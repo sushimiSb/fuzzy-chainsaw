@@ -1,9 +1,12 @@
-release: test
-	@git tag `grep -o -E '[0-9]\.[0-9]{2}\.[0-9]{1,2}' gh-md-toc`
-	@git push --tags origin master
+# Contribution Guidelines
 
-test:
-	@bats tests
+Please ensure your pull request adheres to the following guidelines:
 
-lint:
-	@shellcheck -e SC2008 gh-md-toc
+- Suggested Github Profile READMEs should be beautiful or stand out in some way.
+- Make an individual pull request for each suggestion.
+- Can suggest for different categories as well.
+- Start the Name with a capital.
+- Check your spelling and grammar.
+- Make sure your text editor is set to remove trailing whitespace.
+
+Thank you for your suggestions!
