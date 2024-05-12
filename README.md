@@ -1,42 +1,90 @@
-Welcome to the list of awesome GitHub profile readme templates and thanks for considering to contribute. Contributions are welcome so we can tap into the collection of best Github profile readmes' in one place.
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				@keyframes rotate {
+					0% {
+						transform: rotate(3deg);
+					}
+					100% {
+						transform: rotate(-3deg);
+					}
+				}
 
-Please [open a pull request](https://github.com/themlphdstudent/awesome-github-profile-readme-templates/pulls) if you would like to contribute new or improve existing readme. If you would like to comment on or discuss content but don't have concrete changes yet, please [open an issue](https://github.com/themlphdstudent/awesome-github-profile-readme-templates/issues).
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
 
-This is a curated list so the goal is not to collect all possible resources but collect the ones which are most helpful, provide a unique perspective, or are of special significance.
+				@keyframes fadeIn {
+					0% {
+						opacity: 0;
+					}
+					66% {
+						opacity: 0;
+					}
+					100% {
+						opacity: 1;
+					}
+				}
 
-## How to contribute:
+				.container {
+					font-family:
+						system-ui,
+						-apple-system,
+						'Segoe UI',
+						Roboto,
+						Helvetica,
+						Arial,
+						sans-serif,
+						'Apple Color Emoji',
+						'Segoe UI Emoji';
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
+					background-size: 600% 400%;
+					animation: gradientBackground 10s ease infinite;
+					border-radius: 10px;
+					color: white;
+					text-align: center;
+				}
 
-- Step 1: Fork this repository.
+				h1 {
+					font-size: 50px;
+					line-height: 1.3;
+					letter-spacing: 5px;
+					text-transform: uppercase;
+					text-shadow:
+						0 1px 0 #efefef,
+						0 2px 0 #efefef,
+						0 3px 0 #efefef,
+						0 4px 0 #efefef,
+						0 12px 5px rgba(0, 0, 0, 0.1);
+					animation: rotate ease-in-out 1s infinite alternate;
+				}
 
-- Step 2: Clone the repository in your local machine.
-
-- Step 3: Create a new branch.
-
-- Step 4: Create a new markdown file. Your file name should be your GitHub username.
-```
-- File name should be username.md 
-```
-- Step 5: Copy and Paste your GitHub profile readme content in the new file. Put file in **templates**
-
-- Step 6: At the end of the file add the following content with appropriate changes.
-
-  - Add line break using this command `------`
-  - Credit: `[username](https://github.com/username)`
-  - Last Edited on: Date when you edited this file. The date must be in DD/MM/YYYY format.
-
-- Step 7: Add your name and filename in **\_sidebar.md** like this
-
-```
-- [username](/templates/username.md)
-```
-
-- Step 8: Save the file and commit your changes with the proper message. Your message must contain your username.
-```
-- Example Message : Added template for username: <username>
-```
-
-- Step 9: Push your commit to GitHub.
-
-- Step 10: Submit a Pull Request.
-
-- Step 11: All Done.
+				p {
+					font-size: 20px;
+					text-shadow: 0 1px 0 #efefef;
+					animation: 5s ease 0s normal forwards 1 fadeIn;
+				}
+			</style>
+			<div class="container">
+				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
+				<p>Click to see the source</p>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
