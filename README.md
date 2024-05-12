@@ -1,128 +1,247 @@
-# Contributor Covenant Code of Conduct
+Markdown Cheatsheet<a name="TOP"></a>
+===================
 
-## Our Pledge
+- - - - 
+# Heading 1 #
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+    Markup :  # Heading 1 #
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+    -OR-
 
-## Our Standards
+    Markup :  ============= (below H1 text)
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+## Heading 2 ##
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+    Markup :  ## Heading 2 ##
 
-Examples of unacceptable behavior include:
+    -OR-
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+    Markup: --------------- (below H2 text)
 
-## Enforcement Responsibilities
+### Heading 3 ###
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+    Markup :  ### Heading 3 ###
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+#### Heading 4 ####
 
-## Scope
+    Markup :  #### Heading 4 ####
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
 
-## Enforcement
+Common text
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-samariya.durgesh@gmail.com.
-All complaints will be reviewed and investigated promptly and fairly.
+    Markup :  Common text
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+_Emphasized text_
 
-## Enforcement Guidelines
+    Markup :  _Emphasized text_ or *Emphasized text*
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+~~Strikethrough text~~
 
-### 1. Correction
+    Markup :  ~~Strikethrough text~~
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+__Strong text__
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+    Markup :  __Strong text__ or **Strong text**
 
-### 2. Warning
+___Strong emphasized text___
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
+[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
-### 3. Temporary Ban
+    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+[heading-1](#heading-1 "Goto heading-1")
+    
+    Markup: [heading-1](#heading-1 "Goto heading-1")
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
+Table, like this one :
 
-### 4. Permanent Ban
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+```
 
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+Adding a pipe `|` in a cell :
 
-## Attribution
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | \|
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  |  \| 
+```
 
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
+Left, right and center aligned table
 
-[homepage]: https://www.contributor-covenant.org
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
 
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+```
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
+```
+
+`code()`
+
+    Markup :  `code()`
+
+```javascript
+    var specificLanguage_code = 
+    {
+        "data": {
+            "lookedUpPlatform": 1,
+            "query": "Kasabian+Test+Transmission",
+            "lookedUpItem": {
+                "name": "Test Transmission",
+                "artist": "Kasabian",
+                "album": "Kasabian",
+                "picture": null,
+                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
+            }
+        }
+    }
+```
+
+    Markup : ```javascript
+             ```
+
+* Bullet list
+    * Nested bullet
+        * Sub-nested bullet etc
+* Bullet list item 2
+
+~~~
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
+~~~
+
+1. A numbered list
+    1. A nested numbered list
+    2. Which is numbered
+2. Which is numbered
+
+~~~
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+~~~
+
+- [ ] An uncompleted task
+- [x] A completed task
+
+~~~
+ Markup : - [ ] An uncompleted task
+          - [x] A completed task
+~~~
+
+- [ ] An uncompleted task
+    - [ ] A subtask
+
+~~~
+ Markup : - [ ] An uncompleted task
+              - [ ] A subtask
+~~~
+
+> Blockquote
+>> Nested blockquote
+
+    Markup :  > Blockquote
+              >> Nested Blockquote
+
+_Horizontal line :_
+- - - -
+
+    Markup :  - - - -
+
+_Image with alt :_
+
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+
+    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+
+Foldable text:
+
+<details>
+  <summary>Title 1</summary>
+  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+</details>
+<details>
+  <summary>Title 2</summary>
+  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
+</details>
+
+    Markup : <details>
+               <summary>Title 1</summary>
+               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+             </details>
+
+```html
+<h3>HTML</h3>
+<p> Some HTML code here </p>
+```
+
+Link to a specific part of the page:
+
+[Go To TOP](#TOP)
+   
+    Markup : [text goes here](#section_name)
+              section_title<a name="section_name"></a>    
+
+Hotkey:
+
+<kbd>⌘F</kbd>
+
+<kbd>⇧⌘F</kbd>
+
+    Markup : <kbd>⌘F</kbd>
+
+Hotkey list:
+
+| Key | Symbol |
+| --- | --- |
+| Option | ⌥ |
+| Control | ⌃ |
+| Command | ⌘ |
+| Shift | ⇧ |
+| Caps Lock | ⇪ |
+| Tab | ⇥ |
+| Esc | ⎋ |
+| Power | ⌽ |
+| Return | ↩ |
+| Delete | ⌫ |
+| Up | ↑ |
+| Down | ↓ |
+| Left | ← |
+| Right | → |
+
+Emoji:
+
+:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+
+    Markup : Code appears between colons :EMOJICODE:
