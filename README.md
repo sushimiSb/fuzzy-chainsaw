@@ -1,47 +1,87 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 54 54" style="enable-background:new 0 0 54 54;" xml:space="preserve">
-<g>
-	<g>
-		<path style="fill:#4FBA6F;" d="M27,53L27,53C12.641,53,1,41.359,1,27v0C1,12.641,12.641,1,27,1h0c14.359,0,26,11.641,26,26v0
-			C53,41.359,41.359,53,27,53z"/>
-		<path style="fill:#4FBA6F;" d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2
-			C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z"/>
-	</g>
-	<path style="fill:#FFFFFF;" d="M22.294,40c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L32.88,27
-		L21.587,15.707c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l11.498,11.498c0.667,0.667,0.667,1.751,0,2.418
-		L23.001,39.707C22.806,39.902,22.55,40,22.294,40z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+# ⚠️⚠️ DEPRECATED ⚠️⚠️
+
+Please go to the [Engineering wiki in Notion](https://www.notion.so/buffer/Engineering-Wiki-f34142d290304c35bebadf76cc9cc89e).
+
+---
+
+# Buffer Engineering Wiki
+
+Welcome, friend! 👋 This is the Buffer Engineering Wiki. It's is a living, evolving project that exists to guide you through all the info you need to know to be a happy and productive Buffer Engineer™.
+
+It's a handy reference whether you're new, changing teams, or just like breaking down knowledge silos. 💥
+
+# Table of Contents
+
+💁 _In no particular order, please keep up to date and feel free to rearrange in your PRs_
+### Local Development
+_Get all setup to work on Buffer locally_ 
+
+* :octocat: [`buffer-dev`](https://github.com/bufferapp/buffer-dev)
+
+### Team Specific
+* [Data Team](/teams/data/README.md)
+* [Account Management](/teams/account-management/README.md)
+* [Publish](/teams/publish/README.md)
+* [Mobile](/teams/mobile/README.md)
+* [Systems](/teams/systems/README.md)
+
+### Seeking Advice & Input
+* [How the Architecture Review process works](https://github.com/bufferapp/README/blob/master/architecture-review.md) 
+
+### Engineering Leadership
+* [How Engineering Management Works at Buffer](https://github.com/bufferapp/README/tree/master/engineering-management)
+* [(All-Buffer)Code of Conduct](https://github.com/bufferapp/code-of-conduct)
+    
+### Buffer Web
+_The web app at buffer.com/app, API, static pages, and more!_
+
+* :octocat: [`buffer-web`](https://github.com/bufferapp/buffer-web)
+* [Deployments](/deployments.md)
+* [Deployments for `buffer-web`](https://github.com/bufferapp/buffer-web/blob/master/docs/deploy.md)
+* [PHP Guidelines](https://github.com/bufferapp/buffer-web/blob/master/docs/php-guide.md) — Great doc by @josem on writing PHP in `buffer-web`
+* [PHP Testing](https://github.com/bufferapp/buffer-web/blob/master/docs/php-testing.md)
+* [Feature Flips](https://github.com/bufferapp/buffer-web/blob/master/docs/release-feature.md)
+* ️[buffer-web workers in k8s](/buffer-web-workers-kubernetes.md)
+* ️[Lifecycle of an update](https://paper.dropbox.com/doc/Lifecycle-of-an-update-4rUM5QNLWO4MpNimFpUPy)
+* [Editing files and making a PR directly on GitHub](/editing-on-github.md)
+
+### Buffer Marketing
+_The home page at buffer.com, more static pages, salary calculator, and more!_
+
+* :octocat: [`buffer-marketing`](https://github.com/bufferapp/buffer-marketing)
+* Check out the README in `buffer-marketing` for some great documentation.
+
+### Blog
+_Our blogs, hosted on WPEngine._
+
+* [Wordpress Blogs](/wordpress-blogs.md)
+
+### Billing
+_Everything related to the Stripe API & Webhook and our billing logic._
+
+* [Billing API endpoint signatures](/billing/api-endpoints.md)
+
+### Open Source
+_Everything related to Open Source at Buffer_
+* [Buffer Open Source FAQ](/open-source-faq.md)
+
+### Meta
+* [Contributing to the Wiki](/CONTRIBUTING.md)
+* [Encryption Tool for this Wiki](/encryption-tool.md)
+
+---
+
+## Contributing to the Wiki
+
+All contributions would be glorious. An out of date wiki is so much worse than the occasional misleading new contribution, so please **err on the side of sharing your knowledge**.
+
+Wikis are best when they're living and evolving. As an async, remote team, let's create a wiki that reflects our commitment to this way of work! 🌍
+
+👉 **[Read how to contribute right here](CONTRIBUTING.md)!**
+
+tl:dr;
+
+1. Be the change you want to see on the wiki ✨ Just **edit it directly** on Github ✏️
+1. Got more of a **suggestion** than an immediate change? Open a **Pull Request** 🙋🏽‍
+1. Not sure what the right info is, but you can see the current **docs are wrong**? Open an **issue** 🤔
+1. Got lots to share? Awesome!🦄 Work on this wiki **locally**: `$ git clone git@github.com:bufferapp/README.git`
