@@ -1,186 +1,121 @@
-<!-- markdownlint-disable MD033 MD041 -->
-<p align="center">
-  <h3 align="center">⌨️ Readme Typing SVG</h3>
-</p>
+Creative Commons Legal Code
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Type+messages+everywhere!;Add+a+bio+to+your+profile!;Add+a+description+to+your+repo!;Make+your+readme+stand+out!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000" alt="Example Usage - README Typing SVG">
-</p>
+CC0 1.0 Universal
 
-<p align="center">
-  <a href="https://github.com/search?q=extension%3Amd+%22https+readme+typing+svg%22&type=Code" alt="Users" title="Repo users">
-    <img src="https://freshidea.com/jonah/app/github-search-results/readme-typing-svg/index.php"/></a>
-  <a href="https://discord.gg/fPrdqh3Zfu" alt="Discord" title="Dev Pro Tips Discussion & Support Server">
-    <img src="https://img.shields.io/discord/819650821314052106?color=7289DA&logo=discord&logoColor=white&style=for-the-badge"/></a>
-</p>
-<!-- markdownlint-enable MD033 -->
+    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+    HEREUNDER.
 
-## ⚡ Quick setup
+Statement of Purpose
 
-1. Copy-paste the markdown below into your GitHub profile README
-2. Replace the value after `?lines=` with your text. Separate lines of text with semicolons and use `+` or `%20` for spaces.
-3. Adjust the width parameter (see below) to fit the full width of your text.
+The laws of most jurisdictions throughout the world automatically confer
+exclusive Copyright and Related Rights (defined below) upon the creator
+and subsequent owner(s) (each and all, an "owner") of an original work of
+authorship and/or a database (each, a "Work").
 
-```md
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
-```
+Certain owners wish to permanently relinquish those rights to a Work for
+the purpose of contributing to a commons of creative, cultural and
+scientific works ("Commons") that the public can reliably and without fear
+of later claims of infringement build upon, modify, incorporate in other
+works, reuse and redistribute as freely as possible in any form whatsoever
+and for any purposes, including without limitation commercial purposes.
+These owners may contribute to the Commons to promote the ideal of a free
+culture and the further production of creative, cultural and scientific
+works, or to gain reputation or greater distribution for their Work in
+part through the use and efforts of others.
 
-4. Star the repo 😄
+For these and/or other purposes and motivations, and without any
+expectation of additional consideration or compensation, the person
+associating CC0 with a Work (the "Affirmer"), to the extent that he or she
+is an owner of Copyright and Related Rights in the Work, voluntarily
+elects to apply CC0 to the Work and publicly distribute the Work under its
+terms, with knowledge of his or her Copyright and Related Rights in the
+Work and the meaning and intended legal effect of CC0 on those rights.
 
-## ⚙ Demo site
+1. Copyright and Related Rights. A Work made available under CC0 may be
+protected by copyright and related or neighboring rights ("Copyright and
+Related Rights"). Copyright and Related Rights include, but are not
+limited to, the following:
 
-Here you can easily customize your Typing SVG with a live preview.
+  i. the right to reproduce, adapt, distribute, perform, display,
+     communicate, and translate a Work;
+ ii. moral rights retained by the original author(s) and/or performer(s);
+iii. publicity and privacy rights pertaining to a person's image or
+     likeness depicted in a Work;
+ iv. rights protecting against unfair competition in regards to a Work,
+     subject to the limitations in paragraph 4(a), below;
+  v. rights protecting the extraction, dissemination, use and reuse of data
+     in a Work;
+ vi. database rights (such as those arising under Directive 96/9/EC of the
+     European Parliament and of the Council of 11 March 1996 on the legal
+     protection of databases, and under any national implementation
+     thereof, including any amended or successor version of such
+     directive); and
+vii. other similar, equivalent or corresponding rights throughout the
+     world based on applicable law or treaty, and any national
+     implementations thereof.
 
-<https://readme-typing-svg.demolab.com/demo/>
+2. Waiver. To the greatest extent permitted by, but not in contravention
+of, applicable law, Affirmer hereby overtly, fully, permanently,
+irrevocably and unconditionally waives, abandons, and surrenders all of
+Affirmer's Copyright and Related Rights and associated claims and causes
+of action, whether now known or unknown (including existing as well as
+future claims and causes of action), in the Work (i) in all territories
+worldwide, (ii) for the maximum duration provided by applicable law or
+treaty (including future time extensions), (iii) in any current or future
+medium and for any number of copies, and (iv) for any purpose whatsoever,
+including without limitation commercial, advertising or promotional
+purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
+member of the public at large and to the detriment of Affirmer's heirs and
+successors, fully intending that such Waiver shall not be subject to
+revocation, rescission, cancellation, termination, or any other legal or
+equitable action to disrupt the quiet enjoyment of the Work by the public
+as contemplated by Affirmer's express Statement of Purpose.
 
-[![Demo Site](https://user-images.githubusercontent.com/20955511/183703055-42ec8754-d84c-414f-8132-a02974224aa1.gif "Demo Site")](https://readme-typing-svg.demolab.com/demo/)
+3. Public License Fallback. Should any part of the Waiver for any reason
+be judged legally invalid or ineffective under applicable law, then the
+Waiver shall be preserved to the maximum extent permitted taking into
+account Affirmer's express Statement of Purpose. In addition, to the
+extent the Waiver is so judged Affirmer hereby grants to each affected
+person a royalty-free, non transferable, non sublicensable, non exclusive,
+irrevocable and unconditional license to exercise Affirmer's Copyright and
+Related Rights in the Work (i) in all territories worldwide, (ii) for the
+maximum duration provided by applicable law or treaty (including future
+time extensions), (iii) in any current or future medium and for any number
+of copies, and (iv) for any purpose whatsoever, including without
+limitation commercial, advertising or promotional purposes (the
+"License"). The License shall be deemed effective as of the date CC0 was
+applied by Affirmer to the Work. Should any part of the License for any
+reason be judged legally invalid or ineffective under applicable law, such
+partial invalidity or ineffectiveness shall not invalidate the remainder
+of the License, and in such case Affirmer hereby affirms that he or she
+will not (i) exercise any of his or her remaining Copyright and Related
+Rights in the Work or (ii) assert any associated claims and causes of
+action with respect to the Work, in either case contrary to Affirmer's
+express Statement of Purpose.
 
-## 🚀 Example usage
+4. Limitations and Disclaimers.
 
-Below are links to profiles where you can see Readme Typing SVGs in action!
-
-[![Jonah Lawrence](https://github.com/DenverCoder1.png?size=60)](https://github.com/DenverCoder1 "Jonah Lawrence on GitHub")
-[![Jini by Rentalz.com](https://i.imgur.com/TtuoKCs.png)](https://jini.rentalz.com/ "Jini by Rentalz.com")
-[![Waren Gonzaga](https://github.com/warengonzaga.png?size=60)](https://github.com/warengonzaga "Waren Gonzaga on GitHub")
-[![8BitJonny](https://github.com/8BitJonny.png?size=60)](https://github.com/8BitJonny "8BitJonny on GitHub")
-[![Aditya Raute](https://github.com/adityaraute.png?size=60)](https://github.com/adityaraute "Aditya Raute on GitHub")
-[![Shiva Sankeerth Reddy](https://github.com/ShivaSankeerth.png?size=60)](https://github.com/ShivaSankeerth "Shiva Sankeerth Reddy on GitHub")
-[![Tarun Kamboj](https://github.com/Tarun-Kamboj.png?size=60)](https://github.com/Tarun-Kamboj "Tarun Kamboj on GitHub")
-[![T.A.Vignesh](https://github.com/tavignesh.png?size=60)](https://github.com/tavignesh "T.A.Vignesh on GitHub")
-[![William J. Ghelfi](https://github.com/trumbitta.png?size=60)](https://github.com/trumbitta "William J. Ghelfi on GitHub")
-[![Mano Bharathi M](https://i.imgur.com/Audc6L9.png)](https://github.com/ManoBharathi93 "Mano Bharathi M on GitHub")
-[![Shivam Yadav](https://github.com/sudoshivam.png?size=60)](https://github.com/sudoshivam "Shivam Yadav on GitHub")
-[![Pratik Pingale](https://github.com/PROxZIMA.png?size=60)](https://github.com/PROxZIMA "Pratik Pingale on GitHub")
-[![Vydr'Oz](https://github.com/VydrOz.png?size=60)](https://github.com/VydrOz "Vydr'Oz on GitHub")
-[![Caroline Heloíse](https://github.com/Carol42.png?size=60)](https://github.com/Carol42 "Caroline Heloíse on GitHub")
-[![PriyanshK09](https://github.com/PriyanshK09.png?size=60)](https://github.com/PriyanshK09 "PriyanshK09 on GitHub")
-[![Thakur Ballary](https://github.com/thakurballary.png?size=60)](https://github.com/thakurballary "Thakur Ballary on GitHub")
-[![NiceSapien](https://github.com/nicesapien.png?size=60)](https://github.com/nicesapien "NiceSapien on GitHub")
-[![Manthan Ank](https://github.com/manthanank.png?size=60)](https://github.com/manthanank "Manthan Ank on GitHub")
-[![Ronny Coste](https://github.com/lertsoft.png?size=60)](https://github.com/lertsoft "Ronny Coste on GitHub")
-[![Vishal Beep](https://github.com/vishal-beep136.png?size=60)](https://github.com/Vishal-beep136 "Vishal Beep on GitHub")
-[![wiz64](https://github.com/wiz64.png?size=60)](https://github.com/wiz64 "wiz64 on GitHub")
-[![Aquarian Blake](https://github.com/Aquarius-blake.png?size=60)](https://github.com/Aquarius-blake "Aquarian Blake on GitHub")
-[![D3vil0p3r](https://github.com/D3vil0p3r.png?size=60)](https://github.com/D3vil0p3r "D3vil0p3r on GitHub")
-[![EliusHHimel](https://github.com/EliusHHimel.png?size=60)](https://github.com/EliusHHimel "EliusHHimel on GitHub")
-[![jcs090218](https://github.com/jcs090218.png?size=60)](https://github.com/jcs090218 "jcs090218 on GitHub")
-[![Rishabh2804](https://github.com/Rishabh2804.png?size=60)](https://github.com/Rishabh2804 "Rishabh2804 on GitHub")
-[![shalinibhatt](https://github.com/shalinibhatt.png?size=60)](https://github.com/shalinibhatt "shalinibhatt on GitHub")
-[![UlisesAlexanderAM](https://github.com/UlisesAlexanderAM.png?size=60)](https://github.com/UlisesAlexanderAM "UlisesAlexanderAM on GitHub")
-[![SpookyJelly](https://github.com/SpookyJelly.png?size=60)](https://github.com/SpookyJelly "SpookyJelly on GitHub")
-[![cfcife](https://github.com/cfcife.png?size=60)](https://github.com/cfcife "cfcife on GitHub")
-[![majidtdeni666](https://github.com/majidtdeni666.png?size=60)](https://github.com/majidtdeni666 "majidtdeni666 on GitHub")
-[![GalexY727](https://github.com/galexy727.png?size=60)](https://github.com/galexy727 "GalexY727 on GitHub")
-[![HectorSaldes](https://github.com/HectorSaldes.png?size=60)](https://github.com/HectorSaldes "HectorSaldes on GitHub")
-[![Ash-codes18](https://github.com/Ash-codes18.png?size=60)](https://github.com/Ash-codes18 "Ash-codes18 on GitHub")
-[![Maagnitude](https://github.com/Maagnitude.png?size=60)](https://github.com/Maagnitude "Maagnitude on GitHub")
-[![cracker911181](https://github.com/cracker911181.png?size=60)](https://github.com/cracker911181 "cracker911181 on GitHub")
-[![quiet-node](https://github.com/quiet-node.png?size=60)](https://github.com/quiet-node "quiet-node on GitHub")
-[![kaustubh43](https://github.com/kaustubh43.png?size=60)](https://github.com/kaustubh43 "kaustubh43 on GitHub")
-[![kaisunoo](https://github.com/kaisunoo.png?size=60)](https://github.com/kaisunoo "kaisunoo on GitHub")
-[![meyer-pidiache](https://github.com/meyer-pidiache.png?size=60)](https://github.com/meyer-pidiache "Meyer Pidiache on GitHub")
-[![jeremiahseun](https://github.com/jeremiahseun.png?size=60)](https://github.com/jeremiahseun "Jeremiah Erinola on GitHub")
-[![Purushottam Anand](https://github.com/creativepuru.png?size=60)](https://github.com/creativepuru "Purushottam Anand 🇮🇳 on GitHub ☕")
-[![Greg Chism](https://github.com/Gchism94.png?size=60)](https://github.com/Gchism94 "Greg Chism 🤘 on GitHub")
-[![turbomaster95](https://github.com/turbomaster95.png?size=60)](https://github.com/turbomaster95 "turbomaster95 🗿 🇮🇳 on GitHub ☕")
-[![K1rsN7](https://github.com/K1rsN7.png?size=60)](https://github.com/K1rsN7 "K1rsN7 on GitHub💪")
-[![codesbyahsen](https://github.com/codesbyahsen.png?size=60)](https://github.com/codesbyahsen "AHSEN ALEE on GitHub")
-[![Freddywhest](https://github.com/Freddywhest.png?size=60)](https://github.com/Freddywhest "Alfred Nti on GitHub")
-[![Shiro-cha](https://github.com/Shiro-cha.png?size=60)](https://github.com/Shiro-cha "Shiro Yukami on Github")
-[![Abid-Nafi](https://github.com/MohammedAbidNafi.png?size=60)](https://github.com/MohammedAbidNafi "Abid Nafi on Github")
-[![Srijan-Baniyal](https://github.com/Srijan-Baniyal.png?size=60)](https://github.com/Srijan-Baniyal "Srijan Baniyal on Github")
-[![BrunoOliveiraS](https://github.com/BrunoOliveiraS.png?size=60)](https://github.com/BrunoOliveiraS "Bruno Oliveira on Github")
-[![zidk](https://github.com/zidk.png?size=60)](https://github.com/zidk "Pablo Gonzalez on Github")
-[![tshr-d-dragon](https://github.com/tshr-d-dragon.png?size=60)](https://github.com/tshr-d-dragon "Tushar Patil on Github")
-[![v-pun215](https://github.com/v-pun215.png?size=60)](https://github.com/v-pun215 "Vihaan Pundir on Github")
-[![DeveshYadav13](https://github.com/DeveshYadav13.png?size=60)](https://github.com/DeveshYadav13 "Devesh Yadav on Github")
-[![HauseMasterZ](https://github.com/HauseMasterZ.png?size=60)](https://github.com/HauseMasterZ "HauseMaster on Github")
-[![hyskoniho](https://github.com/hyskoniho.png?size=60)](https://github.com/hyskoniho "hyskoniho on Github")
-[![elvisisvan](https://github.com/elvisisvan.png?size=60)](https://github.com/elvisisvan "elvisisvan on Github")
-[![Nquenan](https://github.com/Nquenan.png?size=60)](https://github.com/Nquenan "Nquenan on Github")
-[![akhilnev](https://github.com/akhilnev.png?size=60)](https://github.com/akhilnev "Akhilesh Nevatia on Github")
-[![mannysoft](https://github.com/mannysoft.png?size=60)](https://github.com/mannysoft "Manny Isles on Github")
-[![LinThitHtwe](https://github.com/LinThitHtwe.png?size=60)](https://github.com/LinThitHtwe "LinThitHtwe on Github")
-[![Elio-Aliaj](https://github.com/Elio-Aliaj.png?size=60)](https://github.com/Elio-Aliaj "Elio-Aliaj on Github")
-[![MehmetBozkir](https://github.com/MehmetBozkir.png?size=60)](https://github.com/MehmetBozkir "MehmetBozkir on Github")
-[![presentformyfriends](https://github.com/presentformyfriends.png?size=60)](https://github.com/presentformyfriends "presentformyfriends on Github")
-[![Ad7amstein](https://github.com/Ad7amstein.png?size=60)](https://github.com/Ad7amstein "Ad7amstein on Github")
-[![LakshmanKishore](https://github.com/LakshmanKishore.png?size=60)](https://github.com/LakshmanKishore "LakshmanKishore on Github")
-[![mateusadada](https://github.com/mateusadada.png?size=60)](https://github.com/mateusadada "mateusadada on Github")
-[![fasakinhenry](https://github.com/fasakinhenry.png?size=60)](https://github.com/fasakinhenry "fasakinhenry on Github")
-[![YousifAbozid](https://github.com/YousifAbozid.png?size=60)](https://github.com/YousifAbozid "YousifAbozid on Github")
-[![SuSheng13T](https://github.com/SuSheng13T.png?size=60)](https://github.com/SuSheng13T "SuSheng13T on Github")
-[![hheinsoee](https://github.com/hheinsoee.png?size=60)](https://github.com/hheinsoee "hheinsoee on Github")
-
-Feel free to [open a PR](https://github.com/DenverCoder1/readme-typing-svg/issues/21#issue-870549556) and add yours!
-
-## 🔧 Options
-
-|  Parameter   |                                   Details                                   |  Type   |               Example               |
-| :----------: | :-------------------------------------------------------------------------: | :-----: | :---------------------------------: |
-|   `lines`    |       Text to display with lines separated by `;` and `+` for spaces        | string  | `First+line;Second+line;Third+line` |
-|   `height`   |             Height of the output SVG in pixels (default: `50`)              | integer |         Any positive number         |
-|   `width`    |             Width of the output SVG in pixels (default: `400`)              | integer |         Any positive number         |
-|    `size`    |                     Font size in pixels (default: `20`)                     | integer |         Any positive number         |
-|    `font`    |                     Font family (default: `monospace`)                      | string  |     Any font from Google Fonts      |
-|   `color`    |                    Color of the text (default: `36BCF7`)                    | string  |  Hex code without # (eg. `F724A9`)  |
-| `background` |             Background color of the text (default: `00000000`)              | string  |  Hex code without # (eg. `FEFF4C`)  |
-|   `center`   |    `true` to center text or `false` for left aligned (default: `false`)     | boolean |          `true` or `false`          |
-|  `vCenter`   |  `true` to center vertically or `false`(default) to align above the center  | boolean |          `true` or `false`          |
-| `multiline`  |  `true` to wrap lines or `false` to retype on one line (default: `false`)   | boolean |          `true` or `false`          |
-|  `duration`  | Duration of the printing of a single line in milliseconds (default: `5000`) | integer |         Any positive number         |
-|   `pause`    |     Duration of the pause between lines in milliseconds (default: `0`)      | integer |       Any non-negative number       |
-|   `repeat`   |  `true` to loop around to the first line after the last (default: `true`)   | boolean |          `true` or `false`          |
-| `separator`  |     Separator used between lines in the lines parameter (default: `;`)      | string  |        `;`, `;;`, `/`, etc.         |
-
-## 📤 Deploying it on your own
-
-If you can, it is preferable to host the files on your own server.
-
-Doing this can lead to better uptime and more control over customization (you can modify the code for your usage).
-
-You can deploy the PHP files on any website server with PHP installed or as a Heroku app.
-
-### Step-by-step instructions for deploying to Heroku
-
-1. Sign in to **Heroku** or create a new account at <https://heroku.com>
-2. Click the "Deploy to Heroku" button below
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg "Deploy to Heroku")](https://heroku.com/deploy?template=https://github.com/DenverCoder1/readme-typing-svg/tree/main)
-
-3. On the page that comes up, click **"Deploy App"** at the end of the form
-4. Once the app is deployed, click **"Manage App"** to go to the dashboard
-5. Scroll down to the **Domains** section in the settings to find the URL you will use in place of `readme-typing-svg.demolab.com`
-
-## 🤗 Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request if you have a way to improve this project.
-
-Make sure your request is meaningful and you have tested the app locally before submitting a pull request.
-
-Refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for more details on contributing, installing requirements, and running the application.
-
-## 🙋‍♂️ Support
-
-💙 If you like this project, give it a ⭐ and share it with friends!
-
-<!-- markdownlint-disable MD033 -->
-<p align="left">
-  <a href="https://www.youtube.com/channel/UCipSxT7a3rn81vGLw9lqRkg?sub_confirmation=1"><img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/></a>
-  <a href="https://github.com/sponsors/DenverCoder1"><img alt="Sponsor with Github" title="Sponsor with Github" src="https://img.shields.io/badge/-Sponsor-ea4aaa?style=for-the-badge&logo=github&logoColor=white"/></a>
-</p>
-<!-- markdownlint-enable MD033 -->
-
-[☕ Buy me a coffee](https://ko-fi.com/jlawrence)
-
----
-
-Made with ❤️ and PHP
-
-<!-- markdownlint-disable MD033 -->
-
-<a href="https://heroku.com/"><img alt="Powered by Heroku" title="Powered by Heroku" src="https://img.shields.io/badge/-Powered%20by%20Heroku-6567a5?style=for-the-badge&logo=heroku&logoColor=white"/></a>
-
-<!-- markdownlint-enable MD033 -->
-
-This project uses [Twemoji](https://github.com/twitter/twemoji), published under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)
+ a. No trademark or patent rights held by Affirmer are waived, abandoned,
+    surrendered, licensed or otherwise affected by this document.
+ b. Affirmer offers the Work as-is and makes no representations or
+    warranties of any kind concerning the Work, express, implied,
+    statutory or otherwise, including without limitation warranties of
+    title, merchantability, fitness for a particular purpose, non
+    infringement, or the absence of latent or other defects, accuracy, or
+    the present or absence of errors, whether or not discoverable, all to
+    the greatest extent permissible under applicable law.
+ c. Affirmer disclaims responsibility for clearing rights of other persons
+    that may apply to the Work or any use thereof, including without
+    limitation any person's Copyright and Related Rights in the Work.
+    Further, Affirmer disclaims responsibility for obtaining any necessary
+    consents, permissions or other rights required for any use of the
+    Work.
+ d. Affirmer understands and acknowledges that Creative Commons is not a
+    party to this document and has no duty or obligation with respect to
+    this CC0 or use of the Work.
