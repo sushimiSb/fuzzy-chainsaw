@@ -1,60 +1,93 @@
-# This file is to provide an easy interface to specify vendor, board, and compiler for FreeRTOS.
-# It is supposed to be processed first by cmake before the top level CMakeLists.txt file. Note the
-# behavior of this file is not officially supported by CMake. After CMake 3.17, there's a better
-# way for this, https://cmake.org/cmake/help/v3.17/variable/CMAKE_PROJECT_PROJECT-NAME_INCLUDE_BEFORE.html
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# If VENDOR or BOARD is specified, try to find a match.
-if(DEFINED VENDOR OR DEFINED BOARD)
-    include("${CMAKE_CURRENT_LIST_DIR}/tools/cmake/afr_utils.cmake")
+# C extensions
+*.so
 
-    set(matched_boards)
-    afr_get_boards(all_boards)
-    foreach(board IN LISTS all_boards)
-        string(REGEX MATCH "${VENDOR}.*\\.${BOARD}.*" match "${board}")
-        if(match)
-            list(APPEND matched_boards "${match}")
-        endif()
-    endforeach()
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-    list(LENGTH matched_boards size)
-    if(size EQUAL 0)
-        message(FATAL_ERROR "No matching board found, please check your VENDOR and BOARD value.")
-    endif()
-    if(NOT size EQUAL 1)
-        list(JOIN matched_boards ", " matched_boards)
-        message(FATAL_ERROR "Multiple matching boards found: ${matched_boards}")
-    else()
-        set(AFR_BOARD "${matched_boards}" CACHE STRING "")
-    endif()
-endif()
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-# If COMPILER is specified, set toolchain file to ${COMPILER}.cmake.
-if(DEFINED COMPILER)
-    if(DEFINED CMAKE_TOOLCHAIN_FILE)
-        get_filename_component(toolchain "${CMAKE_TOOLCHAIN_FILE}" NAME_WE)
-        if(NOT "${COMPILER}" STREQUAL "${toolchain}")
-            message(WARNING "CMAKE_TOOLCHAIN_FILE is already defined to ${toolchain}.cmake, you\
-                need to delete cache and reconfigure if you want to switch compiler.")
-        endif()
-    else()
-        set(toolchain_dir "${CMAKE_CURRENT_LIST_DIR}/tools/cmake/toolchains")
-        set(toolchain_file "${toolchain_dir}/${COMPILER}.cmake")
-        if(EXISTS "${toolchain_file}")
-            set(CMAKE_TOOLCHAIN_FILE "${toolchain_file}" CACHE INTERNAL "")
-        else()
-            message(FATAL_ERROR "Toolchain file \"${COMPILER}.cmake\" does not exist, please\
-                select one from \"cmake/toolchains\" folder.")
-        endif()
-    endif()
-endif()
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Disable compiler checks when only outputing metadata.
-if(AFR_METADATA_MODE)
-    set(CMAKE_C_COMPILER_FORCED TRUE CACHE INTERNAL "")
-    set(CMAKE_CXX_COMPILER_FORCED TRUE CACHE INTERNAL "")
-endif()
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
 
-# Remove these helper variables from CMake cache.
-unset(VENDOR CACHE)
-unset(BOARD CACHE)
-unset(COMPILER CACHE)
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+
+# Rope project settings
+.ropeproject
+
+.idea
+
+.DS_Store
