@@ -1,267 +1,56 @@
-Getting started with Markdown
-=============================
-
-
-- [Getting started with Markdown](#getting-started-with-markdown)
-- [Titles](#titles)
-- [Paragraph](#paragraph)
-- [List](#list)
-	- [List CheckBox](#list-checkbox)
-- [Link](#link)
-	- [Anchor links](#anchor-links)
-- [Blockquote](#blockquote)
-- [Image | GIF](#image--gif)
-- [Style Text](#style-text)
-	- [Italic](#italic)
-	- [Bold](#bold)
-	- [Strikethrough](#strikethrough)
-- [Code](#code)
-- [Email](#email)
-- [Table](#table)
-	- [Table Align](#table-align)
-    	- [Align Center](#align-center)
-    	- [Align Left](#align-left)
-    	- [Align Right](#align-right)
-- [Escape Characters](#escape-characters)
-- [Emoji](#emoji)
-- [Shields Badges](#Shields-Badges)
-- [Markdown Editor](#markdown-editor)
-- [Some links for more in depth learning](#some-links-for-more-in-depth-learning)
-
-----------------------------------
-
-# Titles 
-
-### Title 1
-### Title 2
-
-	Title 1
-	========================
-	Title 2 
-	------------------------
-
-# Title 1
-## Title 2
-### Title 3
-#### Title 4
-##### Title 5
-###### Title 6
-
-    # Title 1
-    ## Title 2
-    ### Title 3    
-    #### Title 4
-    ##### Title 5
-    ###### Title 6    
-
-# Paragraph
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. Phasellus eleifend egestas diam, id tincidunt arcu dictum quis. Pellentesque eu dui tempus, tempus massa sed, eleifend tortor. Donec in sem in erat iaculis tincidunt. Fusce condimentum hendrerit turpis nec vehicula. Aliquam finibus nisi vel eros lobortis dictum. Etiam congue tortor libero, quis faucibus ligula gravida a. Suspendisse non pulvinar nisl. Sed malesuada, felis vitae consequat gravida, dui ligula suscipit ligula, nec elementum nulla sem vel dolor. Vivamus augue elit, venenatis non lorem in, volutpat placerat turpis. Nullam et libero at eros vulputate auctor. Duis sed pharetra lacus. Sed egestas ligula vitae libero aliquet, ac imperdiet est ullamcorper. Sed dapibus sem tempus eros dignissim, ac suscipit lectus dapibus. Proin sagittis diam vel urna volutpat, vel ullamcorper urna lobortis. Suspendisse potenti.
-
-Nulla varius risus sapien, nec fringilla massa facilisis sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vel ornare erat, eget rhoncus lectus. Suspendisse interdum scelerisque molestie. Aliquam convallis consectetur lorem ut consectetur. Nullam massa libero, cursus et porta ac, consequat eget nibh. Sed faucibus nisl augue, non viverra justo sagittis venenatis.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. 
-    
-    Phasellus eleifend egestas diam, id tincidunt arcu dictum quis.
-
-# List 
-* Item 1;
-	* Item 1.1;
-* Item 2;
-	* Item 2.1;
-	* Item 2.2;
-* Item 3
-	* Item 3.1;
-		* Item 3.1.1;
-    
->      * Item 1;
->	      * Item 1.1;
->	    * Item 2;
->	     * Item 2.1;
->	     * Item 2.2;
->	    * Item 3
->		   * Item 3.1;
->			  * Item 3.1.1;
-
-## List CheckBox
-
- - [ ] Item A
- - [x] Item B
- - [x] Item C
- 
->     - [ ] Item A
->     - [x] Item B
->     - [x] Item C
-
-
-# Link
-[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
-
-[Youtube](https://www.youtube.com) - _Enjoy videos and music you love, upload original content, and share it with friends, family, and the world on YouTube._
-
-[GitHub](https://github.com/fefong/markdown_readme#getting-started-with-markdown) - _Project_
-
-		[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
-
-## Anchor links
-
-[Markdown - Summary](#Getting-started-with-Markdown)
-
-[Markdown - Markdown Editor](#Markdown-Editor)
-
-		[Markdown - Link](#Link)
-
-# Blockquote
-> Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny
-
-    > Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny 
-
-# Image | GIF
-![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
-    
-    ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
-    
-See more [Markdown Extras - Image Align](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#image-align)    
-
-# Style Text
-### Italic
-
-*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
-
-     *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
-
-### Bold
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
-
-    **Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
-    
-### Strikethrough
-~~strikethrough text~~
-
-    ~~strikethrough text~~
-    
-# Code
-
-```java
-public static void main(String[] args) {
-	//TODO
-}
-```
-
->   \`\`\`java <br>
->   public static void main(String[] args) {<br>
->	    //TODO<br>
->	}<br>
->   \`\`\`<br>
-
-See more [Markdown Extras - Style Text](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#style-text)
-
-# Email
-<email@email.com>
-
-    <email@email.com>
-
-# Table
-
-|Column 1|Column 2|Column 3|
-|---|---|---|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|---|---|---|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-## Table Align
-
-## Align Center
-
-|Column 1|Column 2|Column 3|
-|:---:|:---:|:---:|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|:---:|:---:|:---:|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-## Align Left
-
-|Column 1|Column 2|Column 3|
-|:---|:---|:---|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|:---|:---|:---|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-## Align Right
-
-|Column 1|Column 2|Column 3|
-|---:|---:|---:|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|---:|---:|---:|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-See more [Markdown Extras - Table](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table)
-* [Rownspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---rowspan)
-* [Colspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---colspan)
-
-# Escape Characters
-
-```
-\   backslash
-`   backtick
-*   asterisk
-_   underscore
-{}  curly braces
-[]  square brackets
-()  parentheses
-#   hash mark
-+   plus sign
--   minus sign (hyphen)
-.   dot
-!   exclamation mark
-```
-
-# Emoji
-
-* [Emoji](emoji.md#emoji);
-	* [People](emoji.md#people) - (:blush: ; :hushed: ; :shit:);
-	* [Nature](emoji.md#nature) - (:sunny: ; :snowman: ; :dog:);
-	* [Objects](emoji.md#objects) - (:file_folder: ; :computer: ; :bell:);
-	* [Places](emoji.md#places) - (:rainbow: ; :warning: ; :statue_of_liberty:);
-	* [Symbols](emoji.md#symbols) - (:cancer: ; :x: ; :shipit:);
-* [Kaomoji](emoji.md#kaomoji);
-* [Special-Symbols](emoji.md#special-symbols);
-	
-
-# Shields Badges
-
-:warning: _We are not responsible for this site_
-
-See more: [https://shields.io/](https://shields.io/)
-
-[![GitHub forks](https://img.shields.io/github/forks/fefong/markdown_readme)](https://github.com/fefong/markdown_readme/network)
-![Markdown](https://img.shields.io/badge/markdown-project-red)
-
-# Markdown Editor
-
-[StackEdit](https://stackedit.io) - _StackEdit’s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files._
-
-# Some links for more in depth learning
-
-:page_facing_up: [Markdown Extras](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#markdown---extras)
-
-:page_facing_up: [Wikipedia - Markdown](https://pt.wikipedia.org/wiki/Markdown)
-
-:page_facing_up: [Oficial](https://daringfireball.net/projects/markdown/)
-
-
+<img align="center" src="https://raw.githubusercontent.com/saviomartin/saviomartin/master/assets/banner.gif"/>
+
+<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/about.png?raw=true"/>
+
+- 🔭 I’m currently working on NodeJs
+- 🌱 I’m currently learning Backend
+- 💬 Ask me anything about Frontend
+- 📫 How to reach me: saviomartin2020@gmail.com
+- 😄 My website: https://savio.works/
+- ⚡ Fun fact: I'm comming to teen
+
+<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/connect.png?raw=true"/>
+
+- <a href="https://www.instagram.com/teen_developer/"><img src="https://img.shields.io/badge/instagram%20@teen_developer-DD2476?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+- <a href="https://www.instagram.com/teen_developer/"><img src="https://img.shields.io/badge/facebook%20@saviomartin.1694-344E86?style=for-the-badge&logo=facebook&logoColor=white"/></a>
+- <a href="https://www.instagram.com/teen_developer/"><img src="https://img.shields.io/badge/twitter%20@saviomartin3-0D95E8?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+- <a href="https://savio.works/"><img height="30px" src="https://img.shields.io/badge/My%20Website:%20savio.works-8E2DE2?style=for-the-badge&logo=google%20chrome&logoColor=white"/></a>
+
+<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/skills.png?raw=true">
+
+![HTML5](https://img.shields.io/badge/html%205-grey?style=for-the-badge&logo=html5&logoColor=white&labelColor=8E2DE2)
+![CSS3](https://img.shields.io/badge/css%203-grey?style=for-the-badge&logo=css3&logoColor=white&labelColor=8E2DE2)
+![Sass](https://img.shields.io/badge/sass-grey?style=for-the-badge&logo=sass&logoColor=white&labelColor=8E2DE2)
+![JavaScript](https://img.shields.io/badge/-JavaScript-grey?style=for-the-badge&logo=javascript&logoColor=white&labelColor=8E2DE2)
+<br>
+![bootstrap](https://img.shields.io/badge/-bootstrap-grey?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=8E2DE2)
+![materializecss](https://img.shields.io/badge/Materialize%20css-grey?style=for-the-badge&logo=google&logoColor=white&labelColor=8E2DE2)
+![node](https://img.shields.io/badge/-node-grey?style=for-the-badge&logo=node.js&logoColor=white&labelColor=8E2DE2)
+![php](https://img.shields.io/badge/-php-grey?style=for-the-badge&logo=php&logoColor=white&labelColor=8E2DE2)
+<br>
+![mongodb](https://img.shields.io/badge/-mongodb-grey?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=8E2DE2)
+![firebase](https://img.shields.io/badge/-firebase-grey?style=for-the-badge&logo=firebase&logoColor=white&labelColor=8E2DE2)
+![git](https://img.shields.io/badge/-git-grey?style=for-the-badge&logo=git&logoColor=white&labelColor=8E2DE2)
+![github](https://img.shields.io/badge/-github-grey?style=for-the-badge&logo=github&logoColor=white&labelColor=8E2DE2)
+<br>
+![python](https://img.shields.io/badge/-python-grey?style=for-the-badge&logo=python&logoColor=white&labelColor=8E2DE2)
+![jquery](https://img.shields.io/badge/-jquery-grey?style=for-the-badge&logo=jquery&logoColor=white&labelColor=8E2DE2)
+![MarkDown](https://img.shields.io/badge/-Markdown-grey?style=for-the-badge&logo=Markdown&logoColor=white&labelColor=8E2DE2)
+![git](https://img.shields.io/badge/-git-grey?style=for-the-badge&logo=git&logoColor=white&labelColor=8E2DE2)
+
+
+<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/git.png?raw=true"/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=saviomartin&show_icons=true&theme=radical&title_color=8E2DE2&text_color=fff&icon_color=8E2DE2">
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=saviomartin&theme=radical&title_color=8E2DE2&text_color=fff)
+
+<img src="https://github.com/saviomartin/saviomartin/blob/master/assets/repo.png?raw=true">
+
+![Repo 1](https://github-readme-stats.vercel.app/api/pin/?username=saviomartin&repo=sprintnote&show_icons=true&theme=radical&title_color=8E2DE2&text_color=fff&icon_color=8E2DE2)
+![Repo 2](https://github-readme-stats.vercel.app/api/pin/?username=saviomartin&repo=covid-chatbot&show_icons=true&theme=radical&title_color=8E2DE2&text_color=fff&icon_color=8E2DE2)
+
+<p align="center">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=saviomartin" id="counter">
+</p>
+⭐️ From [saviomartin](https://github.com/saviomartin)
