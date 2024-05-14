@@ -1,126 +1,247 @@
-# Markdown - Extras
+Markdown Cheatsheet<a name="TOP"></a>
+===================
+
+- - - - 
+# Heading 1 #
+
+    Markup :  # Heading 1 #
+
+    -OR-
+
+    Markup :  ============= (below H1 text)
+
+## Heading 2 ##
+
+    Markup :  ## Heading 2 ##
+
+    -OR-
+
+    Markup: --------------- (below H2 text)
+
+### Heading 3 ###
+
+    Markup :  ### Heading 3 ###
+
+#### Heading 4 ####
+
+    Markup :  #### Heading 4 ####
 
 
-## Image Align
+Common text
 
-### Image Align - Middle _(default)_
+    Markup :  Common text
 
-Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium. lobortis.
+_Emphasized text_
+
+    Markup :  _Emphasized text_ or *Emphasized text*
+
+~~Strikethrough text~~
+
+    Markup :  ~~Strikethrough text~~
+
+__Strong text__
+
+    Markup :  __Strong text__ or **Strong text**
+
+___Strong emphasized text___
+
+    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
+
+[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+
+    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+
+[heading-1](#heading-1 "Goto heading-1")
+    
+    Markup: [heading-1](#heading-1 "Goto heading-1")
+
+Table, like this one :
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+```
+
+Adding a pipe `|` in a cell :
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | \|
+
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  |  \| 
+```
+
+Left, right and center aligned table
+
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
+
+```
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
+```
+
+`code()`
+
+    Markup :  `code()`
+
+```javascript
+    var specificLanguage_code = 
+    {
+        "data": {
+            "lookedUpPlatform": 1,
+            "query": "Kasabian+Test+Transmission",
+            "lookedUpItem": {
+                "name": "Test Transmission",
+                "artist": "Kasabian",
+                "album": "Kasabian",
+                "picture": null,
+                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
+            }
+        }
+    }
+```
+
+    Markup : ```javascript
+             ```
+
+* Bullet list
+    * Nested bullet
+        * Sub-nested bullet etc
+* Bullet list item 2
+
+~~~
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
+~~~
+
+1. A numbered list
+    1. A nested numbered list
+    2. Which is numbered
+2. Which is numbered
+
+~~~
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+~~~
+
+- [ ] An uncompleted task
+- [x] A completed task
+
+~~~
+ Markup : - [ ] An uncompleted task
+          - [x] A completed task
+~~~
+
+- [ ] An uncompleted task
+    - [ ] A subtask
+
+~~~
+ Markup : - [ ] An uncompleted task
+              - [ ] A subtask
+~~~
+
+> Blockquote
+>> Nested blockquote
+
+    Markup :  > Blockquote
+              >> Nested Blockquote
+
+_Horizontal line :_
+- - - -
+
+    Markup :  - - - -
+
+_Image with alt :_
+
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+
+    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+
+Foldable text:
+
+<details>
+  <summary>Title 1</summary>
+  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+</details>
+<details>
+  <summary>Title 2</summary>
+  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
+</details>
+
+    Markup : <details>
+               <summary>Title 1</summary>
+               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+             </details>
 
 ```html
-<img src="right-arrow.svg" width="42" height="42">
+<h3>HTML</h3>
+<p> Some HTML code here </p>
 ```
 
-### Image Align - Left
+Link to a specific part of the page:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> Fusce semper libero ligula, vel varius enim sagittis quis. Aenean sed massa velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras faucibus consequat est eu varius. Nam vitae dignissim velit. 
+[Go To TOP](#TOP)
+   
+    Markup : [text goes here](#section_name)
+              section_title<a name="section_name"></a>    
 
-```html
-<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> 
-```
+Hotkey:
 
-### Image Align - Right
+<kbd>⌘F</kbd>
 
-Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" alt="right" align="right" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium.
+<kbd>⇧⌘F</kbd>
 
-```html
-<img src="right-arrow.svg" alt="right" align="right" width="42" height="42">
-```
+    Markup : <kbd>⌘F</kbd>
 
-## Style Text
+Hotkey list:
 
+| Key | Symbol |
+| --- | --- |
+| Option | ⌥ |
+| Control | ⌃ |
+| Command | ⌘ |
+| Shift | ⇧ |
+| Caps Lock | ⇪ |
+| Tab | ⇥ |
+| Esc | ⎋ |
+| Power | ⌽ |
+| Return | ↩ |
+| Delete | ⌫ |
+| Up | ↑ |
+| Down | ↓ |
+| Left | ← |
+| Right | → |
 
-### keyboard input
+Emoji:
 
-<kbd>ALT + F4</kbd> 
-```
-<kbd>ALT + F4</kbd> 
-```
+:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
 
-### subscripted
-normal text <sub>subscripted</sub> normal text
-```
-normal text <sub>subscripted</sub> normal text
-```
-
-### superscripted
-normal text <sup>superscripted</sup> normal text
-```
-normal text <sup>superscripted</sup> normal text
-```
-
-## Table
-
-### Table - _rowspan_
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td>row 1 - column 2</td>
-    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-  </tr>
-</table>
-
-```html
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td>row 1 - column 2</td>
-    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-  </tr>
-</table>
-```
-
-### Table - _colspan_
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td colspan="2" align="center">row 1 - column 2 & 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-    <td>row 2 - column 3</td>
-  </tr>
-</table>
-
-```html
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td colspan="2" align="center">row 1 - column 2 & 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-    <td>row 2 - column 3</td>
-  </tr>
-</table>
-```
+    Markup : Code appears between colons :EMOJICODE:
