@@ -1,56 +1,126 @@
-# Contributing
+# Markdown - Extras
 
-Contributions to this project are [released](https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license) to the public under the [project's open source license](LICENSE).
 
-This project adheres to a [Code of Conduct][code-of-conduct]. By participating, you are expected to honor this code.
+## Image Align
 
-[code-of-conduct]: CODE_OF_CONDUCT.md
+### Image Align - Middle _(default)_
 
-This library's only job is to decide which markup format to use and call out to an external library to convert the markup to HTML (see the [README](README.md) for more information on how markup is rendered on GitHub.com).
+Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium. lobortis.
 
-If you are having an issue with:
+```html
+<img src="right-arrow.svg" width="42" height="42">
+```
 
-* **Syntax highlighting** - see [github/linguist](https://github.com/github/linguist/blob/master/CONTRIBUTING.md#fixing-syntax-highlighting)
-* **Markdown on GitHub** - contact [GitHub Support](https://support.github.com/)
-* **Styling issues on GitHub** - see [primer-markdown](https://github.com/primer/primer-css/tree/master/modules/primer-markdown) module in the [primer/primer-css](https://github.com/primer/primer-css) repository
+### Image Align - Left
 
-Anything else - [search open issues](https://github.com/github/markup/issues) or create an issue and and we'll help point you in the right direction.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> Fusce semper libero ligula, vel varius enim sagittis quis. Aenean sed massa velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras faucibus consequat est eu varius. Nam vitae dignissim velit. 
 
-## Submitting a Pull Request
+```html
+<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> 
+```
 
-1. Fork it.
-2. Create a branch (`git checkout -b my_markup`)
-3. Commit your changes (`git commit -am "Added Snarkdown"`)
-4. Push to the branch (`git push origin my_markup`)
-5. Open a [Pull Request][1]
-6. Enjoy a refreshing Diet Coke and wait
+### Image Align - Right
 
-**dependencies**
+Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" alt="right" align="right" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium.
 
-You can run `script/bootstrap.contrib` to fetch them all.
+```html
+<img src="right-arrow.svg" alt="right" align="right" width="42" height="42">
+```
 
-## Testing
+## Style Text
 
-To run the tests:
 
-    $ rake
+### keyboard input
 
-If nothing complains, congratulations!
+<kbd>ALT + F4</kbd> 
+```
+<kbd>ALT + F4</kbd> 
+```
 
-## Releasing a new version
+### subscripted
+normal text <sub>subscripted</sub> normal text
+```
+normal text <sub>subscripted</sub> normal text
+```
 
-If you are the current maintainer of this gem:
+### superscripted
+normal text <sup>superscripted</sup> normal text
+```
+normal text <sup>superscripted</sup> normal text
+```
 
-0. Bump the version number in `lib/github-markup.rb`, adhering to [Semantic Versioning](http://semver.org/)
-0. Update `HISTORY.md`
-0. Test the latest version on GitHub
-  0. Build the new version with `rake build`
-  0. Copy `pkg/github-markup*.gem` to `vendor/cache` in your local checkout of GitHub
-  0. Update the version for `github-markup` in the `Gemfile`
-  0. Run `bundle update --local github-markup`
-  0. Run any relevant tests and test it manually from the browser.
-0. Push the new gem release with `rake release`. If you don't have permission to release to rubygems.org, contact one of the existing owners (`gem owners github-markup`) and ask them to add you.
+## Table
 
-[1]: http://github.com/github/markup/pulls
-[r2h]: lib/github/commands/rest2html
-[r2hc]: lib/github/markups.rb#L51
+### Table - _rowspan_
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+```
+
+### Table - _colspan_
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+```
