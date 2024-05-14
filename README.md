@@ -1,67 +1,93 @@
-# WordPress Blogs
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-## Theme
+# C extensions
+*.so
 
-### Theme Repository
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-The theme repository houses the current theme as well as previous themes that Buffer has used over the years. **buffer-2016** is in use across each of the sites right now.
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-https://github.com/bufferapp/buffer-blog-themes
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-### buffer-2016
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
 
-The 2016 theme is a single theme that has various template options available within the WordPress theme options allowing it to be tailored for each individual blog. Including different homepage templates called "newspaper" and "magazine".
+# Translations
+*.mo
+*.pot
 
-buffer-2016 makes use of GULP and SASS to compile & minify scripts and CSS.
+# Django stuff:
+*.log
+local_settings.py
 
-### Previous Themes
-Previous themes made use of a base theme which was then overwritten by sub themes to customize them for each individual site.
+# Flask stuff:
+instance/
+.webassets-cache
 
-Having one singular code base for each sites theme makes making changes across each of the blogs easier.
+# Scrapy stuff:
+.scrapy
 
+# Sphinx documentation
+docs/_build/
 
+# PyBuilder
+target/
 
-## Plugins
+# IPython Notebook
+.ipynb_checkpoints
 
-Ideally we should explore plugins very carefully before installing them, running audits on installed plugins on a frequent basis to ensure we don't have any installed that aren't in use as well as ensuring upgrades are done to avoid security issues.
+# pyenv
+.python-version
 
+# celery beat schedule file
+celerybeat-schedule
 
-## Hosting
+# dotenv
+.env
 
-We have a number of WordPress blogs at Buffer. These are all hosted on WPEngine, using the same theme across each of the blogs.
+# virtualenv
+venv/
+ENV/
 
-Right now WPEngine hosts...
-* [Social](http://blog.bufferapp.com/)
-* [Open](http://open.buffer.com/)
-* [Overflow](https://overflow.buffer.com/)
+# Spyder project settings
+.spyderproject
 
-We have additional sites setup within WPEngine which aren't currently in use. WPEngine allows us to host many installations of WordPress if we wish to expand our blog offering.
+# Rope project settings
+.ropeproject
 
-### Deployments
+.idea
 
-WPEngine has its own GIT repository setup which allows you to push to their repositories to deploy to staging or production. Unfortunately this can lead to issues when themes/plugins are changed remotely within WordPress.
-
-Instead we make use of GitHub for hosting the repository and use [DeployBot](http://buffer.deploybot.com/) to manage deployments to each of the blog environments. Right now these are set up to automatically deploy to each of the blog staging sites on merge to master and manual deployments are done to deploy to the production environments.
-
-Previously deployments to production would be done in order of visitor numbers, starting with Overflow, then Open, before finally deploying to Social. DeployBot allows you to quickly rollback a change via their dashboard if required. For bigger changes you can also make use of the WPEngine backup points for extra security.
-
-Deployments can also be triggered using Slack commands in #eng-deploys. These can be configured within DeployBot.
-* /deploy-social-blog-production
-* /deploy-social-blog-staging
-* /deploy-overflow-blog-production
-* /deploy-overflow-blog-staging
-
-### Staging
-WPEngine offers a staging environment which can be used to test plugins & themes in the same setup as the production. Within the WPEngine dashboard you can trigger a sync between staging & production to test the latest content within the Staging environment.
-
-* [Social](http://bufferblog.staging.wpengine.com/)
-* [Open](https://bufferopen.staging.wpengine.com/)
-* [Overflow](https://bufferdevs.staging.wpengine.com/)
-
-
-## Local Setup
-We have previously made use of MAMP to host WordPress locally. Depending on how familiar you are with Docker, you could also setup a Docker Image with a WordPress environment.
-
-You'll want the buffer-blog-themes repository checked out within the WordPress envirnment so the WordPress installation has access to the themes.
-
-Once setup you can grab an export of the MySQL database from WPEngine via phpMyAdmin to work with real blog content.
+.DS_Store
