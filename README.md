@@ -1,69 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+# 项目背景
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <meta name="description" content="Awesome GitHub Profile Readme Templates" />
-  <title>Awesome GitHub Profile Readme Templates</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+蘑菇街能有今天的快速发展，得益于开源软件群雄崛起的大环境背景，我们一直对开源社区怀有感恩之情，因此也一直希望能为开源社区贡献一份力量。
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css"
-    type="text/css">
+2013年我们蘑菇街从社区导购华丽转身时尚电商平台，为解决千万妹子和时尚卖家的沟通问题，我们开发了自己的即时通讯软件。既然已经有了用户使用的IM，为什么我们自己公司内部沟通还要用第三方的呢？因此就有了TT(TeamTalk)的雏形，现在蘑菇街内部的在线沟通全部通过TT来完成。随着TT功能的逐渐完善，我们决定把TT开源来回馈开源社区，希望国内的中小企业都能用上开源、免费、好用的IM工具！
 
-  <!-- docsify-themeable styles-->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
-  <link rel="stylesheet alternative" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
-    title="dark">
+# 项目介绍
+* 名称：TeamTalk
+* 官网：http://tt.mogu.io/
+* 开源协议：[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+* 定位：中小型企业用户，member >= 2
+* 特点：开源与产品并重
+* 功能：可靠的消息传递机制；支持文字、图片、语音等富文本信息；文件收发等	
 
-  <style>
-    .sidebar-nav li>a[href^="/"]:not([href*="?id="]),
-    .sidebar-nav li>a[href^="/"]:not([href*="?id="])~ul a,
-    .sidebar-nav li>a[href^="#/"]:not([href*="?id="]),
-    .sidebar-nav li>a[href^="#/"]:not([href*="?id="])~ul a {
-      padding: 0;
-    }
-
-    .sidebar-nav li.collapse>a[href^="/"]:not([href*="?id="]):not(:only-child),
-    .sidebar-nav li.collapse>a[href^="#/"]:not([href*="?id="]):not(:only-child),
-    .sidebar-nav li.active>a[href^="/"]:not([href*="?id="]):not(:only-child),
-    .sidebar-nav li.active>a[href^="#/"]:not([href*="?id="]):not(:only-child) {
-      background: transparent;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="app">Please wait...</div>
-
-  <script>
-    window.$docsify = {
-      search: [
-        '/_sidebar',
-      ],
-
-      name: 'Awesome Github Profile Readme Templates',
-      basePath: "https://raw.githubusercontent.com/durgeshsamariya/awesome-github-profile-readme-templates/master/",
-      loadSidebar: true,
-      auto2top: true,
-      sidebarDisplayLevel: 1,
-    }
-  </script>
+# 项目框架
 
 
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+麻雀虽小五脏俱全，本项目涉及到多个平台、多种语言，简单关系如下图：
+     
+![teamtalk架构图](http://s6.mogucdn.com/b7/pic/140921/7n6ih_ieygmzjsmiywezjwmmytambqhayde_514x551.jpg)
 
-  <!-- plugins -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"
-    type="text/javascript">
-    </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
-    type="text/javascript">
-    </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-</body>
 
-</html>
+#### 服务端：
+     
+CppServer：TTCppServer工程，包括IM消息服务器、http服务器、文件传输服务器、文件存储服务器、登陆服务器
+java DB Proxy：TTJavaServer工程，承载着后台消息存储、redis等接口
+PHP server：TTPhpServer工程，teamtalk后台配置页面
+
+#### 客户端：
+
+- mac：TTMacClient工程，mac客户端工程
+- iOS：TTIOSClient工程，IOS客户端工程
+- Android：TTAndroidClient工程，android客户端工程
+- Windows：TTWinClient工程，windows客户端工程
+
+* 语言：c++、objective-c、java、php
+* 系统环境：Linux、Windows，Mac, iOS, Android
+
+# 代码下载
+-[地址](https://github.com/mogujie/TeamTalk)
+
+# 交流
+
+* qq交流群1：341273218(已满)
+* qq交流群2:437335108
+* 邮件交流：tt@mogujie.com
