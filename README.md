@@ -1,53 +1,10 @@
-#!/bin/bash
+![banner](https://user-images.githubusercontent.com/23727056/87433896-78ae9700-c607-11ea-9ca6-9cdbe3f67998.jpg)
 
-function encrypt(){
-    echo $(aws kms encrypt --key-id alias/encrypter --plaintext "$1" --output text --query CiphertextBlob)
-}
+The aim of this repository is to collect awesome READMEs that developers around the world are using on their own profiles to act as an inspiration for others.
+Video about [GitHub Profile README](https://twitter.com/github/status/1294348292130836482?s=20)
 
-function decrypt(){
-    echo "$1" | base64 --decode > awsencrypteddata.temp
-    OLDIFS=$IFS
-    IFS=
-    echo $(aws kms decrypt --ciphertext-blob fileb://awsencrypteddata.temp --output text --query Plaintext | base64 --decode)
-    IFS=$OLDIFS
-    rm awsencrypteddata.temp
-}
+Feel free to add your own or someone else's profile README if you find it super awesome! 
 
-function encryptfile(){
-    echo $(aws kms encrypt --key-id alias/encrypter --plaintext fileb://"$1" --output text --query CiphertextBlob)
-}
+Don't forget to leave a if you find this repo useful ⭐
 
-function help(){
-    printf "
-A utility to encrypt sensitive information that we might need to paste
-in sensitive locations.
-
-Usage: bufcrypt COMMAND \"input\"
-
-Commands:
-
-  encrypt                 Use this to encrypt text directly via terminal.
-                          Supports multi line strings
-  decrypt                 Use this to decrypt encrypted text. Paste the encrypted
-                          text inside quotes
-  encryptfile             Encrypt the contents of a file using this.
-
-Examples:
-
-Encrypt single line text:
-bufcrypt encrypt \"senstive info goes here\"
-
-Encrypt multi line text:
-bufcrypt encrypt \"my sensitive info
-goes
-on multiple lines\"
-
-Decrypt
-bufcrypt decrypt \"ciphertexttodecrypt\"
-
-Encrypt a file
-bufcrypt encryptfile \"~/.aws/credentials.backup\"
-"
-}
-
-$1 "$2"
+Thankyou🎆
