@@ -1,5 +1,23 @@
-# Explanation
+# Compiled class file
+*.class
 
-You can put HTML (actually XHTML) and CSS inside a [`<foreignObject>` tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) inside a SVG file inside an `<img>` tag inside your readme. 🤯
+# Log file
+*.log
 
-Thanks to [@Richienb](https://github.com/Richienb) for sharing the trick in [this pull request](https://github.com/sindresorhus/sindresorhus/pull/9).
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
