@@ -1,10 +1,24 @@
-## Copyright 2021, [YOUR NAME]
+(?# Floating point numbers)
+[0-9]+\.[0-9]+
 
-###### Please delete this line and the next one
-###### APP TYPE can be a webpage/website, a web app, a software and so on
+(?# Long integer literals)
+[0-9]+L
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this [APP TYPE] and associated documentation files, to deal in the [APP TYPE] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [APP TYPE], and to permit persons to whom the [APP TYPE] is furnished to do so, subject to the following conditions:
+(?# 2^64-1)
+18446744073709551615
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [APP TYPE].
+(?# 2^64)
+18446744073709551616
 
-THE [APP TYPE] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [APP TYPE] OR THE USE OR OTHER DEALINGS IN THE [APP TYPE].
+(?# From http parser test)
+0GPHKXSJQ826RK7GZEB2
+
+(?# From uint parse test)
+18446744073709551615
+10000000000000000000
+9223372036854775807G
+
+(?# Found in:)
+(?# esp-idf/components/nghttp/nghttp2/third-party/http-parser/test.c)
+(?# Part of the URL to the page on dan brown)
+0SHYY5BZXN3KR20BNFAY
