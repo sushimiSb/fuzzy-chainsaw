@@ -1,24 +1,46 @@
-(?# Floating point numbers)
-[0-9]+\.[0-9]+
-
-(?# Long integer literals)
-[0-9]+L
-
-(?# 2^64-1)
-18446744073709551615
-
-(?# 2^64)
-18446744073709551616
-
-(?# From http parser test)
-0GPHKXSJQ826RK7GZEB2
-
-(?# From uint parse test)
-18446744073709551615
-10000000000000000000
-9223372036854775807G
-
-(?# Found in:)
-(?# esp-idf/components/nghttp/nghttp2/third-party/http-parser/test.c)
-(?# Part of the URL to the page on dan brown)
-0SHYY5BZXN3KR20BNFAY
+{
+  "name": "standard-readme-spec",
+  "version": "1.2.2",
+  "description": "A standard style for README files",
+  "bin": "cat.sh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardLitt/standard-readme.git"
+  },
+  "keywords": [
+    "standard",
+    "markdown",
+    "readme",
+    "parse",
+    "lint",
+    "standard-readme",
+    "spec",
+    "md",
+    "documentation"
+  ],
+  "author": {
+    "name": "Richard Littauer",
+    "email": "richard.littauer@gmail.com",
+    "url": "http://burntfen.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RichardLitt/standard-readme/issues"
+  },
+  "homepage": "https://github.com/RichardLitt/standard-readme",
+  "dependencies": {
+    "opencollective": "^1.0.3",
+    "opencollective-postinstall": "^2.0.3"
+  },
+  "coordinates": [
+    52.5173031,
+    13.4535065
+  ],
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/standard-readme"
+  },
+  "scripts": {
+    "postinstall": "opencollective-postinstall"
+  }
+}
