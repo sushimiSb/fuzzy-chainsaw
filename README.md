@@ -1,47 +1,78 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 54 54" style="enable-background:new 0 0 54 54;" xml:space="preserve">
-<g>
-	<g>
-		<path style="fill:#4FBA6F;" d="M27,53L27,53C12.641,53,1,41.359,1,27v0C1,12.641,12.641,1,27,1h0c14.359,0,26,11.641,26,26v0
-			C53,41.359,41.359,53,27,53z"/>
-		<path style="fill:#4FBA6F;" d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2
-			C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z"/>
-	</g>
-	<path style="fill:#FFFFFF;" d="M22.294,40c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L32.88,27
-		L21.587,15.707c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l11.498,11.498c0.667,0.667,0.667,1.751,0,2.418
-		L23.001,39.707C22.806,39.902,22.55,40,22.294,40z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+# Product Name
+> Short blurb about what your product does.
+
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
+
+One to two paragraph statement about your product and what it does.
+
+![](header.png)
+
+## Installation
+
+OS X & Linux:
+
+```sh
+npm install my-crazy-module --save
+```
+
+Windows:
+
+```sh
+edit autoexec.bat
+```
+
+## Usage example
+
+A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+
+_For more examples and usage, please refer to the [Wiki][wiki]._
+
+## Development setup
+
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+
+```sh
+make install
+npm test
+```
+
+## Release History
+
+* 0.2.1
+    * CHANGE: Update docs (module code remains unchanged)
+* 0.2.0
+    * CHANGE: Remove `setDefaultXYZ()`
+    * ADD: Add `init()`
+* 0.1.1
+    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+* 0.1.0
+    * The first proper release
+    * CHANGE: Rename `foo()` to `bar()`
+* 0.0.1
+    * Work in progress
+
+## Meta
+
+Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+
+Distributed under the XYZ license. See ``LICENSE`` for more information.
+
+[https://github.com/yourname/github-link](https://github.com/dbader/)
+
+## Contributing
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
