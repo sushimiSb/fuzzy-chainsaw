@@ -1,46 +1,169 @@
-# 项目背景
+<p align="center">
+  <a href="https://rahuldkjain.github.io/gh-profile-readme-generator">
+    <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  GitHub Profile README Generator
+</h1>
 
-蘑菇街能有今天的快速发展，得益于开源软件群雄崛起的大环境背景，我们一直对开源社区怀有感恩之情，因此也一直希望能为开源社区贡献一份力量。
+<p align="center">
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
+<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator license" />
+</a>
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" target="blank">
+<img src="https://img.shields.io/github/forks/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator forks"/>
+</a>
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator stars"/>
+</a>
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
+<img src="https://img.shields.io/github/issues/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
+</a>
+<a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
+</a>
+<a href="https://discord.gg/HHMs7Eg" target="blank">
+<img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile readme generator"/>
+</a>
+</p>
 
-2013年我们蘑菇街从社区导购华丽转身时尚电商平台，为解决千万妹子和时尚卖家的沟通问题，我们开发了自己的即时通讯软件。既然已经有了用户使用的IM，为什么我们自己公司内部沟通还要用第三方的呢？因此就有了TT(TeamTalk)的雏形，现在蘑菇街内部的在线沟通全部通过TT来完成。随着TT功能的逐渐完善，我们决定把TT开源来回馈开源社区，希望国内的中小企业都能用上开源、免费、好用的IM工具！
+<p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
-# 项目介绍
-* 名称：TeamTalk
-* 官网：http://tt.mogu.io/
-* 开源协议：[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
-* 定位：中小型企业用户，member >= 2
-* 特点：开源与产品并重
-* 功能：可靠的消息传递机制；支持文字、图片、语音等富文本信息；文件收发等	
+<p align="center">
+    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">View Demo</a>
+    ·
+    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
+    ·
+    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Request Feature</a>
+</p>
 
-# 项目框架
+<p align="center">
+<i>Loved the tool? Please consider <a href="https://paypal.me/rahuldkjain/10">donating</a>  💸 to help it improve!</i>
+</p>
 
+<p align="center">
+<a href="https://www.paypal.me/rahuldkjain"><img src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate" alt="sponsor github profile readme generator"/>
+</a>
+<a href='https://ko-fi.com/A0A81XXSX' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for rahuldkjain' />
+</a>
+<a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
+</p>
 
-麻雀虽小五脏俱全，本项目涉及到多个平台、多种语言，简单关系如下图：
-     
-![teamtalk架构图](http://s6.mogucdn.com/b7/pic/140921/7n6ih_ieygmzjsmiywezjwmmytambqhayde_514x551.jpg)
+#### Tired of editing GitHub Profile README with new features?
 
+This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
 
-#### 服务端：
-     
-CppServer：TTCppServer工程，包括IM消息服务器、http服务器、文件传输服务器、文件存储服务器、登陆服务器
-java DB Proxy：TTJavaServer工程，承载着后台消息存储、redis等接口
-PHP server：TTPhpServer工程，teamtalk后台配置页面
+## 🚀 Demo
 
-#### 客户端：
+<a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">
+<img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
+</a>
 
-- mac：TTMacClient工程，mac客户端工程
-- iOS：TTIOSClient工程，IOS客户端工程
-- Android：TTAndroidClient工程，android客户端工程
-- Windows：TTWinClient工程，windows客户端工程
+Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-generator)
 
-* 语言：c++、objective-c、java、php
-* 系统环境：Linux、Windows，Mac, iOS, Android
+## 🧐 Features
 
-# 代码下载
--[地址](https://github.com/mogujie/TeamTalk)
+Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
 
-# 交流
+- **Uniform Dev Icons**
 
-* qq交流群1：341273218(已满)
-* qq交流群2:437335108
-* 邮件交流：tt@mogujie.com
+- **Uniform Social Icons**
+
+- **Visitors Counter Badge**
+
+- **GitHub Profile Stats Card**
+
+- **GitHub Top Skills**
+
+- **GitHub Streak Stats**
+
+- **Dynamic Dev(.)to Blogs** (GitHub Action)
+
+- **Dynamic Medium Blogs** (GitHub Action)
+
+- **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
+
+- **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
+
+- **Buy Me A Coffee button**
+
+Click on `Generate README` to get your README in `markdown`.
+You can preview the README too.
+
+## 🛠️ Installation Steps
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/rahuldkjain/github-profile-readme-generator.git
+```
+
+2. Change the working directory
+
+```bash
+cd github-profile-readme-generator
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the app
+
+```bash
+npm start
+```
+
+🌟 You are all set!
+
+## 🍰 Contributing
+
+Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
+
+Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+## 💻 Built with
+
+- [Gatsby](https://www.gatsbyjs.com/)
+- [Tailwind CSS](https://tailwindcss.com/): for styling
+- [GSAP](https://greensock.com/gsap/): for small SVG Animations
+
+## 🙇 Special Thanks
+
+- [Anurag Hazra](https://github.com/anuraghazra) for amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+- [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
+- [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
+- [Jonah Lawrence](https://github.com/DenverCoder1) for the incredible [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+- [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
+- [Eliot Sanford](https://github.com/techieeliot) for adding hashnode as a blog input
+
+## 🙇 Sponsors
+
+- [Scott C Wilson](https://github.com/scottcwilson) donated the first-ever grant to this tool. A big thanks to him.
+- [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed support with his donation. Thanks a lot.
+- [Aadit Kamat](https://github.com/aaditkamat) find the tool useful and showed support with his donation. A big thanks to him.
+- [Jean-Michel Fayard](https://github.com/jmfayard) used the generator to create his GitHub Profile README and he loved it. Thanks to him for showing support to the tool with the donation.
+
+## 🙏 Support
+
+<p align="left">
+<a href="https://www.paypal.me/rahuldkjain/10"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
+</a>
+<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator">
+<img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator" alt="tweet github profile readme generator"/>
+</a>
+</p>
+
+<p align="left">
+  <a href='https://ko-fi.com/A0A81XXSX' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for rahuldkjain' />
+  </a>
+  <a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
+</p>
+
+<hr>
+<p align="center">
+Developed with ❤️ in India 🇮🇳 
+</p>
