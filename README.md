@@ -1,47 +1,67 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 54 54" style="enable-background:new 0 0 54 54;" xml:space="preserve">
-<g>
-	<g>
-		<path style="fill:#4FBA6F;" d="M27,53L27,53C12.641,53,1,41.359,1,27v0C1,12.641,12.641,1,27,1h0c14.359,0,26,11.641,26,26v0
-			C53,41.359,41.359,53,27,53z"/>
-		<path style="fill:#4FBA6F;" d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2
-			C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z"/>
-	</g>
-	<path style="fill:#FFFFFF;" d="M22.294,40c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L32.88,27
-		L21.587,15.707c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l11.498,11.498c0.667,0.667,0.667,1.751,0,2.418
-		L23.001,39.707C22.806,39.902,22.55,40,22.294,40z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+# WordPress Blogs
+
+## Theme
+
+### Theme Repository
+
+The theme repository houses the current theme as well as previous themes that Buffer has used over the years. **buffer-2016** is in use across each of the sites right now.
+
+https://github.com/bufferapp/buffer-blog-themes
+
+### buffer-2016
+
+The 2016 theme is a single theme that has various template options available within the WordPress theme options allowing it to be tailored for each individual blog. Including different homepage templates called "newspaper" and "magazine".
+
+buffer-2016 makes use of GULP and SASS to compile & minify scripts and CSS.
+
+### Previous Themes
+Previous themes made use of a base theme which was then overwritten by sub themes to customize them for each individual site.
+
+Having one singular code base for each sites theme makes making changes across each of the blogs easier.
+
+
+
+## Plugins
+
+Ideally we should explore plugins very carefully before installing them, running audits on installed plugins on a frequent basis to ensure we don't have any installed that aren't in use as well as ensuring upgrades are done to avoid security issues.
+
+
+## Hosting
+
+We have a number of WordPress blogs at Buffer. These are all hosted on WPEngine, using the same theme across each of the blogs.
+
+Right now WPEngine hosts...
+* [Social](http://blog.bufferapp.com/)
+* [Open](http://open.buffer.com/)
+* [Overflow](https://overflow.buffer.com/)
+
+We have additional sites setup within WPEngine which aren't currently in use. WPEngine allows us to host many installations of WordPress if we wish to expand our blog offering.
+
+### Deployments
+
+WPEngine has its own GIT repository setup which allows you to push to their repositories to deploy to staging or production. Unfortunately this can lead to issues when themes/plugins are changed remotely within WordPress.
+
+Instead we make use of GitHub for hosting the repository and use [DeployBot](http://buffer.deploybot.com/) to manage deployments to each of the blog environments. Right now these are set up to automatically deploy to each of the blog staging sites on merge to master and manual deployments are done to deploy to the production environments.
+
+Previously deployments to production would be done in order of visitor numbers, starting with Overflow, then Open, before finally deploying to Social. DeployBot allows you to quickly rollback a change via their dashboard if required. For bigger changes you can also make use of the WPEngine backup points for extra security.
+
+Deployments can also be triggered using Slack commands in #eng-deploys. These can be configured within DeployBot.
+* /deploy-social-blog-production
+* /deploy-social-blog-staging
+* /deploy-overflow-blog-production
+* /deploy-overflow-blog-staging
+
+### Staging
+WPEngine offers a staging environment which can be used to test plugins & themes in the same setup as the production. Within the WPEngine dashboard you can trigger a sync between staging & production to test the latest content within the Staging environment.
+
+* [Social](http://bufferblog.staging.wpengine.com/)
+* [Open](https://bufferopen.staging.wpengine.com/)
+* [Overflow](https://bufferdevs.staging.wpengine.com/)
+
+
+## Local Setup
+We have previously made use of MAMP to host WordPress locally. Depending on how familiar you are with Docker, you could also setup a Docker Image with a WordPress environment.
+
+You'll want the buffer-blog-themes repository checked out within the WordPress envirnment so the WordPress installation has access to the themes.
+
+Once setup you can grab an export of the MySQL database from WPEngine via phpMyAdmin to work with real blog content.
