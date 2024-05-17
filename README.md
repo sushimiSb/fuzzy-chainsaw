@@ -1,12 +1,27 @@
-# Contribution Guidelines
-
-Please ensure your pull request adheres to the following guidelines:
-
-- Suggested Github Profile READMEs should be beautiful or stand out in some way.
-- Make an individual pull request for each suggestion.
-- Can suggest for different categories as well.
-- Start the Name with a capital.
-- Check your spelling and grammar.
-- Make sure your text editor is set to remove trailing whitespace.
-
-Thank you for your suggestions!
+module.exports = {
+  purge: [],
+  theme: {
+    extend: {},
+    fontSize: {
+      xxs: '.60rem',
+      xs: '.75rem',
+      sm: '.875rem',
+      tiny: '.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
+    },
+    fontFamily: {
+      title: ['Lato', 'sans-serif'],
+      body: ['Roboto Mono', 'monospace'],
+    },
+  },
+  variants: {},
+  plugins: [],
+};
