@@ -1,20 +1,25 @@
-.DS_Store
-node_modules
-/report
-/coverage
+# Ignore uncrustify backups
+*.unc*
+doc/html/*
+doc/output/*
+doc/tag/*
+doxygen_warnings.txt
+/.metadata/
+.vscode/*
+*.o
+*.d
+*.elf
+*.hex
+!/vendors/cypress/MTB/psoc6/psoc64tfm/COMPONENT_TFM_S_FW/tfm_s_unsigned.hex
+*.bin
+*.pyc
+*.log
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+RemoteSystemsTempFiles/*
 
-# Editor directories and files
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
+# Ignore top-level build dir
+/build*/
 
-# Fix an error from npm 6.9.0
-.git
+# Ignore certificate files
+*.pem
+*.crt
