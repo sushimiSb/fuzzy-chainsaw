@@ -1,487 +1,240 @@
-# Описание разметки файла README.md
-Для описания проектов на GitHub используется README.md, который пишется на языке разметки markdown. Что и как поддерживается расписано ниже. Также существует еще один формат - [reStructuredText](https://github.com/GnuriaN/format-README/blob/master/README.rst), описание которого вынесено в отдельный файл `README.rst`.
+# Specification
 
-## Оглавление
+A compliant README must satisfy all the requirements listed below.
 
-0. [Разделительная черта](#Разделительная-черта)
-1. [Заголовки](#Заголовки)
-2. [Работа с выделением текста](#Работа-с-выделением-текста)
-3. [Использование эмодзи (emoji)](#Использование-эмодзи-emoji)
-4. [Использование цитирования в тексте](#Использование-цитирования-в-тексте)
-5. [Подсветка кода](#Подсветка-кода)
-6. [Списки](#Списки)
-    1. [Маркированный](#Маркированный)
-    2. [Нумерованный](#Нумерованный)
-    3. [Смешанные списки](#Смешанные-списки)
-    4. [Список задач](#Список-задач)
-7. [Ссылки](#Ссылки)
-8. [Вставка изображения](#Вставка-изображения)
-9. [Вставка таблиц](#Вставка-таблиц)
-10. [Диаграммы Mermaid.js](#диаграммы-mermaidjs)
-11. [Дополнения](https://github.com/GnuriaN/format-README/blob/master/Дополнения.md)
-    
-## Разделительная черта
-При использовании
-```
-____
-```
-получается разделительная черта
-____
-[:arrow_up:Оглавление](#Оглавление)
-___
-## Заголовки
+> Note: Standard Readme is designed for open source libraries. Although it's [historically](README.md#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
 
-Всего существует шесть уровней заголовков. Для того, чтобы создать заголовок, необходимо в начале строки добавить символы `#`, в количестве равном его уровню.
-____
-# Заголовок первого уровня
-```
-# Заголовок 1
-```
-Заголовок первого уровня также можно создать:
-```
-Заголовок 1
-===========
-```
-____
-## Заголовок второго уровня
-```
-## Заголовок 2
-```
-Заголовок второго уровня также можно создать:
-```
-Заголовок 2
------------
-```
-____
-### Заголовок третьего уровня
-```
-### Заголовок 3
-```
-____
-#### Заголовок четвертого уровня
-```
-#### Заголовок 4
-```
-____
-##### Заголовок пятого уровня
-```
-##### Заголовок 5
-```
-____
-###### Заголовок шестого уровня
-```
-###### Заголовок 6
-```
-____
-[:arrow_up:Оглавление](#Оглавление)
-____
-## Работа с выделением текста
+**Requirements:**
+  - Be called README (with capitalization) and have a specific extension depending on its format (`.md` for Markdown, `.org` for Org Mode Markup syntax, `.html` for HTML, ...)
+  - If the project supports i18n, the file must be named accordingly: `README.de.md`, where `de` is the BCP 47 Language tag. For naming, prioritize non-regional subtags for languages. If there is only one README and the language is not English, then a different language in the text is permissible without needing to specify the BCP tag: e.g., `README.md` can be in German if there is no `README.md` in another language. Where there are multiple languages, `README.md` is reserved for English.
+  - Be a valid file in the selected format (Markdown, Org Mode, HTML, ...).
+  - Sections must appear in order given below. Optional sections may be omitted.
+  - Sections must have the titles listed below, unless otherwise specified. If the README is in another language, the titles must be translated into that language.
+  - Must not contain broken links.
+  - If there are code examples, they should be linted in the same way as the code is linted in the rest of the project.
 
-```
-~~Зачеркнутый текст~~
-```
-~~Зачеркнутый текст (Strikethrough)~~
+## Table of Contents
 
-Для выделения текста **`жирным`** или *`наклонным`* и их сочетания можно использовать комбинации `*` или `_`
+_Note: This is only a navigation guide for the specification, and does not define or mandate terms for any specification-compliant documents._
 
-```
-**Жирный текст (bold)**
-```
-**Жирный текст (bold)**
+- [Sections](#sections)
+  - [Title](#title)
+  - [Banner](#banner)
+  - [Badges](#badges)
+  - [Short Description](#short-description)
+  - [Long Description](#long-description)
+  - [Table of Contents](#table-of-contents-1)
+  - [Security](#security)
+  - [Background](#background)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Extra Sections](#extra-sections)
+  - [API](#api)
+  - [Maintainers](#maintainers)
+  - [Thanks](#thanks)
+  - [Contributing](#contributing)
+  - [License](#license)
+- [Definitions](#definitions)
 
-```
-*Наклонный текст (italic)*
-```
-*Наклонный текст (italic)*
+## Sections
 
-```
-***Жирный наклонный текст (bold italic)***
-```
-***Жирный наклонный текст (bold italic)***
+### Title
+**Status:** Required.
 
-```
-__Жирный текст (bold)__
-```
-__Жирный текст (bold)__
+**Requirements:**
+- Title must match repository, folder and package manager names - or it may have another, relevant title with the repository, folder, and package manager title next to it in italics and in parentheses. For instance:
 
-```
-_Наклонный текст (italic)_
-```
-_Наклонный текст (italic)_
+  ```markdown
+  # Standard Readme Style _(standard-readme)_
+  ```
 
-```
-___Жирный наклонный текст (bold italic)___
-```
-___Жирный наклонный текст (bold italic)___
+  If any of the folder, repository, or package manager names do not match, there must be a note in the [Long Description](#long-description) explaining why.
 
-```
-~~*__Тут странный текст__*~~
-```
-~~*__Тут странный текст__*~~
-    
-[:arrow_up:Оглавление](#Оглавление)
-____
-## Использование эмодзи (emoji)
-В самом тексте можно использовать эмодзи, например написать вот так:    
-:white_check_mark: Это уже сделано    
-:negative_squared_cross_mark: Я не буду это делать    
-:black_square_button: делать или не делать, вот в чем вопрос?    
-В оригинале это выглядит так (в конце строки четыре (4) пробела для того, чтобы был переход на новую строку):
-```
-:white_check_mark: Это уже сделано    
-:negative_squared_cross_mark: Я не буду это делать    
-:black_square_button: делать или не делать, вот в чем вопрос?    
-```
+**Suggestions:**
+- Should be self-evident.
 
-Список работающих Эмодзи находится тут -> [emoji.md](https://github.com/GnuriaN/format-README.md/blob/master/emoji.md)    
-    
-[:arrow_up:Оглавление](#Оглавление)
-___
-## Использование цитирования в тексте
-```
-> Цитата (уровень 1)    
-> > Вложенная цитата (уровень 2)    
-> > > Вложенная цитата (уровень 3)    
+### Banner
+**Status:** Optional.
 
-> > Продолжение цитаты (уровень 2)    
+**Requirements:**
+- Must not have its own title.
+- Must link to local image in current repository.
+- Must appear directly after the title.
 
-> Продолжение цитаты (уровень 1)    
-```
-> Цитата (уровень 1)    
-> > Вложенная цитата (уровень 2)    
-> > > Вложенная цитата (уровень 3)    
+### Badges
+**Status:** Optional.
 
-> > Продолжение цитаты (уровень 2)    
+**Requirements:**
+- Must not have its own title.
+- Must be newline delimited.
 
-> Продолжение цитаты (уровень 1)    
+**Suggestions:**
+- Use http://shields.io or a similar service to create and host the images.
+- Add the [Standard Readme badge](https://github.com/RichardLitt/standard-readme#badge).
 
-Внешний вид, конечно, не очень, но может и пригодиться.
+### Short Description
+**Status:** Required.
 
-[:arrow_up:Оглавление](#Оглавление)
-___
-## Подсветка кода
+**Requirements:**
+- Must not have its own title.
+- Must be less than 120 characters.
+- Must not start with `> `
+- Must be on its own line.
+- Must match the description in the packager manager's `description` field.
+- Must match GitHub's description (if on GitHub).
 
-Если нужно выделить слово или фразу внутри строки, то используются одинарные обратные кавычки (`):
+**Suggestions:**
+- Use [gh-description](https://github.com/RichardLitt/gh-description) to set and get GitHub description.
+- Use `npm show . description` to show the description from a local [npm](https://npmjs.com) package.
 
-    Это `слово` будет выделено
+### Long Description
+**Status:** Optional.
 
-Для выделения в блоки - тройные:
+**Requirements:**
+- Must not have its own title.
+- If any of the folder, repository, or package manager names do not match, there must be a note here as to why. See [Title section](#title).
 
-    ```
-        Здесь может быть
-        Ваша реклама
-    ```
+**Suggestions:**
+- If too long, consider moving to the [Background](#background) section.
+- Cover the main reasons for building the repository.
+- "This should describe your module in broad terms,
+generally in just a few paragraphs; more detail of the module's
+routines or methods, lengthy code examples, or other in-depth
+material should be given in subsequent sections.
 
-Дополнительно можно задавать язык кода внутри блока, указав его после первых трех кавычек:
+  Ideally, someone who's slightly familiar with your module should be
+able to refresh their memory without hitting "page down". As your
+reader continues through the document, they should receive a
+progressively greater amount of knowledge."
 
-    ```html
-        <input type="text">
-    ```
+  ~ [Kirrily "Skud" Robert, perlmodstyle](http://perldoc.perl.org/perlmodstyle.html)
 
-    ```css
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    ```
+### Table of Contents
+**Status:** Required; optional for READMEs shorter than 100 lines.
 
-    ```php
-        <?php phpinfo();?>
-    ```
+**Requirements:**
+- Must link to all sections in the file.
+- Must start with the next section; do not include the title or Table of Contents headings.
+- Must be at least one-depth: must capture all level two headings (e.g.: Markdown's `##` or Org Mode's `**` or HTML's `<h2>` and so on).
 
-Пример блока для `C#`:
+**Suggestions:**
+- May capture third and fourth depth headings. If it is a long ToC, these are optional.
 
-```C#
-using MarkdownSharp;
-using MarkdownSharp.Extensions.Mal;
+### Security
+**Status**: Optional.
 
-Markdown mark = new Markdown();
+**Requirements:**
+- May go here if it is important to highlight security concerns. Otherwise, it should be in [Extra Sections](#extra-sections).
 
-// Short link for MAL - 
-// http://myanimelist.net/people/413/Kitamura_Eri => mal://Kitamura_Eri
-mark.AddExtension(new Articles()); 
-mark.AddExtension(new Profile());
+### Background
+**Status:** Optional.
 
-mark.Transform(text);
-```
+**Requirements:**
+- Cover motivation.
+- Cover abstract dependencies.
+- Cover intellectual provenance: A `See Also` section is also fitting.
 
-Пример блока для `Python`:
-```Python
-from timeit import Timer
+### Install
+**Status:** Required by default, optional for [documentation repositories](#definitions).
 
-tmp = "Python 3.2.2 (default, Jun 12 2011, 15:08:59) [MSC v.1500 32 bit (Intel)] on win32."
+**Requirements:**
+- Code block illustrating how to install.
 
-def case1(): # А. инкрементальные конкатенации в цикле
-    s = ""
-    for i in range(10000):
-        s += tmp
+**Subsections:**
+- `Dependencies`. Required if there are unusual dependencies or dependencies that must be manually installed.
 
-def case2(): # Б. через промежуточный список и метод join
-    s = []
-    for i in range(10000):
-        s.append(tmp)
-    s = "".join(s)
+**Suggestions:**
+- Link to prerequisite sites for programming language: [npmjs](https://npmjs.com), [godocs](https://godoc.org), etc.
+- Include any system-specific information needed for installation.
+- An `Updating` section would be useful for most packages, if there are multiple versions which the user may interface with.
 
-def case3(): # В. списковое выражение и метод join
-    return "".join([tmp for i in range(10000)])
+### Usage
+**Status:** Required by default, optional for [documentation repositories](#definitions).
 
-def case4(): # Г. генераторное выражение и метод join
-    return "".join(tmp for i in range(10000))
+**Requirements:**
+- Code block illustrating common usage.
+- If CLI compatible, code block indicating common usage.
+- If importable, code block indicating both import functionality and usage.
 
-for v in range(1,5):
-    print (Timer("func()","from __main__ import case%s as func" % v).timeit(200))
-```
-    
-[:arrow_up:Оглавление](#Оглавление)
-___
-## Списки
+**Subsections:**
+- `CLI`. Required if CLI functionality exists.
 
-#### Маркированный
-Задать **маркированный** список можно несколькими символами `-`, `+` или `*`:
-```
-- Уровень списка 1. Пункт 1.
-- Уровень списка 1. Пункт 2.
-- Уровень списка 1. Пункт 3.
-```
-- Уровень списка 1. Пункт 1.
-- Уровень списка 1. Пункт 2.
-- Уровень списка 1. Пункт 3.
+**Suggestions:**
+- Cover basic choices that may affect usage: for instance, if JavaScript, cover promises/callbacks, ES6 here.
+- If relevant, point to a runnable file for the usage code.
 
-```
-+ Уровень списка 1. Пункт 1.
-+ Уровень списка 1. Пункт 2.
-+ Уровень списка 1. Пункт 3.
-```
-+ Уровень списка 1. Пункт 1.
-+ Уровень списка 1. Пункт 2.
-+ Уровень списка 1. Пункт 3.
+### Extra Sections
+**Status**: Optional.
 
-```
-* Уровень списка 1. Пункт 1.
-* Уровень списка 1. Пункт 2.
-* Уровень списка 1. Пункт 3.
-```
-* Уровень списка 1. Пункт 1.
-* Уровень списка 1. Пункт 2.
-* Уровень списка 1. Пункт 3.
+**Requirements:**
+- None.
 
-Можно создавать многоуровневые списки. Каждый уровень отделяется **четырьмя** (4) пробелами:
-```
-- Уровень списка 1. Пункт 1.
-    - Уровень списка 2. Пункт 1.
-- Уровень списка 1. Пункт 2.
-    - Уровень списка 2. Пункт 1.
-    - Уровень списка 2. Пункт 2.
-- Уровень списка 1. Пункт 3.
-    - Уровень списка 2. Пункт 1.
-        - Уровень списка 3. Пункт 1.
-        - Уровень списка 3. Пункт 2.
-           - Уровень списка 4. Пункт 1.
-```
-- Уровень списка 1. Пункт 1.
-  - Уровень списка 2. Пункт 1.
-- Уровень списка 1. Пункт 2.
-    - Уровень списка 2. Пункт 1.
-    - Уровень списка 2. Пункт 2.
-- Уровень списка 1. Пункт 3.
-    - Уровень списка 2. Пункт 1.
-      - Уровень списка 3. Пункт 1.
-      - Уровень списка 3. Пункт 2.
-         - Уровень списка 4. Пункт 1.
+**Suggestions:**
+- This should not be called `Extra Sections`. This is a space for 0 or more sections to be included, each of which must have their own titles.
+- This should contain any other sections that are relevant, placed after [Usage](#usage) and before [API](#api).
+- Specifically, the [Security](#security) section should be here if it wasn't important enough to be placed above.
 
-Каждый уровень отделяется двумя пробелами.
+### API
+**Status:** Optional.
 
-#### Нумерованный
-Для Githib работа с нумерованными списками выглядит очень интересно. Каждый уровень отделяется **четырьмя** (4) пробелами:
-```
-1. Первый уровень 1
-    1. Второй уровень 1
-        1. Третий уровень 1
-            1. Четвертый уровень 1
-                1. Пятый уровень 1
-                    1. Шестой уровень
-                        1. Седьмой уровень
-                            1. Седьмой уровень
-2. Первый уровень 2
-2. Первый уровень (должно быть 3)
-4. Первый уровень 4
-```
-1. Первый уровень 1
-    1. Второй уровень 1
-        1. Третий уровень 1
-            1. Четвертый уровень 1
-                1. Пятый уровень 1
-                    1. Шестой уровень
-                        1. Седьмой уровень
-                            1. Седьмой уровень
-2. Первый уровень 2
-2. Первый уровень (должно быть 3)
-4. Первый уровень 4
+**Requirements:**
+- Describe exported functions and objects.
 
-#### Смешанные списки
-При использовании смешанных списков нужно очень внимательно следить за нумерацией. Лучше, как и в нумерованных, использовать четыре (4) пробела для отделения уровня.
-```
-1. Первый уровень "нумерованный" - 1
-    * Второй уровень "маркер"
-        + Третий уровень "маркер"
-        - Третий уровень "маркер"
-        1. Третий уровень "нумерованный" - 1
-            1. Четвертый уровень "нумерованный" - 1
-                1. Пятый уровень "нумерованный" - 1
-                    1. Шестой уровень "нумерованный" - 1
-                        1. Седьмой уровень "нумерованный" - 1
-                        * Седьмой уровень "маркер"
-                        2. Седьмой уровень "нумерованный" - 1 (нарушена нумерация, новая нумерация 1)
-                        3. Седьмой уровень "нумерованный" - 1 (нарушена нумерация, новая нумерация 2)
-                            1. Восьмой уровень "нумерованный" - 1
-2. Первый уровень "нумерованный" - 2
-- Первый уровень "нумерованный" - 3
-4. Первый уровень "нумерованный" - 4 (нарушена нумерация, новая нумерация 1)
-5. Первый уровень "нумерованный" - 5 (нарушена нумерация, новая нумерация 2)
-```
-1. Первый уровень "нумерованный" - 1
-    * Второй уровень "маркер"
-        + Третий уровень "маркер"
-        - Третий уровень "маркер"
-        1. Третий уровень "нумерованный" - 1
-            1. Четвертый уровень "нумерованный" - 1
-                1. Пятый уровень "нумерованный" - 1
-                    1. Шестой уровень "нумерованный" - 1
-                        1. Седьмой уровень "нумерованный" - 1
-                        * Седьмой уровень "маркер"
-                        2. Седьмой уровень "нумерованный" - 2
-                        3. Седьмой уровень "нумерованный" - 3
-                            1. Восьмой уровень "нумерованный" - 1
-2. Первый уровень "нумерованный" - 2
-- Первый уровень "маркерный" - 3
-4. Первый уровень "нумерованный" - 4 (хотя по идее должен быть 3)
-5. Первый уровень "нумерованный" - 5 (хотя, по идее должен быть 3)
+**Suggestions:**
+- Describe signatures, return types, callbacks, and events.
+- Cover types covered where not obvious.
+- Describe caveats.
+- If using an external API generator (like go-doc, js-doc, or so on), point to an external `API.md` file. This can be the only item in the section, if present.
 
-#### Список задач
-(Task List)
-Можно создавать "Списки задач" для этого необходимо использовать `- [ ]` для поставленной задачи и `- [X]` для выполненной задачи.
-```
-- [X] Придумать внешний вид резюме
-- [ ] Написать основные категории
-- [X] Опубликовать
+### Maintainer(s)
+**Status**: Optional.
 
-```
-- [X] Придумать внешний вид резюме
-- [ ] Написать основные категории
-- [X] Опубликовать
+**Requirements:**
+- Must be called `Maintainer` or `Maintainers`.
+- List maintainer(s) for a repository, along with one way of contacting them (e.g. GitHub link or email).
 
-Также можно создавать многоуровневые списки задач. Каждый уровень отделяется **четырьмя** (4) пробелами:
-```
-- [X] Задача 1
-    - [X] Подзадача 1 для Задачи 1
-    - [X] Подзадача 2 для Задачи 1
-- [ ] Задача 2
-    - [X] Подзадача 1 для Задачи 2
-    - [ ] Подзадача 2 для Задачи 2
-- [ ] Задача 3
-    - [ ] Подзадача 1 для Задачи 3
-        - [ ] Подзадача 1 для Подзадача 1 для Задачи 3
-```
-- [X] Задача 1
-    - [X] Подзадача 1 для Задачи 1
-    - [X] Подзадача 2 для Задачи 1
-- [ ] Задача 2
-    - [X] Подзадача 1 для Задачи 2
-    - [ ] Подзадача 2 для Задачи 2
-- [ ] Задача 3
-    - [ ] Подзадача 1 для Задачи 3
-        - [ ] Подзадача 1 для Подзадача 1 для Задачи 3
-    
-[:arrow_up:Оглавление](#Оглавление) 
-___
-## Ссылки
-Либо просто вставить ссылку, либо дополнительно задать текст ссылки (пробела между скобками быть не должно):
-```
-Первый вариант вставки ссылок - это просто написать адрес сайта http://sabaka.net
-```
-Первый вариант вставки ссылок - это просто написать адрес сайта http://sabaka.net
+**Suggestions:**
+- This should be a small list of people in charge of the repo. This should not be everyone with access rights, such as an entire organization, but the people who should be pinged and who are in charge of the direction and maintenance of the repository.
+- Listing past maintainers is good for attribution, and kind.
 
-Второй вариант записывается так: `[текст ссылки](адрес ссылки)`
-```
-[sabaka.net](http://sabaka.net)
-```
-[sabaka.net](http://sabaka.net)
-    
-[Sabaka(DOT)Net]:http://sabaka.net    
-    
-[:arrow_up:Оглавление](#Оглавление)
-____
-## Вставка изображения
-```
-![Alt-текст](https://avatars1.githubusercontent.com/u/5384215?v=3&s=460 "Орк")
-```
-![Alt-текст](https://avatars1.githubusercontent.com/u/5384215?v=3&s=460 "Орк")
+### Thanks
+**Status**: Optional.
 
-### Дополнительно:
-#### Вставка ссылки с картинкой на ролик с YouTube
-Описание комбинации `[![Тут текст](адрес до картинки)](ссылка на страничку YouTube)`        
-Пример:        
-```[![Тут текст](https://img.youtube.com/vi/RHPYGwVQB2o/0.jpg)](https://youtu.be/RHPYGwVQB2o)```        
-Что мы увидим:        
-[![Тут текст](https://img.youtube.com/vi/RHPYGwVQB2o/0.jpg)](https://youtu.be/RHPYGwVQB2o)        
-        
-[:arrow_up:Оглавление](#Оглавление) 
-____
-## Вставка таблиц
-```
-| LEFT | CENTER | RIGHT |
-|----------------|:---------:|----------------:|
-| По левому краю | По центру | По правому краю |
-| текст | текст | текст |
-```
-| LEFT | CENTER | RIGHT |
-|----------------|:---------:|----------------:|
-| По левому краю | По центру | По правому краю |
-| текст | текст | текст |
+**Requirements:**
+- Must be called `Thanks`, `Credits` or `Acknowledgements`.
 
-**Внимание:** Если в тексте таблицы нужно использовать символ "вертикальная черта - `|`", то в место него необходимо написать замену на комбинацию HTML-кода* `&#124;`, это нужно для того, чтобы таблица не потеряла ориентации.    
-*) - Можно использовать ASCII и/или UTF коды.
+**Suggestions:**
+- State anyone or anything that significantly helped with the development of your project.
+- State public contact hyper-links if applicable.
 
-**Пример:**
-```
-| Обозначение | Описание | Пример регулярного выражения|
-|----:|:----:|:----------|
-| literal | Строка содержит символьный литерал literal | foo |
-| re1&#124;re2 | Строка содержит регулярные выражения `rel` или `re2` | foo&#124;bar |
-```
-**Результат:**
+### Contributing
+**Status**: Required.
 
-| Обозначение | Описание | Пример регулярного выражения|
-|----:|:----:|:----------|
-| literal | Строка содержит символьный литерал literal | foo |
-| re1&#124;re2 | Строка содержит регулярные выражения `rel` или `re2` | foo&#124;bar |
+**Requirements:**
+- State where users can ask questions.
+- State whether PRs are accepted.
+- List any requirements for contributing; for instance, having a sign-off on commits.
 
-[:arrow_up:Оглавление](#Оглавление) 
-____
-## Диаграммы Mermaid.js
-Появилась возможность вставлять диаграммы [Mermaid.js](https://mermaid-js.github.io/mermaid/#/)
+**Suggestions:**
+- Link to a CONTRIBUTING file -- if there is one.
+- Be as friendly as possible.
+- Link to the GitHub issues.
+- Link to a Code of Conduct. A CoC is often in the Contributing section or document, or set elsewhere for an entire organization, so it may not be necessary to include the entire file in each repository. However, it is highly recommended to always link to the code, wherever it lives.
+- A subsection for listing contributors is also welcome here.
 
-<pre>
-```mermaid
-... код диаграммы ...
-```
-</pre>
-Пример:
-<pre>
-```mermaid
-erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-```
-</pre>
-```mermaid
-erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-```
-Очень подробно на русском языке о диаграммах Mermaid.js: https://habr.com/ru/post/652867/ 
+### License
+**Status:** Required.
 
-[:arrow_up:Оглавление](#Оглавление) 
-____
+**Requirements:**
+- State license full name or identifier, as listed on the  [SPDX](https://spdx.org/licenses/) license list. For unlicensed repositories, add `UNLICENSED`. For more details, add `SEE LICENSE IN <filename>` and link to the license file. (These requirements were adapted from [npm](https://docs.npmjs.com/files/package.json#license)).
+- State license owner.
+- Must be last section.
+
+**Suggestions:**
+- Link to longer License file in local repository.
+
+## Definitions
+
+_These definitions are provided to clarify any terms used above._
+
+- **Documentation repositories**: Repositories without any functional code. For instance, [RichardLitt/knowledge](https://github.com/RichardLitt/knowledge).
