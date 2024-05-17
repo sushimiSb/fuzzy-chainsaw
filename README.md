@@ -1,26 +1,20 @@
-# take control of the growl notifications
-module GrowlHacks
-  def growl(type, subject, body, *args, &block)
-    case type
-    when Kicker::GROWL_NOTIFICATIONS[:succeeded]
-      puts subject = "Success"
-      body = body.split("\n").last
-    when Kicker::GROWL_NOTIFICATIONS[:failed]
-      subject = "Failure"
-      puts body
-      body = body.split("\n").last
-    else
-      return nil
-    end
-    super(type, subject, body, *args, &block)
-  end
-end
+.DS_Store
+node_modules
+/report
+/coverage
 
-Kicker.send :extend, GrowlHacks
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# no logging
-Kicker::Utils.module_eval do
-  def log(message)
-    nil
-  end
-end
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Fix an error from npm 6.9.0
+.git
