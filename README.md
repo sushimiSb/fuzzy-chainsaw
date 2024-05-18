@@ -1,2 +1,1 @@
-vendor
-*.min.js
+Dockerfile
