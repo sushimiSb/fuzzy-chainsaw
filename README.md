@@ -1,15 +1,14 @@
-# Changelog
+FROM debian
 
-## v1.0.0
+RUN apt update -y && \
+  apt upgrade -y && \
+  apt install curl -y
 
-### Added or Changed
-- Added this changelog :)
-- Fixed typos in both templates
-- Back to top links
-- Added more "Built With" frameworks/libraries
-- Changed table of contents to start collapsed
-- Added checkboxes for major features on roadmap
+WORKDIR app
 
-### Removed
+COPY gh-md-toc .
 
-- Some packages/libraries from acknowledgements I no longer use
+RUN chmod +x gh-md-toc
+
+ENTRYPOINT ["./gh-md-toc"]
+CMD []
