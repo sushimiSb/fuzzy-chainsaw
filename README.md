@@ -1,17 +1,14 @@
-<div align="center">
-	<br>
-	<a href="https://github.com/sindresorhus/css-in-readme-like-wat/blame/main/header.svg">
-		<img src="header.svg" width="800" height="400" alt="Click to see the source">
-	</a>
-	<br>
-</div>
+# Como contribuir?
 
+Este é um projeto totalmente livre que aceita contribuições via pull requests no GitHub. Este documento tem a responsabilidade de alinhar as contribuições de acordo com os padrões estabelecidos no mesmo. Em caso de dúvidas, [abra uma issue](https://github.com/iuricode/readme-template/issues/new).
 
+## Passos
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
+1. Crie um fork deste repositório.
+2. Envie seus commits em português.
+3. Insira um pequeno resumo sobre o que foi adicionado.
+4. Solicite um pull request.
+
+## Recomendação (opcional)
+
+Para uma melhor semântica nos commits, recomendamos nosso repositório sobre [padrões de commits](https://github.com/iuricode/padroes-de-commits). Assim ficará mais fácil para avaliar seu pull request.
