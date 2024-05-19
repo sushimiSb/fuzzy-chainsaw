@@ -1,240 +1,436 @@
-# Specification
+# readme2tex
+Renders LaTeX for Github Readmes
 
-A compliant README must satisfy all the requirements listed below.
+$$
+\huge\text{Hello \LaTeX}
+$$
 
-> Note: Standard Readme is designed for open source libraries. Although it's [historically](README.md#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
+\begin{tikzpicture}
+\newcounter{density}
+\setcounter{density}{20}
+    \def\couleur{blue}
+    \path[coordinate] (0,0)  coordinate(A)
+                ++( 60:6cm) coordinate(B)
+                ++(-60:6cm) coordinate(C);
+    \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
+    \foreach \x in {1,...,15}{%
+        \pgfmathsetcounter{density}{\thedensity+10}
+        \setcounter{density}{\thedensity}
+        \path[coordinate] coordinate(X) at (A){};
+        \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
+                            -- (C) coordinate[pos=.15](B)
+                            -- (X) coordinate[pos=.15](C);
+        \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
+    }
+\end{tikzpicture}
 
-**Requirements:**
-  - Be called README (with capitalization) and have a specific extension depending on its format (`.md` for Markdown, `.org` for Org Mode Markup syntax, `.html` for HTML, ...)
-  - If the project supports i18n, the file must be named accordingly: `README.de.md`, where `de` is the BCP 47 Language tag. For naming, prioritize non-regional subtags for languages. If there is only one README and the language is not English, then a different language in the text is permissible without needing to specify the BCP tag: e.g., `README.md` can be in German if there is no `README.md` in another language. Where there are multiple languages, `README.md` is reserved for English.
-  - Be a valid file in the selected format (Markdown, Org Mode, HTML, ...).
-  - Sections must appear in order given below. Optional sections may be omitted.
-  - Sections must have the titles listed below, unless otherwise specified. If the README is in another language, the titles must be translated into that language.
-  - Must not contain broken links.
-  - If there are code examples, they should be linted in the same way as the code is linted in the rest of the project.
+<sub>**Make sure that pdflatex is installed on your system.**</sub>
 
-## Table of Contents
+----------------------------------------
 
-_Note: This is only a navigation guide for the specification, and does not define or mandate terms for any specification-compliant documents._
+`readme2tex` is a Python script that "texifies" your readme. It takes in Github Markdown and
+replaces anything enclosed between dollar signs with rendered $\text{\LaTeX}$.
 
-- [Sections](#sections)
-  - [Title](#title)
-  - [Banner](#banner)
-  - [Badges](#badges)
-  - [Short Description](#short-description)
-  - [Long Description](#long-description)
-  - [Table of Contents](#table-of-contents-1)
-  - [Security](#security)
-  - [Background](#background)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Extra Sections](#extra-sections)
-  - [API](#api)
-  - [Maintainers](#maintainers)
-  - [Thanks](#thanks)
-  - [Contributing](#contributing)
-  - [License](#license)
-- [Definitions](#definitions)
+In addition, while other Github TeX renderers tend to give a jumpy look to the compiled text, 
+<p align="center">
+<img src="http://i.imgur.com/XSV1rPw.png?1" width=500/>
+</p>
 
-## Sections
+`readme2tex` ensures that inline mathematical expressions
+are properly aligned with the rest of the text to give a more natural look to the document. For example,
+this formula $\frac{dy}{dx}$ is preprocessed so that it lines up at the correct baseline for the text.
+This is the one salient feature of this package compared to the others out there.
 
-### Title
-**Status:** Required.
+### Installation
 
-**Requirements:**
-- Title must match repository, folder and package manager names - or it may have another, relevant title with the repository, folder, and package manager title next to it in italics and in parentheses. For instance:
+Make sure that you have Python 2.7 or above and `pip` installed. In addition, you'll need to have the programs `latex` 
+and `dvisvgm` on your `PATH`. In addition, you'll need to pre-install the `geometry` package in $\text{\LaTeX}$.
 
-  ```markdown
-  # Standard Readme Style _(standard-readme)_
-  ```
+To install `readme2tex`, you'll need to run
 
-  If any of the folder, repository, or package manager names do not match, there must be a note in the [Long Description](#long-description) explaining why.
+```bash
+sudo pip install readme2tex
+```
 
-**Suggestions:**
-- Should be self-evident.
+or, if you want to try out the bleeding edge,
 
-### Banner
-**Status:** Optional.
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+python setup.py develop
+```
 
-**Requirements:**
-- Must not have its own title.
-- Must link to local image in current repository.
-- Must appear directly after the title.
+To compile `INPUT.md` and render all of its formulas, run
 
-### Badges
-**Status:** Optional.
+```bash
+python -m readme2tex --output README.md INPUT.md
+```
 
-**Requirements:**
-- Must not have its own title.
-- Must be newline delimited.
+If you want to do this automatically for every commit of INPUT.md, you can use the `--add-git-hook` command once to
+set up the post-commit hook, like so
 
-**Suggestions:**
-- Use http://shields.io or a similar service to create and host the images.
-- Add the [Standard Readme badge](https://github.com/RichardLitt/standard-readme#badge).
+```bash
+git stash --include-untracked
+git branch svgs # if this isn't already there
 
-### Short Description
-**Status:** Required.
+python -m readme2tex --output README.md --branch svgs --usepackage tikz INPUT.md --add-git-hook
 
-**Requirements:**
-- Must not have its own title.
-- Must be less than 120 characters.
-- Must not start with `> `
-- Must be on its own line.
-- Must match the description in the packager manager's `description` field.
-- Must match GitHub's description (if on GitHub).
+# modify INPUT.md
 
-**Suggestions:**
-- Use [gh-description](https://github.com/RichardLitt/gh-description) to set and get GitHub description.
-- Use `npm show . description` to show the description from a local [npm](https://npmjs.com) package.
+git add INPUT.md
+git commit -a -m "updated readme"
 
-### Long Description
-**Status:** Optional.
+git stash pop
+```
 
-**Requirements:**
-- Must not have its own title.
-- If any of the folder, repository, or package manager names do not match, there must be a note here as to why. See [Title section](#title).
+and every `git commit` that touches `INPUT.md` from now on will allow you to automatically run `readme2tex` on it, saving
+you from having to remember how `readme2tex` works. The caveat is that if you use a GUI to interact with git, things
+might get a bit wonky. In particular, `readme2tex` will just assume that you're fine with all of the changes and won't
+prompt you for verification like it does on the terminal.
 
-**Suggestions:**
-- If too long, consider moving to the [Background](#background) section.
-- Cover the main reasons for building the repository.
-- "This should describe your module in broad terms,
-generally in just a few paragraphs; more detail of the module's
-routines or methods, lengthy code examples, or other in-depth
-material should be given in subsequent sections.
+<p align="center">
+<a href="https://asciinema.org/a/2am62r2x2udg1zqyb6r3kpm1i"><img src="https://asciinema.org/a/2am62r2x2udg1zqyb6r3kpm1i.png" width=600/></a>
+</p>
 
-  Ideally, someone who's slightly familiar with your module should be
-able to refresh their memory without hitting "page down". As your
-reader continues through the document, they should receive a
-progressively greater amount of knowledge."
+You can uninstall the hook by deleting `.git/hooks/post-commit`. See `python -m readme2tex --help` for a list
+of what you can do in `readme2tex`.
 
-  ~ [Kirrily "Skud" Robert, perlmodstyle](http://perldoc.perl.org/perlmodstyle.html)
+### Examples:
 
-### Table of Contents
-**Status:** Required; optional for READMEs shorter than 100 lines.
+Here's a display level formula
+$$
+\frac{n!}{k!(n-k)!} = {n \choose k}
+$$
 
-**Requirements:**
-- Must link to all sections in the file.
-- Must start with the next section; do not include the title or Table of Contents headings.
-- Must be at least one-depth: must capture all level two headings (e.g.: Markdown's `##` or Org Mode's `**` or HTML's `<h2>` and so on).
+The code that was used to render this formula is just
 
-**Suggestions:**
-- May capture third and fourth depth headings. If it is a long ToC, these are optional.
+    $$
+    \frac{n!}{k!(n-k)!} = {n \choose k}
+    $$
 
-### Security
-**Status**: Optional.
+<sub>*Note: you can escape \$ so that they don't render.*</sub>
 
-**Requirements:**
-- May go here if it is important to highlight security concerns. Otherwise, it should be in [Extra Sections](#extra-sections).
+Here's an inline formula. 
 
-### Background
-**Status:** Optional.
+> It is well known that if $ax^2 + bx + c =0$, then $x = \frac{-b \pm \sqrt{b^2- 4ac}}{2a}$.
 
-**Requirements:**
-- Cover motivation.
-- Cover abstract dependencies.
-- Cover intellectual provenance: A `See Also` section is also fitting.
+The code that was used to render this is:
 
-### Install
-**Status:** Required by default, optional for [documentation repositories](#definitions).
+    It is well known that if $ax^2 + bx + c = 0$, then $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
 
-**Requirements:**
-- Code block illustrating how to install.
+Notice that the formulas line up with the baseline of the text, even when the height of these two images are different.
 
-**Subsections:**
-- `Dependencies`. Required if there are unusual dependencies or dependencies that must be manually installed.
+Sometimes, you might run into formulas that are bottom-heavy, like $x^2\sum\limits_{3^{n^{n^{n}}}}$. Here, `readme2tex`
+can compute the correct offset to align this formula to the baseline of your paragraph of text as well.
 
-**Suggestions:**
-- Link to prerequisite sites for programming language: [npmjs](https://npmjs.com), [godocs](https://godoc.org), etc.
-- Include any system-specific information needed for installation.
-- An `Updating` section would be useful for most packages, if there are multiple versions which the user may interface with.
+#### Tikz (Courtesy of http://www.texample.net/)
+
+Did you notice the picture at the top of this page? That was also generated by $\text{\LaTeX}$. `readme2tex` is capable of
+handling Tikz code. For reference, the picture
+
+\begin{tikzpicture}
+\newcounter{density}
+\setcounter{density}{20}
+    \def\couleur{red}
+    \path[coordinate] (0,0)  coordinate(A)
+                ++( 60:6cm) coordinate(B)
+                ++(-60:6cm) coordinate(C);
+    \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
+    \foreach \x in {1,...,15}{%
+        \pgfmathsetcounter{density}{\thedensity+10}
+        \setcounter{density}{\thedensity}
+        \path[coordinate] coordinate(X) at (A){};
+        \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
+                            -- (C) coordinate[pos=.15](B)
+                            -- (X) coordinate[pos=.15](C);
+        \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
+    }
+\end{tikzpicture}
+
+is given by the tikz code
+
+    \begin{tikzpicture}
+    \newcounter{density}
+    \setcounter{density}{20}
+        \def\couleur{red}
+        \path[coordinate] (0,0)  coordinate(A)
+                    ++( 60:6cm) coordinate(B)
+                    ++(-60:6cm) coordinate(C);
+        \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
+        \foreach \x in {1,...,15}{%
+            \pgfmathsetcounter{density}{\thedensity+10}
+            \setcounter{density}{\thedensity}
+            \path[coordinate] coordinate(X) at (A){};
+            \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
+                                -- (C) coordinate[pos=.15](B)
+                                -- (X) coordinate[pos=.15](C);
+            \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
+        }
+    \end{tikzpicture}
+
+We can see a few other examples, such as this graphical proof of the Pythagorean Theorem.
+
+\begin{tikzpicture}
+\newcommand{\pythagwidth}{3cm}
+\newcommand{\pythagheight}{2cm}
+  \coordinate [label={below right:$A$}] (A) at (0, 0);
+  \coordinate [label={above right:$B$}] (B) at (0, \pythagheight);
+  \coordinate [label={below left:$C$}] (C) at (-\pythagwidth, 0);
+
+  \coordinate (D1) at (-\pythagheight, \pythagheight + \pythagwidth);
+  \coordinate (D2) at (-\pythagheight - \pythagwidth, \pythagwidth);
+
+  \draw [very thick] (A) -- (C) -- (B) -- (A);
+
+  \newcommand{\ranglesize}{0.3cm}
+  \draw (A) -- ++ (0, \ranglesize) -- ++ (-\ranglesize, 0) -- ++ (0, -\ranglesize);
+
+  \draw [dashed] (A) -- node [below] {$b$} ++ (-\pythagwidth, 0)
+            -- node [right] {$b$} ++ (0, -\pythagwidth)
+            -- node [above] {$b$} ++ (\pythagwidth, 0)
+            -- node [left]  {$b$} ++ (0, \pythagwidth);
+
+  \draw [dashed] (A) -- node [right] {$c$} ++ (0, \pythagheight)
+            -- node [below] {$c$} ++ (\pythagheight, 0)
+            -- node [left]  {$c$} ++ (0, -\pythagheight)
+            -- node [above] {$c$} ++ (-\pythagheight, 0);
+
+  \draw [dashed] (C) -- node [above left]  {$a$} (B)
+                     -- node [below left]  {$a$} (D1)
+                     -- node [below right] {$a$} (D2)
+                     -- node [above right] {$a$} (C);
+\end{tikzpicture}
+
+How about a few snowflakes?
+
+\begin{center}
+\usetikzlibrary{lindenmayersystems}
+
+\pgfdeclarelindenmayersystem{A}{
+    \rule{F -> FF[+F][-F]}
+}
+
+\pgfdeclarelindenmayersystem{B}{
+    \rule{F -> ffF[++FF][--FF]}
+}
+
+\pgfdeclarelindenmayersystem{C}{
+    \symbol{G}{\pgflsystemdrawforward}
+    \rule{F -> F[+F][-F]FG[+F][-F]FG}
+}
+
+\pgfdeclarelindenmayersystem{D}{
+    \symbol{G}{\pgflsystemdrawforward}
+    \symbol{H}{\pgflsystemdrawforward}
+    \rule{F -> H[+HG][-HG]G}
+    \rule{G -> HF}
+}
+
+\tikzset{
+    type/.style={l-system={#1, axiom=F,order=3,step=4pt,angle=60},
+      blue, opacity=0.4, line width=.5mm, line cap=round   
+    },
+}
+
+\newcommand\drawsnowflake[2][scale=0.2]{
+    \tikz[#1]
+    \foreach \a in {0,60,...,300}  {
+    \draw[rotate=\a,#2] l-system;
+    };
+}
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake[scale=0.3]{type=A, line width=\width mm} }
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake[scale=0.38]{type=A, l-system={angle=90}, line width=\width mm} }    
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake[scale=0.3]{type=B, line width=\width mm} }
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake{type=B, l-system={angle=30}, line width=\width mm} }
+
+\drawsnowflake[scale=0.24]{type=C, l-system={order=2}, line width=0.2mm}
+\drawsnowflake[scale=0.25]{type=C, l-system={order=2}, line width=0.4mm}
+\drawsnowflake[scale=0.25]{type=C, l-system={order=2,axiom=fF}, line width=0.2mm}
+\drawsnowflake[scale=0.32]{type=C, l-system={order=2,axiom=---fff+++F}, line width=0.2mm}
+
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=GF}, line width=0.7mm}
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=GfF}, line width=0.7mm}
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=FG}, line width=0.7mm}
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=FfG}, line width=0.7mm}
+\end{center}
 
 ### Usage
-**Status:** Required by default, optional for [documentation repositories](#definitions).
 
-**Requirements:**
-- Code block illustrating common usage.
-- If CLI compatible, code block indicating common usage.
-- If importable, code block indicating both import functionality and usage.
+    python -m readme2tex --output README.md [READOTHER.md]
 
-**Subsections:**
-- `CLI`. Required if CLI functionality exists.
+It will then look for a file called `readother.md` and compile it down to a readable Github-ready
+document.
 
-**Suggestions:**
-- Cover basic choices that may affect usage: for instance, if JavaScript, cover promises/callbacks, ES6 here.
-- If relevant, point to a runnable file for the usage code.
+In addition, you can specify other arguments to `render.py`, such as:
 
-### Extra Sections
-**Status**: Optional.
+* `--readme READOTHER.md` The raw readme to process. Defaults to `READOTHER.md`.
+* `--output README.md` The processed readme.md file. Defaults to `README_GH.md`.
+* `--usepackage tikz` Addition packages to use during $\text{\LaTeX}$ compilation. You can specify this multiple times.
+* `--svgdir svgs/` The directory to store the output svgs. The default is `svgs/`
+* `--branch master` *Experimental* Which branch to store the svgs into, the default is just master.
+* `--username username` Your github username. This is optional, and `render.py` will try to infer this for you.
+* `--project project` The current github project. This is also optional.
+* `--nocdn` Ticking this will use relative paths for the output images. Defaults to False.
+* `--htmlize` Ticking this will output a `md.html` file so you can preview what the output looks like. Defaults to False.
+* `--valign` Ticking this will use the `valign` trick (detailed below) instead. See the caveats section for tradeoffs.
+* `--rerender` Ticking this will force a recompilation of all $\text{\LaTeX}$ formulas even if they are already cached.
+* `--bustcache` Ticking this will ensure that Github renews its image cache. Github may sometimes take up to an hour for changed images to reappear. This is usually not necessary unless you've made stylistic changes.
+* `--add-git-hook` Ticking this will generate a post-commit hook for git that runs readme2tex with the rest of the specified arguments after each `git commit`.
+* `--pngtrick` Ticking this will generate `png` files instead of `svgs` for the formulas.
 
-**Requirements:**
-- None.
+My usual workflow is to create a secondary branch just for the compiled svgs. You can accomplish this via
 
-**Suggestions:**
-- This should not be called `Extra Sections`. This is a space for 0 or more sections to be included, each of which must have their own titles.
-- This should contain any other sections that are relevant, placed after [Usage](#usage) and before [API](#api).
-- Specifically, the [Security](#security) section should be here if it wasn't important enough to be placed above.
+    python -m readme2tex --branch svgs --output README.md
 
-### API
-**Status:** Optional.
+However, be careful with this command, since it will switch over to the `svgs` branch without any input from you.
 
-**Requirements:**
-- Describe exported functions and objects.
+#### Relative Paths
 
-**Suggestions:**
-- Describe signatures, return types, callbacks, and events.
-- Cover types covered where not obvious.
-- Describe caveats.
-- If using an external API generator (like go-doc, js-doc, or so on), point to an external `API.md` file. This can be the only item in the section, if present.
+If you're on a private repository or you want to, for whatever reason, use relative paths to resolve your images, you can
+do so by using the combination
 
-### Maintainer(s)
-**Status**: Optional.
+    python -m readme2tex --branch master --nocdn --pngtrick ...
 
-**Requirements:**
-- Must be called `Maintainer` or `Maintainers`.
-- List maintainer(s) for a repository, along with one way of contacting them (e.g. GitHub link or email).
+which will output `pngs` relative to your `README.md`.
 
-**Suggestions:**
-- This should be a small list of people in charge of the repo. This should not be everyone with access rights, such as an entire organization, but the people who should be pinged and who are in charge of the direction and maintenance of the repository.
-- Listing past maintainers is good for attribution, and kind.
+Due to security considerations, Github will not resolve `svgs` relatively, which means that private repositories will
+be locked out of the usual `svg` workflow. Using the `--branch master --nocdn --pngtrick` combination will get around
+this restriction.
 
-### Thanks
-**Status**: Optional.
+### Troubleshooting
 
-**Requirements:**
-- Must be called `Thanks`, `Credits` or `Acknowledgements`.
+#### Tikz
 
-**Suggestions:**
-- State anyone or anything that significantly helped with the development of your project.
-- State public contact hyper-links if applicable.
+If your Tikz drawings don't show up, there's a good chance that you either don't have Ghostscript installed or
+`dvisvgm` isn't picking it up for whatever reason. This is most likely to happen on some installations of TexLive
+on OSX.
 
-### Contributing
-**Status**: Required.
+Check to see if `ps` is included in the list when you run
 
-**Requirements:**
-- State where users can ask questions.
-- State whether PRs are accepted.
-- List any requirements for contributing; for instance, having a sign-off on commits.
+```bash
+# dvisvgm -l
+bgcolor    background color special
+color      complete support of color specials
+dvisvgm    special set for embedding raw SVG snippets
+em         line drawing statements of the emTeX special set
+html       hyperref specials
+pdf        pdfTeX font map specials
+ps         dvips PostScript specials <<<
+tpic       TPIC specials
+```
 
-**Suggestions:**
-- Link to a CONTRIBUTING file -- if there is one.
-- Be as friendly as possible.
-- Link to the GitHub issues.
-- Link to a Code of Conduct. A CoC is often in the Contributing section or document, or set elsewhere for an entire organization, so it may not be necessary to include the entire file in each repository. However, it is highly recommended to always link to the code, wherever it lives.
-- A subsection for listing contributors is also welcome here.
+If not, try installing it (either `apt-get`, `yum`, or `brew`). Furthermore, if you are on OSX, make sure to add the
+following to your `~/.bash_profile`
 
-### License
-**Status:** Required.
+```bash
+export LIBGS=/usr/local/lib/libgs.dylib
+```
 
-**Requirements:**
-- State license full name or identifier, as listed on the  [SPDX](https://spdx.org/licenses/) license list. For unlicensed repositories, add `UNLICENSED`. For more details, add `SEE LICENSE IN <filename>` and link to the license file. (These requirements were adapted from [npm](https://docs.npmjs.com/files/package.json#license)).
-- State license owner.
-- Must be last section.
+where `/usr/local/lib/libgs.dylib` is the location where `libgs.dylib` is installed.
 
-**Suggestions:**
-- Link to longer License file in local repository.
+#### I'm seeing weird formatting from time to time.
 
-## Definitions
+Make sure that if you have a `<p>...</p>` tag somewhere, you leave at least one blank line after the closing tag.
 
-_These definitions are provided to clarify any terms used above._
+#### I ran `--add-git-hook`, but the post-commit hook isn't running after committing.
 
-- **Documentation repositories**: Repositories without any functional code. For instance, [RichardLitt/knowledge](https://github.com/RichardLitt/knowledge).
+```bash
+chmod +x .git/hooks/post-commit
+```
+
+#### I raw `readme2tex` and got strange image srcs or got images that won't resolve
+
+Try running `readme2tex` with
+
+```bash
+python -m readme2tex ... --username GITHUB_USERNAME  --project PROJECT_NAME
+```
+
+#### I ran `readme2tex` and got a traceback somewhere.
+
+Unfortunately, this script still has a few kinks and bugs that I need to iron out. In the mean time, if the `pypi` releases
+aren't working for you, you should switch over to the development version to see if the bugs have been squashed:
+
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+python setup.py develop
+```
+
+### Technical Tricks
+
+#### How can you tell where the baseline of an image is?
+
+By prepending every inline formula with an anchor. During post-processing, we can isolate the anchor, which
+is fixed at the baseline, and crop it out. It's super clowny, but it does the job.
+
+#### Caveats
+
+Github does not allow you to pass in custom style attributes to your images. While this is useful for security purposes,
+it makes it incredibly difficult to ensure that images will align correctly to the text. `readme2tex` circumvents this
+using one of two tricks:
+
+1. In Chrome, the attribute `valign=offset` works for `img` tags as well. This allows us to shift the image directly.
+Unfortunately, this is not supported within any of the other major browsers, therefore this mode is not enabled by
+default.
+2. In every (reasonably modern) browser, the `align=middle` attribute will vertically center an image. However, the
+definition of the vertical "center" is different. In particular, for Chrome, Firefox, (and probably Safari), that center
+is the exact middle of the image. For IE and Edge however, the center is about 5 pixels (the height of a lower-case character)
+above the exact center. Since this looks great for non-IE browsers, and reasonably good on Edge, this is the default
+rendering method. The trick here is to pad either the top or the bottom of the image with extra spaces until the
+baseline of the formula is at the center. For most formulas, this works great. However, if you have a tall formula,
+like $\frac{~}{\sum\limits_{x^{x^{x^{x}}}}^{x^{x^{x^{x}}}} f(x)}$, you'll notice that there might be a lot
+of slack vertical spacing between these lines. If this is a deal-breaker for you, you can always try the `--valign True`
+mode. For most inline formulas, this is usually a non-issue.
+
+#### How to compile this document
+Make sure that you have the `tikz` and the `xcolor` packages installed locally.
+
+    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch svgs
+
+and of course
+
+    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch svgs --add-git-hook
+
+For the `png` relative mode, use
+
+    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch master --nocdn --pngtrick
+
+----------------------------------------
+
+\begin{tikzpicture}[scale=0.25, line join=bevel]
+% \a and \b are two macros defining characteristic
+% dimensions of the Penrose triangle.		
+\pgfmathsetmacro{\a}{2.5}
+\pgfmathsetmacro{\b}{0.9}
+
+\tikzset{%
+  apply style/.code     = {\tikzset{#1}},
+  triangle_edges/.style = {thick,draw=black}
+}
+
+\foreach \theta/\facestyle in {%
+    0/{triangle_edges, fill = gray!50},
+  120/{triangle_edges, fill = gray!25},
+  240/{triangle_edges, fill = gray!90}%
+}{
+  \begin{scope}[rotate=\theta]
+    \draw[apply style/.expand once=\facestyle]
+      ({-sqrt(3)/2*\a},{-0.5*\a})                     --
+      ++(-\b,0)                                       --
+        ({0.5*\b},{\a+3*sqrt(3)/2*\b})                -- % higher point	
+        ({sqrt(3)/2*\a+2.5*\b},{-.5*\a-sqrt(3)/2*\b}) -- % rightmost point
+      ++({-.5*\b},-{sqrt(3)/2*\b})                    -- % lower point
+        ({0.5*\b},{\a+sqrt(3)/2*\b})                  --
+      cycle;
+    \end{scope}
+  }	
+\end{tikzpicture}
