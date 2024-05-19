@@ -1,8 +1,5 @@
-root = true
+## Reporting a Vulnerability
 
-[*]
-indent_style = tab
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
+If you discover a potential security issue in this project we ask that you notify AWS/Amazon Security
+via our [vulnerability reporting page](http://aws.amazon.com/security/vulnerability-reporting/) or directly via email to aws-security@amazon.com.
+Please do **NOT** create a public github issue.
