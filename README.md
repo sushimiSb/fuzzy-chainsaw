@@ -1,436 +1,270 @@
-# readme2tex
-Renders LaTeX for Github Readmes
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-$$
-\huge\text{Hello \LaTeX}
-$$
 
-\begin{tikzpicture}
-\newcounter{density}
-\setcounter{density}{20}
-    \def\couleur{blue}
-    \path[coordinate] (0,0)  coordinate(A)
-                ++( 60:6cm) coordinate(B)
-                ++(-60:6cm) coordinate(C);
-    \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
-    \foreach \x in {1,...,15}{%
-        \pgfmathsetcounter{density}{\thedensity+10}
-        \setcounter{density}{\thedensity}
-        \path[coordinate] coordinate(X) at (A){};
-        \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
-                            -- (C) coordinate[pos=.15](B)
-                            -- (X) coordinate[pos=.15](C);
-        \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
-    }
-\end{tikzpicture}
 
-<sub>**Make sure that pdflatex is installed on your system.**</sub>
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-----------------------------------------
 
-`readme2tex` is a Python script that "texifies" your readme. It takes in Github Markdown and
-replaces anything enclosed between dollar signs with rendered $\text{\LaTeX}$.
 
-In addition, while other Github TeX renderers tend to give a jumpy look to the compiled text, 
-<p align="center">
-<img src="http://i.imgur.com/XSV1rPw.png?1" width=500/>
-</p>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-`readme2tex` ensures that inline mathematical expressions
-are properly aligned with the rest of the text to give a more natural look to the document. For example,
-this formula $\frac{dy}{dx}$ is preprocessed so that it lines up at the correct baseline for the text.
-This is the one salient feature of this package compared to the others out there.
+  <h3 align="center">Best-README-Template</h3>
+
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+
+Here's why:
+* Your time should be focused on creating something amazing. A project that solves a problem and helps others
+* You shouldn't be doing the same tasks over and over like creating a README from scratch
+* You should implement DRY principles to the rest of your life :smile:
+
+Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+
+Use the `BLANK_README.md` to get started.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
 ### Installation
 
-Make sure that you have Python 2.7 or above and `pip` installed. In addition, you'll need to have the programs `latex` 
-and `dvisvgm` on your `PATH`. In addition, you'll need to pre-install the `geometry` package in $\text{\LaTeX}$.
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-To install `readme2tex`, you'll need to run
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
 
-```bash
-sudo pip install readme2tex
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-or, if you want to try out the bleeding edge,
 
-```bash
-git clone https://github.com/leegao/readme2tex
-cd readme2tex
-python setup.py develop
-```
 
-To compile `INPUT.md` and render all of its formulas, run
+<!-- USAGE EXAMPLES -->
+## Usage
 
-```bash
-python -m readme2tex --output README.md INPUT.md
-```
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-If you want to do this automatically for every commit of INPUT.md, you can use the `--add-git-hook` command once to
-set up the post-commit hook, like so
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-```bash
-git stash --include-untracked
-git branch svgs # if this isn't already there
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-python -m readme2tex --output README.md --branch svgs --usepackage tikz INPUT.md --add-git-hook
 
-# modify INPUT.md
-
-git add INPUT.md
-git commit -a -m "updated readme"
 
-git stash pop
-```
+<!-- ROADMAP -->
+## Roadmap
 
-and every `git commit` that touches `INPUT.md` from now on will allow you to automatically run `readme2tex` on it, saving
-you from having to remember how `readme2tex` works. The caveat is that if you use a GUI to interact with git, things
-might get a bit wonky. In particular, `readme2tex` will just assume that you're fine with all of the changes and won't
-prompt you for verification like it does on the terminal.
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
 
-<p align="center">
-<a href="https://asciinema.org/a/2am62r2x2udg1zqyb6r3kpm1i"><img src="https://asciinema.org/a/2am62r2x2udg1zqyb6r3kpm1i.png" width=600/></a>
-</p>
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-You can uninstall the hook by deleting `.git/hooks/post-commit`. See `python -m readme2tex --help` for a list
-of what you can do in `readme2tex`.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Examples:
 
-Here's a display level formula
-$$
-\frac{n!}{k!(n-k)!} = {n \choose k}
-$$
 
-The code that was used to render this formula is just
+<!-- CONTRIBUTING -->
+## Contributing
 
-    $$
-    \frac{n!}{k!(n-k)!} = {n \choose k}
-    $$
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-<sub>*Note: you can escape \$ so that they don't render.*</sub>
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-Here's an inline formula. 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-> It is well known that if $ax^2 + bx + c =0$, then $x = \frac{-b \pm \sqrt{b^2- 4ac}}{2a}$.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The code that was used to render this is:
 
-    It is well known that if $ax^2 + bx + c = 0$, then $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
 
-Notice that the formulas line up with the baseline of the text, even when the height of these two images are different.
+<!-- LICENSE -->
+## License
 
-Sometimes, you might run into formulas that are bottom-heavy, like $x^2\sum\limits_{3^{n^{n^{n}}}}$. Here, `readme2tex`
-can compute the correct offset to align this formula to the baseline of your paragraph of text as well.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-#### Tikz (Courtesy of http://www.texample.net/)
-
-Did you notice the picture at the top of this page? That was also generated by $\text{\LaTeX}$. `readme2tex` is capable of
-handling Tikz code. For reference, the picture
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-\begin{tikzpicture}
-\newcounter{density}
-\setcounter{density}{20}
-    \def\couleur{red}
-    \path[coordinate] (0,0)  coordinate(A)
-                ++( 60:6cm) coordinate(B)
-                ++(-60:6cm) coordinate(C);
-    \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
-    \foreach \x in {1,...,15}{%
-        \pgfmathsetcounter{density}{\thedensity+10}
-        \setcounter{density}{\thedensity}
-        \path[coordinate] coordinate(X) at (A){};
-        \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
-                            -- (C) coordinate[pos=.15](B)
-                            -- (X) coordinate[pos=.15](C);
-        \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
-    }
-\end{tikzpicture}
-
-is given by the tikz code
-
-    \begin{tikzpicture}
-    \newcounter{density}
-    \setcounter{density}{20}
-        \def\couleur{red}
-        \path[coordinate] (0,0)  coordinate(A)
-                    ++( 60:6cm) coordinate(B)
-                    ++(-60:6cm) coordinate(C);
-        \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
-        \foreach \x in {1,...,15}{%
-            \pgfmathsetcounter{density}{\thedensity+10}
-            \setcounter{density}{\thedensity}
-            \path[coordinate] coordinate(X) at (A){};
-            \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
-                                -- (C) coordinate[pos=.15](B)
-                                -- (X) coordinate[pos=.15](C);
-            \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
-        }
-    \end{tikzpicture}
-
-We can see a few other examples, such as this graphical proof of the Pythagorean Theorem.
-
-\begin{tikzpicture}
-\newcommand{\pythagwidth}{3cm}
-\newcommand{\pythagheight}{2cm}
-  \coordinate [label={below right:$A$}] (A) at (0, 0);
-  \coordinate [label={above right:$B$}] (B) at (0, \pythagheight);
-  \coordinate [label={below left:$C$}] (C) at (-\pythagwidth, 0);
-
-  \coordinate (D1) at (-\pythagheight, \pythagheight + \pythagwidth);
-  \coordinate (D2) at (-\pythagheight - \pythagwidth, \pythagwidth);
-
-  \draw [very thick] (A) -- (C) -- (B) -- (A);
-
-  \newcommand{\ranglesize}{0.3cm}
-  \draw (A) -- ++ (0, \ranglesize) -- ++ (-\ranglesize, 0) -- ++ (0, -\ranglesize);
-
-  \draw [dashed] (A) -- node [below] {$b$} ++ (-\pythagwidth, 0)
-            -- node [right] {$b$} ++ (0, -\pythagwidth)
-            -- node [above] {$b$} ++ (\pythagwidth, 0)
-            -- node [left]  {$b$} ++ (0, \pythagwidth);
-
-  \draw [dashed] (A) -- node [right] {$c$} ++ (0, \pythagheight)
-            -- node [below] {$c$} ++ (\pythagheight, 0)
-            -- node [left]  {$c$} ++ (0, -\pythagheight)
-            -- node [above] {$c$} ++ (-\pythagheight, 0);
-
-  \draw [dashed] (C) -- node [above left]  {$a$} (B)
-                     -- node [below left]  {$a$} (D1)
-                     -- node [below right] {$a$} (D2)
-                     -- node [above right] {$a$} (C);
-\end{tikzpicture}
-
-How about a few snowflakes?
-
-\begin{center}
-\usetikzlibrary{lindenmayersystems}
-
-\pgfdeclarelindenmayersystem{A}{
-    \rule{F -> FF[+F][-F]}
-}
-
-\pgfdeclarelindenmayersystem{B}{
-    \rule{F -> ffF[++FF][--FF]}
-}
-
-\pgfdeclarelindenmayersystem{C}{
-    \symbol{G}{\pgflsystemdrawforward}
-    \rule{F -> F[+F][-F]FG[+F][-F]FG}
-}
-
-\pgfdeclarelindenmayersystem{D}{
-    \symbol{G}{\pgflsystemdrawforward}
-    \symbol{H}{\pgflsystemdrawforward}
-    \rule{F -> H[+HG][-HG]G}
-    \rule{G -> HF}
-}
-
-\tikzset{
-    type/.style={l-system={#1, axiom=F,order=3,step=4pt,angle=60},
-      blue, opacity=0.4, line width=.5mm, line cap=round   
-    },
-}
-
-\newcommand\drawsnowflake[2][scale=0.2]{
-    \tikz[#1]
-    \foreach \a in {0,60,...,300}  {
-    \draw[rotate=\a,#2] l-system;
-    };
-}
-
-\foreach \width in {.2,.4,...,.8} 
-{  \drawsnowflake[scale=0.3]{type=A, line width=\width mm} }
-
-\foreach \width in {.2,.4,...,.8} 
-{  \drawsnowflake[scale=0.38]{type=A, l-system={angle=90}, line width=\width mm} }    
-
-\foreach \width in {.2,.4,...,.8} 
-{  \drawsnowflake[scale=0.3]{type=B, line width=\width mm} }
-
-\foreach \width in {.2,.4,...,.8} 
-{  \drawsnowflake{type=B, l-system={angle=30}, line width=\width mm} }
 
-\drawsnowflake[scale=0.24]{type=C, l-system={order=2}, line width=0.2mm}
-\drawsnowflake[scale=0.25]{type=C, l-system={order=2}, line width=0.4mm}
-\drawsnowflake[scale=0.25]{type=C, l-system={order=2,axiom=fF}, line width=0.2mm}
-\drawsnowflake[scale=0.32]{type=C, l-system={order=2,axiom=---fff+++F}, line width=0.2mm}
 
-\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=GF}, line width=0.7mm}
-\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=GfF}, line width=0.7mm}
-\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=FG}, line width=0.7mm}
-\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=FfG}, line width=0.7mm}
-\end{center}
+<!-- CONTACT -->
+## Contact
 
-### Usage
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-    python -m readme2tex --output README.md [READOTHER.md]
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-It will then look for a file called `readother.md` and compile it down to a readable Github-ready
-document.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-In addition, you can specify other arguments to `render.py`, such as:
 
-* `--readme READOTHER.md` The raw readme to process. Defaults to `READOTHER.md`.
-* `--output README.md` The processed readme.md file. Defaults to `README_GH.md`.
-* `--usepackage tikz` Addition packages to use during $\text{\LaTeX}$ compilation. You can specify this multiple times.
-* `--svgdir svgs/` The directory to store the output svgs. The default is `svgs/`
-* `--branch master` *Experimental* Which branch to store the svgs into, the default is just master.
-* `--username username` Your github username. This is optional, and `render.py` will try to infer this for you.
-* `--project project` The current github project. This is also optional.
-* `--nocdn` Ticking this will use relative paths for the output images. Defaults to False.
-* `--htmlize` Ticking this will output a `md.html` file so you can preview what the output looks like. Defaults to False.
-* `--valign` Ticking this will use the `valign` trick (detailed below) instead. See the caveats section for tradeoffs.
-* `--rerender` Ticking this will force a recompilation of all $\text{\LaTeX}$ formulas even if they are already cached.
-* `--bustcache` Ticking this will ensure that Github renews its image cache. Github may sometimes take up to an hour for changed images to reappear. This is usually not necessary unless you've made stylistic changes.
-* `--add-git-hook` Ticking this will generate a post-commit hook for git that runs readme2tex with the rest of the specified arguments after each `git commit`.
-* `--pngtrick` Ticking this will generate `png` files instead of `svgs` for the formulas.
 
-My usual workflow is to create a secondary branch just for the compiled svgs. You can accomplish this via
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 
-    python -m readme2tex --branch svgs --output README.md
-
-However, be careful with this command, since it will switch over to the `svgs` branch without any input from you.
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-#### Relative Paths
-
-If you're on a private repository or you want to, for whatever reason, use relative paths to resolve your images, you can
-do so by using the combination
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
 
-    python -m readme2tex --branch master --nocdn --pngtrick ...
-
-which will output `pngs` relative to your `README.md`.
-
-Due to security considerations, Github will not resolve `svgs` relatively, which means that private repositories will
-be locked out of the usual `svg` workflow. Using the `--branch master --nocdn --pngtrick` combination will get around
-this restriction.
-
-### Troubleshooting
-
-#### Tikz
-
-If your Tikz drawings don't show up, there's a good chance that you either don't have Ghostscript installed or
-`dvisvgm` isn't picking it up for whatever reason. This is most likely to happen on some installations of TexLive
-on OSX.
-
-Check to see if `ps` is included in the list when you run
-
-```bash
-# dvisvgm -l
-bgcolor    background color special
-color      complete support of color specials
-dvisvgm    special set for embedding raw SVG snippets
-em         line drawing statements of the emTeX special set
-html       hyperref specials
-pdf        pdfTeX font map specials
-ps         dvips PostScript specials <<<
-tpic       TPIC specials
-```
-
-If not, try installing it (either `apt-get`, `yum`, or `brew`). Furthermore, if you are on OSX, make sure to add the
-following to your `~/.bash_profile`
-
-```bash
-export LIBGS=/usr/local/lib/libgs.dylib
-```
-
-where `/usr/local/lib/libgs.dylib` is the location where `libgs.dylib` is installed.
-
-#### I'm seeing weird formatting from time to time.
-
-Make sure that if you have a `<p>...</p>` tag somewhere, you leave at least one blank line after the closing tag.
-
-#### I ran `--add-git-hook`, but the post-commit hook isn't running after committing.
-
-```bash
-chmod +x .git/hooks/post-commit
-```
-
-#### I raw `readme2tex` and got strange image srcs or got images that won't resolve
-
-Try running `readme2tex` with
-
-```bash
-python -m readme2tex ... --username GITHUB_USERNAME  --project PROJECT_NAME
-```
-
-#### I ran `readme2tex` and got a traceback somewhere.
-
-Unfortunately, this script still has a few kinks and bugs that I need to iron out. In the mean time, if the `pypi` releases
-aren't working for you, you should switch over to the development version to see if the bugs have been squashed:
-
-```bash
-git clone https://github.com/leegao/readme2tex
-cd readme2tex
-python setup.py develop
-```
-
-### Technical Tricks
-
-#### How can you tell where the baseline of an image is?
-
-By prepending every inline formula with an anchor. During post-processing, we can isolate the anchor, which
-is fixed at the baseline, and crop it out. It's super clowny, but it does the job.
-
-#### Caveats
-
-Github does not allow you to pass in custom style attributes to your images. While this is useful for security purposes,
-it makes it incredibly difficult to ensure that images will align correctly to the text. `readme2tex` circumvents this
-using one of two tricks:
-
-1. In Chrome, the attribute `valign=offset` works for `img` tags as well. This allows us to shift the image directly.
-Unfortunately, this is not supported within any of the other major browsers, therefore this mode is not enabled by
-default.
-2. In every (reasonably modern) browser, the `align=middle` attribute will vertically center an image. However, the
-definition of the vertical "center" is different. In particular, for Chrome, Firefox, (and probably Safari), that center
-is the exact middle of the image. For IE and Edge however, the center is about 5 pixels (the height of a lower-case character)
-above the exact center. Since this looks great for non-IE browsers, and reasonably good on Edge, this is the default
-rendering method. The trick here is to pad either the top or the bottom of the image with extra spaces until the
-baseline of the formula is at the center. For most formulas, this works great. However, if you have a tall formula,
-like $\frac{~}{\sum\limits_{x^{x^{x^{x}}}}^{x^{x^{x^{x}}}} f(x)}$, you'll notice that there might be a lot
-of slack vertical spacing between these lines. If this is a deal-breaker for you, you can always try the `--valign True`
-mode. For most inline formulas, this is usually a non-issue.
-
-#### How to compile this document
-Make sure that you have the `tikz` and the `xcolor` packages installed locally.
-
-    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch svgs
-
-and of course
-
-    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch svgs --add-git-hook
-
-For the `png` relative mode, use
-
-    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch master --nocdn --pngtrick
-
-----------------------------------------
-
-\begin{tikzpicture}[scale=0.25, line join=bevel]
-% \a and \b are two macros defining characteristic
-% dimensions of the Penrose triangle.		
-\pgfmathsetmacro{\a}{2.5}
-\pgfmathsetmacro{\b}{0.9}
-
-\tikzset{%
-  apply style/.code     = {\tikzset{#1}},
-  triangle_edges/.style = {thick,draw=black}
-}
-
-\foreach \theta/\facestyle in {%
-    0/{triangle_edges, fill = gray!50},
-  120/{triangle_edges, fill = gray!25},
-  240/{triangle_edges, fill = gray!90}%
-}{
-  \begin{scope}[rotate=\theta]
-    \draw[apply style/.expand once=\facestyle]
-      ({-sqrt(3)/2*\a},{-0.5*\a})                     --
-      ++(-\b,0)                                       --
-        ({0.5*\b},{\a+3*sqrt(3)/2*\b})                -- % higher point	
-        ({sqrt(3)/2*\a+2.5*\b},{-.5*\a-sqrt(3)/2*\b}) -- % rightmost point
-      ++({-.5*\b},-{sqrt(3)/2*\b})                    -- % lower point
-        ({0.5*\b},{\a+sqrt(3)/2*\b})                  --
-      cycle;
-    \end{scope}
-  }	
-\end{tikzpicture}
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 
