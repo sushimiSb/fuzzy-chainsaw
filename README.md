@@ -1,97 +1,436 @@
-# `buffer-web` workers and cron in Kubernetes
+# readme2tex
+Renders LaTeX for Github Readmes
 
-We are transitionning `buffer-web` utils workers to k8s (Kubernetes). Here what you'll need to know to make changes to those workers.
+$$
+\huge\text{Hello \LaTeX}
+$$
 
-Team members to contact for more information:
-* Primary contacts - Eric, Colin
+\begin{tikzpicture}
+\newcounter{density}
+\setcounter{density}{20}
+    \def\couleur{blue}
+    \path[coordinate] (0,0)  coordinate(A)
+                ++( 60:6cm) coordinate(B)
+                ++(-60:6cm) coordinate(C);
+    \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
+    \foreach \x in {1,...,15}{%
+        \pgfmathsetcounter{density}{\thedensity+10}
+        \setcounter{density}{\thedensity}
+        \path[coordinate] coordinate(X) at (A){};
+        \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
+                            -- (C) coordinate[pos=.15](B)
+                            -- (X) coordinate[pos=.15](C);
+        \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
+    }
+\end{tikzpicture}
 
-## Contents
+<sub>**Make sure that pdflatex is installed on your system.**</sub>
 
-* [List of workers in k8s](#list-of-workers-in-k8s)
-* [List of crons in k8s](#list-of-crons-in-k8s)
-* [Deploy workers/crons to k8s](#deploying-workers-or-crons-to-kubernetes)
-* [Architecture](#architecture)
-* [Code specific to k8s](#code-specific-to-k8s)
-* [Run k8s workers locally](#run-k8s-workers-locally)
-* [Production Deployments](#production-deployments)
+----------------------------------------
 
-## List of workers in k8s
-| Worker name | deployment key | Description|
-| --- | --- | --- |
-| analytics | worker-analytics | Update analytics
-| elasticsearch-indexer | worker-elasticsearch-indexer | Index profiles/users/updates in elasticsearch
-| email | worker-email | ???
-| gnip analytics | worker-gnip-analytics | Process GNIP analytics for a given twitter profile
-| link | worker-link | increment the buffer button
-| patch-records | worker-patch-record | "patch" the image fields for updates with the correct data structure
-| picture | worker-picture | Process images
-| push | worker-push | ???
-| quick-analytics | worker-quick-analytics | Update analytics
-| s3-cleanup | worker-s3-cleanup | ???
-| service | worker-service | ???
-| signup | worker-signup | Add complimentary information to user after the signup process
-| stripe-webhook | worker-stripe-webhook | ???
-| tweet-backfill | worker-tweet-backfill | ?
-| twitter-friends | worker-twitter-friends | Index in the twitter friend elasticsearch cluster
-| update | worker-update | Use to send updates from our users
-| update-migration | worker-update-migration | ???
-| user-cleanup | worker-user-cleanup | clean users information after they leave buffer
-| weekly-email-digest | worker-eweekly-email-digestmail | Send weekly email stats to our users
+`readme2tex` is a Python script that "texifies" your readme. It takes in Github Markdown and
+replaces anything enclosed between dollar signs with rendered $\text{\LaTeX}$.
 
+In addition, while other Github TeX renderers tend to give a jumpy look to the compiled text, 
+<p align="center">
+<img src="http://i.imgur.com/XSV1rPw.png?1" width=500/>
+</p>
 
-## List of crons in k8s
-| Cron name | deployment key | Description|
-| --- | --- | --- |
-| queue-analytics | cron-analytics | Send all due analytics to the analytics queue
-| queue-scheduled-updates | cron-updates | Send all due updates to the sqs updates queue (The update workers will process the queue later on)
+`readme2tex` ensures that inline mathematical expressions
+are properly aligned with the rest of the text to give a more natural look to the document. For example,
+this formula $\frac{dy}{dx}$ is preprocessed so that it lines up at the correct baseline for the text.
+This is the one salient feature of this package compared to the others out there.
 
+### Installation
 
-## Deploying workers or crons to kubernetes
+Make sure that you have Python 2.7 or above and `pip` installed. In addition, you'll need to have the programs `latex` 
+and `dvisvgm` on your `PATH`. In addition, you'll need to pre-install the `geometry` package in $\text{\LaTeX}$.
 
-Take the deployment key [of the worker](#list-of-workers-in-k8s) or [crons](#list-of-crons-in-k8s) you want to target, and do:
-```
-    @bufferbot servicedeploy [deployment key]
-```
+To install `readme2tex`, you'll need to run
 
-For example to deploy to the update worker:
-```
-    @bufferbot servicedeploy worker-update
+```bash
+sudo pip install readme2tex
 ```
 
-Then you can check the workers has been properly deployed by checking the age of the worker:
+or, if you want to try out the bleeding edge,
+
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+python setup.py develop
 ```
-    kubectl get pods -n workers
+
+To compile `INPUT.md` and render all of its formulas, run
+
+```bash
+python -m readme2tex --output README.md INPUT.md
 ```
 
-## Architecture
+If you want to do this automatically for every commit of INPUT.md, you can use the `--add-git-hook` command once to
+set up the post-commit hook, like so
 
-To put it in a simple way, we put the `buffer-web` repo in a docker container and run the workers in k8s. [Here the Dockerfile used in production](https://github.com/bufferapp/buffer-web/blob/master/Dockerfile.workers). We use the [official PHP 5.6.31](https://github.com/bufferapp/dockerfiles/blob/master/php56-cli/Dockerfile) image, that uses itself `Debian 8.9 (jessie)`.
+```bash
+git stash --include-untracked
+git branch svgs # if this isn't already there
 
-Each worker has its own kubernetes deployment file located in the kube repo, under `kube/us-east1.buffer-k8s.com/workers`. Reach anyone in the system team to have access to it!
+python -m readme2tex --output README.md --branch svgs --usepackage tikz INPUT.md --add-git-hook
 
-In SQS, the new queue name [has the `_k8s` suffix appened](https://github.com/bufferapp/buffer-web/blob/4eda46cb62a18f9285eab93e33100d7133e92cfc/shared/libraries/Workers/Worker.php#L81-L83) to its previous name. For instance, instead of `update` queue, it will be `update_k8s`
+# modify INPUT.md
 
-## Code specific to k8s
-We set the  [`ENV_KUBERNETES`](https://github.com/bufferapp/buffer-web/blob/37348b9f59c675f420ea7099fd2ed9d0758e4844/Dockerfile.workers#L10
-) environnment variable to specify the code that is specific to kubernetes. Here the handy link to see [how it's used](https://github.com/bufferapp/buffer-web/search?utf8=%E2%9C%93&q=ENV_KUBERNETES&type=).
+git add INPUT.md
+git commit -a -m "updated readme"
 
-## Run k8s workers locally
+git stash pop
+```
 
-Use `buffer-dev` to starts the worker :
+and every `git commit` that touches `INPUT.md` from now on will allow you to automatically run `readme2tex` on it, saving
+you from having to remember how `readme2tex` works. The caveat is that if you use a GUI to interact with git, things
+might get a bit wonky. In particular, `readme2tex` will just assume that you're fine with all of the changes and won't
+prompt you for verification like it does on the terminal.
 
-- `./dev web-worker start worker_name`
-- `./dev web-worker tail worker_name`
-- `./dev web-worker stop worker_name`
+<p align="center">
+<a href="https://asciinema.org/a/2am62r2x2udg1zqyb6r3kpm1i"><img src="https://asciinema.org/a/2am62r2x2udg1zqyb6r3kpm1i.png" width=600/></a>
+</p>
 
-If you have modified the `Dockerfile.local.worker`, please make sure to `./dev rebuild web-worker` the dev environment.
+You can uninstall the hook by deleting `.git/hooks/post-commit`. See `python -m readme2tex --help` for a list
+of what you can do in `readme2tex`.
 
-Note: This way is better than the `./dev worker` command  because it reflects the exact same container as production. 🐳🐳🐳
+### Examples:
 
+Here's a display level formula
+$$
+\frac{n!}{k!(n-k)!} = {n \choose k}
+$$
 
-## Production Deployments 
+The code that was used to render this formula is just
 
-To deploy to production :
+    $$
+    \frac{n!}{k!(n-k)!} = {n \choose k}
+    $$
 
-`@bufferbot servicedeploy [deployment-key]`
+<sub>*Note: you can escape \$ so that they don't render.*</sub>
 
-Note:  You'll probably change some library/models that will affect utils, web or api environnments. In that case, you should aslo deploy to those environnments. Just ask in #eng-deploys if you're unsure :) 
+Here's an inline formula. 
+
+> It is well known that if $ax^2 + bx + c =0$, then $x = \frac{-b \pm \sqrt{b^2- 4ac}}{2a}$.
+
+The code that was used to render this is:
+
+    It is well known that if $ax^2 + bx + c = 0$, then $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+
+Notice that the formulas line up with the baseline of the text, even when the height of these two images are different.
+
+Sometimes, you might run into formulas that are bottom-heavy, like $x^2\sum\limits_{3^{n^{n^{n}}}}$. Here, `readme2tex`
+can compute the correct offset to align this formula to the baseline of your paragraph of text as well.
+
+#### Tikz (Courtesy of http://www.texample.net/)
+
+Did you notice the picture at the top of this page? That was also generated by $\text{\LaTeX}$. `readme2tex` is capable of
+handling Tikz code. For reference, the picture
+
+\begin{tikzpicture}
+\newcounter{density}
+\setcounter{density}{20}
+    \def\couleur{red}
+    \path[coordinate] (0,0)  coordinate(A)
+                ++( 60:6cm) coordinate(B)
+                ++(-60:6cm) coordinate(C);
+    \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
+    \foreach \x in {1,...,15}{%
+        \pgfmathsetcounter{density}{\thedensity+10}
+        \setcounter{density}{\thedensity}
+        \path[coordinate] coordinate(X) at (A){};
+        \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
+                            -- (C) coordinate[pos=.15](B)
+                            -- (X) coordinate[pos=.15](C);
+        \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
+    }
+\end{tikzpicture}
+
+is given by the tikz code
+
+    \begin{tikzpicture}
+    \newcounter{density}
+    \setcounter{density}{20}
+        \def\couleur{red}
+        \path[coordinate] (0,0)  coordinate(A)
+                    ++( 60:6cm) coordinate(B)
+                    ++(-60:6cm) coordinate(C);
+        \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) -- cycle;
+        \foreach \x in {1,...,15}{%
+            \pgfmathsetcounter{density}{\thedensity+10}
+            \setcounter{density}{\thedensity}
+            \path[coordinate] coordinate(X) at (A){};
+            \path[coordinate] (A) -- (B) coordinate[pos=.15](A)
+                                -- (C) coordinate[pos=.15](B)
+                                -- (X) coordinate[pos=.15](C);
+            \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
+        }
+    \end{tikzpicture}
+
+We can see a few other examples, such as this graphical proof of the Pythagorean Theorem.
+
+\begin{tikzpicture}
+\newcommand{\pythagwidth}{3cm}
+\newcommand{\pythagheight}{2cm}
+  \coordinate [label={below right:$A$}] (A) at (0, 0);
+  \coordinate [label={above right:$B$}] (B) at (0, \pythagheight);
+  \coordinate [label={below left:$C$}] (C) at (-\pythagwidth, 0);
+
+  \coordinate (D1) at (-\pythagheight, \pythagheight + \pythagwidth);
+  \coordinate (D2) at (-\pythagheight - \pythagwidth, \pythagwidth);
+
+  \draw [very thick] (A) -- (C) -- (B) -- (A);
+
+  \newcommand{\ranglesize}{0.3cm}
+  \draw (A) -- ++ (0, \ranglesize) -- ++ (-\ranglesize, 0) -- ++ (0, -\ranglesize);
+
+  \draw [dashed] (A) -- node [below] {$b$} ++ (-\pythagwidth, 0)
+            -- node [right] {$b$} ++ (0, -\pythagwidth)
+            -- node [above] {$b$} ++ (\pythagwidth, 0)
+            -- node [left]  {$b$} ++ (0, \pythagwidth);
+
+  \draw [dashed] (A) -- node [right] {$c$} ++ (0, \pythagheight)
+            -- node [below] {$c$} ++ (\pythagheight, 0)
+            -- node [left]  {$c$} ++ (0, -\pythagheight)
+            -- node [above] {$c$} ++ (-\pythagheight, 0);
+
+  \draw [dashed] (C) -- node [above left]  {$a$} (B)
+                     -- node [below left]  {$a$} (D1)
+                     -- node [below right] {$a$} (D2)
+                     -- node [above right] {$a$} (C);
+\end{tikzpicture}
+
+How about a few snowflakes?
+
+\begin{center}
+\usetikzlibrary{lindenmayersystems}
+
+\pgfdeclarelindenmayersystem{A}{
+    \rule{F -> FF[+F][-F]}
+}
+
+\pgfdeclarelindenmayersystem{B}{
+    \rule{F -> ffF[++FF][--FF]}
+}
+
+\pgfdeclarelindenmayersystem{C}{
+    \symbol{G}{\pgflsystemdrawforward}
+    \rule{F -> F[+F][-F]FG[+F][-F]FG}
+}
+
+\pgfdeclarelindenmayersystem{D}{
+    \symbol{G}{\pgflsystemdrawforward}
+    \symbol{H}{\pgflsystemdrawforward}
+    \rule{F -> H[+HG][-HG]G}
+    \rule{G -> HF}
+}
+
+\tikzset{
+    type/.style={l-system={#1, axiom=F,order=3,step=4pt,angle=60},
+      blue, opacity=0.4, line width=.5mm, line cap=round   
+    },
+}
+
+\newcommand\drawsnowflake[2][scale=0.2]{
+    \tikz[#1]
+    \foreach \a in {0,60,...,300}  {
+    \draw[rotate=\a,#2] l-system;
+    };
+}
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake[scale=0.3]{type=A, line width=\width mm} }
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake[scale=0.38]{type=A, l-system={angle=90}, line width=\width mm} }    
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake[scale=0.3]{type=B, line width=\width mm} }
+
+\foreach \width in {.2,.4,...,.8} 
+{  \drawsnowflake{type=B, l-system={angle=30}, line width=\width mm} }
+
+\drawsnowflake[scale=0.24]{type=C, l-system={order=2}, line width=0.2mm}
+\drawsnowflake[scale=0.25]{type=C, l-system={order=2}, line width=0.4mm}
+\drawsnowflake[scale=0.25]{type=C, l-system={order=2,axiom=fF}, line width=0.2mm}
+\drawsnowflake[scale=0.32]{type=C, l-system={order=2,axiom=---fff+++F}, line width=0.2mm}
+
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=GF}, line width=0.7mm}
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=GfF}, line width=0.7mm}
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=FG}, line width=0.7mm}
+\drawsnowflake[scale=0.38]{type=D, l-system={order=4,angle=60,axiom=FfG}, line width=0.7mm}
+\end{center}
+
+### Usage
+
+    python -m readme2tex --output README.md [READOTHER.md]
+
+It will then look for a file called `readother.md` and compile it down to a readable Github-ready
+document.
+
+In addition, you can specify other arguments to `render.py`, such as:
+
+* `--readme READOTHER.md` The raw readme to process. Defaults to `READOTHER.md`.
+* `--output README.md` The processed readme.md file. Defaults to `README_GH.md`.
+* `--usepackage tikz` Addition packages to use during $\text{\LaTeX}$ compilation. You can specify this multiple times.
+* `--svgdir svgs/` The directory to store the output svgs. The default is `svgs/`
+* `--branch master` *Experimental* Which branch to store the svgs into, the default is just master.
+* `--username username` Your github username. This is optional, and `render.py` will try to infer this for you.
+* `--project project` The current github project. This is also optional.
+* `--nocdn` Ticking this will use relative paths for the output images. Defaults to False.
+* `--htmlize` Ticking this will output a `md.html` file so you can preview what the output looks like. Defaults to False.
+* `--valign` Ticking this will use the `valign` trick (detailed below) instead. See the caveats section for tradeoffs.
+* `--rerender` Ticking this will force a recompilation of all $\text{\LaTeX}$ formulas even if they are already cached.
+* `--bustcache` Ticking this will ensure that Github renews its image cache. Github may sometimes take up to an hour for changed images to reappear. This is usually not necessary unless you've made stylistic changes.
+* `--add-git-hook` Ticking this will generate a post-commit hook for git that runs readme2tex with the rest of the specified arguments after each `git commit`.
+* `--pngtrick` Ticking this will generate `png` files instead of `svgs` for the formulas.
+
+My usual workflow is to create a secondary branch just for the compiled svgs. You can accomplish this via
+
+    python -m readme2tex --branch svgs --output README.md
+
+However, be careful with this command, since it will switch over to the `svgs` branch without any input from you.
+
+#### Relative Paths
+
+If you're on a private repository or you want to, for whatever reason, use relative paths to resolve your images, you can
+do so by using the combination
+
+    python -m readme2tex --branch master --nocdn --pngtrick ...
+
+which will output `pngs` relative to your `README.md`.
+
+Due to security considerations, Github will not resolve `svgs` relatively, which means that private repositories will
+be locked out of the usual `svg` workflow. Using the `--branch master --nocdn --pngtrick` combination will get around
+this restriction.
+
+### Troubleshooting
+
+#### Tikz
+
+If your Tikz drawings don't show up, there's a good chance that you either don't have Ghostscript installed or
+`dvisvgm` isn't picking it up for whatever reason. This is most likely to happen on some installations of TexLive
+on OSX.
+
+Check to see if `ps` is included in the list when you run
+
+```bash
+# dvisvgm -l
+bgcolor    background color special
+color      complete support of color specials
+dvisvgm    special set for embedding raw SVG snippets
+em         line drawing statements of the emTeX special set
+html       hyperref specials
+pdf        pdfTeX font map specials
+ps         dvips PostScript specials <<<
+tpic       TPIC specials
+```
+
+If not, try installing it (either `apt-get`, `yum`, or `brew`). Furthermore, if you are on OSX, make sure to add the
+following to your `~/.bash_profile`
+
+```bash
+export LIBGS=/usr/local/lib/libgs.dylib
+```
+
+where `/usr/local/lib/libgs.dylib` is the location where `libgs.dylib` is installed.
+
+#### I'm seeing weird formatting from time to time.
+
+Make sure that if you have a `<p>...</p>` tag somewhere, you leave at least one blank line after the closing tag.
+
+#### I ran `--add-git-hook`, but the post-commit hook isn't running after committing.
+
+```bash
+chmod +x .git/hooks/post-commit
+```
+
+#### I raw `readme2tex` and got strange image srcs or got images that won't resolve
+
+Try running `readme2tex` with
+
+```bash
+python -m readme2tex ... --username GITHUB_USERNAME  --project PROJECT_NAME
+```
+
+#### I ran `readme2tex` and got a traceback somewhere.
+
+Unfortunately, this script still has a few kinks and bugs that I need to iron out. In the mean time, if the `pypi` releases
+aren't working for you, you should switch over to the development version to see if the bugs have been squashed:
+
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+python setup.py develop
+```
+
+### Technical Tricks
+
+#### How can you tell where the baseline of an image is?
+
+By prepending every inline formula with an anchor. During post-processing, we can isolate the anchor, which
+is fixed at the baseline, and crop it out. It's super clowny, but it does the job.
+
+#### Caveats
+
+Github does not allow you to pass in custom style attributes to your images. While this is useful for security purposes,
+it makes it incredibly difficult to ensure that images will align correctly to the text. `readme2tex` circumvents this
+using one of two tricks:
+
+1. In Chrome, the attribute `valign=offset` works for `img` tags as well. This allows us to shift the image directly.
+Unfortunately, this is not supported within any of the other major browsers, therefore this mode is not enabled by
+default.
+2. In every (reasonably modern) browser, the `align=middle` attribute will vertically center an image. However, the
+definition of the vertical "center" is different. In particular, for Chrome, Firefox, (and probably Safari), that center
+is the exact middle of the image. For IE and Edge however, the center is about 5 pixels (the height of a lower-case character)
+above the exact center. Since this looks great for non-IE browsers, and reasonably good on Edge, this is the default
+rendering method. The trick here is to pad either the top or the bottom of the image with extra spaces until the
+baseline of the formula is at the center. For most formulas, this works great. However, if you have a tall formula,
+like $\frac{~}{\sum\limits_{x^{x^{x^{x}}}}^{x^{x^{x^{x}}}} f(x)}$, you'll notice that there might be a lot
+of slack vertical spacing between these lines. If this is a deal-breaker for you, you can always try the `--valign True`
+mode. For most inline formulas, this is usually a non-issue.
+
+#### How to compile this document
+Make sure that you have the `tikz` and the `xcolor` packages installed locally.
+
+    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch svgs
+
+and of course
+
+    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch svgs --add-git-hook
+
+For the `png` relative mode, use
+
+    python -m readme2tex --usepackage "tikz" --usepackage "xcolor" --output README.md --branch master --nocdn --pngtrick
+
+----------------------------------------
+
+\begin{tikzpicture}[scale=0.25, line join=bevel]
+% \a and \b are two macros defining characteristic
+% dimensions of the Penrose triangle.		
+\pgfmathsetmacro{\a}{2.5}
+\pgfmathsetmacro{\b}{0.9}
+
+\tikzset{%
+  apply style/.code     = {\tikzset{#1}},
+  triangle_edges/.style = {thick,draw=black}
+}
+
+\foreach \theta/\facestyle in {%
+    0/{triangle_edges, fill = gray!50},
+  120/{triangle_edges, fill = gray!25},
+  240/{triangle_edges, fill = gray!90}%
+}{
+  \begin{scope}[rotate=\theta]
+    \draw[apply style/.expand once=\facestyle]
+      ({-sqrt(3)/2*\a},{-0.5*\a})                     --
+      ++(-\b,0)                                       --
+        ({0.5*\b},{\a+3*sqrt(3)/2*\b})                -- % higher point	
+        ({sqrt(3)/2*\a+2.5*\b},{-.5*\a-sqrt(3)/2*\b}) -- % rightmost point
+      ++({-.5*\b},-{sqrt(3)/2*\b})                    -- % lower point
+        ({0.5*\b},{\a+sqrt(3)/2*\b})                  --
+      cycle;
+    \end{scope}
+  }	
+\end{tikzpicture}
