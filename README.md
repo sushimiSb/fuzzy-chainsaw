@@ -1,56 +1,20 @@
-# Contributing
+==================
+format-README.rst
+==================
+reStructuredText (сокращение: ReST, расширение файла: .rst) — облегчённый язык разметки.
 
-Contributions to this project are [released](https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license) to the public under the [project's open source license](LICENSE).
+:Дата последнего редактирования: |date| в |time| 
+:Компоновал: **GnuriaN**
 
-This project adheres to a [Code of Conduct][code-of-conduct]. By participating, you are expected to honor this code.
+Общее описание
+==============
+**reStructuredText** - хорошо применим для создания простых веб-страниц и других документов, а также в качестве вспомогательного языка при написании комментариев в программном коде. Используется в системе подготовки технической документации Docutils, написанной в основном Дэвидом Гуджером (David Goodger). reStructuredText можно считать потомком легковесных систем разметки StructuredText и Setext. Парсер reStructuredText поддерживает достаточное количество конечных форматов, в том числе PDF, HTML, ODT, LaTeX и формат презентаций S5.
 
-[code-of-conduct]: CODE_OF_CONDUCT.md
+Система документирования Sphinx, написанная для нужд документирования языка программирования Python на сайте docs.python.org и построенная на базе Docutils, применяется уже в нескольких десятках проектов. ReST является одним из языков разметки, используемых на github, в частности, для README-файлов. Формат имеет статус экспериментального в проекте «Гутенберг».
 
-This library's only job is to decide which markup format to use and call out to an external library to convert the markup to HTML (see the [README](README.md) for more information on how markup is rendered on GitHub.com).
+**Sphinx** — это генератор документации, который преобразует файлы в формате *reStructuredText* в HTML website и другие форматы (PDF, EPub и man). Он использует ряд расширений для reStructuredText (например, для автоматической генерации документации по исходному коду, создания математических формул или подсветки исходного кода). Первый публичный релиз (версия 0.1.61611) был объявлен 21 марта 2008 года. Он был разработан и широко используется для документирования языка программирования Python, а также его дополнительных модулей.
 
-If you are having an issue with:
+Вся необходимая информация для работы со **Sphinx** и форматом **reStructuredText** находится тут: https://sphinx-ru.readthedocs.io/ru/latest/index.html и тут https://sphinx-ru.readthedocs.io/ru/latest/rst-markup.html#retext
 
-* **Syntax highlighting** - see [github/linguist](https://github.com/github/linguist/blob/master/CONTRIBUTING.md#fixing-syntax-highlighting)
-* **Markdown on GitHub** - contact [GitHub Support](https://support.github.com/)
-* **Styling issues on GitHub** - see [primer-markdown](https://github.com/primer/primer-css/tree/master/modules/primer-markdown) module in the [primer/primer-css](https://github.com/primer/primer-css) repository
-
-Anything else - [search open issues](https://github.com/github/markup/issues) or create an issue and and we'll help point you in the right direction.
-
-## Submitting a Pull Request
-
-1. Fork it.
-2. Create a branch (`git checkout -b my_markup`)
-3. Commit your changes (`git commit -am "Added Snarkdown"`)
-4. Push to the branch (`git push origin my_markup`)
-5. Open a [Pull Request][1]
-6. Enjoy a refreshing Diet Coke and wait
-
-**dependencies**
-
-You can run `script/bootstrap.contrib` to fetch them all.
-
-## Testing
-
-To run the tests:
-
-    $ rake
-
-If nothing complains, congratulations!
-
-## Releasing a new version
-
-If you are the current maintainer of this gem:
-
-0. Bump the version number in `lib/github-markup.rb`, adhering to [Semantic Versioning](http://semver.org/)
-0. Update `HISTORY.md`
-0. Test the latest version on GitHub
-  0. Build the new version with `rake build`
-  0. Copy `pkg/github-markup*.gem` to `vendor/cache` in your local checkout of GitHub
-  0. Update the version for `github-markup` in the `Gemfile`
-  0. Run `bundle update --local github-markup`
-  0. Run any relevant tests and test it manually from the browser.
-0. Push the new gem release with `rake release`. If you don't have permission to release to rubygems.org, contact one of the existing owners (`gem owners github-markup`) and ask them to add you.
-
-[1]: http://github.com/github/markup/pulls
-[r2h]: lib/github/commands/rest2html
-[r2hc]: lib/github/markups.rb#L51
+.. |date| date:: %d.%m.%Y
+.. |time| date:: %H:%M
