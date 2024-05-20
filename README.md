@@ -1,50 +1,11 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Contributing
 
-# Folder config file
-Desktop.ini
+We love issues and pull requests! If you have something you want to add, change, or remove, please file a new issue or open a pull request.
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+## Keep Improving It!
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+The purpose of this repository is to document the Buffer Engineering Team knowledge and workflows and tools so they can be improved the same way code does. Feel free to add an issue for anything you want to discuss or open a new pull requests with the purposed changes.
 
-# Windows shortcuts
-*.lnk
+## Nothing is finished
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-.idea
-/.vs
+Everything is always in draft and subject to change, including this repository. So do not delay documenting things and do not include _"draft"_ in the titles of documents. Ensure everyone can read the current state. Nothing will ever be finished.
