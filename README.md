@@ -1,23 +1,53 @@
-# Compiled class file
-*.class
+#!/bin/bash
 
-# Log file
-*.log
+function encrypt(){
+    echo $(aws kms encrypt --key-id alias/encrypter --plaintext "$1" --output text --query CiphertextBlob)
+}
 
-# BlueJ files
-*.ctxt
+function decrypt(){
+    echo "$1" | base64 --decode > awsencrypteddata.temp
+    OLDIFS=$IFS
+    IFS=
+    echo $(aws kms decrypt --ciphertext-blob fileb://awsencrypteddata.temp --output text --query Plaintext | base64 --decode)
+    IFS=$OLDIFS
+    rm awsencrypteddata.temp
+}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+function encryptfile(){
+    echo $(aws kms encrypt --key-id alias/encrypter --plaintext fileb://"$1" --output text --query CiphertextBlob)
+}
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+function help(){
+    printf "
+A utility to encrypt sensitive information that we might need to paste
+in sensitive locations.
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+Usage: bufcrypt COMMAND \"input\"
+
+Commands:
+
+  encrypt                 Use this to encrypt text directly via terminal.
+                          Supports multi line strings
+  decrypt                 Use this to decrypt encrypted text. Paste the encrypted
+                          text inside quotes
+  encryptfile             Encrypt the contents of a file using this.
+
+Examples:
+
+Encrypt single line text:
+bufcrypt encrypt \"senstive info goes here\"
+
+Encrypt multi line text:
+bufcrypt encrypt \"my sensitive info
+goes
+on multiple lines\"
+
+Decrypt
+bufcrypt decrypt \"ciphertexttodecrypt\"
+
+Encrypt a file
+bufcrypt encryptfile \"~/.aws/credentials.backup\"
+"
+}
+
+$1 "$2"
