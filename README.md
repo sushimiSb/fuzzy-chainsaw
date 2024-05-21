@@ -1,267 +1,487 @@
-Getting started with Markdown
-=============================
+# Описание разметки файла README.md
+Для описания проектов на GitHub используется README.md, который пишется на языке разметки markdown. Что и как поддерживается расписано ниже. Также существует еще один формат - [reStructuredText](https://github.com/GnuriaN/format-README/blob/master/README.rst), описание которого вынесено в отдельный файл `README.rst`.
 
+## Оглавление
 
-- [Getting started with Markdown](#getting-started-with-markdown)
-- [Titles](#titles)
-- [Paragraph](#paragraph)
-- [List](#list)
-	- [List CheckBox](#list-checkbox)
-- [Link](#link)
-	- [Anchor links](#anchor-links)
-- [Blockquote](#blockquote)
-- [Image | GIF](#image--gif)
-- [Style Text](#style-text)
-	- [Italic](#italic)
-	- [Bold](#bold)
-	- [Strikethrough](#strikethrough)
-- [Code](#code)
-- [Email](#email)
-- [Table](#table)
-	- [Table Align](#table-align)
-    	- [Align Center](#align-center)
-    	- [Align Left](#align-left)
-    	- [Align Right](#align-right)
-- [Escape Characters](#escape-characters)
-- [Emoji](#emoji)
-- [Shields Badges](#Shields-Badges)
-- [Markdown Editor](#markdown-editor)
-- [Some links for more in depth learning](#some-links-for-more-in-depth-learning)
-
-----------------------------------
-
-# Titles 
-
-### Title 1
-### Title 2
-
-	Title 1
-	========================
-	Title 2 
-	------------------------
-
-# Title 1
-## Title 2
-### Title 3
-#### Title 4
-##### Title 5
-###### Title 6
-
-    # Title 1
-    ## Title 2
-    ### Title 3    
-    #### Title 4
-    ##### Title 5
-    ###### Title 6    
-
-# Paragraph
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. Phasellus eleifend egestas diam, id tincidunt arcu dictum quis. Pellentesque eu dui tempus, tempus massa sed, eleifend tortor. Donec in sem in erat iaculis tincidunt. Fusce condimentum hendrerit turpis nec vehicula. Aliquam finibus nisi vel eros lobortis dictum. Etiam congue tortor libero, quis faucibus ligula gravida a. Suspendisse non pulvinar nisl. Sed malesuada, felis vitae consequat gravida, dui ligula suscipit ligula, nec elementum nulla sem vel dolor. Vivamus augue elit, venenatis non lorem in, volutpat placerat turpis. Nullam et libero at eros vulputate auctor. Duis sed pharetra lacus. Sed egestas ligula vitae libero aliquet, ac imperdiet est ullamcorper. Sed dapibus sem tempus eros dignissim, ac suscipit lectus dapibus. Proin sagittis diam vel urna volutpat, vel ullamcorper urna lobortis. Suspendisse potenti.
-
-Nulla varius risus sapien, nec fringilla massa facilisis sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vel ornare erat, eget rhoncus lectus. Suspendisse interdum scelerisque molestie. Aliquam convallis consectetur lorem ut consectetur. Nullam massa libero, cursus et porta ac, consequat eget nibh. Sed faucibus nisl augue, non viverra justo sagittis venenatis.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. 
+0. [Разделительная черта](#Разделительная-черта)
+1. [Заголовки](#Заголовки)
+2. [Работа с выделением текста](#Работа-с-выделением-текста)
+3. [Использование эмодзи (emoji)](#Использование-эмодзи-emoji)
+4. [Использование цитирования в тексте](#Использование-цитирования-в-тексте)
+5. [Подсветка кода](#Подсветка-кода)
+6. [Списки](#Списки)
+    1. [Маркированный](#Маркированный)
+    2. [Нумерованный](#Нумерованный)
+    3. [Смешанные списки](#Смешанные-списки)
+    4. [Список задач](#Список-задач)
+7. [Ссылки](#Ссылки)
+8. [Вставка изображения](#Вставка-изображения)
+9. [Вставка таблиц](#Вставка-таблиц)
+10. [Диаграммы Mermaid.js](#диаграммы-mermaidjs)
+11. [Дополнения](https://github.com/GnuriaN/format-README/blob/master/Дополнения.md)
     
-    Phasellus eleifend egestas diam, id tincidunt arcu dictum quis.
-
-# List 
-* Item 1;
-	* Item 1.1;
-* Item 2;
-	* Item 2.1;
-	* Item 2.2;
-* Item 3
-	* Item 3.1;
-		* Item 3.1.1;
-    
->      * Item 1;
->	      * Item 1.1;
->	    * Item 2;
->	     * Item 2.1;
->	     * Item 2.2;
->	    * Item 3
->		   * Item 3.1;
->			  * Item 3.1.1;
-
-## List CheckBox
-
- - [ ] Item A
- - [x] Item B
- - [x] Item C
- 
->     - [ ] Item A
->     - [x] Item B
->     - [x] Item C
-
-
-# Link
-[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
-
-[Youtube](https://www.youtube.com) - _Enjoy videos and music you love, upload original content, and share it with friends, family, and the world on YouTube._
-
-[GitHub](https://github.com/fefong/markdown_readme#getting-started-with-markdown) - _Project_
-
-		[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
-
-## Anchor links
-
-[Markdown - Summary](#Getting-started-with-Markdown)
-
-[Markdown - Markdown Editor](#Markdown-Editor)
-
-		[Markdown - Link](#Link)
-
-# Blockquote
-> Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny
-
-    > Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny 
-
-# Image | GIF
-![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
-    
-    ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
-    
-See more [Markdown Extras - Image Align](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#image-align)    
-
-# Style Text
-### Italic
-
-*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
-
-     *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
-
-### Bold
-**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
-
-    **Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
-    
-### Strikethrough
-~~strikethrough text~~
-
-    ~~strikethrough text~~
-    
-# Code
-
-```java
-public static void main(String[] args) {
-	//TODO
-}
+## Разделительная черта
+При использовании
 ```
+____
+```
+получается разделительная черта
+____
+[:arrow_up:Оглавление](#Оглавление)
+___
+## Заголовки
 
->   \`\`\`java <br>
->   public static void main(String[] args) {<br>
->	    //TODO<br>
->	}<br>
->   \`\`\`<br>
-
-See more [Markdown Extras - Style Text](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#style-text)
-
-# Email
-<email@email.com>
-
-    <email@email.com>
-
-# Table
-
-|Column 1|Column 2|Column 3|
-|---|---|---|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|---|---|---|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-## Table Align
-
-## Align Center
-
-|Column 1|Column 2|Column 3|
-|:---:|:---:|:---:|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|:---:|:---:|:---:|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-## Align Left
-
-|Column 1|Column 2|Column 3|
-|:---|:---|:---|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|:---|:---|:---|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-## Align Right
-
-|Column 1|Column 2|Column 3|
-|---:|---:|---:|
-|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
-|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
-
->\|Column 1|Column 2|Column 3|<br>
->\|---:|---:|---:|<br>
->\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
->\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
-
-See more [Markdown Extras - Table](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table)
-* [Rownspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---rowspan)
-* [Colspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---colspan)
-
-# Escape Characters
+Всего существует шесть уровней заголовков. Для того, чтобы создать заголовок, необходимо в начале строки добавить символы `#`, в количестве равном его уровню.
+____
+# Заголовок первого уровня
+```
+# Заголовок 1
+```
+Заголовок первого уровня также можно создать:
+```
+Заголовок 1
+===========
+```
+____
+## Заголовок второго уровня
+```
+## Заголовок 2
+```
+Заголовок второго уровня также можно создать:
+```
+Заголовок 2
+-----------
+```
+____
+### Заголовок третьего уровня
+```
+### Заголовок 3
+```
+____
+#### Заголовок четвертого уровня
+```
+#### Заголовок 4
+```
+____
+##### Заголовок пятого уровня
+```
+##### Заголовок 5
+```
+____
+###### Заголовок шестого уровня
+```
+###### Заголовок 6
+```
+____
+[:arrow_up:Оглавление](#Оглавление)
+____
+## Работа с выделением текста
 
 ```
-\   backslash
-`   backtick
-*   asterisk
-_   underscore
-{}  curly braces
-[]  square brackets
-()  parentheses
-#   hash mark
-+   plus sign
--   minus sign (hyphen)
-.   dot
-!   exclamation mark
+~~Зачеркнутый текст~~
+```
+~~Зачеркнутый текст (Strikethrough)~~
+
+Для выделения текста **`жирным`** или *`наклонным`* и их сочетания можно использовать комбинации `*` или `_`
+
+```
+**Жирный текст (bold)**
+```
+**Жирный текст (bold)**
+
+```
+*Наклонный текст (italic)*
+```
+*Наклонный текст (italic)*
+
+```
+***Жирный наклонный текст (bold italic)***
+```
+***Жирный наклонный текст (bold italic)***
+
+```
+__Жирный текст (bold)__
+```
+__Жирный текст (bold)__
+
+```
+_Наклонный текст (italic)_
+```
+_Наклонный текст (italic)_
+
+```
+___Жирный наклонный текст (bold italic)___
+```
+___Жирный наклонный текст (bold italic)___
+
+```
+~~*__Тут странный текст__*~~
+```
+~~*__Тут странный текст__*~~
+    
+[:arrow_up:Оглавление](#Оглавление)
+____
+## Использование эмодзи (emoji)
+В самом тексте можно использовать эмодзи, например написать вот так:    
+:white_check_mark: Это уже сделано    
+:negative_squared_cross_mark: Я не буду это делать    
+:black_square_button: делать или не делать, вот в чем вопрос?    
+В оригинале это выглядит так (в конце строки четыре (4) пробела для того, чтобы был переход на новую строку):
+```
+:white_check_mark: Это уже сделано    
+:negative_squared_cross_mark: Я не буду это делать    
+:black_square_button: делать или не делать, вот в чем вопрос?    
 ```
 
-# Emoji
+Список работающих Эмодзи находится тут -> [emoji.md](https://github.com/GnuriaN/format-README.md/blob/master/emoji.md)    
+    
+[:arrow_up:Оглавление](#Оглавление)
+___
+## Использование цитирования в тексте
+```
+> Цитата (уровень 1)    
+> > Вложенная цитата (уровень 2)    
+> > > Вложенная цитата (уровень 3)    
 
-* [Emoji](emoji.md#emoji);
-	* [People](emoji.md#people) - (:blush: ; :hushed: ; :shit:);
-	* [Nature](emoji.md#nature) - (:sunny: ; :snowman: ; :dog:);
-	* [Objects](emoji.md#objects) - (:file_folder: ; :computer: ; :bell:);
-	* [Places](emoji.md#places) - (:rainbow: ; :warning: ; :statue_of_liberty:);
-	* [Symbols](emoji.md#symbols) - (:cancer: ; :x: ; :shipit:);
-* [Kaomoji](emoji.md#kaomoji);
-* [Special-Symbols](emoji.md#special-symbols);
-	
+> > Продолжение цитаты (уровень 2)    
 
-# Shields Badges
+> Продолжение цитаты (уровень 1)    
+```
+> Цитата (уровень 1)    
+> > Вложенная цитата (уровень 2)    
+> > > Вложенная цитата (уровень 3)    
 
-:warning: _We are not responsible for this site_
+> > Продолжение цитаты (уровень 2)    
 
-See more: [https://shields.io/](https://shields.io/)
+> Продолжение цитаты (уровень 1)    
 
-[![GitHub forks](https://img.shields.io/github/forks/fefong/markdown_readme)](https://github.com/fefong/markdown_readme/network)
-![Markdown](https://img.shields.io/badge/markdown-project-red)
+Внешний вид, конечно, не очень, но может и пригодиться.
 
-# Markdown Editor
+[:arrow_up:Оглавление](#Оглавление)
+___
+## Подсветка кода
 
-[StackEdit](https://stackedit.io) - _StackEdit’s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files._
+Если нужно выделить слово или фразу внутри строки, то используются одинарные обратные кавычки (`):
 
-# Some links for more in depth learning
+    Это `слово` будет выделено
 
-:page_facing_up: [Markdown Extras](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#markdown---extras)
+Для выделения в блоки - тройные:
 
-:page_facing_up: [Wikipedia - Markdown](https://pt.wikipedia.org/wiki/Markdown)
+    ```
+        Здесь может быть
+        Ваша реклама
+    ```
 
-:page_facing_up: [Oficial](https://daringfireball.net/projects/markdown/)
+Дополнительно можно задавать язык кода внутри блока, указав его после первых трех кавычек:
 
+    ```html
+        <input type="text">
+    ```
 
+    ```css
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    ```
+
+    ```php
+        <?php phpinfo();?>
+    ```
+
+Пример блока для `C#`:
+
+```C#
+using MarkdownSharp;
+using MarkdownSharp.Extensions.Mal;
+
+Markdown mark = new Markdown();
+
+// Short link for MAL - 
+// http://myanimelist.net/people/413/Kitamura_Eri => mal://Kitamura_Eri
+mark.AddExtension(new Articles()); 
+mark.AddExtension(new Profile());
+
+mark.Transform(text);
+```
+
+Пример блока для `Python`:
+```Python
+from timeit import Timer
+
+tmp = "Python 3.2.2 (default, Jun 12 2011, 15:08:59) [MSC v.1500 32 bit (Intel)] on win32."
+
+def case1(): # А. инкрементальные конкатенации в цикле
+    s = ""
+    for i in range(10000):
+        s += tmp
+
+def case2(): # Б. через промежуточный список и метод join
+    s = []
+    for i in range(10000):
+        s.append(tmp)
+    s = "".join(s)
+
+def case3(): # В. списковое выражение и метод join
+    return "".join([tmp for i in range(10000)])
+
+def case4(): # Г. генераторное выражение и метод join
+    return "".join(tmp for i in range(10000))
+
+for v in range(1,5):
+    print (Timer("func()","from __main__ import case%s as func" % v).timeit(200))
+```
+    
+[:arrow_up:Оглавление](#Оглавление)
+___
+## Списки
+
+#### Маркированный
+Задать **маркированный** список можно несколькими символами `-`, `+` или `*`:
+```
+- Уровень списка 1. Пункт 1.
+- Уровень списка 1. Пункт 2.
+- Уровень списка 1. Пункт 3.
+```
+- Уровень списка 1. Пункт 1.
+- Уровень списка 1. Пункт 2.
+- Уровень списка 1. Пункт 3.
+
+```
++ Уровень списка 1. Пункт 1.
++ Уровень списка 1. Пункт 2.
++ Уровень списка 1. Пункт 3.
+```
++ Уровень списка 1. Пункт 1.
++ Уровень списка 1. Пункт 2.
++ Уровень списка 1. Пункт 3.
+
+```
+* Уровень списка 1. Пункт 1.
+* Уровень списка 1. Пункт 2.
+* Уровень списка 1. Пункт 3.
+```
+* Уровень списка 1. Пункт 1.
+* Уровень списка 1. Пункт 2.
+* Уровень списка 1. Пункт 3.
+
+Можно создавать многоуровневые списки. Каждый уровень отделяется **четырьмя** (4) пробелами:
+```
+- Уровень списка 1. Пункт 1.
+    - Уровень списка 2. Пункт 1.
+- Уровень списка 1. Пункт 2.
+    - Уровень списка 2. Пункт 1.
+    - Уровень списка 2. Пункт 2.
+- Уровень списка 1. Пункт 3.
+    - Уровень списка 2. Пункт 1.
+        - Уровень списка 3. Пункт 1.
+        - Уровень списка 3. Пункт 2.
+           - Уровень списка 4. Пункт 1.
+```
+- Уровень списка 1. Пункт 1.
+  - Уровень списка 2. Пункт 1.
+- Уровень списка 1. Пункт 2.
+    - Уровень списка 2. Пункт 1.
+    - Уровень списка 2. Пункт 2.
+- Уровень списка 1. Пункт 3.
+    - Уровень списка 2. Пункт 1.
+      - Уровень списка 3. Пункт 1.
+      - Уровень списка 3. Пункт 2.
+         - Уровень списка 4. Пункт 1.
+
+Каждый уровень отделяется двумя пробелами.
+
+#### Нумерованный
+Для Githib работа с нумерованными списками выглядит очень интересно. Каждый уровень отделяется **четырьмя** (4) пробелами:
+```
+1. Первый уровень 1
+    1. Второй уровень 1
+        1. Третий уровень 1
+            1. Четвертый уровень 1
+                1. Пятый уровень 1
+                    1. Шестой уровень
+                        1. Седьмой уровень
+                            1. Седьмой уровень
+2. Первый уровень 2
+2. Первый уровень (должно быть 3)
+4. Первый уровень 4
+```
+1. Первый уровень 1
+    1. Второй уровень 1
+        1. Третий уровень 1
+            1. Четвертый уровень 1
+                1. Пятый уровень 1
+                    1. Шестой уровень
+                        1. Седьмой уровень
+                            1. Седьмой уровень
+2. Первый уровень 2
+2. Первый уровень (должно быть 3)
+4. Первый уровень 4
+
+#### Смешанные списки
+При использовании смешанных списков нужно очень внимательно следить за нумерацией. Лучше, как и в нумерованных, использовать четыре (4) пробела для отделения уровня.
+```
+1. Первый уровень "нумерованный" - 1
+    * Второй уровень "маркер"
+        + Третий уровень "маркер"
+        - Третий уровень "маркер"
+        1. Третий уровень "нумерованный" - 1
+            1. Четвертый уровень "нумерованный" - 1
+                1. Пятый уровень "нумерованный" - 1
+                    1. Шестой уровень "нумерованный" - 1
+                        1. Седьмой уровень "нумерованный" - 1
+                        * Седьмой уровень "маркер"
+                        2. Седьмой уровень "нумерованный" - 1 (нарушена нумерация, новая нумерация 1)
+                        3. Седьмой уровень "нумерованный" - 1 (нарушена нумерация, новая нумерация 2)
+                            1. Восьмой уровень "нумерованный" - 1
+2. Первый уровень "нумерованный" - 2
+- Первый уровень "нумерованный" - 3
+4. Первый уровень "нумерованный" - 4 (нарушена нумерация, новая нумерация 1)
+5. Первый уровень "нумерованный" - 5 (нарушена нумерация, новая нумерация 2)
+```
+1. Первый уровень "нумерованный" - 1
+    * Второй уровень "маркер"
+        + Третий уровень "маркер"
+        - Третий уровень "маркер"
+        1. Третий уровень "нумерованный" - 1
+            1. Четвертый уровень "нумерованный" - 1
+                1. Пятый уровень "нумерованный" - 1
+                    1. Шестой уровень "нумерованный" - 1
+                        1. Седьмой уровень "нумерованный" - 1
+                        * Седьмой уровень "маркер"
+                        2. Седьмой уровень "нумерованный" - 2
+                        3. Седьмой уровень "нумерованный" - 3
+                            1. Восьмой уровень "нумерованный" - 1
+2. Первый уровень "нумерованный" - 2
+- Первый уровень "маркерный" - 3
+4. Первый уровень "нумерованный" - 4 (хотя по идее должен быть 3)
+5. Первый уровень "нумерованный" - 5 (хотя, по идее должен быть 3)
+
+#### Список задач
+(Task List)
+Можно создавать "Списки задач" для этого необходимо использовать `- [ ]` для поставленной задачи и `- [X]` для выполненной задачи.
+```
+- [X] Придумать внешний вид резюме
+- [ ] Написать основные категории
+- [X] Опубликовать
+
+```
+- [X] Придумать внешний вид резюме
+- [ ] Написать основные категории
+- [X] Опубликовать
+
+Также можно создавать многоуровневые списки задач. Каждый уровень отделяется **четырьмя** (4) пробелами:
+```
+- [X] Задача 1
+    - [X] Подзадача 1 для Задачи 1
+    - [X] Подзадача 2 для Задачи 1
+- [ ] Задача 2
+    - [X] Подзадача 1 для Задачи 2
+    - [ ] Подзадача 2 для Задачи 2
+- [ ] Задача 3
+    - [ ] Подзадача 1 для Задачи 3
+        - [ ] Подзадача 1 для Подзадача 1 для Задачи 3
+```
+- [X] Задача 1
+    - [X] Подзадача 1 для Задачи 1
+    - [X] Подзадача 2 для Задачи 1
+- [ ] Задача 2
+    - [X] Подзадача 1 для Задачи 2
+    - [ ] Подзадача 2 для Задачи 2
+- [ ] Задача 3
+    - [ ] Подзадача 1 для Задачи 3
+        - [ ] Подзадача 1 для Подзадача 1 для Задачи 3
+    
+[:arrow_up:Оглавление](#Оглавление) 
+___
+## Ссылки
+Либо просто вставить ссылку, либо дополнительно задать текст ссылки (пробела между скобками быть не должно):
+```
+Первый вариант вставки ссылок - это просто написать адрес сайта http://sabaka.net
+```
+Первый вариант вставки ссылок - это просто написать адрес сайта http://sabaka.net
+
+Второй вариант записывается так: `[текст ссылки](адрес ссылки)`
+```
+[sabaka.net](http://sabaka.net)
+```
+[sabaka.net](http://sabaka.net)
+    
+[Sabaka(DOT)Net]:http://sabaka.net    
+    
+[:arrow_up:Оглавление](#Оглавление)
+____
+## Вставка изображения
+```
+![Alt-текст](https://avatars1.githubusercontent.com/u/5384215?v=3&s=460 "Орк")
+```
+![Alt-текст](https://avatars1.githubusercontent.com/u/5384215?v=3&s=460 "Орк")
+
+### Дополнительно:
+#### Вставка ссылки с картинкой на ролик с YouTube
+Описание комбинации `[![Тут текст](адрес до картинки)](ссылка на страничку YouTube)`        
+Пример:        
+```[![Тут текст](https://img.youtube.com/vi/RHPYGwVQB2o/0.jpg)](https://youtu.be/RHPYGwVQB2o)```        
+Что мы увидим:        
+[![Тут текст](https://img.youtube.com/vi/RHPYGwVQB2o/0.jpg)](https://youtu.be/RHPYGwVQB2o)        
+        
+[:arrow_up:Оглавление](#Оглавление) 
+____
+## Вставка таблиц
+```
+| LEFT | CENTER | RIGHT |
+|----------------|:---------:|----------------:|
+| По левому краю | По центру | По правому краю |
+| текст | текст | текст |
+```
+| LEFT | CENTER | RIGHT |
+|----------------|:---------:|----------------:|
+| По левому краю | По центру | По правому краю |
+| текст | текст | текст |
+
+**Внимание:** Если в тексте таблицы нужно использовать символ "вертикальная черта - `|`", то в место него необходимо написать замену на комбинацию HTML-кода* `&#124;`, это нужно для того, чтобы таблица не потеряла ориентации.    
+*) - Можно использовать ASCII и/или UTF коды.
+
+**Пример:**
+```
+| Обозначение | Описание | Пример регулярного выражения|
+|----:|:----:|:----------|
+| literal | Строка содержит символьный литерал literal | foo |
+| re1&#124;re2 | Строка содержит регулярные выражения `rel` или `re2` | foo&#124;bar |
+```
+**Результат:**
+
+| Обозначение | Описание | Пример регулярного выражения|
+|----:|:----:|:----------|
+| literal | Строка содержит символьный литерал literal | foo |
+| re1&#124;re2 | Строка содержит регулярные выражения `rel` или `re2` | foo&#124;bar |
+
+[:arrow_up:Оглавление](#Оглавление) 
+____
+## Диаграммы Mermaid.js
+Появилась возможность вставлять диаграммы [Mermaid.js](https://mermaid-js.github.io/mermaid/#/)
+
+<pre>
+```mermaid
+... код диаграммы ...
+```
+</pre>
+Пример:
+<pre>
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+</pre>
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+Очень подробно на русском языке о диаграммах Mermaid.js: https://habr.com/ru/post/652867/ 
+
+[:arrow_up:Оглавление](#Оглавление) 
+____
