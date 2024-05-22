@@ -1,272 +1,321 @@
-2011-2019 Artsy Inc.
-
-## creative commons
-
-# Attribution 4.0 International
-
-Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal
-advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship.
-Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives
-no warranties regarding its licenses, any material licensed under their terms and conditions, or any related
-information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent
-possible.
-
-### Using Creative Commons Public Licenses
-
-Creative Commons public licenses provide a standard set of terms and conditions that creators and other rights
-holders may use to share original works of authorship and other material subject to copyright and certain other
-rights specified in the public license below. The following considerations are for informational purposes only, are
-not exhaustive, and do not form part of our licenses.
-
-- **Considerations for licensors:** Our public licenses are intended for use by those authorized to give the public
-  permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are
-  irrevocable. Licensors should read and understand the terms and conditions of the license they choose before
-  applying it. Licensors should also secure all rights necessary before applying our licenses so that the public
-  can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This
-  includes other CC-licensed material, or material used under an exception or limitation to copyright.
-  [More considerations for licensors](https://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensors).
-
-- **Considerations for the public:** By using one of our public licenses, a licensor grants the public permission
-  to use the licensed material under specified terms and conditions. If the licensor’s permission is not necessary
-  for any reason–for example, because of any applicable exception or limitation to copyright–then that use is not
-  regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a
-  licensor has authority to grant. Use of the licensed material may still be restricted for other reasons,
-  including because others have copyright or other rights in the material. A licensor may make special requests,
-  such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged
-  to respect those requests where reasonable.
-  [More considerations for the public](https://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensees).
-
-## Creative Commons Attribution 4.0 International Public License
-
-By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of
-this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public
-License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance
-of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor
-receives from making the Licensed Material available under these terms and conditions.
-
-### Section 1 – Definitions.
-
-a. **Adapted Material** means material subject to Copyright and Similar Rights that is derived from or based upon
-the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or
-otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor.
-For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound
-recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a
-moving image.
-
-b. **Adapter's License** means the license You apply to Your Copyright and Similar Rights in Your contributions to
-Adapted Material in accordance with the terms and conditions of this Public License.
-
-c. **Copyright and Similar Rights** means copyright and/or similar rights closely related to copyright including,
-without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how
-the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section
-2(b)(1)-(2) are not Copyright and Similar Rights.
-
-d. **Effective Technological Measures** means those measures that, in the absence of proper authority, may not be
-circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December
-20, 1996, and/or similar international agreements.
-
-e. **Exceptions and Limitations** means fair use, fair dealing, and/or any other exception or limitation to
-Copyright and Similar Rights that applies to Your use of the Licensed Material.
-
-f. **Licensed Material** means the artistic or literary work, database, or other material to which the Licensor
-applied this Public License.
-
-g. **Licensed Rights** means the rights granted to You subject to the terms and conditions of this Public License,
-which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the
-Licensor has authority to license.
-
-h. **Licensor** means the individual(s) or entity(ies) granting rights under this Public License.
-
-i. **Share** means to provide material to the public by any means or process that requires permission under the
-Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination,
-communication, or importation, and to make material available to the public including in ways that members of the
-public may access the material from a place and at a time individually chosen by them.
-
-j. **Sui Generis Database Rights** means rights other than copyright resulting from Directive 96/9/EC of the
-European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or
-succeeded, as well as other essentially equivalent rights anywhere in the world.
-
-k. **You** means the individual or entity exercising the Licensed Rights under this Public License. Your has a
-corresponding meaning.
-
-### Section 2 – Scope.
-
-a. **_License grant._**
-
-1.  Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide,
-    royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the
-    Licensed Material to:
-
-    A. reproduce and Share the Licensed Material, in whole or in part; and
-
-    B. produce, reproduce, and Share Adapted Material.
-
-2.  **Exceptions and Limitations.** For the avoidance of doubt, where Exceptions and Limitations apply to Your use,
-    this Public License does not apply, and You do not need to comply with its terms and conditions.
-
-3.  **Term.** The term of this Public License is specified in Section 6(a).
-
-4.  **Media and formats; technical modifications allowed.** The Licensor authorizes You to exercise the Licensed
-    Rights in all media and formats whether now known or hereafter created, and to make technical modifications
-    necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from
-    making technical modifications necessary to exercise the Licensed Rights, including technical modifications
-    necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making
-    modifications authorized by this Section 2(a)(4) never produces Adapted Material.
-
-5.  **Downstream recipients.**
-
-    A. **Offer from the Licensor – Licensed Material.** Every recipient of the Licensed Material automatically
-    receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this
-    Public License.
-
-    B. **No downstream restrictions.** You may not offer or impose any additional or different terms or conditions
-    on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of
-    the Licensed Rights by any recipient of the Licensed Material.
-
-6.  **No endorsement.** Nothing in this Public License constitutes or may be construed as permission to assert or
-    imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or
-    granted official status by, the Licensor or others designated to receive attribution as provided in Section
-    3(a)(1)(A)(i).
-
-b. **_Other rights._**
-
-1.  Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity,
-    privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or
-    agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to
-    exercise the Licensed Rights, but not otherwise.
-
-2.  Patent and trademark rights are not licensed under this Public License.
-
-3.  To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the
-    Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or
-    compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such
-    royalties.
-
-### Section 3 – License Conditions.
-
-Your exercise of the Licensed Rights is expressly made subject to the following conditions.
-
-a. **_Attribution._**
-
-1.  If You Share the Licensed Material (including in modified form), You must:
-
-    A. retain the following if it is supplied by the Licensor with the Licensed Material:
-
-    i. identification of the creator(s) of the Licensed Material and any others designated to receive attribution,
-    in any reasonable manner requested by the Licensor (including by pseudonym if designated);
-
-    ii. a copyright notice;
-
-    iii. a notice that refers to this Public License;
-
-    iv. a notice that refers to the disclaimer of warranties;
-
-    v. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
-
-    B. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
-
-    C. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or
-    hyperlink to, this Public License.
-
-2.  You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and
-    context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions
-    by providing a URI or hyperlink to a resource that includes the required information.
-
-3.  If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the
-    extent reasonably practicable.
-
-4.  If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the
-    Adapted Material from complying with this Public License.
-
-### Section 4 – Sui Generis Database Rights.
-
-Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
-
-a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or
-a substantial portion of the contents of the database;
-
-b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis
-Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents)
-is Adapted Material; and
-
-c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of
-the database.
-
-For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public
-License where the Licensed Rights include other Copyright and Similar Rights.
-
-### Section 5 – Disclaimer of Warranties and Limitation of Liability.
-
-a. **Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the
-Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the
-Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of
-title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects,
-accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of
-warranties are not allowed in full or in part, this disclaimer may not apply to You.**
-
-b. **To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without
-limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive,
-exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed
-Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages.
-Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.**
-
-c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that,
-to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
-
-### Section 6 – Term and Termination.
-
-a. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail
-to comply with this Public License, then Your rights under this Public License terminate automatically.
-
-b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
-
-1.  automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of
-    the violation; or
-
-2.  upon express reinstatement by the Licensor.
-
-For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for
-Your violations of this Public License.
-
-c. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions
-or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
-
-d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
-
-### Section 7 – Other Terms and Conditions.
-
-a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless
-expressly agreed.
-
-b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate
-from and independent of the terms and conditions of this Public License.
-
-### Section 8 – Interpretation.
-
-a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit,
-restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission
-under this Public License.
-
-b. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be
-automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed,
-it shall be severed from this Public License without affecting the enforceability of the remaining terms and
-conditions.
-
-c. No term or condition of this Public License will be waived and no failure to comply consented to unless
-expressly agreed to by the Licensor.
-
-d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any
-privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction
-or authority.
-
-> Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one
-> of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except
-> for the limited purpose of indicating that material is shared under a Creative Commons public license or as
-> otherwise permitted by the Creative Commons policies published at
-> [creativecommons.org/policies](https://creativecommons.org/policies), Creative Commons does not authorize the use
-> of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written
-> consent including, without limitation, in connection with any unauthorized modifications to any of its public
-> licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the
-> avoidance of doubt, this paragraph does not form part of the public licenses.
->
-> Creative Commons may be contacted at creativecommons.org
+# EMOJI CHEAT SHEET
+
+[Назад к README.md](https://github.com/GnuriaN/format-README.md/blob/master/README.md)
+
+##  People
+|		|		|		|
+|	-	|	-	|	-	|
+|	:bowtie:    `:bowtie:`	|	:rage:    `:rage:`	|	:ok_hand:    `:ok_hand:`	|
+|	:smile:    `:smile:`	|	:triumph:    `:triumph:`	|	:punch:    `:punch:`	|
+|	:laughing:    `:laughing:`	|	:sleepy:    `:sleepy:`	|	:facepunch:    `:facepunch:`	|
+|	:blush:    `:blush:`	|	:yum:    `:yum:`	|	:fist:    `:fist:`	|
+|	:smiley:    `:smiley:`	|	:mask:    `:mask:`	|	:v:    `:v:`	|
+|	:relaxed:    `:relaxed:`	|	:sunglasses:    `:sunglasses:`	|	:wave:    `:wave:`	|
+|	:smirk:    `:smirk:`	|	:dizzy_face:    `:dizzy_face:`	|	:hand:    `:hand:`	|
+|	:heart_eyes:    `:heart_eyes:`	|	:imp:    `:imp:`	|	:raised_hand:    `:raised_hand:`	|
+|	:kissing_heart:    `:kissing_heart:`	|	:smiling_imp:    `:smiling_imp:`	|	:open_hands:    `:open_hands:`	|
+|	:kissing_closed_eyes:    `:kissing_closed_eyes:`	|	:neutral_face:    `:neutral_face:`	|	:point_up:    `:point_up:`	|
+|	:flushed:    `:flushed:`	|	:no_mouth:    `:no_mouth:`	|	:point_down:    `:point_down:`	|
+|	:relieved:    `:relieved:`	|	:innocent:    `:innocent:`	|	:point_left:    `:point_left:`	|
+|	:satisfied:    `:satisfied:`	|	:alien:    `:alien:`	|	:point_right:    `:point_right:`	|
+|	:grin:    `:grin:`	|	:yellow_heart:    `:yellow_heart:`	|	:raised_hands:    `:raised_hands:`	|
+|	:wink:    `:wink:`	|	:blue_heart:    `:blue_heart:`	|	:pray:    `:pray:`	|
+|	:stuck_out_tongue_winking_eye:    `:stuck_out_tongue_winking_eye:`	|	:purple_heart:    `:purple_heart:`	|	:point_up_2:    `:point_up_2:`	|
+|	:stuck_out_tongue_closed_eyes:    `:stuck_out_tongue_closed_eyes:`	|	:heart:    `:heart:`	|	:clap:    `:clap:`	|
+|	:grinning:    `:grinning:`	|	:green_heart:    `:green_heart:`	|	:muscle:    `:muscle:`	|
+|	:kissing:    `:kissing:`	|	:broken_heart:    `:broken_heart:`	|	:metal:    `:metal:`	|
+|	:kissing_smiling_eyes:    `:kissing_smiling_eyes:`	|	:heartbeat:    `:heartbeat:`	|	:fu:    `:fu:`	|
+|	:stuck_out_tongue:    `:stuck_out_tongue:`	|	:heartpulse:    `:heartpulse:`	|	:runner:    `:runner:`	|
+|	:sleeping:    `:sleeping:`	|	:two_hearts:    `:two_hearts:`	|	:running:    `:running:`	|
+|	:worried:    `:worried:`	|	:revolving_hearts:    `:revolving_hearts:`	|	:couple:    `:couple:`	|
+|	:frowning:    `:frowning:`	|	:cupid:    `:cupid:`	|	:family:    `:family:`	|
+|	:anguished:    `:anguished:`	|	:sparkling_heart:    `:sparkling_heart:`	|	:two_men_holding_hands:    `:two_men_holding_hands:`	|
+|	:open_mouth:    `:open_mouth:`	|	:sparkles:    `:sparkles:`	|	:two_women_holding_hands:    `:two_women_holding_hands:`	|
+|	:grimacing:    `:grimacing:`	|	:star:    `:star:`	|	:dancer:    `:dancer:`	|
+|	:confused:    `:confused:`	|	:star2:    `:star2:`	|	:dancers:    `:dancers:`	|
+|	:hushed:    `:hushed:`	|	:dizzy:    `:dizzy:`	|	:ok_woman:    `:ok_woman:`	|
+|	:expressionless:    `:expressionless:`	|	:boom:    `:boom:`	|	:no_good:    `:no_good:`	|
+|	:unamused:    `:unamused:`	|	:collision:    `:collision:`	|	:information_desk_person:    `:information_desk_person:`	|
+|	:sweat_smile:    `:sweat_smile:`	|	:anger:    `:anger:`	|	:raising_hand:    `:raising_hand:`	|
+|	:sweat:    `:sweat:`	|	:exclamation:    `:exclamation:`	|	:bride_with_veil:    `:bride_with_veil:`	|
+|	:disappointed_relieved:    `:disappointed_relieved:`	|	:question:    `:question:`	|	:person_with_pouting_face:    `:person_with_pouting_face:`	|
+|	:weary:    `:weary:`	|	:grey_exclamation:    `:grey_exclamation:`	|	:person_frowning:    `:person_frowning:`	|
+|	:pensive:    `:pensive:`	|	:grey_question:    `:grey_question:`	|	:bow:    `:bow:`	|
+|	:disappointed:    `:disappointed:`	|	:zzz:    `:zzz:`	|	:couple_with_heart:    `:couple_with_heart:`	|
+|	:confounded:    `:confounded:`	|	:dash:    `:dash:`	|	:massage:    `:massage:`	|
+|	:fearful:    `:fearful:`	|	:sweat_drops:    `:sweat_drops:`	|	:haircut:    `:haircut:`	|
+|	:cold_sweat:    `:cold_sweat:`	|	:notes:    `:notes:`	|	:nail_care:    `:nail_care:`	|
+|	:persevere:    `:persevere:`	|	:musical_note:    `:musical_note:`	|	:boy:    `:boy:`	|
+|	:cry:    `:cry:`	|	:fire:    `:fire:`	|	:girl:    `:girl:`	|
+|	:sob:    `:sob:`	|	:hankey:    `:hankey:`	|	:woman:    `:woman:`	|
+|	:joy:    `:joy:`	|	:poop:    `:poop:`	|	:man:    `:man:`	|
+|	:astonished:    `:astonished:`	|	:shit:    `:shit:`	|	:baby:    `:baby:`	|
+|	:scream:    `:scream:`	|	:+1:    `:+1:`	|	:older_woman:    `:older_woman:`	|
+|	:neckbeard:    `:neckbeard:`	|	:thumbsup:    `:thumbsup:`	|	:older_man:    `:older_man:`	|
+|	:tired_face:    `:tired_face:`	|	:-1:    `:-1:`	|	:person_with_blond_hair:    `:person_with_blond_hair:`	|
+|	:angry:    `:angry:`	|	:thumbsdown:    `:thumbsdown:`	|	:feelsgood:    `:feelsgood:`	|
+|	:man_with_gua_pi_mao:    `:man_with_gua_pi_mao:`	|	:hear_no_evil:    `:hear_no_evil:`	|	:finnadie:    `:finnadie:`	|
+|	:man_with_turban:    `:man_with_turban:`	|	:speak_no_evil:    `:speak_no_evil:`	|	:goberserk:    `:goberserk:`	|
+|	:construction_worker:    `:construction_worker:`	|	:guardsman:    `:guardsman:`	|	:godmode:    `:godmode:`	|
+|	:cop:    `:cop:`	|	:skull:    `:skull:`	|	:hurtrealbad:    `:hurtrealbad:`	|
+|	:angel:    `:angel:`	|	:feet:    `:feet:`	|	:rage1:    `:rage1:`	|
+|	:princess:    `:princess:`	|	:lips:    `:lips:`	|	:rage2:    `:rage2:`	|
+|	:smiley_cat:    `:smiley_cat:`	|	:kiss:    `:kiss:`	|	:rage3:    `:rage3:`	|
+|	:smile_cat:    `:smile_cat:`	|	:droplet:    `:droplet:`	|	:rage4:    `:rage4:`	|
+|	:heart_eyes_cat:    `:heart_eyes_cat:`	|	:ear:    `:ear:`	|	:suspect:    `:suspect:`	|
+|	:kissing_cat:    `:kissing_cat:`	|	:eyes:    `:eyes:`	|	:trollface:    `:trollface:`	|
+|	:smirk_cat:    `:smirk_cat:`	|	:nose:    `:nose:`	|	:joy_cat:    `:joy_cat:`	|
+|	:scream_cat:    `:scream_cat:`	|	:tongue:    `:tongue:`	|	:pouting_cat:    `:pouting_cat:`	|
+|	:crying_cat_face:    `:crying_cat_face:`	|	:love_letter:    `:love_letter:`	|	:japanese_ogre:    `:japanese_ogre:`	|
+|	:thought_balloon:    `:thought_balloon:`	|	:bust_in_silhouette:    `:bust_in_silhouette:`	|	:japanese_goblin:    `:japanese_goblin:`	|
+|	:see_no_evil:    `:see_no_evil:`	|	:busts_in_silhouette:    `:busts_in_silhouette:`	|	:speech_balloon:    `:speech_balloon:`	|
+
+
+## Nature
+|		|		|		|
+|	-	|	-	|	-	|
+|	:sunny:    `:sunny:`	|	:bug:    `:bug:`	|	:maple_leaf:    `:maple_leaf:`	|
+|	:umbrella:    `:umbrella:`	|	:honeybee:    `:honeybee:`	|	:leaves:    `:leaves:`	|
+|	:cloud:    `:cloud:`	|	:ant:    `:ant:`	|	:fallen_leaf:    `:fallen_leaf:`	|
+|	:snowflake:    `:snowflake:`	|	:beetle:    `:beetle:`	|	:herb:    `:herb:`	|
+|	:snowman:    `:snowman:`	|	:snail:    `:snail:`	|	:mushroom:    `:mushroom:`	|
+|	:zap:    `:zap:`	|	:octopus:    `:octopus:`	|	:cactus:    `:cactus:`	|
+|	:cyclone:    `:cyclone:`	|	:tropical_fish:    `:tropical_fish:`	|	:palm_tree:    `:palm_tree:`	|
+|	:foggy:    `:foggy:`	|	:fish:    `:fish:`	|	:evergreen_tree:    `:evergreen_tree:`	|
+|	:ocean:    `:ocean:`	|	:whale:    `:whale:`	|	:deciduous_tree:    `:deciduous_tree:`	|
+|	:cat:    `:cat:`	|	:whale2:    `:whale2:`	|	:chestnut:    `:chestnut:`	|
+|	:dog:    `:dog:`	|	:dolphin:    `:dolphin:`	|	:seedling:    `:seedling:`	|
+|	:mouse:    `:mouse:`	|	:cow2:    `:cow2:`	|	:blossom:    `:blossom:`	|
+|	:hamster:    `:hamster:`	|	:ram:    `:ram:`	|	:ear_of_rice:    `:ear_of_rice:`	|
+|	:rabbit:    `:rabbit:`	|	:rat:    `:rat:`	|	:shell:    `:shell:`	|
+|	:wolf:    `:wolf:`	|	:water_buffalo:    `:water_buffalo:`	|	:globe_with_meridians:    `:globe_with_meridians:`	|
+|	:frog:    `:frog:`	|	:tiger2:    `:tiger2:`	|	:sun_with_face:    `:sun_with_face:`	|
+|	:tiger:    `:tiger:`	|	:rabbit2:    `:rabbit2:`	|	:full_moon_with_face:    `:full_moon_with_face:`	|
+|	:koala:    `:koala:`	|	:dragon:    `:dragon:`	|	:new_moon_with_face:    `:new_moon_with_face:`	|
+|	:bear:    `:bear:`	|	:goat:    `:goat:`	|	:new_moon:    `:new_moon:`	|
+|	:pig:    `:pig:`	|	:rooster:    `:rooster:`	|	:waxing_crescent_moon:    `:waxing_crescent_moon:`	|
+|	:pig_nose:    `:pig_nose:`	|	:dog2:    `:dog2:`	|	:first_quarter_moon:    `:first_quarter_moon:`	|
+|	:cow:    `:cow:`	|	:pig2:    `:pig2:`	|	:waxing_gibbous_moon:    `:waxing_gibbous_moon:`	|
+|	:boar:    `:boar:`	|	:mouse2:    `:mouse2:`	|	:full_moon:    `:full_moon:`	|
+|	:monkey_face:    `:monkey_face:`	|	:ox:    `:ox:`	|	:waning_gibbous_moon:    `:waning_gibbous_moon:`	|
+|	:monkey:    `:monkey:`	|	:dragon_face:    `:dragon_face:`	|	:last_quarter_moon:    `:last_quarter_moon:`	|
+|	:horse:    `:horse:`	|	:blowfish:    `:blowfish:`	|	:waning_crescent_moon:    `:waning_crescent_moon:`	|
+|	:racehorse:    `:racehorse:`	|	:crocodile:    `:crocodile:`	|	:last_quarter_moon_with_face:    `:last_quarter_moon_with_face:`	|
+|	:camel:    `:camel:`	|	:dromedary_camel:    `:dromedary_camel:`	|	:first_quarter_moon_with_face:    `:first_quarter_moon_with_face:`	|
+|	:sheep:    `:sheep:`	|	:leopard:    `:leopard:`	|	:crescent_moon:    `:crescent_moon:`	|
+|	:elephant:    `:elephant:`	|	:cat2:    `:cat2:`	|	:earth_africa:    `:earth_africa:`	|
+|	:panda_face:    `:panda_face:`	|	:poodle:    `:poodle:`	|	:earth_americas:    `:earth_americas:`	|
+|	:snake:    `:snake:`	|	:paw_prints:    `:paw_prints:`	|	:earth_asia:    `:earth_asia:`	|
+|	:bird:    `:bird:`	|	:bouquet:    `:bouquet:`	|	:volcano:    `:volcano:`	|
+|	:baby_chick:    `:baby_chick:`	|	:cherry_blossom:    `:cherry_blossom:`	|	:milky_way:    `:milky_way:`	|
+|	:hatched_chick:    `:hatched_chick:`	|	:tulip:    `:tulip:`	|	:partly_sunny:    `:partly_sunny:`	|
+|	:hatching_chick:    `:hatching_chick:`	|	:four_leaf_clover:    `:four_leaf_clover:`	|	:octocat:    `:octocat:`	|
+|	:chicken:    `:chicken:`	|	:rose:    `:rose:`	|	:squirrel:    `:squirrel:`	|
+|	:penguin:    `:penguin:`	|	:sunflower:    `:sunflower:`	|		|
+|	:turtle:    `:turtle:`	|	:hibiscus:    `:hibiscus:`	|		|
+
+## Objects
+|		|		|		|
+|	-	|	-	|	-	|
+|	:bamboo:    `:bamboo:`	|	:postal_horn:    `:postal_horn:`	|	:guitar:    `:guitar:`	|
+|	:gift_heart:    `:gift_heart:`	|	:mailbox_closed:    `:mailbox_closed:`	|	:shoe:    `:shoe:`	|
+|	:dolls:    `:dolls:`	|	:mailbox_with_mail:    `:mailbox_with_mail:`	|	:sandal:    `:sandal:`	|
+|	:school_satchel:    `:school_satchel:`	|	:mailbox_with_no_mail:    `:mailbox_with_no_mail:`	|	:high_heel:    `:high_heel:`	|
+|	:mortar_board:    `:mortar_board:`	|	:package:    `:package:`	|	:lipstick:    `:lipstick:`	|
+|	:flags:    `:flags:`	|	:door:    `:door:`	|	:boot:    `:boot:`	|
+|	:fireworks:    `:fireworks:`	|	:smoking:    `:smoking:`	|	:shirt:    `:shirt:`	|
+|	:sparkler:    `:sparkler:`	|	:bomb:    `:bomb:`	|	:tshirt:    `:tshirt:`	|
+|	:wind_chime:    `:wind_chime:`	|	:gun:    `:gun:`	|	:necktie:    `:necktie:`	|
+|	:rice_scene:    `:rice_scene:`	|	:hocho:    `:hocho:`	|	:womans_clothes:    `:womans_clothes:`	|
+|	:jack_o_lantern:    `:jack_o_lantern:`	|	:pill:    `:pill:`	|	:dress:    `:dress:`	|
+|	:ghost:    `:ghost:`	|	:syringe:    `:syringe:`	|	:running_shirt_with_sash:    `:running_shirt_with_sash:`	|
+|	:santa:    `:santa:`	|	:page_facing_up:    `:page_facing_up:`	|	:jeans:    `:jeans:`	|
+|	:christmas_tree:    `:christmas_tree:`	|	:page_with_curl:    `:page_with_curl:`	|	:kimono:    `:kimono:`	|
+|	:gift:    `:gift:`	|	:bookmark_tabs:    `:bookmark_tabs:`	|	:bikini:    `:bikini:`	|
+|	:bell:    `:bell:`	|	:bar_chart:    `:bar_chart:`	|	:ribbon:    `:ribbon:`	|
+|	:no_bell:    `:no_bell:`	|	:chart_with_upwards_trend:    `:chart_with_upwards_trend:`	|	:tophat:    `:tophat:`	|
+|	:tanabata_tree:    `:tanabata_tree:`	|	:chart_with_downwards_trend:    `:chart_with_downwards_trend:`	|	:crown:    `:crown:`	|
+|	:tada:    `:tada:`	|	:scroll:    `:scroll:`	|	:womans_hat:    `:womans_hat:`	|
+|	:confetti_ball:    `:confetti_ball:`	|	:clipboard:    `:clipboard:`	|	:mans_shoe:    `:mans_shoe:`	|
+|	:balloon:    `:balloon:`	|	:calendar:    `:calendar:`	|	:closed_umbrella:    `:closed_umbrella:`	|
+|	:crystal_ball:    `:crystal_ball:`	|	:date:    `:date:`	|	:briefcase:    `:briefcase:`	|
+|	:cd:    `:cd:`	|	:card_index:    `:card_index:`	|	:handbag:    `:handbag:`	|
+|	:dvd:    `:dvd:`	|	:file_folder:    `:file_folder:`	|	:pouch:    `:pouch:`	|
+|	:floppy_disk:    `:floppy_disk:`	|	:open_file_folder:    `:open_file_folder:`	|	:purse:    `:purse:`	|
+|	:camera:    `:camera:`	|	:scissors:    `:scissors:`	|	:eyeglasses:    `:eyeglasses:`	|
+|	:video_camera:    `:video_camera:`	|	:pushpin:    `:pushpin:`	|	:fishing_pole_and_fish:    `:fishing_pole_and_fish:`	|
+|	:movie_camera:    `:movie_camera:`	|	:paperclip:    `:paperclip:`	|	:coffee:    `:coffee:`	|
+|	:computer:    `:computer:`	|	:black_nib:    `:black_nib:`	|	:tea:    `:tea:`	|
+|	:tv:    `:tv:`	|	:pencil2:    `:pencil2:`	|	:sake:    `:sake:`	|
+|	:iphone:    `:iphone:`	|	:straight_ruler:    `:straight_ruler:`	|	:baby_bottle:    `:baby_bottle:`	|
+|	:phone:    `:phone:`	|	:triangular_ruler:    `:triangular_ruler:`	|	:beer:    `:beer:`	|
+|	:telephone:    `:telephone:`	|	:closed_book:    `:closed_book:`	|	:beers:    `:beers:`	|
+|	:telephone_receiver:    `:telephone_receiver:`	|	:green_book:    `:green_book:`	|	:cocktail:    `:cocktail:`	|
+|	:pager:    `:pager:`	|	:blue_book:    `:blue_book:`	|	:tropical_drink:    `:tropical_drink:`	|
+|	:fax:    `:fax:`	|	:orange_book:    `:orange_book:`	|	:wine_glass:    `:wine_glass:`	|
+|	:minidisc:    `:minidisc:`	|	:notebook:    `:notebook:`	|	:fork_and_knife:    `:fork_and_knife:`	|
+|	:vhs:    `:vhs:`	|	:notebook_with_decorative_cover:    `:notebook_with_decorative_cover:`	|	:pizza:    `:pizza:`	|
+|	:sound:    `:sound:`	|	:ledger:    `:ledger:`	|	:hamburger:    `:hamburger:`	|
+|	:speaker:    `:speaker:`	|	:books:    `:books:`	|	:fries:    `:fries:`	|
+|	:mute:    `:mute:`	|	:bookmark:    `:bookmark:`	|	:poultry_leg:    `:poultry_leg:`	|
+|	:loudspeaker:    `:loudspeaker:`	|	:name_badge:    `:name_badge:`	|	:meat_on_bone:    `:meat_on_bone:`	|
+|	:mega:    `:mega:`	|	:microscope:    `:microscope:`	|	:spaghetti:    `:spaghetti:`	|
+|	:hourglass:    `:hourglass:`	|	:telescope:    `:telescope:`	|	:curry:    `:curry:`	|
+|	:hourglass_flowing_sand:    `:hourglass_flowing_sand:`	|	:newspaper:    `:newspaper:`	|	:fried_shrimp:    `:fried_shrimp:`	|
+|	:alarm_clock:    `:alarm_clock:`	|	:football:    `:football:`	|	:bento:    `:bento:`	|
+|	:watch:    `:watch:`	|	:basketball:    `:basketball:`	|	:sushi:    `:sushi:`	|
+|	:radio:    `:radio:`	|	:soccer:    `:soccer:`	|	:fish_cake:    `:fish_cake:`	|
+|	:satellite:    `:satellite:`	|	:baseball:    `:baseball:`	|	:rice_ball:    `:rice_ball:`	|
+|	:loop:    `:loop:`	|	:tennis:    `:tennis:`	|	:rice_cracker:    `:rice_cracker:`	|
+|	:mag:    `:mag:`	|	:8ball:    `:8ball:`	|	:rice:    `:rice:`	|
+|	:mag_right:    `:mag_right:`	|	:rugby_football:    `:rugby_football:`	|	:ramen:    `:ramen:`	|
+|	:unlock:    `:unlock:`	|	:bowling:    `:bowling:`	|	:stew:    `:stew:`	|
+|	:lock:    `:lock:`	|	:golf:    `:golf:`	|	:oden:    `:oden:`	|
+|	:lock_with_ink_pen:    `:lock_with_ink_pen:`	|	:mountain_bicyclist:    `:mountain_bicyclist:`	|	:dango:    `:dango:`	|
+|	:closed_lock_with_key:    `:closed_lock_with_key:`	|	:bicyclist:    `:bicyclist:`	|	:egg:    `:egg:`	|
+|	:key:    `:key:`	|	:horse_racing:    `:horse_racing:`	|	:bread:    `:bread:`	|
+|	:bulb:    `:bulb:`	|	:snowboarder:    `:snowboarder:`	|	:doughnut:    `:doughnut:`	|
+|	:flashlight:    `:flashlight:`	|	:swimmer:    `:swimmer:`	|	:custard:    `:custard:`	|
+|	:high_brightness:    `:high_brightness:`	|	:surfer:    `:surfer:`	|	:icecream:    `:icecream:`	|
+|	:low_brightness:    `:low_brightness:`	|	:ski:    `:ski:`	|	:ice_cream:    `:ice_cream:`	|
+|	:electric_plug:    `:electric_plug:`	|	:spades:    `:spades:`	|	:shaved_ice:    `:shaved_ice:`	|
+|	:battery:    `:battery:`	|	:hearts:    `:hearts:`	|	:birthday:    `:birthday:`	|
+|	:calling:    `:calling:`	|	:clubs:    `:clubs:`	|	:cake:    `:cake:`	|
+|	:email:    `:email:`	|	:diamonds:    `:diamonds:`	|	:cookie:    `:cookie:`	|
+|	:mailbox:    `:mailbox:`	|	:gem:    `:gem:`	|	:chocolate_bar:    `:chocolate_bar:`	|
+|	:postbox:    `:postbox:`	|	:ring:    `:ring:`	|	:candy:    `:candy:`	|
+|	:bath:    `:bath:`	|	:trophy:    `:trophy:`	|	:lollipop:    `:lollipop:`	|
+|	:bathtub:    `:bathtub:`	|	:musical_score:    `:musical_score:`	|	:honey_pot:    `:honey_pot:`	|
+|	:shower:    `:shower:`	|	:musical_keyboard:    `:musical_keyboard:`	|	:apple:    `:apple:`	|
+|	:toilet:    `:toilet:`	|	:violin:    `:violin:`	|	:green_apple:    `:green_apple:`	|
+|	:wrench:    `:wrench:`	|	:space_invader:    `:space_invader:`	|	:tangerine:    `:tangerine:`	|
+|	:nut_and_bolt:    `:nut_and_bolt:`	|	:video_game:    `:video_game:`	|	:lemon:    `:lemon:`	|
+|	:hammer:    `:hammer:`	|	:black_joker:    `:black_joker:`	|	:cherries:    `:cherries:`	|
+|	:seat:    `:seat:`	|	:flower_playing_cards:    `:flower_playing_cards:`	|	:grapes:    `:grapes:`	|
+|	:moneybag:    `:moneybag:`	|	:game_die:    `:game_die:`	|	:watermelon:    `:watermelon:`	|
+|	:yen:    `:yen:`	|	:dart:    `:dart:`	|	:strawberry:    `:strawberry:`	|
+|	:dollar:    `:dollar:`	|	:mahjong:    `:mahjong:`	|	:peach:    `:peach:`	|
+|	:pound:    `:pound:`	|	:clapper:    `:clapper:`	|	:melon:    `:melon:`	|
+|	:euro:    `:euro:`	|	:memo:    `:memo:`	|	:banana:    `:banana:`	|
+|	:credit_card:    `:credit_card:`	|	:pencil:    `:pencil:`	|	:pear:    `:pear:`	|
+|	:money_with_wings:    `:money_with_wings:`	|	:book:    `:book:`	|	:pineapple:    `:pineapple:`	|
+|	:e-mail:    `:e-mail:`	|	:art:    `:art:`	|	:sweet_potato:    `:sweet_potato:`	|
+|	:inbox_tray:    `:inbox_tray:`	|	:microphone:    `:microphone:`	|	:eggplant:    `:eggplant:`	|
+|	:outbox_tray:    `:outbox_tray:`	|	:headphones:    `:headphones:`	|	:tomato:    `:tomato:`	|
+|	:envelope:    `:envelope:`	|	:trumpet:    `:trumpet:`	|	:corn:    `:corn:`	|
+|	:incoming_envelope:    `:incoming_envelope:`	|	:saxophone:    `:saxophone:`	|		|
+
+
+## Places
+|		|		|		|
+|	-	|	-	|	-	|
+|	:house:    `:house:`	|	:sailboat:    `:sailboat:`	|	:monorail:    `:monorail:`	|
+|	:house_with_garden:    `:house_with_garden:`	|	:rowboat:    `:rowboat:`	|	:railway_car:    `:railway_car:`	|
+|	:school:    `:school:`	|	:anchor:    `:anchor:`	|	:trolleybus:    `:trolleybus:`	|
+|	:office:    `:office:`	|	:rocket:    `:rocket:`	|	:ticket:    `:ticket:`	|
+|	:post_office:    `:post_office:`	|	:airplane:    `:airplane:`	|	:fuelpump:    `:fuelpump:`	|
+|	:hospital:    `:hospital:`	|	:helicopter:    `:helicopter:`	|	:vertical_traffic_light:    `:vertical_traffic_light:`	|
+|	:bank:    `:bank:`	|	:steam_locomotive:    `:steam_locomotive:`	|	:traffic_light:    `:traffic_light:`	|
+|	:convenience_store:    `:convenience_store:`	|	:tram:    `:tram:`	|	:warning:    `:warning:`	|
+|	:love_hotel:    `:love_hotel:`	|	:mountain_railway:    `:mountain_railway:`	|	:construction:    `:construction:`	|
+|	:hotel:    `:hotel:`	|	:bike:    `:bike:`	|	:beginner:    `:beginner:`	|
+|	:wedding:    `:wedding:`	|	:aerial_tramway:    `:aerial_tramway:`	|	:atm:    `:atm:`	|
+|	:church:    `:church:`	|	:suspension_railway:    `:suspension_railway:`	|	:slot_machine:    `:slot_machine:`	|
+|	:department_store:    `:department_store:`	|	:mountain_cableway:    `:mountain_cableway:`	|	:busstop:    `:busstop:`	|
+|	:european_post_office:    `:european_post_office:`	|	:tractor:    `:tractor:`	|	:barber:    `:barber:`	|
+|	:city_sunrise:    `:city_sunrise:`	|	:blue_car:    `:blue_car:`	|	:hotsprings:    `:hotsprings:`	|
+|	:city_sunset:    `:city_sunset:`	|	:oncoming_automobile:    `:oncoming_automobile:`	|	:checkered_flag:    `:checkered_flag:`	|
+|	:japanese_castle:    `:japanese_castle:`	|	:car:    `:car:`	|	:crossed_flags:    `:crossed_flags:`	|
+|	:european_castle:    `:european_castle:`	|	:red_car:    `:red_car:`	|	:izakaya_lantern:    `:izakaya_lantern:`	|
+|	:tent:    `:tent:`	|	:taxi:    `:taxi:`	|	:moyai:    `:moyai:`	|
+|	:factory:    `:factory:`	|	:oncoming_taxi:    `:oncoming_taxi:`	|	:circus_tent:    `:circus_tent:`	|
+|	:tokyo_tower:    `:tokyo_tower:`	|	:articulated_lorry:    `:articulated_lorry:`	|	:performing_arts:    `:performing_arts:`	|
+|	:japan:    `:japan:`	|	:bus:    `:bus:`	|	:round_pushpin:    `:round_pushpin:`	|
+|	:mount_fuji:    `:mount_fuji:`	|	:oncoming_bus:    `:oncoming_bus:`	|	:triangular_flag_on_post:    `:triangular_flag_on_post:`	|
+|	:sunrise_over_mountains:    `:sunrise_over_mountains:`	|	:rotating_light:    `:rotating_light:`	|	:jp:    `:jp:`	|
+|	:sunrise:    `:sunrise:`	|	:police_car:    `:police_car:`	|	:kr:    `:kr:`	|
+|	:stars:    `:stars:`	|	:oncoming_police_car:    `:oncoming_police_car:`	|	:cn:    `:cn:`	|
+|	:statue_of_liberty:    `:statue_of_liberty:`	|	:fire_engine:    `:fire_engine:`	|	:us:    `:us:`	|
+|	:bridge_at_night:    `:bridge_at_night:`	|	:ambulance:    `:ambulance:`	|	:fr:    `:fr:`	|
+|	:carousel_horse:    `:carousel_horse:`	|	:minibus:    `:minibus:`	|	:es:    `:es:`	|
+|	:rainbow:    `:rainbow:`	|	:truck:    `:truck:`	|	:it:    `:it:`	|
+|	:ferris_wheel:    `:ferris_wheel:`	|	:train:    `:train:`	|	:ru:    `:ru:`	|
+|	:fountain:    `:fountain:`	|	:station:    `:station:`	|	:gb:    `:gb:`	|
+|	:roller_coaster:    `:roller_coaster:`	|	:train2:    `:train2:`	|	:uk:    `:uk:`	|
+|	:ship:    `:ship:`	|	:bullettrain_front:    `:bullettrain_front:`	|	:de:    `:de:`	|
+|	:speedboat:    `:speedboat:`	|	:bullettrain_side:    `:bullettrain_side:`	|		|
+|	:boat:    `:boat:`	|	:light_rail:    `:light_rail:`	|		|
+
+
+
+## Symbols
+|		|		|		|
+|	-	|	-	|	-	|
+|	:one:    `:one:`	|	:mens:    `:mens:`	|	:clock1030:    `:clock1030:`	|
+|	:two:    `:two:`	|	:womens:    `:womens:`	|	:clock11:    `:clock11:`	|
+|	:three:    `:three:`	|	:baby_symbol:    `:baby_symbol:`	|	:clock1130:    `:clock1130:`	|
+|	:four:    `:four:`	|	:no_smoking:    `:no_smoking:`	|	:clock12:    `:clock12:`	|
+|	:five:    `:five:`	|	:parking:    `:parking:`	|	:clock1230:    `:clock1230:`	|
+|	:six:    `:six:`	|	:wheelchair:    `:wheelchair:`	|	:clock2:    `:clock2:`	|
+|	:seven:    `:seven:`	|	:metro:    `:metro:`	|	:clock230:    `:clock230:`	|
+|	:eight:    `:eight:`	|	:baggage_claim:    `:baggage_claim:`	|	:clock3:    `:clock3:`	|
+|	:nine:    `:nine:`	|	:accept:    `:accept:`	|	:clock330:    `:clock330:`	|
+|	:keycap_ten:    `:keycap_ten:`	|	:wc:    `:wc:`	|	:clock4:    `:clock4:`	|
+|	:1234:    `:1234:`	|	:potable_water:    `:potable_water:`	|	:clock430:    `:clock430:`	|
+|	:zero:    `:zero:`	|	:put_litter_in_its_place:    `:put_litter_in_its_place:`	|	:clock5:    `:clock5:`	|
+|	:hash:    `:hash:`	|	:secret:    `:secret:`	|	:clock530:    `:clock530:`	|
+|	:symbols:    `:symbols:`	|	:congratulations:    `:congratulations:`	|	:clock6:    `:clock6:`	|
+|	:arrow_backward:    `:arrow_backward:`	|	:m:    `:m:`	|	:clock630:    `:clock630:`	|
+|	:arrow_down:    `:arrow_down:`	|	:passport_control:    `:passport_control:`	|	:clock7:    `:clock7:`	|
+|	:arrow_forward:    `:arrow_forward:`	|	:left_luggage:    `:left_luggage:`	|	:clock730:    `:clock730:`	|
+|	:arrow_left:    `:arrow_left:`	|	:customs:    `:customs:`	|	:clock8:    `:clock8:`	|
+|	:capital_abcd:    `:capital_abcd:`	|	:ideograph_advantage:    `:ideograph_advantage:`	|	:clock830:    `:clock830:`	|
+|	:abcd:    `:abcd:`	|	:cl:    `:cl:`	|	:clock9:    `:clock9:`	|
+|	:abc:    `:abc:`	|	:sos:    `:sos:`	|	:clock930:    `:clock930:`	|
+|	:arrow_lower_left:    `:arrow_lower_left:`	|	:id:    `:id:`	|	:heavy_dollar_sign:    `:heavy_dollar_sign:`	|
+|	:arrow_lower_right:    `:arrow_lower_right:`	|	:no_entry_sign:    `:no_entry_sign:`	|	:copyright:    `:copyright:`	|
+|	:arrow_right:    `:arrow_right:`	|	:underage:    `:underage:`	|	:registered:    `:registered:`	|
+|	:arrow_up:    `:arrow_up:`	|	:no_mobile_phones:    `:no_mobile_phones:`	|	:tm:    `:tm:`	|
+|	:arrow_upper_left:    `:arrow_upper_left:`	|	:do_not_litter:    `:do_not_litter:`	|	:x:    `:x:`	|
+|	:arrow_upper_right:    `:arrow_upper_right:`	|	:non-potable_water:    `:non-potable_water:`	|	:heavy_exclamation_mark:    `:heavy_exclamation_mark:`	|
+|	:arrow_double_down:    `:arrow_double_down:`	|	:no_bicycles:    `:no_bicycles:`	|	:bangbang:    `:bangbang:`	|
+|	:arrow_double_up:    `:arrow_double_up:`	|	:no_pedestrians:    `:no_pedestrians:`	|	:interrobang:    `:interrobang:`	|
+|	:arrow_down_small:    `:arrow_down_small:`	|	:children_crossing:    `:children_crossing:`	|	:o:    `:o:`	|
+|	:arrow_heading_down:    `:arrow_heading_down:`	|	:no_entry:    `:no_entry:`	|	:heavy_multiplication_x:    `:heavy_multiplication_x:`	|
+|	:arrow_heading_up:    `:arrow_heading_up:`	|	:eight_spoked_asterisk:    `:eight_spoked_asterisk:`	|	:heavy_plus_sign:    `:heavy_plus_sign:`	|
+|	:leftwards_arrow_with_hook:    `:leftwards_arrow_with_hook:`	|	:sparkle:    `:sparkle:`	|	:heavy_minus_sign:    `:heavy_minus_sign:`	|
+|	:arrow_right_hook:    `:arrow_right_hook:`	|	:eight_pointed_black_star:    `:eight_pointed_black_star:`	|	:heavy_division_sign:    `:heavy_division_sign:`	|
+|	:left_right_arrow:    `:left_right_arrow:`	|	:heart_decoration:    `:heart_decoration:`	|	:white_flower:    `:white_flower:`	|
+|	:arrow_up_down:    `:arrow_up_down:`	|	:vs:    `:vs:`	|	:100:    `:100:`	|
+|	:arrow_up_small:    `:arrow_up_small:`	|	:vibration_mode:    `:vibration_mode:`	|	:heavy_check_mark:    `:heavy_check_mark:`	|
+|	:arrows_clockwise:    `:arrows_clockwise:`	|	:mobile_phone_off:    `:mobile_phone_off:`	|	:ballot_box_with_check:    `:ballot_box_with_check:`	|
+|	:arrows_counterclockwise:    `:arrows_counterclockwise:`	|	:chart:    `:chart:`	|	:radio_button:    `:radio_button:`	|
+|	:rewind:    `:rewind:`	|	:currency_exchange:    `:currency_exchange:`	|	:link:    `:link:`	|
+|	:fast_forward:    `:fast_forward:`	|	:aries:    `:aries:`	|	:curly_loop:    `:curly_loop:`	|
+|	:information_source:    `:information_source:`	|	:taurus:    `:taurus:`	|	:wavy_dash:    `:wavy_dash:`	|
+|	:ok:    `:ok:`	|	:gemini:    `:gemini:`	|	:part_alternation_mark:    `:part_alternation_mark:`	|
+|	:twisted_rightwards_arrows:    `:twisted_rightwards_arrows:`	|	:cancer:    `:cancer:`	|	:trident:    `:trident:`	|
+|	:repeat:    `:repeat:`	|	:leo:    `:leo:`	|	:black_small_square:    `:black_small_square:`	|
+|	:repeat_one:    `:repeat_one:`	|	:virgo:    `:virgo:`	|	:white_small_square:    `:white_small_square:`	|
+|	:new:    `:new:`	|	:libra:    `:libra:`	|	:black_medium_small_square:    `:black_medium_small_square:`	|
+|	:top:    `:top:`	|	:scorpius:    `:scorpius:`	|	:white_medium_small_square:    `:white_medium_small_square:`	|
+|	:up:    `:up:`	|	:sagittarius:    `:sagittarius:`	|	:black_medium_square:    `:black_medium_square:`	|
+|	:cool:    `:cool:`	|	:capricorn:    `:capricorn:`	|	:white_medium_square:    `:white_medium_square:`	|
+|	:free:    `:free:`	|	:aquarius:    `:aquarius:`	|	:black_large_square:    `:black_large_square:`	|
+|	:ng:    `:ng:`	|	:pisces:    `:pisces:`	|	:white_large_square:    `:white_large_square:`	|
+|	:cinema:    `:cinema:`	|	:ophiuchus:    `:ophiuchus:`	|	:white_check_mark:    `:white_check_mark:`	|
+|	:koko:    `:koko:`	|	:six_pointed_star:    `:six_pointed_star:`	|	:black_square_button:    `:black_square_button:`	|
+|	:signal_strength:    `:signal_strength:`	|	:negative_squared_cross_mark:    `:negative_squared_cross_mark:`	|	:white_square_button:    `:white_square_button:`	|
+|	:u5272:    `:u5272:`	|	:a:    `:a:`	|	:black_circle:    `:black_circle:`	|
+|	:u5408:    `:u5408:`	|	:b:    `:b:`	|	:white_circle:    `:white_circle:`	|
+|	:u55b6:    `:u55b6:`	|	:ab:    `:ab:`	|	:red_circle:    `:red_circle:`	|
+|	:u6307:    `:u6307:`	|	:o2:    `:o2:`	|	:large_blue_circle:    `:large_blue_circle:`	|
+|	:u6708:    `:u6708:`	|	:diamond_shape_with_a_dot_inside:    `:diamond_shape_with_a_dot_inside:`	|	:large_blue_diamond:    `:large_blue_diamond:`	|
+|	:u6709:    `:u6709:`	|	:recycle:    `:recycle:`	|	:large_orange_diamond:    `:large_orange_diamond:`	|
+|	:u6e80:    `:u6e80:`	|	:end:    `:end:`	|	:small_blue_diamond:    `:small_blue_diamond:`	|
+|	:u7121:    `:u7121:`	|	:back:    `:back:`	|	:small_orange_diamond:    `:small_orange_diamond:`	|
+|	:u7533:    `:u7533:`	|	:on:    `:on:`	|	:small_red_triangle:    `:small_red_triangle:`	|
+|	:u7a7a:    `:u7a7a:`	|	:soon:    `:soon:`	|	:small_red_triangle_down:    `:small_red_triangle_down:`	|
+|	:u7981:    `:u7981:`	|	:clock1:    `:clock1:`	|	:shipit:    `:shipit:`	|
+|	:sa:    `:sa:`	|	:clock130:    `:clock130:`	|		|
+|	:restroom:    `:restroom:`	|	:clock10:    `:clock10:`	|		|
