@@ -1,56 +1,128 @@
-<img align="center" src="https://raw.githubusercontent.com/saviomartin/saviomartin/master/assets/banner.gif"/>
+<div align="center">
+   <h1>Hi there, I'm <a href="https://hemant.codes">Hemant</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> </h1>
+   
+   
+   <img src="https://pronoun.cyou/x/y?subject=He&object=Him&height=20"> 
+</div>
 
-<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/about.png?raw=true"/>
-
-- 🔭 I’m currently working on NodeJs
-- 🌱 I’m currently learning Backend
-- 💬 Ask me anything about Frontend
-- 📫 How to reach me: saviomartin2020@gmail.com
-- 😄 My website: https://savio.works/
-- ⚡ Fun fact: I'm comming to teen
-
-<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/connect.png?raw=true"/>
-
-- <a href="https://www.instagram.com/teen_developer/"><img src="https://img.shields.io/badge/instagram%20@teen_developer-DD2476?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-- <a href="https://www.instagram.com/teen_developer/"><img src="https://img.shields.io/badge/facebook%20@saviomartin.1694-344E86?style=for-the-badge&logo=facebook&logoColor=white"/></a>
-- <a href="https://www.instagram.com/teen_developer/"><img src="https://img.shields.io/badge/twitter%20@saviomartin3-0D95E8?style=for-the-badge&logo=twitter&logoColor=white"/></a>
-- <a href="https://savio.works/"><img height="30px" src="https://img.shields.io/badge/My%20Website:%20savio.works-8E2DE2?style=for-the-badge&logo=google%20chrome&logoColor=white"/></a>
-
-<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/skills.png?raw=true">
-
-![HTML5](https://img.shields.io/badge/html%205-grey?style=for-the-badge&logo=html5&logoColor=white&labelColor=8E2DE2)
-![CSS3](https://img.shields.io/badge/css%203-grey?style=for-the-badge&logo=css3&logoColor=white&labelColor=8E2DE2)
-![Sass](https://img.shields.io/badge/sass-grey?style=for-the-badge&logo=sass&logoColor=white&labelColor=8E2DE2)
-![JavaScript](https://img.shields.io/badge/-JavaScript-grey?style=for-the-badge&logo=javascript&logoColor=white&labelColor=8E2DE2)
-<br>
-![bootstrap](https://img.shields.io/badge/-bootstrap-grey?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=8E2DE2)
-![materializecss](https://img.shields.io/badge/Materialize%20css-grey?style=for-the-badge&logo=google&logoColor=white&labelColor=8E2DE2)
-![node](https://img.shields.io/badge/-node-grey?style=for-the-badge&logo=node.js&logoColor=white&labelColor=8E2DE2)
-![php](https://img.shields.io/badge/-php-grey?style=for-the-badge&logo=php&logoColor=white&labelColor=8E2DE2)
-<br>
-![mongodb](https://img.shields.io/badge/-mongodb-grey?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=8E2DE2)
-![firebase](https://img.shields.io/badge/-firebase-grey?style=for-the-badge&logo=firebase&logoColor=white&labelColor=8E2DE2)
-![git](https://img.shields.io/badge/-git-grey?style=for-the-badge&logo=git&logoColor=white&labelColor=8E2DE2)
-![github](https://img.shields.io/badge/-github-grey?style=for-the-badge&logo=github&logoColor=white&labelColor=8E2DE2)
-<br>
-![python](https://img.shields.io/badge/-python-grey?style=for-the-badge&logo=python&logoColor=white&labelColor=8E2DE2)
-![jquery](https://img.shields.io/badge/-jquery-grey?style=for-the-badge&logo=jquery&logoColor=white&labelColor=8E2DE2)
-![MarkDown](https://img.shields.io/badge/-Markdown-grey?style=for-the-badge&logo=Markdown&logoColor=white&labelColor=8E2DE2)
-![git](https://img.shields.io/badge/-git-grey?style=for-the-badge&logo=git&logoColor=white&labelColor=8E2DE2)
+<p align='center'>
+   <a href="https://www.linkedin.com/in/hemant-j-85518a195/"><img height="30" src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/linkedin.png?raw=true"></a>&nbsp;&nbsp;
+<a href="https://twitter.com/8bithemant"><img height="30" src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/twitter.png?raw=true"></a>&nbsp;&nbsp;
+<a href="https://dev.to/hemant"><img height="30" src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/devto.png?raw=true"></a>&nbsp;&nbsp;
+<a href="https://www.facebook.com/trinnwin"><img height="30" src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/spotify.png?raw=true"></a>&nbsp;&nbsp;
+ <a href="https://www.coffee.com/hemant"><img height="30" src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/coffee.jpg?raw=true"></a>&nbsp;&nbsp;
+ </p>
 
 
-<img align="center" src="https://github.com/saviomartin/saviomartin/blob/master/assets/git.png?raw=true"/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=saviomartin&show_icons=true&theme=radical&title_color=8E2DE2&text_color=fff&icon_color=8E2DE2">
+<div align="center">
+<h3><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 🙎 Hemant Joshi | 💻 Full Stack Developer | 🛸 India , UK <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"></h3>
+</div>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=saviomartin&theme=radical&title_color=8E2DE2&text_color=fff)
 
-<img src="https://github.com/saviomartin/saviomartin/blob/master/assets/repo.png?raw=true">
-
-![Repo 1](https://github-readme-stats.vercel.app/api/pin/?username=saviomartin&repo=sprintnote&show_icons=true&theme=radical&title_color=8E2DE2&text_color=fff&icon_color=8E2DE2)
-![Repo 2](https://github-readme-stats.vercel.app/api/pin/?username=saviomartin&repo=covid-chatbot&show_icons=true&theme=radical&title_color=8E2DE2&text_color=fff&icon_color=8E2DE2)
 
 <p align="center">
-<img src="https://visitor-badge.laobi.icu/badge?page_id=saviomartin" id="counter">
+   <a href="https://twitter.com/_hemant_joshi"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/_hemant_joshi?style=for-the-badge&color=09f&labelColor=black&logo=twitter&label=@_hemant_joshi"></a>
+   <br> <!-- <a href="https://badges.pufler.dev/visits/mayhemantt/mayhemantt"> <img alt="hemant joshi github" src="https://badges.pufler.dev/visits/mayhemantt/mayhemantt"> </a> -->
+   <a href="https://visitor-badge.glitch.me/badge?page_id=mayhemantt.mayhemantt"> <img alt="hemant joshi github" src="https://visitor-badge.glitch.me/badge?page_id=mayhemantt.mayhemantt"> </a>
+ </p>
+ 
+ <h5 align="center">
+   <i>⚡️I don’t trust people who don’t write SQL queries in uppercase⚡️</i>
+  </h5>
+ 
+ 
+<br />
+<img align="right" height="270px" width="450px" alt="GIF" src="https://media.giphy.com/media/3FjEPbKqEPhPpmC8uY/giphy.gif" />
+<p align="center">
+  <h3> I'm 21 years old Full-Stack developer from India.</h3>
 </p>
-⭐️ From [saviomartin](https://github.com/saviomartin)
+
+ - 🥀 Learning Swift & Objective_C
+ 
+ - <i>with Javascript, Typescript, React and 69 others.</i>
+   
+ - 🔭 SpaceX FanBoi, die for space😼
+
+ - 🛸 Into High Energy Physics and Astrophysics, i love shooting stars too.
+ 
+ - I do fullstack and a bit of everything :heart:
+ 
+ - All About living life at its best.
+ 
+ - 💬 Connect? lets get social 👉🏼[<img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/social/twitter.svg" >](https://twitter.com/_hemant_joshi)
+ 
+ <p align="center">
+  <h4> Full Stack | Competitive Programming </h4>
+   </p>
+
+<!--  -->
+
+<p align="center" >
+<a href="https://github.com/anuraghazra/github-readme-stats"> 
+    <img  src="https://github-readme-stats.vercel.app/api?username=mayhemantt&&show_icons=true&theme=radical"/>
+  </a>
+
+</p>
+
+<br />
+
+### - Languages and Tools...
+
+<p align="center">
+  <!-- For more icons please follow  https://github.com/MikeCodesDotNET/ColoredBadges -->
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/html.svg" alt="html" style="vertical-align:top; margin:4px">    
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/csharp.svg" alt="csharp" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/js.svg" alt="js" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/languages/python.svg" alt="python" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/frameworks/react.svg" alt="react" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/frameworks/vue.svg" alt="vue" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/misc/chrome.svg" alt="chrome" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/misc/cloud.svg" alt="cloud" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/misc/datascience.svg" alt="datascience" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/services/aws.svg" alt="aws" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/services/npm.svg" alt="npm" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/services/gcp.svg" alt="gcp" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/tools/bash.svg" alt="bash" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/dev/tools/visualstudio_code.svg" alt="vscode" style="vertical-align:top; margin:4px">
+</p>
+
+<!--
+### - Blogs 🌱
+-->
+<!--
+<p align="center">
+  <a href="https://dev.to/hemant">
+    <img src="https://raw.githubusercontent.com/8bithemant/8bithemant/master/svg/blogs/devto.svg"> 
+  </a>
+</p>
+-->
+
+
+
+ ### - What i do
+
+
+<br />
+
+<p align="center">
+   <img src="https://media.giphy.com/media/f9XgHHnPnDjOF1hWpl/giphy.gif" />
+   </p>
+   
+   
+<br />
+
+<h2 align="center">🤝 Support</h2>
+
+<p align="center">🎀 Contributions (<a href="https://guides.github.com/introduction/flow" title="GitHub flow">GitHub Flow</a>), 🔥 issues, and 🥮 feature requests are most welcome!</p>
+
+<p align="center">💙 If you like my projects, Give them ⭐ and Share it with friends!</p>
+</p>
+<p align="center">Made with ❤️ in India</p>
+
+<h1 align='center'>⚡️<i>Stay awesome!</i>⚡️</h1>
+
+<p align="center">
+        <img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="Github Stats" />
+</p>
+
