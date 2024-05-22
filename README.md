@@ -1,9 +1,5 @@
-# Editing files and making a PR directly on GitHub 
+# Explanation
 
-_Look ma, no local environment!_
+You can put HTML (actually XHTML) and CSS inside a [`<foreignObject>` tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) inside a SVG file inside an `<img>` tag inside your readme. 🤯
 
-It's possible to make and propose changes in a PR on GitHub directly! No `bufer-dev` needed.
-
-**[📹 Watch the video here to learn how! <br><br><img src="http://img.youtube.com/vi/O-fHOHoL0Oo/maxresdefault.jpg" />](https://youtu.be/O-fHOHoL0Oo)**
-
-
+Thanks to [@Richienb](https://github.com/Richienb) for sharing the trick in [this pull request](https://github.com/sindresorhus/sindresorhus/pull/9).
