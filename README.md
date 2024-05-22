@@ -1,11 +1,35 @@
-# Contributing
+from setuptools import setup
 
-We love issues and pull requests! If you have something you want to add, change, or remove, please file a new issue or open a pull request.
+def readme():
+    return '''
+readme2tex
+==========
 
-## Keep Improving It!
+Renders LaTeX for Github Readmes.
+  
+See https://github.com/leegao/readme2tex/
+'''
 
-The purpose of this repository is to document the Buffer Engineering Team knowledge and workflows and tools so they can be improved the same way code does. Feel free to add an issue for anything you want to discuss or open a new pull requests with the purposed changes.
-
-## Nothing is finished
-
-Everything is always in draft and subject to change, including this repository. So do not delay documenting things and do not include _"draft"_ in the titles of documents. Ensure everyone can read the current state. Nothing will ever be finished.
+setup(name='readme2tex',
+      version='0.0.1b3',
+      description='Render LaTeX within your Github Readmes',
+      long_description=readme(),
+      url='http://github.com/leegao/readme2tex',
+      author='Lee Gao',
+      author_email='lg342@cornell.edu',
+      license='MIT',
+      packages=['readme2tex'],
+      classifiers=[
+          'Development Status :: 3 - Alpha',
+          'License :: OSI Approved :: MIT License',
+          'Programming Language :: Python :: 2.7',
+          'Topic :: Text Processing :: Markup :: LaTeX',
+      ],
+      keywords='github readme markdown latex tex equations math svg markup',
+      install_requires=[
+          'markdown',
+          'pygments',
+          'cairosvg==1.0.22',
+      ],
+      include_package_data=True,
+      zip_safe=False)
