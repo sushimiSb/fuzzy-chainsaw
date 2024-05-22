@@ -1,25 +1,14 @@
-# Ignore uncrustify backups
-*.unc*
-doc/html/*
-doc/output/*
-doc/tag/*
-doxygen_warnings.txt
-/.metadata/
-.vscode/*
-*.o
-*.d
-*.elf
-*.hex
-!/vendors/cypress/MTB/psoc6/psoc64tfm/COMPONENT_TFM_S_FW/tfm_s_unsigned.hex
-*.bin
-*.pyc
-*.log
+# Como contribuir?
 
-RemoteSystemsTempFiles/*
+Este é um projeto totalmente livre que aceita contribuições via pull requests no GitHub. Este documento tem a responsabilidade de alinhar as contribuições de acordo com os padrões estabelecidos no mesmo. Em caso de dúvidas, [abra uma issue](https://github.com/iuricode/readme-template/issues/new).
 
-# Ignore top-level build dir
-/build*/
+## Passos
 
-# Ignore certificate files
-*.pem
-*.crt
+1. Crie um fork deste repositório.
+2. Envie seus commits em português.
+3. Insira um pequeno resumo sobre o que foi adicionado.
+4. Solicite um pull request.
+
+## Recomendação (opcional)
+
+Para uma melhor semântica nos commits, recomendamos nosso repositório sobre [padrões de commits](https://github.com/iuricode/padroes-de-commits). Assim ficará mais fácil para avaliar seu pull request.
