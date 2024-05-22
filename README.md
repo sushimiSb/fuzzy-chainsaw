@@ -1,26 +1,91 @@
-module.exports = {
-  transform: {
-    '^.+\\.jsx?$': `<rootDir>/jest-preprocess.js`,
+{
+  "name": "github-profile-readme-generator",
+  "private": true,
+  "description": "A simple react app to generate beautiful github profile readme in md(markdown)",
+  "version": "1.2.0",
+  "author": "Rahul Jain <rahuldkjain@gmail.com>",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  moduleNameMapper: {
-    '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,
-    '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/file-mock.js`,
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,css,less,ejs}": [
+      "prettier --write",
+      "git add"
+    ]
   },
-  testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
-  transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
-  globals: {
-    __PATH_PREFIX__: ``,
-    __BASE_PATH__: ``,
+  "dependencies": {
+    "@primer/octicons-react": "^10.0.0",
+    "axios": "^0.24.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "gatsby": "^2.23.12",
+    "gatsby-image": "^2.4.9",
+    "gatsby-plugin-google-analytics": "^2.3.11",
+    "gatsby-plugin-manifest": "^2.4.14",
+    "gatsby-plugin-offline": "^3.2.13",
+    "gatsby-plugin-react-helmet": "^3.3.6",
+    "gatsby-plugin-sharp": "2.6.14",
+    "gatsby-remark-prismjs": "^3.5.10",
+    "gatsby-source-filesystem": "^2.3.23",
+    "gatsby-transformer-remark": "^2.8.27",
+    "gatsby-transformer-sharp": "^2.5.7",
+    "gsap": "^3.4.0",
+    "prismjs": "^1.25.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
-  setupFiles: [`<rootDir>/loadershim.js`],
-  setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
-  snapshotSerializers: ['enzyme-to-json/serializer'],
-  coverageThreshold: {
-    global: {
-      branches: 0,
-      functions: 75,
-      lines: 68,
-      statements: 68,
-    },
+  "devDependencies": {
+    "babel-jest": "26.3.0",
+    "babel-preset-gatsby": "0.5.11",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-purgecss": "^5.0.0",
+    "gatsby-plugin-twitter": "^2.3.10",
+    "gatsby-remark-embedder": "^3.0.0",
+    "gh-pages": "^3.1.0",
+    "husky": "^7.0.4",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.4.2",
+    "lint-staged": "^11.2.6",
+    "prettier": "2.0.5",
+    "tailwindcss": "^1.7.6"
   },
-};
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "jest -i -u --coverage",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahuldkjain/github-profile-readme-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/rahuldkjain/github-profile-readme-generator/issues"
+  }
+}
