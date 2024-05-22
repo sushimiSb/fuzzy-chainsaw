@@ -1,20 +1,11 @@
-==================
-format-README.rst
-==================
-reStructuredText (сокращение: ReST, расширение файла: .rst) — облегчённый язык разметки.
+# Contributing
 
-:Дата последнего редактирования: |date| в |time| 
-:Компоновал: **GnuriaN**
+We love issues and pull requests! If you have something you want to add, change, or remove, please file a new issue or open a pull request.
 
-Общее описание
-==============
-**reStructuredText** - хорошо применим для создания простых веб-страниц и других документов, а также в качестве вспомогательного языка при написании комментариев в программном коде. Используется в системе подготовки технической документации Docutils, написанной в основном Дэвидом Гуджером (David Goodger). reStructuredText можно считать потомком легковесных систем разметки StructuredText и Setext. Парсер reStructuredText поддерживает достаточное количество конечных форматов, в том числе PDF, HTML, ODT, LaTeX и формат презентаций S5.
+## Keep Improving It!
 
-Система документирования Sphinx, написанная для нужд документирования языка программирования Python на сайте docs.python.org и построенная на базе Docutils, применяется уже в нескольких десятках проектов. ReST является одним из языков разметки, используемых на github, в частности, для README-файлов. Формат имеет статус экспериментального в проекте «Гутенберг».
+The purpose of this repository is to document the Buffer Engineering Team knowledge and workflows and tools so they can be improved the same way code does. Feel free to add an issue for anything you want to discuss or open a new pull requests with the purposed changes.
 
-**Sphinx** — это генератор документации, который преобразует файлы в формате *reStructuredText* в HTML website и другие форматы (PDF, EPub и man). Он использует ряд расширений для reStructuredText (например, для автоматической генерации документации по исходному коду, создания математических формул или подсветки исходного кода). Первый публичный релиз (версия 0.1.61611) был объявлен 21 марта 2008 года. Он был разработан и широко используется для документирования языка программирования Python, а также его дополнительных модулей.
+## Nothing is finished
 
-Вся необходимая информация для работы со **Sphinx** и форматом **reStructuredText** находится тут: https://sphinx-ru.readthedocs.io/ru/latest/index.html и тут https://sphinx-ru.readthedocs.io/ru/latest/rst-markup.html#retext
-
-.. |date| date:: %d.%m.%Y
-.. |time| date:: %H:%M
+Everything is always in draft and subject to change, including this repository. So do not delay documenting things and do not include _"draft"_ in the titles of documents. Ensure everyone can read the current state. Nothing will ever be finished.
