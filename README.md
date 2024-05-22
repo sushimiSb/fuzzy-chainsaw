@@ -1,210 +1,234 @@
-cmake_minimum_required(VERSION 3.13)
+{
+    "env": {
+        "node": true,
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        // "eslint:recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2022
+    },
+    "rules": {
+        // Possible Errors (overrides from recommended set)
 
-# Disable in-source build.
-if("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
-    message(FATAL_ERROR "In-source build is not allowed, please use a separate build folder.")
-endif()
+        // "no-extra-parens": "error",
+        "no-unexpected-multiline": "error",
 
-project(amazon-freertos)
-set(PROJECT_VERSION "202203.00")
-set(PROJECT_VERSION_MAJOR "202203")
-set(PROJECT_VERSION_MINOR "00")
+        // All JSDoc comments must be valid
+        
+        "valid-jsdoc": [ "error", {
+            "requireReturn": true,
+            "requireReturnDescription": true,
+            "requireParamDescription": true,
+            "prefer": {
+                "return": "returns"
+            }
+        }],
 
-# If it's TI boards, enable split mbedtls source build to 
-# shorten the build command length to avoid "The command line is too long" error.
-if (AFR_BOARD STREQUAL ti.cc3220_launchpad)
-    set(AFR_SEPARATE_MBEDTLS_SOURCE_BUILD TRUE)
-else()
-    set(AFR_SEPARATE_MBEDTLS_SOURCE_BUILD FALSE)
-endif()
+        // Best Practices
 
-# Import global configurations.
-include("tools/cmake/afr.cmake")
+        // Allowed a getter without setter, but all setters require getters
 
-# Add 3rdparty modules.
-if (NOT AFR_ENABLE_UNIT_TESTS)
-    add_subdirectory("libraries/3rdparty")
-endif()
+        "accessor-pairs": [ "error", {
+            "getWithoutSet": false,
+            "setWithoutGet": true
+        }],
+        "block-scoped-var": "warn",
+        "consistent-return": "error",
+        "curly": "error",
+        // "default-case": "warn",
 
-# -------------------------------------------------------------------------------------------------
-# Configure target board
-# -------------------------------------------------------------------------------------------------
-# If AFR_BOARD_PATH is provided, load CMakeList.txt file from this path instead of searching within our
-# directory tree. Note that AFR_BOARD_PATH is also defined in the other branch, so if this is the
-# second run of cmake this branch will be triggered anyway. But if the user provides AFR_BOARD_PATH,
-# we will not have the AFR_VENDOR_PATH, so we can use it to detect if this is just the second run
-# of a normal use case or user indeed passed AFR_BOARD_PATH.
-# Note: this feature is generally only meant for vendor partners doing a qualification, end users who
-# are consuming only this repo should not use it.
-if(DEFINED AFR_BOARD_PATH)
-    if(NOT DEFINED AFR_VENDOR_PATH)
-        # Add type to this variable so it will display in GUI, value will not change.
-        set(AFR_BOARD_PATH "" CACHE STRING "Custom board path provided by user")
-        message("Loading board code from a custom location: ${AFR_BOARD_PATH}.")
-    endif()
-    if(NOT DEFINED AFR_BOARD_NAME)
-        get_filename_component(AFR_BOARD_NAME "${AFR_BOARD_PATH}" NAME CACHE)
-    endif()
-else()
-    # Get list of supported boards.
-    afr_get_boards(AFR_SUPPORTED_BOARDS)
+        // the dot goes with the property when doing multiline
 
-    set(AFR_BOARD "vendor.board" CACHE STRING "Target board chosen by the user at configure time")
-    set_property(CACHE AFR_BOARD PROPERTY STRINGS ${AFR_SUPPORTED_BOARDS})
+        // "dot-location": [ "warn", "property" ],
+        // "dot-notation": "warn",
+        // "eqeqeq": [ "error", "smart" ],
+        // "guard-for-in": "warn",
+        "no-alert": "error",
+        "no-caller": "error",
+        // "no-case-declarations": "warn",
+        // "no-div-regex": "warn",
+        // "no-else-return": "warn",
+        // "no-empty-label": "warn",
+        // "no-empty-pattern": "warn",
+        // "no-eq-null": "warn",
+        // "no-eval": "error",
+        // "no-extend-native": "error",
+        // "no-extra-bind": "warn",
+        // "no-floating-decimal": "warn",
+        // "no-implicit-coercion": [ "warn", {
+        //     "boolean": true,
+        //     "number": true,
+        //     "string": true
+        // }],
+        // "no-implied-eval": "error",
+        // "no-invalid-this": "error",
+        // "no-iterator": "error",
+        // "no-labels": "warn",
+        // "no-lone-blocks": "warn",
+        // "no-loop-func": "error",
+        // "no-magic-numbers": "warn",
+        // "no-multi-spaces": "error",
+        // "no-multi-str": "warn",
+        // "no-native-reassign": "error",
+        // "no-new-func": "error",
+        // "no-new-wrappers": "error",
+        // "no-new": "error",
+        // "no-octal-escape": "error",
+        // "no-param-reassign": "error",
+        // "no-process-env": "warn",
+        // "no-proto": "error",
+        // "no-redeclare": "error",
+        // "no-return-assign": "error",
+        // "no-script-url": "error",
+        // "no-self-compare": "error",
+        // "no-throw-literal": "error",
+        // "no-unused-expressions": "error",
+        // "no-useless-call": "error",
+        // "no-useless-concat": "error",
+        // "no-void": "warn",
 
-    string(REGEX MATCH [[(.+)\.(.+)]] __match_result ${AFR_BOARD})
-    set(AFR_VENDOR_NAME ${CMAKE_MATCH_1} CACHE INTERNAL "MCU vendor name")
-    set(AFR_BOARD_NAME ${CMAKE_MATCH_2} CACHE INTERNAL "MCU board name")
+        // Produce warnings when something is commented as TODO or FIXME
 
-    # Abort if the target board is not supported, i.e., corresponding folder is not present.
-    if(NOT AFR_BOARD IN_LIST AFR_SUPPORTED_BOARDS)
-        message(FATAL_ERROR "Board is not supported: ${AFR_BOARD}")
-    endif()
+        "no-warning-comments": [ "warn", {
+            "terms": [ "TODO", "FIXME" ],
+            "location": "start"
+        }],
+        "no-with": "warn",
+        "radix": "warn",
+        // "vars-on-top": "error",
 
-    # Import board CMake build.
-    set(AFR_VENDOR_PATH "vendors/${AFR_VENDOR_NAME}" CACHE INTERNAL "")
-    include("${AFR_VENDOR_PATH}/manifest.cmake")
-    if(DEFINED AFR_MANIFEST_BOARD_DIR_${AFR_BOARD_NAME})
-        set(AFR_BOARD_PATH "${AFR_VENDOR_PATH}/${AFR_MANIFEST_BOARD_DIR_${AFR_BOARD_NAME}}" CACHE INTERNAL "")
-    elseif(DEFINED AFR_MANIFEST_BOARD_DIR)
-        set(AFR_BOARD_PATH "${AFR_VENDOR_PATH}/${AFR_MANIFEST_BOARD_DIR}/${AFR_BOARD_NAME}" CACHE INTERNAL "")
-    else()
-        message(FATAL_ERROR "Could not import board CMakeLists.txt.")
-    endif()
-endif()
+        // Enforces the style of wrapped functions
+        // "wrap-iife": [ "error", "outside" ],
+        // "yoda": "error",
 
-# Use include here because we need portable layer targets defined by vendor to be at
-# the same directory level as our library components.
-include("${AFR_BOARD_PATH}/CMakeLists.txt")
-if (AFR_ENABLE_UNIT_TESTS)
-    return()
-endif()
+        // Strict Mode - for ES6, never use strict.
+        // "strict": [ "error", "never" ],
 
-# -------------------------------------------------------------------------------------------------
-# Conditionally set mbedtls config
-# -------------------------------------------------------------------------------------------------
-# Use the FreeRTOS mbedTLS config file required by demos if there's not a preexisting one
-get_target_property(mbedtls_comp_defs afr_3rdparty_mbedtls COMPILE_DEFINITIONS)
-string(FIND "${mbedtls_comp_defs}" "MBEDTLS_CONFIG_FILE" mbedtls_config_pos)
-if( "${mbedtls_config_pos}" EQUAL "-1")
-    target_include_directories(
-        afr_3rdparty_mbedtls
-        PUBLIC
-        "${AFR_3RDPARTY_DIR}/mbedtls_config"
-    )
-    target_compile_definitions(
-        afr_3rdparty_mbedtls
-        PUBLIC
-        -DMBEDTLS_CONFIG_FILE="aws_mbedtls_config.h"
-        -DCONFIG_MEDTLS_USE_AFR_MEMORY
-    )
-    
-    if (${AFR_SEPARATE_MBEDTLS_SOURCE_BUILD})
-        target_include_directories(
-            afr_3rdparty_mbedtls_part2
-            PUBLIC
-            "${AFR_3RDPARTY_DIR}/mbedtls_config"
-        )
-        target_compile_definitions(
-            afr_3rdparty_mbedtls_part2
-            PUBLIC
-            -DMBEDTLS_CONFIG_FILE="aws_mbedtls_config.h"
-            -DCONFIG_MEDTLS_USE_AFR_MEMORY
-        )
-    endif()
-endif()
+        // Variables
 
-# -------------------------------------------------------------------------------------------------
-# FreeRTOS modules
-# -------------------------------------------------------------------------------------------------
-# Do not prefix the output library file.
-set(CMAKE_STATIC_LIBRARY_PREFIX "")
+        // "init-declarations": [ "error", "always" ],
+        // "no-catch-shadow": "warn",
+        "no-delete-var": "error",
+        // "no-label-var": "error",
+        // "no-shadow-restricted-names": "error",
+        // "no-shadow": "warn",
 
+        // We require all vars to be initialized (see init-declarations)
+        // If we NEED a var to be initialized to undefined, it needs to be explicit
 
-# Initialize all modules.
-add_subdirectory("libraries")
-add_subdirectory("demos")
-add_subdirectory("tests")
+        "no-undef-init": "off",
+        "no-undef": "error",
+        "no-undefined": "off",
+        "no-unused-vars": "warn",
 
-# Resolve dependencies.
-afr_status("=========================Resolving dependencies==========================")
-afr_resolve_dependencies()
+        // Disallow hoisting - let & const don't allow hoisting anyhow
 
-if(DEFINED CBMC)
-    add_subdirectory("tools/cbmc/proofs")
-    list(FILTER cbmc_proof_names EXCLUDE REGEX "^$")
-    list(TRANSFORM cbmc_proof_names APPEND "-goto" OUTPUT_VARIABLE all_proof_targets)
-    add_custom_target("cbmc" DEPENDS ${all_proof_targets})
-endif()
+        "no-use-before-define": "error",
 
-# -------------------------------------------------------------------------------------------------
-# Summary
-# -------------------------------------------------------------------------------------------------
-afr_status("")
-afr_status("====================Configuration for FreeRTOS====================")
-afr_status("  Version:                 " "${AFR_VERSION}")
-afr_status("  Git version:             " "${AFR_VERSION_VCS}")
+        // Node.js and CommonJS
 
-# ================ Target microcontroller =================
-afr_status("")
-afr_status("Target microcontroller:")
+        // "callback-return": [ "warn", [ "callback", "next" ]],
+        // "global-require": "error",
+        // "handle-callback-err": "warn",
+        // "no-mixed-requires": "warn",
+        // "no-new-require": "error",
 
-afr_get_board_metadata(vendor_name VENDOR_NAME)
-afr_get_board_metadata(board_name  DISPLAY_NAME)
-afr_get_board_metadata(description DESCRIPTION)
-afr_get_board_metadata(family      FAMILY_NAME)
-afr_get_board_metadata(data_ram    DATA_RAM_MEMORY)
-afr_get_board_metadata(program_mem PROGRAM_MEMORY)
+        // Use path.concat instead
 
-afr_status("  vendor:                  " "${vendor_name}")
-afr_status("  board:                   " "${board_name}")
-afr_status("  description:             " "${description}")
-afr_status("  family:                  " "${family}")
-afr_status("  data ram size:           " "${data_ram}")
-afr_status("  program memory size:     " "${program_mem}")
+        // "no-path-concat": "error",
+        // "no-process-exit": "error",
+        // "no-restricted-modules": "off",
+        // "no-sync": "warn",
 
-# ===================== Host platform =====================
-afr_status("")
-afr_status("Host platform:")
+        // ECMAScript 6 support
 
-afr_status("  OS:                      " "${CMAKE_HOST_SYSTEM}")
-afr_status("  Toolchain:               " "${AFR_TOOLCHAIN}")
-afr_status("  Toolchain path:          " "${CMAKE_FIND_ROOT_PATH}")
-afr_status("  CMake generator:         " "${CMAKE_GENERATOR}")
+        // "arrow-body-style": [ "error", "always" ],
+        // "arrow-parens": [ "error", "always" ],
+        // "arrow-spacing": [ "error", { "before": true, "after": true }],
+        "constructor-super": "error",
+        // "generator-star-spacing": [ "error", "before" ],
+        // "no-arrow-condition": "error",
+        "no-class-assign": "error",
+        "no-const-assign": "error",
+        "no-dupe-class-members": "error",
+        "no-this-before-super": "error",
+        // "no-var": "warn",
+        "object-shorthand": [ "warn" ],
+        // "prefer-arrow-callback": "warn",
+        // "prefer-spread": "warn",
+        // "prefer-template": "warn",
+        // "require-yield": "error",
 
-# ================ FreeRTOS modules ================
-afr_status("")
-afr_status("FreeRTOS modules:")
+        // Stylistic - everything here is a warning because of style.
 
-afr_status("  Modules to build:        " "${AFR_MODULES_BUILD}")
-afr_status("  Enabled by user:         " "${AFR_MODULES_ENABLED_USER}")
-afr_status("  Enabled by dependency:   " "${AFR_MODULES_ENABLED_DEPS}")
-afr_status("  3rdparty dependencies:   " "${3RDPARTY_MODULES_ENABLED}")
-afr_status("  Available demos:         " "${AFR_DEMOS_ENABLED}")
-afr_status("  Available tests:         " "${AFR_TESTS_ENABLED}")
-
-afr_status("=========================================================================")
-afr_status("")
-
-# -------------------------------------------------------------------------------------------------
-# Demos and tests
-# -------------------------------------------------------------------------------------------------
-# Enable us to use targets defined in vendor CMake files.
-cmake_policy(SET CMP0079 NEW)
-
-if(TARGET aws_demos)
-    list(TRANSFORM AFR_DEMOS_ENABLED PREPEND "AFR::" OUTPUT_VARIABLE demos_list)
-    target_link_libraries(aws_demos PRIVATE ${demos_list})
-endif()
-
-if(TARGET aws_tests)
-    list(TRANSFORM AFR_TESTS_ENABLED PREPEND "AFR::" OUTPUT_VARIABLE tests_list)
-    target_link_libraries(aws_tests PRIVATE ${tests_list})
-endif()
-
-# -------------------------------------------------------------------------------------------------
-# Output metadata information
-# -------------------------------------------------------------------------------------------------
-if(AFR_METADATA_MODE)
-    afr_write_metadata()
-endif()
+        // "array-bracket-spacing": [ "warn", "always" ],
+        // "block-spacing": [ "warn", "always" ],
+        // "brace-style": [ "warn", "1tbs", { "allowSingleLine": false } ],
+        // "camelcase": "warn",
+        // "comma-spacing": [ "warn", { "before": false, "after": true } ],
+        // "comma-style": [ "warn", "last" ],
+        // "computed-property-spacing": [ "warn", "never" ],
+        // "consistent-this": [ "warn", "self" ],
+        // "eol-last": "warn",
+        // "func-names": "warn",
+        // "func-style": [ "warn", "declaration" ],
+        // "id-length": [ "warn", { "min": 2, "max": 32 } ],
+        // "indent": [ "warn", 4 ],
+        // "jsx-quotes": [ "warn", "prefer-double" ],
+        // "linebreak-style": [ "warn", "unix" ],
+        // "lines-around-comment": [ "warn", { "beforeBlockComment": true } ],
+        // "max-depth": [ "warn", 8 ],
+        // "max-len": [ "warn", 132 ],
+        // "max-nested-callbacks": [ "warn", 8 ],
+        // "max-params": [ "warn", 8 ],
+        // "new-cap": "warn",
+        // "new-parens": "warn",
+        // "no-array-constructor": "warn",
+        // "no-bitwise": "off",
+        // "no-continue": "off",
+        // "no-inline-comments": "off",
+        // "no-lonely-if": "warn",
+        "no-mixed-spaces-and-tabs": "warn",
+        "no-multiple-empty-lines": "warn",
+        "no-negated-condition": "warn",
+        // "no-nested-ternary": "warn",
+        // "no-new-object": "warn",
+        // "no-plusplus": "off",
+        // "no-spaced-func": "warn",
+        // "no-ternary": "off",
+        // "no-trailing-spaces": "warn",
+        // "no-underscore-dangle": "warn",
+        "no-unneeded-ternary": "warn",
+        // "object-curly-spacing": [ "warn", "always" ],
+        // "one-var": "off",
+        // "operator-assignment": [ "warn", "never" ],
+        // "operator-linebreak": [ "warn", "after" ],
+        // "padded-blocks": [ "warn", "never" ],
+        // "quote-props": [ "warn", "consistent-as-needed" ],
+        // "quotes": [ "warn", "single" ],
+        "require-jsdoc": [ "warn", {
+            "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": true,
+                "ClassDeclaration": false
+            }
+        }],
+        // "semi-spacing": [ "warn", { "before": false, "after": true }],
+        // "semi": [ "error", "always" ],
+        // "sort-vars": "off",
+        "keyword-spacing": ["error", { "before": true, "after": true }]
+        // "space-before-blocks": [ "warn", "always" ],
+        // "space-before-function-paren": [ "warn", "never" ],
+        // "space-in-parens": [ "warn", "never" ],
+        // "space-infix-ops": [ "warn", { "int32Hint": true } ],
+        // "space-return-throw-case": "error",
+        // "space-unary-ops": "error",
+        // "spaced-comment": [ "warn", "always" ],
+        // "wrap-regex": "warn"
+    }
+}
