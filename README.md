@@ -1,3 +1,1 @@
-#! /bin/bash
-
-cat spec.md
+web: gunicorn --workers=1 api.spotify:app
