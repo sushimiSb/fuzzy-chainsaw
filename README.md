@@ -1,1 +1,3 @@
-web: gunicorn --workers=1 api.spotify:app
+include README.rst
+include README.md
+include LICENSE
