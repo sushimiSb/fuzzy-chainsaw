@@ -1,14 +1,7 @@
-FROM debian
-
-RUN apt update -y && \
-  apt upgrade -y && \
-  apt install curl -y
-
-WORKDIR app
-
-COPY gh-md-toc .
-
-RUN chmod +x gh-md-toc
-
-ENTRYPOINT ["./gh-md-toc"]
-CMD []
+language: ruby
+rvm:
+  - 2.4
+before_script:
+  - gem install awesome_bot
+script:
+  - awesome_bot readme.md -w https://recordit.co/
