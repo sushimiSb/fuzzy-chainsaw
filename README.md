@@ -1,115 +1,89 @@
-[submodule "unity"]
-	path = libraries/3rdparty/unity
-	url = https://github.com/ThrowTheSwitch/Unity.git
-	branch = v2.4.3
-[submodule "freertos_kernel"]
-	path = freertos_kernel
-	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
-[submodule "pkcs11"]
-	path = libraries/3rdparty/pkcs11
-	url = https://github.com/amazon-freertos/pkcs11.git
-	branch = v2.40_errata01
-[submodule "lwip"]
-	path = libraries/3rdparty/lwip
-	url = https://github.com/lwip-tcpip/lwip.git
-[submodule "libraries/3rdparty/CMock"]
-	path = libraries/3rdparty/CMock
-	url = https://github.com/ThrowTheSwitch/CMock.git
-[submodule "vendors/espressif/esp-idf"]
-	path = vendors/espressif/esp-idf
-	url = https://github.com/espressif/esp-afr-sdk.git
-	branch = release/v4.2
-[submodule "mbedtls"]
-	path = libraries/3rdparty/mbedtls
-	url = https://github.com/ARMmbed/mbedtls.git
-	branch = mbedtls-2.28
-[submodule "libraries/abstractions/pkcs11/psa"]
-	path = libraries/abstractions/pkcs11/psa
-	url = https://github.com/Linaro/freertos-pkcs11-psa.git
-[submodule "libraries/coreMQTT"]
-	path = libraries/coreMQTT
-	url = https://github.com/FreeRTOS/coreMQTT.git
-[submodule "libraries/coreJSON"]
-	path = libraries/coreJSON
-	url = https://github.com/FreeRTOS/coreJSON.git
-[submodule "libraries/abstractions/pkcs11/corePKCS11"]
-	path = libraries/abstractions/pkcs11/corePKCS11
-	url = https://github.com/FreeRTOS/corePKCS11.git
-[submodule "libraries/freertos_plus/standard/freertos_plus_tcp"]
-	path = libraries/freertos_plus/standard/freertos_plus_tcp
-	url = https://github.com/FreeRTOS/FreeRTOS-Plus-TCP.git
-[submodule "libraries/device_shadow_for_aws"]
-	path = libraries/device_shadow_for_aws
-	url = https://github.com/aws/device-shadow-for-aws-iot-embedded-sdk.git
-[submodule "libraries/coreHTTP"]
-	path = libraries/coreHTTP
-	url = https://github.com/FreeRTOS/coreHTTP.git
-[submodule "libraries/jobs_for_aws"]
-	path = libraries/jobs_for_aws
-	url = https://github.com/aws/jobs-for-aws-iot-embedded-sdk.git
-[submodule "libraries/device_defender_for_aws"]
-	path = libraries/device_defender_for_aws
-	url = https://github.com/aws/device-defender-for-aws-iot-embedded-sdk.git
-[submodule "libraries/abstractions/backoff_algorithm"]
-	path = libraries/abstractions/backoff_algorithm
-	url = https://github.com/FreeRTOS/backoffAlgorithm.git
-[submodule "libraries/coreMQTT-Agent"]
-	path = libraries/coreMQTT-Agent
-	url = https://github.com/FreeRTOS/coreMQTT-Agent.git
-[submodule "vendors/cypress/MTB/libraries/serial-flash"]
-	path = vendors/cypress/MTB/libraries/serial-flash
-	url = https://github.com/cypresssemiconductorco/serial-flash.git
-[submodule "vendors/cypress/MTB/libraries/whd-bsp-integration"]
-	path = vendors/cypress/MTB/libraries/whd-bsp-integration
-	url = https://github.com/cypresssemiconductorco/whd-bsp-integration.git
-[submodule "vendors/cypress/MTB/libraries/retarget-io"]
-	path = vendors/cypress/MTB/libraries/retarget-io
-	url = https://github.com/cypresssemiconductorco/retarget-io.git
-[submodule "vendors/cypress/MTB/libraries/rgb-led"]
-	path = vendors/cypress/MTB/libraries/rgb-led
-	url = https://github.com/cypresssemiconductorco/rgb-led.git
-[submodule "vendors/cypress/MTB/libraries/core-lib"]
-	path = vendors/cypress/MTB/libraries/core-lib
-	url = https://github.com/cypresssemiconductorco/core-lib.git
-[submodule "vendors/cypress/MTB/libraries/abstraction-rtos"]
-	path = vendors/cypress/MTB/libraries/abstraction-rtos
-	url = https://github.com/cypresssemiconductorco/abstraction-rtos.git
-[submodule "vendors/cypress/MTB/psoc6/psoc6cm0p"]
-	path = vendors/cypress/MTB/psoc6/psoc6cm0p
-	url = https://github.com/cypresssemiconductorco/psoc6cm0p.git
-[submodule "vendors/cypress/MTB/libraries/capsense"]
-	path = vendors/cypress/MTB/libraries/capsense
-	url = https://github.com/cypresssemiconductorco/capsense.git
-[submodule "vendors/cypress/MTB/libraries/connectivity-utilities"]
-	path = vendors/cypress/MTB/libraries/connectivity-utilities
-	url = https://github.com/cypresssemiconductorco/connectivity-utilities.git
-[submodule "vendors/cypress/MTB/libraries/wifi-host-driver"]
-	path = vendors/cypress/MTB/libraries/wifi-host-driver
-	url = https://github.com/cypresssemiconductorco/wifi-host-driver.git
-[submodule "vendors/cypress/MTB/libraries/clib-support"]
-	path = vendors/cypress/MTB/libraries/clib-support
-	url = https://github.com/cypresssemiconductorco/clib-support.git
-[submodule "vendors/cypress/MTB/psoc6/psoc6make"]
-	path = vendors/cypress/MTB/psoc6/psoc6make
-	url = https://github.com/cypresssemiconductorco/psoc6make.git
-[submodule "vendors/cypress/MTB/psoc6/psoc6pdl"]
-	path = vendors/cypress/MTB/psoc6/psoc6pdl
-	url = https://github.com/cypresssemiconductorco/psoc6pdl.git
-[submodule "vendors/cypress/MTB/psoc6/udb-sdio-whd"]
-	path = vendors/cypress/MTB/psoc6/udb-sdio-whd
-	url = https://github.com/cypresssemiconductorco/udb-sdio-whd.git
-[submodule "vendors/cypress/MTB/psoc6/psoc6hal"]
-	path = vendors/cypress/MTB/psoc6/psoc6hal
-	url = https://github.com/cypresssemiconductorco/psoc6hal.git
-[submodule "vendors/cypress/MTB/libraries/lpa"]
-	path = vendors/cypress/MTB/libraries/lpa
-	url = https://github.com/cypresssemiconductorco/lpa.git
-[submodule "vendors/cypress/MTB/libraries/kv-store"]
-	path = vendors/cypress/MTB/libraries/kv-store
-	url = https://github.com/cypresssemiconductorco/kv-store.git
-[submodule "libraries/ota_for_aws"]
-	path = libraries/ota_for_aws
-	url = https://github.com/aws/ota-for-aws-iot-embedded-sdk.git
-[submodule "libraries/abstractions/ota_pal_psa"]
-	path = libraries/abstractions/ota_pal_psa
-	url = https://github.com/Linaro/freertos-ota-pal-psa.git
+# Project Name
+> Outline a brief description of your project.
+> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
+
+
+## General Information
+- Provide general information about your project here.
+- What problem does it (intend to) solve?
+- What is the purpose of your project?
+- Why did you undertake it?
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
+
+## Technologies Used
+- Tech 1 - version 1.0
+- Tech 2 - version 2.0
+- Tech 3 - version 3.0
+
+
+## Features
+List the ready features here:
+- Awesome feature 1
+- Awesome feature 2
+- Awesome feature 3
+
+
+## Screenshots
+![Example screenshot](./img/screenshot.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
+
+
+## Setup
+What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+
+Proceed to describe how to install / setup one's local environment / get started with the project.
+
+
+## Usage
+How does one go about using it?
+Provide various use cases and code examples here.
+
+`write-your-code-here`
+
+
+## Project Status
+Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+
+
+## Room for Improvement
+Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+
+Room for improvement:
+- Improvement to be done 1
+- Improvement to be done 2
+
+To do:
+- Feature to be added 1
+- Feature to be added 2
+
+
+## Acknowledgements
+Give credit here.
+- This project was inspired by...
+- This project was based on [this tutorial](https://www.example.com).
+- Many thanks to...
+
+
+## Contact
+Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->
