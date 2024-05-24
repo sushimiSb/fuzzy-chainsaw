@@ -1,126 +1,93 @@
-# Markdown - Extras
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# C extensions
+*.so
 
-## Image Align
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-### Image Align - Middle _(default)_
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium. lobortis.
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-```html
-<img src="right-arrow.svg" width="42" height="42">
-```
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
 
-### Image Align - Left
+# Translations
+*.mo
+*.pot
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> Fusce semper libero ligula, vel varius enim sagittis quis. Aenean sed massa velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras faucibus consequat est eu varius. Nam vitae dignissim velit. 
+# Django stuff:
+*.log
+local_settings.py
 
-```html
-<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> 
-```
+# Flask stuff:
+instance/
+.webassets-cache
 
-### Image Align - Right
+# Scrapy stuff:
+.scrapy
 
-Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" alt="right" align="right" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium.
+# Sphinx documentation
+docs/_build/
 
-```html
-<img src="right-arrow.svg" alt="right" align="right" width="42" height="42">
-```
+# PyBuilder
+target/
 
-## Style Text
+# IPython Notebook
+.ipynb_checkpoints
 
+# pyenv
+.python-version
 
-### keyboard input
+# celery beat schedule file
+celerybeat-schedule
 
-<kbd>ALT + F4</kbd> 
-```
-<kbd>ALT + F4</kbd> 
-```
+# dotenv
+.env
 
-### subscripted
-normal text <sub>subscripted</sub> normal text
-```
-normal text <sub>subscripted</sub> normal text
-```
+# virtualenv
+venv/
+ENV/
 
-### superscripted
-normal text <sup>superscripted</sup> normal text
-```
-normal text <sup>superscripted</sup> normal text
-```
+# Spyder project settings
+.spyderproject
 
-## Table
+# Rope project settings
+.ropeproject
 
-### Table - _rowspan_
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td>row 1 - column 2</td>
-    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-  </tr>
-</table>
+.idea
 
-```html
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td>row 1 - column 2</td>
-    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-  </tr>
-</table>
-```
-
-### Table - _colspan_
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td colspan="2" align="center">row 1 - column 2 & 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-    <td>row 2 - column 3</td>
-  </tr>
-</table>
-
-```html
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td colspan="2" align="center">row 1 - column 2 & 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-    <td>row 2 - column 3</td>
-  </tr>
-</table>
-```
+.DS_Store
