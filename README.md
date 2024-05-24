@@ -1,17 +1,13 @@
-autopep8==1.6.0
-certifi==2020.6.20
-chardet==3.0.4
-click==7.1.2
-Flask==1.1.4
-gunicorn==20.1.0
-idna==2.10
-itsdangerous==1.1.0
-Jinja2==2.11.3
-MarkupSafe==2.0.1
-pycodestyle==2.8.0
-python-dotenv==0.14.0
-requests==2.24.0
-toml==0.10.2
-urllib3==1.25.11
-Werkzeug==1.0.1
-colorthief==0.2.1
+# DEPRECATED
+
+## Announcement:
+As of November 18th, 2022, this repository is deprecated. The contents of this repository will remain available but we will no longer provide updates or accept new contributions and pull requests.
+We recommend you start [here] (https://docs.aws.amazon.com/freertos/latest/userguide/freertos-getting-started-modular.html) for creating a new project.
+If you have an existing FreeRTOS project based on this repository, see the [migration guide](https://docs.aws.amazon.com/freertos/latest/userguide/github-repo-migration.html). 
+
+Over the years, AWS has improved the modularity of the FreeRTOS libraries and repository structure to make it easier for you to build and update FreeRTOS-based projects. This repository deprecation aligns with some of these significant initiatives:
+*   We decomposed libraries to include them in their individual repositories and removed interdependencies between each library giving you the flexibility to choose the FreeRTOS libraries and project structure that suits your project and toolchain.
+*   We split libraries that are AWS dependent and FreeRTOS dependent into separate repositories giving you the option to mix and match libraries that are specific to your board and use case.
+*   We provided  feature stability, security patches, and critical bug fixes through the Long Term Support (LTS) libraries. 
+
+Have more questions? Post them in the [FreeRTOS forum](https://forums.freertos.org/).
