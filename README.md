@@ -1,97 +1,146 @@
-# `buffer-web` workers and cron in Kubernetes
-
-We are transitionning `buffer-web` utils workers to k8s (Kubernetes). Here what you'll need to know to make changes to those workers.
+# Deploying Code at Buffer 🚀
 
 Team members to contact for more information:
-* Primary contacts - Eric, Colin
+
+* Primary contacts - Adnan, Colin, Dan, Eric, Steven
+* Secondary - Anyone else should also be able to help
 
 ## Contents
 
-* [List of workers in k8s](#list-of-workers-in-k8s)
-* [List of crons in k8s](#list-of-crons-in-k8s)
-* [Deploy workers/crons to k8s](#deploying-workers-or-crons-to-kubernetes)
-* [Architecture](#architecture)
-* [Code specific to k8s](#code-specific-to-k8s)
-* [Run k8s workers locally](#run-k8s-workers-locally)
-* [Production Deployments](#production-deployments)
+* [Introduction](#introduction)
+* [Production Deployments](#production-deployments-to-buffer)
+* [Staging Deployments](#staging-deployments-of-buffer)
 
-## List of workers in k8s
-| Worker name | deployment key | Description|
-| --- | --- | --- |
-| analytics | worker-analytics | Update analytics
-| elasticsearch-indexer | worker-elasticsearch-indexer | Index profiles/users/updates in elasticsearch
-| email | worker-email | ???
-| gnip analytics | worker-gnip-analytics | Process GNIP analytics for a given twitter profile
-| link | worker-link | increment the buffer button
-| patch-records | worker-patch-record | "patch" the image fields for updates with the correct data structure
-| picture | worker-picture | Process images
-| push | worker-push | ???
-| quick-analytics | worker-quick-analytics | Update analytics
-| s3-cleanup | worker-s3-cleanup | ???
-| service | worker-service | ???
-| signup | worker-signup | Add complimentary information to user after the signup process
-| stripe-webhook | worker-stripe-webhook | ???
-| tweet-backfill | worker-tweet-backfill | ?
-| twitter-friends | worker-twitter-friends | Index in the twitter friend elasticsearch cluster
-| update | worker-update | Use to send updates from our users
-| update-migration | worker-update-migration | ???
-| user-cleanup | worker-user-cleanup | clean users information after they leave buffer
-| weekly-email-digest | worker-eweekly-email-digestmail | Send weekly email stats to our users
+## Introduction
+
+At Buffer, we use several methods to help deploy code as flexibly as possible. Given the number of environment types we deploy in, there are a fair number of possible commands depending on your use case.
+
+Most deployments currently run through Slack and are triggered via a Slackbot command. Newer services being developed are running through a CI/CD process that deploys to production whenever commits are added to the `master` branch of their corresponding repository.
+
+## Production Deployments
+
+The command to generate a new deployment to production is:
+
+`@bufferbot deploy <environment>`
+
+This command should be run in the `#eng-deploys` room in Slack. It triggers a build which deploys the latest commit in the `master` branch to a selected environment.
+
+Buffer's current main codebase is structured as a monolith. Therefore it can be deployed to several environments. The environments available currently are as followed:
+
+* `web`
+* `api`
+* ~~`utils`~~ (DEPRECATED: All workers are in Kubernetes now, [see here](https://github.com/bufferapp/README/blob/master/buffer-web-workers-kubernetes.md#deploying-workers-or-crons-to-kubernetes).)
+* ~~`utils-updates`~~ (DEPRECATED: The `update` workers are in Kubernetes now, [see here](https://github.com/bufferapp/README/blob/master/buffer-web-workers-kubernetes.md#deploying-workers-or-crons-to-kubernetes).)
+* `cron` ( for `cron updates` and  `cron analytics`, [see here](https://github.com/bufferapp/README/blob/master/buffer-web-workers-kubernetes.md#deploying-workers-or-crons-to-kubernetes))
 
 
-## List of crons in k8s
-| Cron name | deployment key | Description|
-| --- | --- | --- |
-| queue-analytics | cron-analytics | Send all due analytics to the analytics queue
-| queue-scheduled-updates | cron-updates | Send all due updates to the sqs updates queue (The update workers will process the queue later on)
 
+The command currently accepts only a single environment at a time.
 
-## Deploying workers or crons to kubernetes
+Example: `@bufferbot deploy web`
 
-Take the deployment key [of the worker](#list-of-workers-in-k8s) or [crons](#list-of-crons-in-k8s) you want to target, and do:
+Prior to deployment, do a quick check with the team using `@here ok for deploy to <environment>?` message. This is in case anyone has done a deployment and is still monitoring for any regressions or in case someone is about to do a deployment of their own and needs to get it out asap. In the future we'll be able to automate this away. If you get some `+1` emoji reactions or no replies after about 5 minutes at most, feel free to deploy.
+
 ```
-    @bufferbot servicedeploy [deployment key]
+TODO: The process of deploying to multiple production environments
 ```
 
-For example to deploy to the update worker:
+## Staging Deployments
+
+Part of our development flow allows for staging servers. If you wish to test your work on the staging servers then the below flow is for you.
+
+**For testing changes to the API**
+
+`@bufferbot deploy <branch> to dev-api`
+
+Example: `@bufferbot deploy task/my-important-task to dev-api`
+
+This command accepts `master` as a branch too.
+
+**For testing changes to the frontend/product itself**
+
+`@bufferbot devdeploy <branch>`
+
+To test changes that you would normally deploy to the `web` environment, we have a different approach. Buffer has 3 staging servers set up. The command `devdeploy` helps manage sharing these servers with each other.
+
+Example: `@bufferbot devdeploy task/my-special-task`
+
+The above example will deploy the branch to one of our 3 staging servers and will reply with a message stating which server was used and which dev url you can find your deployment at. The machine it is deployed to is then locked to your name. The next time you do a `devdeploy` it will automatically redeploy to the same machine. If anyone else wishes to use that machine, they must explicity unlock it. Machines are automatically unlocked every 12 hours unless an explicit desire to have it locked for longer has been expressed.
+
+There are other commands possible with `devdeploy`.
+
+**Get the statuses of each dev machine:** `@bufferbot devdeploy status`
+
+**Unlock a machine you need or if you are done with it** `@bufferbot devdeploy unlock <dev1/dev2/dev3>`
+
+The above command shows the choice of machines. If you wish to unlock `dev3` you'd use `@bufferbot devdeploy unlock dev3`
+
+**Create a provisional lock on your machine** `@bufferbot devdeploy lock <dev1/dev2/dev3>`
+
+In some cases, you might want to keep your dev environment around for longer than 12 hours. In that case you'd run this command. It gives you the choice of selecting of locking the machine for 24/36/48 hours. The choice is made directly through the slack interface.
+
+**Deploying to a dev machine of your choice** `@bufferbot devdeploy <branch> to <dev1/dev2/dev3>`
+
+NOTE: This is a USE ONLY IF YOU ABSOLUTELY MUST command. The logic behind this warning is that if you have a use case that depends on staging a deployment to particular machine, this is considered a code smell in many cases. That said, it's hart to avoid it 100% of the time. Therefore this command has been offered as an escape hatch.
+
 ```
-    @bufferbot servicedeploy worker-update
+TODO: Add screenshots
 ```
 
-Then you can check the workers has been properly deployed by checking the age of the worker:
 ```
-    kubectl get pods -n workers
+TODO: Micro service deployments
 ```
 
-## Architecture
+## Rollbacks
 
-To put it in a simple way, we put the `buffer-web` repo in a docker container and run the workers in k8s. [Here the Dockerfile used in production](https://github.com/bufferapp/buffer-web/blob/master/Dockerfile.workers). We use the [official PHP 5.6.31](https://github.com/bufferapp/dockerfiles/blob/master/php56-cli/Dockerfile) image, that uses itself `Debian 8.9 (jessie)`.
+In the case of an emergency, how do you rollback?
 
-Each worker has its own kubernetes deployment file located in the kube repo, under `kube/us-east1.buffer-k8s.com/workers`. Reach anyone in the system team to have access to it!
+### Using helm
 
-In SQS, the new queue name [has the `_k8s` suffix appened](https://github.com/bufferapp/buffer-web/blob/4eda46cb62a18f9285eab93e33100d7133e92cfc/shared/libraries/Workers/Worker.php#L81-L83) to its previous name. For instance, instead of `update` queue, it will be `update_k8s`
+Assuming you have helm (v2.8.2) [Mac os / Linux binary], run `helm history buffer-publish-master`
 
-## Code specific to k8s
-We set the  [`ENV_KUBERNETES`](https://github.com/bufferapp/buffer-web/blob/37348b9f59c675f420ea7099fd2ed9d0758e4844/Dockerfile.workers#L10
-) environnment variable to specify the code that is specific to kubernetes. Here the handy link to see [how it's used](https://github.com/bufferapp/buffer-web/search?utf8=%E2%9C%93&q=ENV_KUBERNETES&type=).
+You'll see something like this:
 
-## Run k8s workers locally
-
-Use `buffer-dev` to starts the worker :
-
-- `./dev web-worker start worker_name`
-- `./dev web-worker tail worker_name`
-- `./dev web-worker stop worker_name`
-
-If you have modified the `Dockerfile.local.worker`, please make sure to `./dev rebuild web-worker` the dev environment.
-
-Note: This way is better than the `./dev worker` command  because it reflects the exact same container as production. 🐳🐳🐳
+![helm history](http://hi.buffer.com/7af033b2c5e2/Image%202018-09-12%20at%201.10.33%20AM.png)
 
 
-## Production Deployments 
+2. Eyeball the time of deployment and identify which REVISION corresponds to the git commit you want to rollback to. Assume in this case it's 165 (at the time of sending this mail, y'all are up to 168)
 
-To deploy to production :
+3. Run `helm rollback buffer-publish-master 165`.
 
-`@bufferbot servicedeploy [deployment-key]`
+4. Run `helm history buffer-publish-master` to verify it worked. (You should see a new REVISION. In this case it would have been 169 and instead of saying Upgrade complete, it would say Rollback to 165)
 
-Note:  You'll probably change some library/models that will affect utils, web or api environnments. In that case, you should aslo deploy to those environnments. Just ask in #eng-deploys if you're unsure :) 
+
+### Using kuberdash (beta)
+
+For buffer-publish:
+
+1. Go to <secret>`hAQICAHiNkzgvn++REwHHO+eri0S+Wdk1uZD6ZjADroinALmauwGApBCi8WwL88pZI66DsKtYAAAAdjB0BgkqhkiG9w0BBwagZzBlAgEAMGAGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMiXEhZb/TCaDtrrxBAgEQgDPG+H25cn2Sachj70SlJlWVQmK6PoZcUzKYsFqe5IPru3KWdSIxco3xMThTKFJ4YDdS5Bw=`</secret>
+   * Refer [the encryption tool docs](encryption-tool.md) to decrypt the above string.
+
+2. Click `view rollout history` for a deployment. In the next screen, enter buffer for namespace and buffer-publish-master for deployment:
+![enter buffer namespace](https://dha4w82d62smt.cloudfront.net/items/2L2a1i0b1y1p403t2O2d/Image%202018-09-12%20at%201.17.23%20AM.png)
+
+3. Click `view rollbacks`. Wait. Wait. Wait for it. And you should see something like this:
+![View Rollbacks](http://hi.buffer.com/040ac0b05cc1/viewrollouthistory.png)
+
+
+4.Using the timestamps (**times are in UTC**) as a hint, browse to the ID you wish to use. Let's use ID 16 as an example here.
+![view rollout revision](http://hi.buffer.com/29e38670a29c/viewrevision.png)
+
+
+5. Check if the tag (the part after bufferapp/buffer-publish) matches the git hash you wish to rollback to. If it does, click revert to this revision. You'll get redirected to the version list page.
+ID 16 should have vanished and ID 20 should now be available.
+
+If you don't see ID 20, then that means the rollback failed (sorry for poor error messaging or the lack of any error messaging).
+
+There's an occasional bug which causes the redirect after completing the request to timeout immediately. You'll just see a white page. Hit **f5** and you should see the list of releases again.
+
+Here's a gallery of pictures for anyone interested in a test rollback scenario using a test branch on kuberdash
+
+* [1](http://hi.buffer.com/64a9b5878f60/Image%202018-09-12%20at%201.17.23%20AM.png)
+* [2](http://hi.buffer.com/040ac0b05cc1/viewrollouthistory.png) (note the ID's available)
+* [3](http://hi.buffer.com/29e38670a29c/viewrevision.png)
+* [4](http://hi.buffer.com/da927fb0fdd4/finallistofrevisions.png) (note that ID 2 has vanished and has been replaced with ID 5)
+
+This experience isn't great no matter which way you do it. Both involve gut checks at some level rather than being confident that the system is guiding you to do the right thing. Adnan is hoping to bump up the priority on fixing the experience around this during Teddy cycle. But for the moment, here's hoping this information is helpful but isn't even needed in the near future :).
