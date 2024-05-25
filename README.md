@@ -1,46 +1,267 @@
-# 项目背景
-
-蘑菇街能有今天的快速发展，得益于开源软件群雄崛起的大环境背景，我们一直对开源社区怀有感恩之情，因此也一直希望能为开源社区贡献一份力量。
-
-2013年我们蘑菇街从社区导购华丽转身时尚电商平台，为解决千万妹子和时尚卖家的沟通问题，我们开发了自己的即时通讯软件。既然已经有了用户使用的IM，为什么我们自己公司内部沟通还要用第三方的呢？因此就有了TT(TeamTalk)的雏形，现在蘑菇街内部的在线沟通全部通过TT来完成。随着TT功能的逐渐完善，我们决定把TT开源来回馈开源社区，希望国内的中小企业都能用上开源、免费、好用的IM工具！
-
-# 项目介绍
-* 名称：TeamTalk
-* 官网：http://tt.mogu.io/
-* 开源协议：[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
-* 定位：中小型企业用户，member >= 2
-* 特点：开源与产品并重
-* 功能：可靠的消息传递机制；支持文字、图片、语音等富文本信息；文件收发等	
-
-# 项目框架
+Getting started with Markdown
+=============================
 
 
-麻雀虽小五脏俱全，本项目涉及到多个平台、多种语言，简单关系如下图：
-     
-![teamtalk架构图](http://s6.mogucdn.com/b7/pic/140921/7n6ih_ieygmzjsmiywezjwmmytambqhayde_514x551.jpg)
+- [Getting started with Markdown](#getting-started-with-markdown)
+- [Titles](#titles)
+- [Paragraph](#paragraph)
+- [List](#list)
+	- [List CheckBox](#list-checkbox)
+- [Link](#link)
+	- [Anchor links](#anchor-links)
+- [Blockquote](#blockquote)
+- [Image | GIF](#image--gif)
+- [Style Text](#style-text)
+	- [Italic](#italic)
+	- [Bold](#bold)
+	- [Strikethrough](#strikethrough)
+- [Code](#code)
+- [Email](#email)
+- [Table](#table)
+	- [Table Align](#table-align)
+    	- [Align Center](#align-center)
+    	- [Align Left](#align-left)
+    	- [Align Right](#align-right)
+- [Escape Characters](#escape-characters)
+- [Emoji](#emoji)
+- [Shields Badges](#Shields-Badges)
+- [Markdown Editor](#markdown-editor)
+- [Some links for more in depth learning](#some-links-for-more-in-depth-learning)
+
+----------------------------------
+
+# Titles 
+
+### Title 1
+### Title 2
+
+	Title 1
+	========================
+	Title 2 
+	------------------------
+
+# Title 1
+## Title 2
+### Title 3
+#### Title 4
+##### Title 5
+###### Title 6
+
+    # Title 1
+    ## Title 2
+    ### Title 3    
+    #### Title 4
+    ##### Title 5
+    ###### Title 6    
+
+# Paragraph
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. Phasellus eleifend egestas diam, id tincidunt arcu dictum quis. Pellentesque eu dui tempus, tempus massa sed, eleifend tortor. Donec in sem in erat iaculis tincidunt. Fusce condimentum hendrerit turpis nec vehicula. Aliquam finibus nisi vel eros lobortis dictum. Etiam congue tortor libero, quis faucibus ligula gravida a. Suspendisse non pulvinar nisl. Sed malesuada, felis vitae consequat gravida, dui ligula suscipit ligula, nec elementum nulla sem vel dolor. Vivamus augue elit, venenatis non lorem in, volutpat placerat turpis. Nullam et libero at eros vulputate auctor. Duis sed pharetra lacus. Sed egestas ligula vitae libero aliquet, ac imperdiet est ullamcorper. Sed dapibus sem tempus eros dignissim, ac suscipit lectus dapibus. Proin sagittis diam vel urna volutpat, vel ullamcorper urna lobortis. Suspendisse potenti.
+
+Nulla varius risus sapien, nec fringilla massa facilisis sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vel ornare erat, eget rhoncus lectus. Suspendisse interdum scelerisque molestie. Aliquam convallis consectetur lorem ut consectetur. Nullam massa libero, cursus et porta ac, consequat eget nibh. Sed faucibus nisl augue, non viverra justo sagittis venenatis.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. 
+    
+    Phasellus eleifend egestas diam, id tincidunt arcu dictum quis.
+
+# List 
+* Item 1;
+	* Item 1.1;
+* Item 2;
+	* Item 2.1;
+	* Item 2.2;
+* Item 3
+	* Item 3.1;
+		* Item 3.1.1;
+    
+>      * Item 1;
+>	      * Item 1.1;
+>	    * Item 2;
+>	     * Item 2.1;
+>	     * Item 2.2;
+>	    * Item 3
+>		   * Item 3.1;
+>			  * Item 3.1.1;
+
+## List CheckBox
+
+ - [ ] Item A
+ - [x] Item B
+ - [x] Item C
+ 
+>     - [ ] Item A
+>     - [x] Item B
+>     - [x] Item C
 
 
-#### 服务端：
-     
-CppServer：TTCppServer工程，包括IM消息服务器、http服务器、文件传输服务器、文件存储服务器、登陆服务器
-java DB Proxy：TTJavaServer工程，承载着后台消息存储、redis等接口
-PHP server：TTPhpServer工程，teamtalk后台配置页面
+# Link
+[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
 
-#### 客户端：
+[Youtube](https://www.youtube.com) - _Enjoy videos and music you love, upload original content, and share it with friends, family, and the world on YouTube._
 
-- mac：TTMacClient工程，mac客户端工程
-- iOS：TTIOSClient工程，IOS客户端工程
-- Android：TTAndroidClient工程，android客户端工程
-- Windows：TTWinClient工程，windows客户端工程
+[GitHub](https://github.com/fefong/markdown_readme#getting-started-with-markdown) - _Project_
 
-* 语言：c++、objective-c、java、php
-* 系统环境：Linux、Windows，Mac, iOS, Android
+		[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
 
-# 代码下载
--[地址](https://github.com/mogujie/TeamTalk)
+## Anchor links
 
-# 交流
+[Markdown - Summary](#Getting-started-with-Markdown)
 
-* qq交流群1：341273218(已满)
-* qq交流群2:437335108
-* 邮件交流：tt@mogujie.com
+[Markdown - Markdown Editor](#Markdown-Editor)
+
+		[Markdown - Link](#Link)
+
+# Blockquote
+> Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny
+
+    > Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny 
+
+# Image | GIF
+![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
+    
+    ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
+    
+See more [Markdown Extras - Image Align](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#image-align)    
+
+# Style Text
+### Italic
+
+*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
+
+     *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
+
+### Bold
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
+
+    **Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
+    
+### Strikethrough
+~~strikethrough text~~
+
+    ~~strikethrough text~~
+    
+# Code
+
+```java
+public static void main(String[] args) {
+	//TODO
+}
+```
+
+>   \`\`\`java <br>
+>   public static void main(String[] args) {<br>
+>	    //TODO<br>
+>	}<br>
+>   \`\`\`<br>
+
+See more [Markdown Extras - Style Text](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#style-text)
+
+# Email
+<email@email.com>
+
+    <email@email.com>
+
+# Table
+
+|Column 1|Column 2|Column 3|
+|---|---|---|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|---|---|---|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+## Table Align
+
+## Align Center
+
+|Column 1|Column 2|Column 3|
+|:---:|:---:|:---:|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|:---:|:---:|:---:|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+## Align Left
+
+|Column 1|Column 2|Column 3|
+|:---|:---|:---|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|:---|:---|:---|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+## Align Right
+
+|Column 1|Column 2|Column 3|
+|---:|---:|---:|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|---:|---:|---:|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+See more [Markdown Extras - Table](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table)
+* [Rownspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---rowspan)
+* [Colspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---colspan)
+
+# Escape Characters
+
+```
+\   backslash
+`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus sign
+-   minus sign (hyphen)
+.   dot
+!   exclamation mark
+```
+
+# Emoji
+
+* [Emoji](emoji.md#emoji);
+	* [People](emoji.md#people) - (:blush: ; :hushed: ; :shit:);
+	* [Nature](emoji.md#nature) - (:sunny: ; :snowman: ; :dog:);
+	* [Objects](emoji.md#objects) - (:file_folder: ; :computer: ; :bell:);
+	* [Places](emoji.md#places) - (:rainbow: ; :warning: ; :statue_of_liberty:);
+	* [Symbols](emoji.md#symbols) - (:cancer: ; :x: ; :shipit:);
+* [Kaomoji](emoji.md#kaomoji);
+* [Special-Symbols](emoji.md#special-symbols);
+	
+
+# Shields Badges
+
+:warning: _We are not responsible for this site_
+
+See more: [https://shields.io/](https://shields.io/)
+
+[![GitHub forks](https://img.shields.io/github/forks/fefong/markdown_readme)](https://github.com/fefong/markdown_readme/network)
+![Markdown](https://img.shields.io/badge/markdown-project-red)
+
+# Markdown Editor
+
+[StackEdit](https://stackedit.io) - _StackEdit’s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files._
+
+# Some links for more in depth learning
+
+:page_facing_up: [Markdown Extras](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#markdown---extras)
+
+:page_facing_up: [Wikipedia - Markdown](https://pt.wikipedia.org/wiki/Markdown)
+
+:page_facing_up: [Oficial](https://daringfireball.net/projects/markdown/)
+
+
