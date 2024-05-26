@@ -1,236 +1,362 @@
-# 规范
+<h1 align="center">Awesome GitHub Profile README
+<a href="https://www.producthunt.com/posts/awesome-github-profiles?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-awesome-github-profiles" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=277987&theme=light" alt="Awesome GitHub Profiles - Best curated list of developers readme, updated every 15 min | Product Hunt" style="width: 200px; height: 44px;" width="200" height="44" /></a></h1>
+<div align="center">
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
+<a href="https://arbeitnow.com/?utm_source=awesome-github-profile-readme"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=arbeitnow&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
+<!-- <img src="http://hits.dwyl.com/abhisheknaiidu/awesome-github-profile-readme.svg" alt="Hits Badge"/> -->
+<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+<a href="https://discord.gg/XTW52Kt"><img src="https://img.shields.io/discord/733027681184251937.svg?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/></a>
+<a href="https://twitter.com/abhisheknaiidu" ><img src="https://img.shields.io/twitter/follow/abhisheknaiidu.svg?style=social" /> </a>
+<br>
 
-一个兼容的 README 必须满足下面列出的所有需求。
+<i>A curated list of awesome Github Profile READMEs</i>
+
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/stargazers"><img src="https://img.shields.io/github/stars/abhisheknaiidu/awesome-github-profile-readme" alt="Stars Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/network/members"><img src="https://img.shields.io/github/forks/abhisheknaiidu/awesome-github-profile-readme" alt="Forks Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/pulls"><img src="https://img.shields.io/github/issues-pr/abhisheknaiidu/awesome-github-profile-readme" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/issues"><img src="https://img.shields.io/github/issues/abhisheknaiidu/awesome-github-profile-readme" alt="Issues Badge"/></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/abhisheknaiidu/awesome-github-profile-readme?color=2b9348"></a>
+<a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/master/LICENSE"><img src="https://img.shields.io/github/license/abhisheknaiidu/awesome-github-profile-readme?color=2b9348" alt="License Badge"/></a>
+
+<img alt="Awesome GitHub Profile Readme" src="assets/agpr.gif"> </img>
+
+<i>Loved the project? Please consider [donating](https://paypal.me/abhisheknaiidu) to help it improve!</i>
+
+</div>
+
+### Contents:
+  - [Categories](#categories)
+      - [GitHub Actions 🤖](#github-actions-)
+      - [Game Mode 🚀](#game-mode-)
+      - [Code Mode 👨🏽‍💻](#code-mode-)
+      - [Dynamic Realtime 💫](#dynamic-realtime-)
+      - [A Little Bit of Everything 😃](#a-little-bit-of-everything-)
+      - [Descriptive 🗒](#descriptive-)
+      - [Simple but Innovative Ones 🤗](#simple-but-innovative-ones-)
+      - [Typing.. Mode 🎰](#typing-mode-)
+      - [Anime 👾](#anime-)
+      - [Minimalistic ✨](#minimalistic-)
+      - [GIFS 👻](#gifs-)
+      - [Just Images 🎭](#just-images-)
+      - [Badges 🎫](#badges-)
+      - [Fancy Fonts 🖋](#fancy-fonts-)
+      - [Icons 🎯](#icons-)
+      - [Retro 😎](#retro-)
+  - [Tools](#tools)
+  - [Articles](#articles)
+  - [Video Tutorials](#tutorials)
+  - [Contribute](#contribute)
+  - [License](#license)
 
 
-> 注意: 标准自述文件是为开放源码库设计的。 尽管它[以前](README.cn.md#背景)是为 Node 和 npm 项目制作的，但它也适用于其他语言的库和包管理器。
+## Categories
 
-**要求:**
-  - 被叫做 README.md (大写).
-  - 如果项目支持 i18n，文件名必须相应地命名: `README.de.md`,  `de` 是 BCP 47语言标记. 对于命名，优先考虑语言的非区域子标记. 如果只有一个 README，并且语言不是英语，那么文本中允许使用不同的语言，而无需指定 BCP 标记: 例如: `README.md`  如果没有语言 README 的话，可以用德语  `README.md`. 在有多种语言的地方,README.md 是留给英语的.
-  - 做一个正确的 Markdown 文件.
-  - 部分必须按照下面给出的顺序显示。可以省略选择部分.
-  - 除非另有说明，部分必须有下面列出的标题。 如果 README 是另一种语言，则必须将标题翻译成该语言.
-  - 不能包含失效的链接.
-  - 如果有代码示例，那么它们的连接方式应该与项目其余部分的代码连接方式相同.
+#### GitHub Actions 🤖
+- [Abhishek Naidu](https://github.com/abhisheknaiidu/abhisheknaiidu)
+- [Thomas Guibert](https://github.com/thmsgbrt/thmsgbrt)
+- [Brian Douglas](https://github.com/bdougie/bdougie)
+- [Shawn Wang](https://github.com/sw-yx/sw-yx)
+- [Simon Willison](https://github.com/simonw/simonw)
+- [Mike Coutermarsh](https://github.com/mscoutermarsh/mscoutermarsh)
+- [Michael Hoffmann (Mokkapps)](https://github.com/mokkapps/mokkapps)
+- [Athul Cyriac Ajay](https://github.com/athul/athul)
+- [Gautam Krishna R](https://github.com/gautamkrishnar/gautamkrishnar)
+- [Roald Nefs](https://github.com/roaldnefs/roaldnefs)
+- [Leo](https://github.com/mopig/mopig)
+- [Dhruv Jain](https://github.com/maddhruv/maddhruv)
+- [Erwin Lejeune](https://github.com/guilyx/guilyx)
+- [Jessica Lim](https://github.com/JessicaLim8/JessicaLim8)
+- [侑夕-Tw93](https://github.com/tw93/tw93)
+- [liununu](https://github.com/liununu/liununu)
+- [Filippo Rossi (qu4k)](https://github.com/qu4k/qu4k)
+- [Moe Poi ~](https://github.com/moepoi/moepoi)
+- [Elon Tang (blackcater)](https://github.com/blackcater/blackcater)
+- [Stanley Lim (Spiderpig86)](https://github.com/Spiderpig86/Spiderpig86)
+- [Akshit Garg (gargakshit)](https://github.com/gargakshit/gargakshit)
+- [Yufan You](https://github.com/ouuan/ouuan)
+- [Danny Koppenhagen](https://github.com/d-koppenhagen/d-koppenhagen)
+- [Vidya Bhandary](https://github.com/vidyabhandary/vidyabhandary)
+- [Rao Hai](https://github.com/RaoHai/RaoHai)
+- [Jatin Rao](https://github.com/jatin2003/jatin2003)
+- [teoxoy](https://github.com/teoxoy/teoxoy)
+- [Aral Roca](https://github.com/aralroca/aralroca)
+- [codeSTACKr](https://github.com/codestackr/codestackr)
+- [itgoyo](https://github.com/itgoyo/itgoyo)
+- [lifeparticle](https://github.com/lifeparticle/lifeparticle)
 
-## 目录
+#### Game Mode 🚀
+- [Tim Burgan](https://github.com/timburgan/timburgan)
+- [Ben Sampica](https://github.com/benjaminsampica/benjaminsampica)
+- [Kavish Hukmani](https://github.com/DoubleGremlin181/DoubleGremlin181)
+- [Jonathan Gin](https://github.com/JonathanGin52/JonathanGin52)
+- [Ross Williams](https://github.com/rossjrw/rossjrw)
+- [kylepls](https://github.com/kylepls/kylepls)
+- [Aaron Liu](https://github.com/HFO4/HFO4)
+- [marcizhu](https://github.com/marcizhu/marcizhu)
 
-_注意: 这只是规范的建议，并没有为任何符合规范的文档定义或强制要求使用术语。_
+#### Code Mode 👨🏽‍💻
+- [Thaiane Braga](https://github.com/Thaiane/Thaiane)
+- [Ash Baker](https://github.com/ashbakernz/ashbakernz)
+- [Anmol Singh](https://github.com/anmol098/anmol098)
+- [Kiho](https://github.com/monkindey/monkindey)
+- [Marton](https://github.com/martonlederer/martonlederer)
+- [Redowan Delowar](https://github.com/rednafi/rednafi)
+- [Zhenye Na](https://github.com/Zhenye-Na/Zhenye-Na)
 
-- [段落](#段落)
-  - [标题](#标题)
-  - [横幅](#横幅)
-  - [徽章](#徽章)
-  - [简短描述](#简短描述)
-  - [长描述](#长描述)
-  - [目录](#目录-1)
-  - [安全](#安全)
-  - [背景](#背景)
-  - [安装](#安装)
-  - [用法](#用法)
-  - [额外部分](#额外部分)
-  - [API](#api)
-  - [维护者](#维护者)
-  - [致谢](#致谢)
-  - [如何贡献](#如何贡献)
-  - [许可证](#许可证)
-- [定义](#定义)
+#### Dynamic Realtime 💫
+- [Kirill Feschenko](https://github.com/xcaq/xcaq)
+- [Anurag Hazra](https://github.com/anuraghazra/anuraghazra)
+- [DenverCoder1](https://github.com/DenverCoder1/DenverCoder1)
+- [Hemant Joshi](https://github.com/8bithemant/8bithemant)
+- [Kittinan](https://github.com/kittinan/kittinan)
+- [Andrew Novac](https://github.com/novatorem/novatorem)
+- [Johnny Villegas](https://github.com/C9-LinkRs/C9-LinkRs)
+- [Andrew Young](https://github.com/andyruwruw/andyruwruw)
+- [Rashmi Jadhav](https://github.com/rusty-sj/rusty-sj)
+- [andyruwruw](https://github.com/andyruwruw/andyruwruw)
+- [Jacob Colvin](https://github.com/MacroPower/MacroPower)
+- [Osman Durdağ](https://github.com/zumrudu-anka/zumrudu-anka)
+- [iampavangandhi](https://github.com/iampavangandhi/iampavangandhi)
+- [Dani Akash](https://github.com/daniakash/daniakash)
+- [Rahul Jha](https://github.com/rahul-jha98/rahul-jha98)
+- [Taehyun Hwang](https://github.com/HwangTaehyun/HwangTaehyun)
 
-## 段落
+#### A Little Bit of Everything 😃
+- [Raymond Li](https://github.com/Raymo111/Raymo111)
+- [Martin Heinz](https://github.com/MartinHeinz/MartinHeinz)
+- [Adam Alston](https://github.com/adamalston/adamalston)
+- [Rafnix Guzmán](https://github.com/rafnixg/rafnixg)
+- [Aditya Pal](https://github.com/sciencepal/sciencepal)
+- [Hedy Li](https://github.com/hedythedev/hedythedev)
+- [Xunzhuo](https://github.com/xunzhuo/xunzhuo)
+- [Khaleel Gibran](https://github.com/khalby786/khalby786)
+- [Apoorv Tyagi](https://github.com/apoorvtyagi/apoorvtyagi)
+- [CxyFreedom](https://github.com/cxyfreedom/cxyfreedom)
+- [Miller Camilo Vega](https://github.com/minoveaz/minoveaz)
+- [Abhishek Maira](https://github.com/AbhishekMaira10/AbhishekMaira10)
+- [Clayton Hamilton](https://github.com/claytonjhamilton/claytonjhamilton)
+- [Sy Rashid](https://github.com/syrashid/syrashid)
+- [Quin Knight](https://github.com/cheesits456/cheesits456)
+- [Jackyu-1999](https://github.com/Jackyu-1999/Jackyu-1999)
+- [Rak Laptudirm](https://github.com/raklaptudirm/raklaptudirm)
+- [Trini B](https://github.com/trinib/trinib)
+- [holic-x](https://github.com/holic-x/holic-x)
 
-### 标题
-**状态:** 必须
+#### Descriptive 🗒
+- [Filip Troníček](https://github.com/filiptronicek/filiptronicek)
+- [Garima Singh](https://github.com/garimasingh128/garimasingh128)
+- [lizheming](https://github.com/lizheming/lizheming)
+- [Nguyễn Hoàng Dương](https://github.com/you-create/you-create)
+- [Saksham Taneja](https://github.com/sakshamtaneja21/sakshamtaneja21)
+- [TheAbbie](https://github.com/theabbie/theabbie)
+- [Keshav Singh](https://github.com/keshavsingh4522/keshavsingh4522)
+- [Vidur Satija](https://github.com/vidursatija/vidursatija)
+- [Dani El-Ayyass](https://github.com/dayyass/dayyass)
+- [Nanra Sukedy](https://github.com/Nanra/Nanra)
 
+#### Simple but Innovative Ones 🤗
+- [Nate Moore](https://github.com/natemoo-re/natemoo-re)
+- [Jhey Tompkins](https://github.com/jh3y/jh3y)
+- [Waylon Walker](https://github.com/WaylonWalker/WaylonWalker)
+- [Vansh Kapoor](https://github.com/vanshkapoor/vanshkapoor)
+- [Harsh Kumar Khatri](https://github.com/harshkumarkhatri/harshkumarkhatri)
+- [Stephen Ajulu](https://github.com/stephenajulu/stephenajulu)
+- [Haany Ali](https://github.com/MarikIshtar007/MarikIshtar007)
+- [Anurag Singh](https://github.com/ashleymavericks/ashleymavericks)
+- [Rishit Dagli](https://github.com/Rishit-dagli/Rishit-dagli)
+- [Vinit Shahdeo](https://github.com/vinitshahdeo/vinitshahdeo/)
+- [Fatih Kadir Akın](https://github.com/f/f/)
+- [Lucas Vazquez](https://github.com/lucasvazq/lucasvazq)
+- [小弟调调™](https://github.com/jaywcjlove/jaywcjlove)
+- [alx365](https://github.com/alx365/alx365)
+- [Johnny Villegas](https://github.com/C9-LinkRs/C9-LinkRs)
+- [一缕殇流化隐半边冰霜](https://github.com/halfrost/halfrost)
+- [Srihari Kapu](https://github.com/sriharikapu/sriharikapu)
+- [vaaski](https://github.com/vaaski/vaaski)
+- [Arturs Smirnovs](https://github.com/arturssmirnovs/arturssmirnovs)
+- [Yash Sahijwani](https://github.com/Terabyte17/Terabyte17)
+- [Hemanth Kollipara](https://github.com/Defcon27/Defcon27)
+- [Tushar Mittal](https://github.com/techytushar/techytushar)
+- [Onimur](https://github.com/onimur/onimur)
+- [Bruno Tacca](https://github.com/brunotacca/brunotacca)
+- [Matthew Taylor](https://github.com/Wrapperup/Wrapperup)
 
-**要求:**
+#### Typing.. Mode 🎰
+- [Mathieu Ledru](https://github.com/matyo91/matyo91)
+- [CyrisXD](https://github.com/CyrisXD/CyrisXD)
+- [Mpho Mphego](https://github.com/mmphego/mmphego)
+- [Abhinav Sharma](https://github.com/ABSphreak/ABSphreak)
+- [Mason Slover](https://github.com/MasonSlover/MasonSlover)
+- [SuperSupeng](https://github.com/SuperSupeng/SuperSupeng)
 
-- 标题必须与仓库、文件夹和包管理器名称相匹配——或者用斜体和括号表示的相关副标题。 例如:
+#### Anime 👾
+- [Ing](https://github.com/innng/innng)
+- [edisonlee55](https://github.com/edisonlee55/edisonlee55)
+- [Ashutosh](https://github.com/Xx-Ashutosh-xX/Xx-Ashutosh-xX)
+- [Yukii](https://github.com/PrincessAkira/PrincessAkira)
 
-  ```markdown
-  # Standard Readme Style _(standard-readme)_
-  ```
-  如果任何文件夹、仓库或包管理器名称不匹配，必须在“长描述”中附注说明原因。
+#### Minimalistic ✨
+- [Caneco](https://github.com/caneco/)
+- [Gift Egwuenu](https://github.com/lauragift21/lauragift21)
+- [Kelechi Precious Nwachukwu](https://github.com/PluckyPrecious/PluckyPrecious)
+- [Ghazi Khan](https://github.com/gkhan205)
+- [Pratik Kumar](https://github.com/pr2tik1/pr2tik1)
+- [Dennis Hartrampf](https://github.com/DennisHartrampf/DennisHartrampf)
+- [MrStanDu33](https://github.com/MrStanDu33/MrStanDu33)
+- [Jayraj Roshan](https://github.com/jayrajroshan/jayrajroshan)
+- [amxchang](https://github.com/amxchang/amxchang)
+- [ridermansb](https://github.com/Ridermansb/Ridermansb)
+- [Maximous Black](https://github.com/maximousblk/maximousblk)
+- [Alex Martin](https://github.com/AlexMartinFR/AlexMartinFR)
+- [ChungZH](https://github.com/ChungZH/ChungZH/)
+- [Orhun](https://github.com/orhun/orhun)
+- [Aveek Saha](https://github.com/Aveek-Saha/Aveek-Saha)
+- [Federico Dondi](https://github.com/federico-dondi)
+- [Zheeeng](https://github.com/Zheeeng/Zheeeng)
+- [TallGuyJenks](https://github.com/tallguyjenks/tallguyjenks)
+- [Stefanie Grunwald](https://github.com/moertel/moertel)
+- [Abdul Khaliq](https://github.com/kha7iq/kha7iq)
 
-**建议:**
+#### GIFS 👻
+- [Pouya Saadeghi](https://github.com/saadeghi/saadeghi)
+- [Ari](https://github.com/ari-hacks/ari-hacks)
+- [Siv Ram Shastri](https://github.com/Prince-Shivaram/Prince-Shivaram)
+- [Shanu Mishra](https://github.com/Shanu1515/Shanu1515)
+- [Shubham Kumar](https://github.com/imskr/imskr)
+- [Duncan](https://github.com/dephraiim/dephraiim)
+- [Demartini](https://github.com/demartini/demartini)
+- [Sindre Sorhus](https://github.com/sindresorhus/sindresorhus)
+- [Pranjal Bhardwaj](https://github.com/Bhard27/Bhard27)
+- [Okan Koçyiğit](https://github.com/okankocyigit/okankocyigit)
+- [Raghav Khullar](https://github.com/RaghavK16/RaghavK16)
+- [xrkffgg](https://github.com/xrkffgg/xrkffgg)
+- [Kevin Cui](https://github.com/KevCui/KevCui)
+- [Muskan Rani](https://github.com/muskanrani/muskanrani)
+- [Rishav Anand](https://github.com/rishavanand/rishavanand)
+- [KelviNosse](https://github.com/KelviNosse/KelviNosse)
+- [nilfalse](https://github.com/nilfalse/nilfalse)
+- [Shahriar Shafin](https://github.com/ShahriarShafin/ShahriarShafin)
+- [Somnath Paul](https://github.com/SP-XD/SP-XD)
+- [Ksenia Morozova](https://github.com/kmoroz/kmoroz)
 
-- 应该是有据可循的
+#### Just Images 🎭
+- [Zack Krida](https://github.com/zackkrida/zackkrida)
+- [偏右](https://github.com/afc163/afc163)
+- [thewhiteh4t](https://github.com/thewhiteh4t/thewhiteh4t)
+- [Akash Rai](https://github.com/akasrai/akasrai)
+- [Oussama Bouchikhi](https://github.com/oussamabouchikhi/oussamabouchikhi)
+- [Daily Random Photo](https://github.com/dailyrandomphoto/dailyrandomphoto)
 
-### 横幅
-**状态:** 可选
+#### Badges 🎫
+- [Harish Kumar S S](https://github.com/harish-sethuraman/harish-sethuraman)
+- [Anirudh Emmadi](https://github.com/aemmadi/aemmadi)
+- [Brendon Smith](https://github.com/br3ndonland/br3ndonland)
+- [Alwin Wang](https://github.com/alwinw/alwinw)
+- [Moshfiq Rony](https://github.com/moshfiqrony/moshfiqrony)
+- [Ileriayo Adebiyi](https://github.com/ileriayo/ileriayo)
+- [Samujjwaal Dey](https://github.com/samujjwaal/samujjwaal)
+- [Char-Al](https://github.com/char-al/char-al)
+- [Oka](https://github.com/Coordinate-Cat/Coordinate-Cat)
+- [Nikita Rusetskii](https://github.com/xtenzQ/xtenzQ)
+- [Raphael Ebner](https://github.com/rafi0101/rafi0101)
 
-**要求:**
-- 不能有自己的标题
-- 必须链接到当前存储库中的本地映像
-- 必须直接出现在标题后面
+#### Fancy Fonts 🖋
+- [xiaoluoboding](https://github.com/xiaoluoboding/xiaoluoboding)
 
-### 徽章
-**Status:** 可选.
+#### Icons 🎯
+- [Yuan Tang](https://github.com/terrytangyuan/terrytangyuan)
+- [Hussainweb](https://github.com/hussainweb/hussainweb)
+- [Peter Han](https://github.com/peterthehan/peterthehan)
+- [Thomas George Thomas](https://github.com/Thomas-George-T/Thomas-George-T)
+- [Derek Nguyen](https://github.com/dereknguyen269/dereknguyen269)
+- [Valentin Briand](https://github.com/vbriand/vbriand)
 
-**要求:**
-- 不能有自己的标题
-- 必须用换行符分隔
+#### Retro 😎
+- [Livio Brunner](https://github.com/BrunnerLivio/BrunnerLivio)
+- [Christian Petersen](https://github.com/fnky/fnky)
 
-**建议:**
-- 使用 http://shields.io 或类似的服务来创建和托管图像
-- 添加 Standard Readme badge 徽章.
+## Tools
+- [Todoist Stats in Readme](https://github.com/abhisheknaiidu/todoist-readme) - Daily Todoist Stats on your Profile Readme
+- [Visitor Badge](https://visitor-badge.glitch.me/#docs) - Count visitors for your README.md, Issues, PRs in GitHub
+- [1990s style Visitor Counter](https://twitter.com/ryanlanciaux/status/1283755637126705152) - Add a 1990s style visitor counter with one line of markdown.
+- [Vistor Count](https://pufler.dev/git-badges/) - Count visitors for README.md that can be used with shields.io
+- [Shields Project](https://shields.io/) - Use Shields to create profile badges, compatible with Simple Icons
+- [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats) - Get dynamically generated GitHub stats on your readmes
+- [Github Contributor Stats](https://github.com/HwangTaehyun/github-contributor-stats) - :fire: Get dynamically generated Github Contributor stats (repositories you really committed) on your readmes
+- [GitHub Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats) - 🔥 Stay motivated and show off your contribution streak! 🌟 Display your total contributions, current streak, and longest streak on your GitHub profile README
+- [Simple Icons](https://github.com/simple-icons/simple-icons#cdn-usage) -  SVG icons for popular brands for your README.md files
+- [Laravel GitHub Profile Visit Counter](https://github.com/caneco/laravel-github-profile-view-counter) - Add on your Laravel project a quick-badge to count your profile visits.
+- [Dev Metrics in Readme](https://github.com/athul/waka-readme) - [WakaTime](https://wakatime.com/) Weekly Metrics on your Profile Readme
+- [Profile Activity Generator](https://github.com/omidnikrah/profile-activity-generator) - Generate custom profile activity for your profile README
+- [Current UTC time](https://github.com/jojoee/jojoee) - Example code of server that can serve dynamic content on GitHub profile
+- [Github Activity in README](https://github.com/jamesgeorge007/github-activity-readme) - Updates `README.md` with the recent GitHub activity of a user
+- [Github Profile README Generator](https://github.com/rahuldkjain/github-profile-readme-generator) - This tool provides an easy way to create github profile readme with latest addons like `visitors count`, `github stats` etc.
+- [Dynamic Profile Page On Github](https://github.com/umutphp/github-action-dynamic-profile-page) - Get dynamically generated list of your commits (of the repositories that the action is configured) on GitHub profile readme.
+- [npm package downloads](https://github.com/maddhruv/github-readme-npm-downloads) - Show all of your npm packages and their total downloads
+- [All Dev Stats in Readme](https://github.com/anmol098/waka-readme-stats) - Are you an early 🐤 or a night 🦉? When are you most productive during the day? What languages you code in? And other stuff... Let's check out in your readme!
+- [Feedparser](https://pythonhosted.org/feedparser/) - Convenient processing of RSS files
+- [Profile README Widgets](https://github.com/marketplace/actions/profile-readme) - Add simple widgets to your profile readme.
+- [Spotify now playing card generator](https://github.com/kittinan/spotify-github-profile) - Generate your Spotify now playing card for your GitHub profile
+- [Markdown Badges](https://github.com/Ileriayo/markdown-badges) - Add badges to your profile.
+- [Latest Blog Posts and StackOverflow activity in readme](https://github.com/gautamkrishnar/blog-post-workflow) - Show your latest blog posts from any sources or StackOverflow activity on your GitHub profile/project readme automatically using the RSS feed using this Github Action
+- [GitHub Readme LinkedIn](https://github.com/soroushchehresa/github-readme-linkedin) - Get dynamically generated images from your LinkedIn profile on your GitHub readmes
+- [GitHub Readme Medium](https://github.com/omidnikrah/github-readme-medium) - Show your latest Medium article on your readmes!
+- [GitHub Readme StackOverflow](https://github.com/omidnikrah/github-readme-stackoverflow) - Dynamically generated your StackOverflow profile status on your GitHub readmes!
+- [StackOverflow Stats Badge](https://github.com/claytonjhamilton/stackoverflow-badge) - Display your stats with this Unique StackOverflow Badge!
+- [Github Profile README Generator](https://github.com/arturssmirnovs/github-profile-readme-generator) - This project allows you to create nice and simple github profile readme files.
+- [Profile Readme Stats](https://github.com/marketplace/actions/profile-readme-stats) - [Github Action] Showcase your github stats on your profile README.md
+- [README Jokes](https://github.com/ABSphreak/readme-jokes) - Random dev jokes in your GitHub README.
+- [GitHub Profile Trophy](https://github.com/ryo-ma/github-profile-trophy) - 🏆 Add dynamically generated GitHub Trophy on your readme
+- [Github Readme Twitter](https://github.com/gazf/github-readme-twitter) - Show your latest tweet on your readmes.
+- [Random Dev Memes](https://github.com/techytushar/random-memer) - Random dev memes to display on your GitHub README.
+- [GitHub Readme Quotes](https://github.com/PiyushSuthar/github-readme-quotes) - Dev quotes on your GitHub Profile Readme.
+- [GitHub Profilinator](https://github.com/rishavanand/github-profilinator) - This tool contains small GUI components that you can hook together to generate markdown for your perfect readme.
+- [PageSpeed score](https://github.com/ankurparihar/readme-pagespeed-insights) - Generate website's PageSpeed score in animated svg form which can be used in GitHub README
+- [Gitwar Profile Score](https://github.com/iampavangandhi/Gitwar) - Add your Github Profile Score in README.
+- [Header Images for Github Profile READMEs](https://github.com/khalby786/REHeader) - Generate header images for your GitHub profile READMEs with custom content
+- [YouTube Channel Stats](https://github.com/DenverCoder1/github-readme-youtube-stats) - 📺 Display number of subscribers on YouTube and/or your channel's view count as a badge
+- [Current Book Status from GoodReads](https://github.com/theFr1nge/goodreads-readme) - Add a card of the current book you are reading that automatically syncs with GoodReads to display your progress.
+- [Readme Typing SVG](https://github.com/DenverCoder1/readme-typing-svg) - :zap: Dynamically generated, customizable SVG that gives the appearance of typing and deleting text
 
-### 简短描述
-**状态:** 必须
+## Articles
+- ["How To Create A GitHub Profile README"](https://www.aboutmonica.com/blog/how-to-create-a-github-profile-readme) - *Monica Powell*
+- ["How to Stand Out on Github with Profile READMEs"](https://medium.com/better-programming/how-to-stand-out-on-github-with-profile-readmes-dfd2102a3490?source=friends_link&sk=61df9c4b63b329ad95528b8d7c00061f) - *Jessica Lim*
+- ["What's on your GitHub Profile"](https://dev.to/waylonwalker/what-s-on-your-github-profile-40p3) - *Waylon Walker*
+- ["3 Ways to Spice up your Github Profile README 🔥"](https://dev.to/jayehernandez/3-ways-to-spice-up-your-github-profile-readme-1276) - *Jaye Hernandez*
+- ["Dynamically Generated Github Stats For Your Profile ReadMe"](https://dev.to/anuraghazra/dynamically-generated-github-stats-for-your-profile-readme-o4g) - *Anurag Hazra*
+- ["How to create an awesome GIF for your GitHub Profile README"](https://dev.to/satvikchachra/how-to-add-an-awesome-readme-to-your-github-profile-361n) - *Satvik Chachra*
+- ["Create a special repository in your GitHub Profile 🔨, supported and unsupported features"](https://torrocus.com/blog/special-github-repository/) - *Alex Malaszkiewicz*
+- ["How to create a Github Profile README with Dynamic Github Stats"](https://codewithghazi.com/how-to-create-a-github-profile-readme-with-dynamic-github-stats/) - *Ghazi Khan*
+- ["How I Built A Self-Updating README On My Github Profile"](https://www.mokkapps.de/blog/how-i-built-a-self-updating-readme-on-my-git-hub-profile/) - *Michael Hoffmann (Mokkapps)*
+- ["Building a self-updating profile README for GitHub"](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/) - *Simon Willison*
+- ["How to create an interactive README for your GitHub profile"](https://kavishhukmani.me/github-profile-interactive-readme-tutorial/) - *Kavish Hukmani*
+- ["什么？Github 居然可以这么玩？"](https://zhuanlan.zhihu.com/p/161705999) - *Tw93*
+- ["Getting started with Markdown Badges"](https://dev.to/ileriayo/mardown-badges-2og0) - *Ileriayo Adebiyi*
+- ["Show your latest dev.to posts automatically on your GitHub profile readme"](https://dev.to/gautamkrishnar/show-your-latest-dev-to-posts-automatically-in-your-github-profile-readme-3nk8)  - *Gautam krishna R*
+- ["How I Built A Self-Updating README by Webhooks and Netlify Functions"](https://github.com/RaoHai/RaoHai/blob/master/How-I-Built-A-Self-Updating-README-by-Webhooks-and-Netlify-Functions.md/) - *Rao Hai*
+- ["Build a Stunning README For Your GitHub Profile"](https://towardsdatascience.com/build-a-stunning-readme-for-your-github-profile-9b80434fe5d7) - *Martin Heinz*
+- ["How I added my Spotify statistics to my GitHub readme 📜"](https://dev.to/gargakshit/how-i-added-my-spotify-statistics-to-my-github-readme-4jdd) - *Akshit Garg*
+- ["Static Readme Regeneration"](https://dev.to/aralroca/static-readme-regeneration-4pf2) - *Aral Roca*
+- ["How to Create a Self-Updating README.md for Your GitHub Profile"](https://medium.com/@th.guibert/how-to-create-a-self-updating-readme-md-for-your-github-profile-f8b05744ca91) - *Thomas Guibert*
+- ["一文玩转github主页"](https://blog.holic-x.com/wv-blog/post/7ad96a5d.html) - *holic-x*
 
-**要求:**
-- 不能有自己的标题
-- 必须少于120个字符
-- 不能以 `>` 开始
--  一定是在它自己的行上
-- 必须符合包管理器的`描述`字段
--  必须符合 GitHub 的描述(如果在 GitHub 上)
+## Tutorials
+- ["Create Impressive GitHub Portfolio"](https://www.youtube.com/watch?v=dkE4mVhwMB4) - *MTECHVIRAL*
+- ["How To Create a Github Profile ReadMe"](https://www.youtube.com/watch?v=DOiGs2NiDbU) - *James Q Quick*
+- ["How to create a GitHub profile README"](https://www.youtube.com/watch?v=vND_UY7xk24) - *Code With Confidence*
+- ["How To Create A GitHub Profile README"](https://www.youtube.com/watch?v=Y1z7_GfEPiE) - *Program With Erik*
+- ["Next Level GitHub Profile README"](https://youtu.be/ECuqb5Tv9qI) - *codeSTACKr*
 
-**建议:**
-- 使用[gh-description](https://github.com/RichardLitt/gh-description) 描述设置并获取 GitHub 描述
-- 使用`npm show . description` 来展示本地的描述 [npm](https://npmjs.com) 包
+## Contribute
 
-### 长描述
-**状态:** 可选
+Contributions are always welcome!
+Please read the [contribution guidelines](contributing.md) first.
 
-**要求:**
-- 不能有自己的标题
-- 如果任何文件夹、存储库或包管理器名称不匹配，则必须在这里说明原因。 看标题部分
+## Special Thanks 🙇
+- [Zetao Zhuang](https://github.com/zzetao) for making the amazing site for this repo!
 
-**建议:**
-- 如果太长，考虑移动到背景部分。
-- 包含构建储存库的主要原因。
+## License
 
-- “这应该大致地描述你的模块，通常只有几个段落; 模块的例程或方法的更多细节，冗长的代码示例，或其他深入的材料应该在随后的章节中给出。
-  理想情况下，对您的模块稍微熟悉的人应该能够刷新他们的记忆，而不必按下“页面向下”键。 当你的读者继续阅读文档时，他们应该会接收到越来越多的知识。”
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-  ~ [Kirrily "Skud" Robert, perlmodstyle](http://perldoc.perl.org/perlmodstyle.html)
-
-### 目录
-**状态:** 必需的; 对于小于100行的 README 可选。
-**要求:**
-- 必须链接到文件中的所有 Markdown 部分
-- 必须从下一节开始，不要包括标题或目录标题
-- 必须至少有一个深度: 必须捕获所有 `##` 标题
-
-**建议:**
-- 可以捕获第三个和第四个深度标题。如果是长目录，这些是可选的.
-
-### 安全
-**状态:** 可选.
-
-**要求:**
-- 如果需要强调安全问题，可以在这里，否则应该在`额外`部分.
-
-### 背景
-**状态:** 可选
-
-**要求:**
-- 包含动机.
-- 包含抽象依赖关系.
-- 包含知识来源: `可参见`也很合适.
-
-### 安装
-**状态:** 默认情况下是必需的，文档存储库是可选的.
-
-**要求:**
-- 说明如何安装的代码块
-
-**子段落:**
-- 如果有不寻常的依赖项或依赖项，必须手动安装
-
-**建议:**
--链接到编程语言的必备站点: [npmjs](https://npmjs.com), [godocs](https://godoc.org),等等.
-- 包括安装所需的任何系统特定信息.
-- 一个`更新`部分对大多数软件包都很有用, 如果用户可以使用多个版本.
-
-###  用法
-**状态:** 默认情况下是必需的，文档存储库是可选的.
-
-**要求:**
-- 说明常用用法的代码块.
-- 如果 CLI 兼容，则代码块指示通用用法.
-- 如果可导入，则指示导入功能和用法的代码块.
-
-**建议:**
-- `CLI`. 如果 CLI 功能存在，则需要.
-
-**建议:**
-- 涵盖可能影响使用的基本选项: 例如，如果是 JavaScript，则涵盖 promises / callbacks，此处为 ES6
-- 如果相关，指向一个可运行的文件以获取使用代码
-
-### 额外部分
-**状态:** 可选.
-
-**要求:**
-- 没有.
-
-**建议:**
-- 这不应该被称为额外部分.  这是一个包含0个或更多部分的空间，每个部分都必须有自己的标题
-- 这应该包含任何其他相关的部分,放在用法之后, API 之前.
-- 具体来说，就是, 安全部分如果没有重要到可以放在上面的话，这个部分应该在这里.
-
-### API
-**状态:** 可选
-
-**要求:**
-- 描述暴露出的功能和对象.
-
-**建议:**
-- 描述签名、返回类型、回调和事件.
-- 指明不容易理解的类型.
-- 描述注意事项.
-- 如果使用外部 API 生成器(比如 go-doc、 js-doc 等等) ，请指向外部 API.md 文件. 这可能是该节中的唯一项，如果存在的话
-
-### 维护者
-**状态:** 可选.
-
-**要求:**
-- 一定要叫维护者
-- 列出存储库的维护人员，以及与他们联系的一种方式(例如 GitHub 链接或电子邮件).
-
-**建议:**
-- 这应该是一个负责项目方向的人员名单。 这不应该是拥有访问权限的每个人，比如整个组织，应该被展示的人是负责存储库的指导和维护的人
-- 列出过去的维护人员对于属性和分类都有好处.
-
-### 致谢
-**状态:** 可选.
-
-**要求:**
-- 一定要叫做 致谢 或者 感谢.
-
-**建议:**
-- 说明对项目的开发有重要帮助的任何人或任何事情
-- 标明公共链接，如果适用的话
-
-### 如何贡献
-**状态:** 必需.
-
-**要求:**
-- 说明用户可以提问的地方.
-- 说明是否接受 PR .
-- 列出贡献的所有要求; 例如，在提交时有一个签名.
-
-**建议:**
-- 链接到`如何贡献文件`--如果有的话
-- 尽可能友好
-- 链接到 GitHub issues 区域.
--  链接到行为守则. `如何贡献规范`通常位于贡献部分或文档中,或者位于整个组织的其他位置，因此可能不需要在每个存储库中包含整个文件。 但是，强烈建议始终链接到规范位置，无论它位于何处.
-- 这里也欢迎列出贡献者的子段落.
-
-### 许可证
-**状态:** 必须
-
-**要求:**
-- 声明许可证全名或标识符, 参考[SPDX](https://spdx.org/licenses/) 许可证列表上的. 对于未授权的存储库, 添加 `UNLICENSED`. 更多详情，请参见 `SEE LICENSE IN <filename>`  并链接到许可文件. (这些要求是从 [npm](https://docs.npmjs.com/files/package.json#license)继承过来的).
-- 声明许可证持有人.
-- 一定是最后一部分.
-
-**建议:**
-- 链接到本地存储库中较长的许可证文件
-
-## 定义
-
-_提供这些定义是为了澄清上面使用的任何术语._
-
-- **文档存储库: 没有任何功能代码的存储库**
+To the extent possible under law, [Abhishek Naidu](https://abhisheknaidu.tech/) has waived all copyright and related or neighboring rights to this work.
