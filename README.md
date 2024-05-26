@@ -1,12 +1,23 @@
-# Contribution Guidelines
+# Compiled class file
+*.class
 
-Please ensure your pull request adheres to the following guidelines:
+# Log file
+*.log
 
-- Suggested Github Profile READMEs should be beautiful or stand out in some way.
-- Make an individual pull request for each suggestion.
-- Can suggest for different categories as well.
-- Start the Name with a capital.
-- Check your spelling and grammar.
-- Make sure your text editor is set to remove trailing whitespace.
+# BlueJ files
+*.ctxt
 
-Thank you for your suggestions!
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
