@@ -1,8 +1,8 @@
- {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://github.com/novatorem/novatorem"
-    }
+module.exports = {
+  collectCoverageFrom: [
+    './src/**/*.js',
+    '!./src/index.js',
+    '!**/node_modules/**',
+    '!**/vendor/**'
   ]
 }
