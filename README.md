@@ -1,61 +1,112 @@
-# Contributing to Readme Markdown Generator
+#common settings that generally should always be used with your language specific settings
 
-👍🎉 First off, thanks for taking the time to contribute! 🎉👍
+# Auto detect text files and perform LF normalization
+# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+* text=auto
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
-Please note we have a [code of conduct](https://github.com/kefranabg/readme-md-generator/blob/master/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+#
+# The above will handle all files NOT found below
+#
 
-## Table of Contents
+# Documents
+*.doc    diff=astextplain
+*.DOC    diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF    diff=astextplain
+*.rtf    diff=astextplain
+*.RTF    diff=astextplain
+*.md text
+*.adoc text
+*.textile text
+*.mustache text
+*.csv text
+*.tab text
+*.tsv text
+*.sql text
+*.html text
+*.css text
 
-- [Setting Up the project locally](#setting-up-the-project-locally)
-- [Submitting a Pull Request](#submitting-a-pull-request)
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.ico binary
+# SVG treated as an asset (binary) by default. If you want to treat it as text,
+# comment-out the following line and uncomment the line after.
+*.svg binary
+#*.svg text
+*.eps binary
 
-## Setting Up the project locally
+#sources
+*.c text
+*.cc text
+*.cxx text
+*.cpp text
+*.c++ text
+*.hpp text
+*.h text
+*.h++ text
+*.hh text
 
-To install the project you need to have `node` and `npm`
+# Compiled Object files
+*.slo binary
+*.lo binary
+*.o binary
+*.obj binary
 
-1.  [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone
-    your fork:
+# Precompiled Headers
+*.gch binary
+*.pch binary
 
-    ```sh
-    # Clone your fork
-    git clone https://github.com/<your-username>/readme-md-generator.git
+# Compiled Dynamic libraries
+*.so binary
+*.dylib binary
+*.dll binary
 
-    # Navigate to the newly cloned directory
-    cd readme-md-generator
-    ```
+# Compiled Static libraries
+*.lai binary
+*.la binary
+*.a binary
+*.lib binary
 
-2.  Your environment needs to be running `node` version >= 9.3.0 and `npm` version >= 5.5.0.
+# Executables
+*.exe binary
+*.out binary
+*.app binary
 
-3.  from the root of the project: `npm` to install all dependencies
 
-    - make sure you have latest `npm` version
+# Basic .gitattributes for a python repo.
 
-4.  from the root of the project: `npm start` to run the cli.
+# Source files
+# ============
+*.pxd       text
+*.py        text
+*.py3       text
+*.pyw       text
+*.pyx       text
 
-> Tip: Keep your `master` branch pointing at the original repository and make
-> pull requests from branches on your fork. To do this, run:
->
-> ```sh
-> git remote add upstream https://github.com/kefranabg/readme-md-generator.git
-> git fetch upstream
-> git branch --set-upstream-to=upstream/master master
-> ```
->
-> This will add the original repository as a "remote" called "upstream," then
-> fetch the git information from that remote, then set your local `master`
-> branch to use the upstream master branch whenever you run `git pull`. Then you
-> can make all of your pull request branches based on this `master` branch.
-> Whenever you want to update your version of `master`, do a regular `git pull`.
+# Binary files
+# ============
+*.db        binary
+*.p         binary
+*.pkl       binary
+*.pyc       binary
+*.pyd       binary
+*.pyo       binary
 
-## Submitting a Pull Request
+# Note: .db, .p, and .pkl files are associated
+# with the python modules ``pickle``, ``dbm.*``,
+# ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
+# (among others).
 
-Please go through existing issues and pull requests to check if somebody else is already working on it.
-
-Also, make sure to run the tests and lint the code before you commit your
-changes.
-
-```sh
-npm run test
-npm run lint
-```
+*.sh text
+make text
+makefile text
+*.mk text
