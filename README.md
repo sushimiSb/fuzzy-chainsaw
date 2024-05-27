@@ -1,26 +1,12 @@
-# take control of the growl notifications
-module GrowlHacks
-  def growl(type, subject, body, *args, &block)
-    case type
-    when Kicker::GROWL_NOTIFICATIONS[:succeeded]
-      puts subject = "Success"
-      body = body.split("\n").last
-    when Kicker::GROWL_NOTIFICATIONS[:failed]
-      subject = "Failure"
-      puts body
-      body = body.split("\n").last
-    else
-      return nil
-    end
-    super(type, subject, body, *args, &block)
-  end
-end
-
-Kicker.send :extend, GrowlHacks
-
-# no logging
-Kicker::Utils.module_eval do
-  def log(message)
-    nil
-  end
-end
+{
+  "name": "Readme Typing SVG",
+  "description": "⚡ Dynamically generated, customizable SVG that gives the appearance of typing and deleting text. Typing SVGs can be used as a bio on your Github profile readme or repository.",
+  "repository": "https://github.com/DenverCoder1/readme-typing-svg/",
+  "keywords": ["github", "dynamic", "readme", "typing", "svg", "profile"],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
