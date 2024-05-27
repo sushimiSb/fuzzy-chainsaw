@@ -1,61 +1,89 @@
-# Contributing to Readme Markdown Generator
-
-👍🎉 First off, thanks for taking the time to contribute! 🎉👍
-
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
-Please note we have a [code of conduct](https://github.com/kefranabg/readme-md-generator/blob/master/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+# Project Name
+> Outline a brief description of your project.
+> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-- [Setting Up the project locally](#setting-up-the-project-locally)
-- [Submitting a Pull Request](#submitting-a-pull-request)
 
-## Setting Up the project locally
+## General Information
+- Provide general information about your project here.
+- What problem does it (intend to) solve?
+- What is the purpose of your project?
+- Why did you undertake it?
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-To install the project you need to have `node` and `npm`
 
-1.  [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone
-    your fork:
+## Technologies Used
+- Tech 1 - version 1.0
+- Tech 2 - version 2.0
+- Tech 3 - version 3.0
 
-    ```sh
-    # Clone your fork
-    git clone https://github.com/<your-username>/readme-md-generator.git
 
-    # Navigate to the newly cloned directory
-    cd readme-md-generator
-    ```
+## Features
+List the ready features here:
+- Awesome feature 1
+- Awesome feature 2
+- Awesome feature 3
 
-2.  Your environment needs to be running `node` version >= 9.3.0 and `npm` version >= 5.5.0.
 
-3.  from the root of the project: `npm` to install all dependencies
+## Screenshots
+![Example screenshot](./img/screenshot.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-    - make sure you have latest `npm` version
 
-4.  from the root of the project: `npm start` to run the cli.
+## Setup
+What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-> Tip: Keep your `master` branch pointing at the original repository and make
-> pull requests from branches on your fork. To do this, run:
->
-> ```sh
-> git remote add upstream https://github.com/kefranabg/readme-md-generator.git
-> git fetch upstream
-> git branch --set-upstream-to=upstream/master master
-> ```
->
-> This will add the original repository as a "remote" called "upstream," then
-> fetch the git information from that remote, then set your local `master`
-> branch to use the upstream master branch whenever you run `git pull`. Then you
-> can make all of your pull request branches based on this `master` branch.
-> Whenever you want to update your version of `master`, do a regular `git pull`.
+Proceed to describe how to install / setup one's local environment / get started with the project.
 
-## Submitting a Pull Request
 
-Please go through existing issues and pull requests to check if somebody else is already working on it.
+## Usage
+How does one go about using it?
+Provide various use cases and code examples here.
 
-Also, make sure to run the tests and lint the code before you commit your
-changes.
+`write-your-code-here`
 
-```sh
-npm run test
-npm run lint
-```
+
+## Project Status
+Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+
+
+## Room for Improvement
+Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+
+Room for improvement:
+- Improvement to be done 1
+- Improvement to be done 2
+
+To do:
+- Feature to be added 1
+- Feature to be added 2
+
+
+## Acknowledgements
+Give credit here.
+- This project was inspired by...
+- This project was based on [this tutorial](https://www.example.com).
+- Many thanks to...
+
+
+## Contact
+Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->
