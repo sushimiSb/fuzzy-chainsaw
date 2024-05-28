@@ -1,112 +1,21 @@
-#common settings that generally should always be used with your language specific settings
+MIT License
 
-# Auto detect text files and perform LF normalization
-# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
-* text=auto
+Copyright (C) 2017 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
 
-#
-# The above will handle all files NOT found below
-#
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-# Documents
-*.doc    diff=astextplain
-*.DOC    diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF    diff=astextplain
-*.rtf    diff=astextplain
-*.RTF    diff=astextplain
-*.md text
-*.adoc text
-*.textile text
-*.mustache text
-*.csv text
-*.tab text
-*.tsv text
-*.sql text
-*.html text
-*.css text
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-# Graphics
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.tif binary
-*.tiff binary
-*.ico binary
-# SVG treated as an asset (binary) by default. If you want to treat it as text,
-# comment-out the following line and uncomment the line after.
-*.svg binary
-#*.svg text
-*.eps binary
-
-#sources
-*.c text
-*.cc text
-*.cxx text
-*.cpp text
-*.c++ text
-*.hpp text
-*.h text
-*.h++ text
-*.hh text
-
-# Compiled Object files
-*.slo binary
-*.lo binary
-*.o binary
-*.obj binary
-
-# Precompiled Headers
-*.gch binary
-*.pch binary
-
-# Compiled Dynamic libraries
-*.so binary
-*.dylib binary
-*.dll binary
-
-# Compiled Static libraries
-*.lai binary
-*.la binary
-*.a binary
-*.lib binary
-
-# Executables
-*.exe binary
-*.out binary
-*.app binary
-
-
-# Basic .gitattributes for a python repo.
-
-# Source files
-# ============
-*.pxd       text
-*.py        text
-*.py3       text
-*.pyw       text
-*.pyx       text
-
-# Binary files
-# ============
-*.db        binary
-*.p         binary
-*.pkl       binary
-*.pyc       binary
-*.pyd       binary
-*.pyo       binary
-
-# Note: .db, .p, and .pkl files are associated
-# with the python modules ``pickle``, ``dbm.*``,
-# ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
-# (among others).
-
-*.sh text
-make text
-makefile text
-*.mk text
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
