@@ -1,10 +1,50 @@
-![banner](https://user-images.githubusercontent.com/23727056/87433896-78ae9700-c607-11ea-9ca6-9cdbe3f67998.jpg)
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-The aim of this repository is to collect awesome READMEs that developers around the world are using on their own profiles to act as an inspiration for others.
-Video about [GitHub Profile README](https://twitter.com/github/status/1294348292130836482?s=20)
+# Folder config file
+Desktop.ini
 
-Feel free to add your own or someone else's profile README if you find it super awesome! 
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-Don't forget to leave a if you find this repo useful ⭐
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-Thankyou🎆
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+.idea
+/.vs
