@@ -1,17 +1,15 @@
-<div align="center">
-	<br>
-	<a href="https://github.com/sindresorhus/css-in-readme-like-wat/blame/main/header.svg">
-		<img src="header.svg" width="800" height="400" alt="Click to see the source">
-	</a>
-	<br>
-</div>
+# Changelog
 
+## v1.0.0
 
+### Added or Changed
+- Added this changelog :)
+- Fixed typos in both templates
+- Back to top links
+- Added more "Built With" frameworks/libraries
+- Changed table of contents to start collapsed
+- Added checkboxes for major features on roadmap
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
+### Removed
+
+- Some packages/libraries from acknowledgements I no longer use
