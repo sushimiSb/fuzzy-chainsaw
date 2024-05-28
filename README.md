@@ -1,78 +1,69 @@
-# Product Name
-> Short blurb about what your product does.
+<!DOCTYPE html>
+<html lang="en">
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="description" content="Awesome GitHub Profile Readme Templates" />
+  <title>Awesome GitHub Profile Readme Templates</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
 
-One to two paragraph statement about your product and what it does.
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css"
+    type="text/css">
 
-![](header.png)
+  <!-- docsify-themeable styles-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
+  <link rel="stylesheet alternative" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    title="dark">
 
-## Installation
+  <style>
+    .sidebar-nav li>a[href^="/"]:not([href*="?id="]),
+    .sidebar-nav li>a[href^="/"]:not([href*="?id="])~ul a,
+    .sidebar-nav li>a[href^="#/"]:not([href*="?id="]),
+    .sidebar-nav li>a[href^="#/"]:not([href*="?id="])~ul a {
+      padding: 0;
+    }
 
-OS X & Linux:
+    .sidebar-nav li.collapse>a[href^="/"]:not([href*="?id="]):not(:only-child),
+    .sidebar-nav li.collapse>a[href^="#/"]:not([href*="?id="]):not(:only-child),
+    .sidebar-nav li.active>a[href^="/"]:not([href*="?id="]):not(:only-child),
+    .sidebar-nav li.active>a[href^="#/"]:not([href*="?id="]):not(:only-child) {
+      background: transparent;
+    }
+  </style>
+</head>
 
-```sh
-npm install my-crazy-module --save
-```
+<body>
+  <div id="app">Please wait...</div>
 
-Windows:
+  <script>
+    window.$docsify = {
+      search: [
+        '/_sidebar',
+      ],
 
-```sh
-edit autoexec.bat
-```
+      name: 'Awesome Github Profile Readme Templates',
+      basePath: "https://raw.githubusercontent.com/durgeshsamariya/awesome-github-profile-readme-templates/master/",
+      loadSidebar: true,
+      auto2top: true,
+      sidebarDisplayLevel: 1,
+    }
+  </script>
 
-## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+  <!-- plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"
+    type="text/javascript">
+    </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
+    type="text/javascript">
+    </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+</body>
 
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
-
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+</html>
