@@ -1,110 +1,78 @@
-# Artsy Engineering [![CircleCI](https://circleci.com/gh/artsy/README.svg?style=svg)](https://circleci.com/gh/artsy/README)
+# Product Name
+> Short blurb about what your product does.
 
-Welcome to Artsy! If you're a new team member, we're excited to have you! Here are your
-[onboarding docs](/onboarding#readme).
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-This repo is a work in progress. In fact, your first pull request could be to fix or add to
-[this doc](https://github.com/artsy/README/blob/master/README.md). Reach out to your mentor or anyone else on the
-engineering team with questions, or try the [#dev Slack channel](https://artsy.slack.com/messages/dev) 🔒.
+One to two paragraph statement about your product and what it does.
 
-Whether you're seasoned or fresh out of school, take a moment to read
-[Your First 60 Days at an Engineering Job](https://code.dblock.org/2015/04/23/your-first-60-days-at-an-engineering-job.html).
+![](header.png)
 
-We split this repo out into different sections, each one has a summary of what's inside to make it easy to browse.
+## Installation
 
-<!-- prettier-ignore-start -->
-<!-- start_toc -->
-| Section |  |
-|--|--|
-| [[TODO] Add a summary.json to RFCs](/RFCs) | [TODO] |
-| [[TODO] Add a summary.json to _templates](/_templates) | [TODO] |
-| [Careers at Artsy](/careers#readme) | How do we grow people |
-| [Conference Notes](/conference-notes#readme) | Artsy Engineers' notes from attending conferences. |
-| [Engineering Culture](/culture#readme) | What makes Artsy Engineering tick? |
-| [Events at Artsy](/events#readme) | Documentation on regularly occurring events and meetings. |
-| [Hiring at Artsy](/hiring#readme) | How do we hire people |
-| [Onboarding Notes for New Engineers](/onboarding#readme) | Your first steps to being productive |
-| [Playbooks](/playbooks#readme) | Tips, procedures, and best practices |
-| [Engineering Practices](/practices#readme) | How do we handle cross-functional concerns. |
-| [Engineering Recommendations](/resources#readme) | Collections of further reading. |
-<!-- end_toc -->
-<!-- prettier-ignore-end -->
+OS X & Linux:
 
-## Artsy Engineering Operations
+```sh
+npm install my-crazy-module --save
+```
 
-### Product & Engineering Teams
+Windows:
 
-Artsy product engineering is organized in product teams. Each team has a _purpose_, eg. _"Help galleries get the
-most out of Artsy and run their business better"_, and Key Performance Indicators, or KPIs, eg. _"The number of
-artworks uploaded by partners."_ Each team has members with different responsibilities, including a _Product
-Manager_, a _Designer_, a _Technical Lead_ and _Engineers_, depending on size. Sometimes the same person wears
-multiple hats.
+```sh
+edit autoexec.bat
+```
 
-You can see this organization
-[in the Product section of Notion 🔑](https://www.notion.so/artsy/Product-470238180cf94c87906ef1d3ee259e05).
+## Usage example
 
-In addition to working on a product team, engineers are encouraged to participate in our practices:
+A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
-- Platform Practice
+_For more examples and usage, please refer to the [Wiki][wiki]._
 
-  - Practice lead: [Matt Jones](https://github.com/mc-jones)
-  - [Slack: #practice-platform](https://artsy.slack.com/messages/practice-platform) 🔒
-  - [Notion](https://www.notion.so/artsy/Platform-Practice-1b558d0627444c9c9bf7ed7583767ca2) 🔒
+## Development setup
 
-- Mobile Practice
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
-  - Practice co-leads: [George Kartalis](https://github.com/gkartalis) and
-    [Sultan Al-Maari](https://github.com/MrSltun)
-  - [Slack: #practice-mobile](https://artsy.slack.com/messages/practice-mobile) 🔒
-  - [Notion](https://www.notion.so/artsy/Mobile-Practice-ecc07763bfd04a848c74107dde3ec6dc) 🔒
+```sh
+make install
+npm test
+```
 
-- Web Practice
+## Release History
 
-  - Practice co-leads: [Tanjie McMeans](https://github.com/TMcMeans) and [Tamara
-    Kiš](https://github.com/tam-kis)
-  - [Slack: #practice-web](https://artsy.slack.com/messages/practice-web) 🔒
-  - [Notion](https://www.notion.so/artsy/Web-Practice-bfe55e2c614a4c0eae493b7830622843) 🔒
+* 0.2.1
+    * CHANGE: Update docs (module code remains unchanged)
+* 0.2.0
+    * CHANGE: Remove `setDefaultXYZ()`
+    * ADD: Add `init()`
+* 0.1.1
+    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+* 0.1.0
+    * The first proper release
+    * CHANGE: Rename `foo()` to `bar()`
+* 0.0.1
+    * Work in progress
 
-- Data Practice
-  - Practice lead: [Anil Bawa-Cavia](https://github.com/cavvia)
-  - [Slack: #practice-data](https://artsy.slack.com/messages/practice-data) 🔒
-  - [Notion](https://www.notion.so/artsy/Data-Practice-e248b46638604067a89ba77ca70b39b1) 🔒
+## Meta
 
-## Request For Comments
+Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
 
-A Request For Comments (or RFC) is how we change things, by opening a discussion
-that everyone can participate in and deciding if we want to move forward with the suggested change or not.
+Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-RFCs should be created by authoring a markdown file in the `/RFCs` folder and then
-opening a pull request. [Read the full playbook][rfc_playbook] for all the details!
+[https://github.com/yourname/github-link](https://github.com/dbader/)
 
-[rfc_playbook]: /playbooks/rfcs.md
+## Contributing
 
-## Support
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-If you are on call or asked to fix an immediate issue reference our
-[support wiki](https://github.com/artsy/potential/wiki) 🔒 for up-to-date playbooks on how to solve issues.
-
-<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-
-## About Artsy
-
-<a href="https://www.artsy.net/">
-  <img align="left" src="https://avatars2.githubusercontent.com/u/546231?s=200&v=4"/>
-</a>
-
-This project is the work of engineers at [Artsy][footer_website], the world's leading and largest online art
-marketplace and platform for discovering art. One of our core [Engineering Principles][footer_principles] is being
-[Open Source by Default][footer_open] which means we strive to share as many details of our work as possible.
-
-You can learn more about this work from [our blog][footer_blog] and by following [@ArtsyOpenSource][footer_twitter]
-or explore our public data by checking out [our API][footer_api]. If you're interested in a career at Artsy, read
-through our [job postings][footer_jobs]!
-
-[footer_website]: https://www.artsy.net/
-[footer_principles]: https://github.com/artsy/README/blob/master/culture/engineering-principles.md
-[footer_open]: https://github.com/artsy/README/blob/master/culture/engineering-principles.md#open-source-by-default
-[footer_blog]: https://artsy.github.io/
-[footer_twitter]: https://twitter.com/ArtsyOpenSource
-[footer_api]: https://developers.artsy.net/
-[footer_jobs]: https://www.artsy.net/jobs
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
