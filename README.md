@@ -1,2 +1,2 @@
-*.md linguist-detectable=true
-*.md linguist-documentation=false
+import './src/styles/tailwind.css';
+require('prismjs/themes/prism-okaidia.css');
