@@ -1,45 +1,10 @@
-import { danger, warn, fail } from "danger"
-import { readFileSync } from "fs"
-import { basename } from "path"
+![banner](https://user-images.githubusercontent.com/23727056/87433896-78ae9700-c607-11ea-9ca6-9cdbe3f67998.jpg)
 
-const files = [...danger.git.created_files, ...danger.git.modified_files]
-const markdowns = files.filter(f => f.indexOf(".md") !== -1)
-const skipTODOCheck = ["dangerfile.ts", "CONTRIBUTING.md"]
+The aim of this repository is to collect awesome READMEs that developers around the world are using on their own profiles to act as an inspiration for others.
+Video about [GitHub Profile README](https://twitter.com/github/status/1294348292130836482?s=20)
 
-// Check for [TODO]s in all files changed
+Feel free to add your own or someone else's profile README if you find it super awesome! 
 
-const wordsToAvoid = [
-  { word: "Github", reason: "Please use GitHub, capital 'H'" },
-  { word: "Cocoapods", reason: "Please use CocoaPods, capital 'P'" },
-  { word: "Javascript", reason: "Please use JavaScript, capital 'S'" },
-  { word: "Typescript", reason: "Please use TypeScript, capital 'S'" },
-  { word: "Fastlane", reason: "Please use fastlane, lowercase 'f'" },
-  { word: "localhost:4000", reason: "You may have left an internal link in the markdown" },
-  { word: "[]: ???", reason: "You've missed a link" },
-  { word: "[TODO]", reason: "You may have missed a TODO here" },
-  { word: "react native", reason: "Please use React Native with capitals" }
-]
+Don't forget to leave a if you find this repo useful ⭐
 
-markdowns.forEach(f => {
-  if (skipTODOCheck.indexOf(f) !== -1) {
-    return
-  }
-
-  const content = readFileSync(f, "utf8")
-  const lines = content.split("\n")
-  lines.forEach(l => {
-    wordsToAvoid.forEach(word => {
-      if (lines.indexOf(word.word) !== -1) {
-        const isLocal = !danger.github
-        const message = isLocal ? `${word.reason} in ${f}:${lines.indexOf(l) + 1}` : word.reason
-        warn(message, f, lines.indexOf(l) + 1)
-      }
-    })
-  })
-})
-
-// Ensure we stay with kebab-case
-const underscores = danger.git.created_files.filter(f => basename(f).indexOf("_") !== -1)
-underscores.forEach(path => {
-  fail(`Found a new file with underscores, this repo uses kebab-case for files: ${path}`)
-})
+Thankyou🎆
