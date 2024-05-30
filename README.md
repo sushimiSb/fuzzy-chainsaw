@@ -1,20 +1,126 @@
-==================
-format-README.rst
-==================
-reStructuredText (сокращение: ReST, расширение файла: .rst) — облегчённый язык разметки.
+# Markdown - Extras
 
-:Дата последнего редактирования: |date| в |time| 
-:Компоновал: **GnuriaN**
 
-Общее описание
-==============
-**reStructuredText** - хорошо применим для создания простых веб-страниц и других документов, а также в качестве вспомогательного языка при написании комментариев в программном коде. Используется в системе подготовки технической документации Docutils, написанной в основном Дэвидом Гуджером (David Goodger). reStructuredText можно считать потомком легковесных систем разметки StructuredText и Setext. Парсер reStructuredText поддерживает достаточное количество конечных форматов, в том числе PDF, HTML, ODT, LaTeX и формат презентаций S5.
+## Image Align
 
-Система документирования Sphinx, написанная для нужд документирования языка программирования Python на сайте docs.python.org и построенная на базе Docutils, применяется уже в нескольких десятках проектов. ReST является одним из языков разметки, используемых на github, в частности, для README-файлов. Формат имеет статус экспериментального в проекте «Гутенберг».
+### Image Align - Middle _(default)_
 
-**Sphinx** — это генератор документации, который преобразует файлы в формате *reStructuredText* в HTML website и другие форматы (PDF, EPub и man). Он использует ряд расширений для reStructuredText (например, для автоматической генерации документации по исходному коду, создания математических формул или подсветки исходного кода). Первый публичный релиз (версия 0.1.61611) был объявлен 21 марта 2008 года. Он был разработан и широко используется для документирования языка программирования Python, а также его дополнительных модулей.
+Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium. lobortis.
 
-Вся необходимая информация для работы со **Sphinx** и форматом **reStructuredText** находится тут: https://sphinx-ru.readthedocs.io/ru/latest/index.html и тут https://sphinx-ru.readthedocs.io/ru/latest/rst-markup.html#retext
+```html
+<img src="right-arrow.svg" width="42" height="42">
+```
 
-.. |date| date:: %d.%m.%Y
-.. |time| date:: %H:%M
+### Image Align - Left
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> Fusce semper libero ligula, vel varius enim sagittis quis. Aenean sed massa velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras faucibus consequat est eu varius. Nam vitae dignissim velit. 
+
+```html
+<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> 
+```
+
+### Image Align - Right
+
+Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" alt="right" align="right" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium.
+
+```html
+<img src="right-arrow.svg" alt="right" align="right" width="42" height="42">
+```
+
+## Style Text
+
+
+### keyboard input
+
+<kbd>ALT + F4</kbd> 
+```
+<kbd>ALT + F4</kbd> 
+```
+
+### subscripted
+normal text <sub>subscripted</sub> normal text
+```
+normal text <sub>subscripted</sub> normal text
+```
+
+### superscripted
+normal text <sup>superscripted</sup> normal text
+```
+normal text <sup>superscripted</sup> normal text
+```
+
+## Table
+
+### Table - _rowspan_
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+```
+
+### Table - _colspan_
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+```
