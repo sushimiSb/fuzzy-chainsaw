@@ -1,5 +1,8 @@
-[bdist_wheel]
-universal = 1
-
-[metadata]
-license_file = LICENSE
+ {
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/novatorem/novatorem"
+    }
+  ]
+}
