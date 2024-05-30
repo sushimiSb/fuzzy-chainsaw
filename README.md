@@ -1,126 +1,90 @@
-# Markdown - Extras
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				@keyframes rotate {
+					0% {
+						transform: rotate(3deg);
+					}
+					100% {
+						transform: rotate(-3deg);
+					}
+				}
 
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
 
-## Image Align
+				@keyframes fadeIn {
+					0% {
+						opacity: 0;
+					}
+					66% {
+						opacity: 0;
+					}
+					100% {
+						opacity: 1;
+					}
+				}
 
-### Image Align - Middle _(default)_
+				.container {
+					font-family:
+						system-ui,
+						-apple-system,
+						'Segoe UI',
+						Roboto,
+						Helvetica,
+						Arial,
+						sans-serif,
+						'Apple Color Emoji',
+						'Segoe UI Emoji';
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
+					background-size: 600% 400%;
+					animation: gradientBackground 10s ease infinite;
+					border-radius: 10px;
+					color: white;
+					text-align: center;
+				}
 
-Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium. lobortis.
+				h1 {
+					font-size: 50px;
+					line-height: 1.3;
+					letter-spacing: 5px;
+					text-transform: uppercase;
+					text-shadow:
+						0 1px 0 #efefef,
+						0 2px 0 #efefef,
+						0 3px 0 #efefef,
+						0 4px 0 #efefef,
+						0 12px 5px rgba(0, 0, 0, 0.1);
+					animation: rotate ease-in-out 1s infinite alternate;
+				}
 
-```html
-<img src="right-arrow.svg" width="42" height="42">
-```
-
-### Image Align - Left
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> Fusce semper libero ligula, vel varius enim sagittis quis. Aenean sed massa velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras faucibus consequat est eu varius. Nam vitae dignissim velit. 
-
-```html
-<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> 
-```
-
-### Image Align - Right
-
-Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" alt="right" align="right" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium.
-
-```html
-<img src="right-arrow.svg" alt="right" align="right" width="42" height="42">
-```
-
-## Style Text
-
-
-### keyboard input
-
-<kbd>ALT + F4</kbd> 
-```
-<kbd>ALT + F4</kbd> 
-```
-
-### subscripted
-normal text <sub>subscripted</sub> normal text
-```
-normal text <sub>subscripted</sub> normal text
-```
-
-### superscripted
-normal text <sup>superscripted</sup> normal text
-```
-normal text <sup>superscripted</sup> normal text
-```
-
-## Table
-
-### Table - _rowspan_
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td>row 1 - column 2</td>
-    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-  </tr>
-</table>
-
-```html
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td>row 1 - column 2</td>
-    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-  </tr>
-</table>
-```
-
-### Table - _colspan_
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td colspan="2" align="center">row 1 - column 2 & 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-    <td>row 2 - column 3</td>
-  </tr>
-</table>
-
-```html
-<table>
-  <tr>
-    <th>column 1</th>
-    <th>column 2</th>
-    <th>column 3</th>
-  </tr>
-  <tr>
-    <td>row 1 - column 1</td>
-    <td colspan="2" align="center">row 1 - column 2 & 3</td>
-  </tr>
-  <tr>
-    <td>row 2 - column 1</td>
-    <td>row 2 - column 2</td>
-    <td>row 2 - column 3</td>
-  </tr>
-</table>
-```
+				p {
+					font-size: 20px;
+					text-shadow: 0 1px 0 #efefef;
+					animation: 5s ease 0s normal forwards 1 fadeIn;
+				}
+			</style>
+			<div class="container">
+				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
+				<p>Click to see the source</p>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
