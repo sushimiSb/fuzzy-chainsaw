@@ -1,24 +1,20 @@
-This is free and unencumbered software released into the public domain.
+==================
+format-README.rst
+==================
+reStructuredText (сокращение: ReST, расширение файла: .rst) — облегчённый язык разметки.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+:Дата последнего редактирования: |date| в |time| 
+:Компоновал: **GnuriaN**
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+Общее описание
+==============
+**reStructuredText** - хорошо применим для создания простых веб-страниц и других документов, а также в качестве вспомогательного языка при написании комментариев в программном коде. Используется в системе подготовки технической документации Docutils, написанной в основном Дэвидом Гуджером (David Goodger). reStructuredText можно считать потомком легковесных систем разметки StructuredText и Setext. Парсер reStructuredText поддерживает достаточное количество конечных форматов, в том числе PDF, HTML, ODT, LaTeX и формат презентаций S5.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+Система документирования Sphinx, написанная для нужд документирования языка программирования Python на сайте docs.python.org и построенная на базе Docutils, применяется уже в нескольких десятках проектов. ReST является одним из языков разметки, используемых на github, в частности, для README-файлов. Формат имеет статус экспериментального в проекте «Гутенберг».
 
-For more information, please refer to <http://unlicense.org>
+**Sphinx** — это генератор документации, который преобразует файлы в формате *reStructuredText* в HTML website и другие форматы (PDF, EPub и man). Он использует ряд расширений для reStructuredText (например, для автоматической генерации документации по исходному коду, создания математических формул или подсветки исходного кода). Первый публичный релиз (версия 0.1.61611) был объявлен 21 марта 2008 года. Он был разработан и широко используется для документирования языка программирования Python, а также его дополнительных модулей.
+
+Вся необходимая информация для работы со **Sphinx** и форматом **reStructuredText** находится тут: https://sphinx-ru.readthedocs.io/ru/latest/index.html и тут https://sphinx-ru.readthedocs.io/ru/latest/rst-markup.html#retext
+
+.. |date| date:: %d.%m.%Y
+.. |time| date:: %H:%M
