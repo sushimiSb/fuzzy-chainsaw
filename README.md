@@ -1,247 +1,61 @@
-Markdown Cheatsheet<a name="TOP"></a>
-===================
+# Contributing to Readme Markdown Generator
 
-- - - - 
-# Heading 1 #
+👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-    Markup :  # Heading 1 #
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+Please note we have a [code of conduct](https://github.com/kefranabg/readme-md-generator/blob/master/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
-    -OR-
+## Table of Contents
 
-    Markup :  ============= (below H1 text)
+- [Setting Up the project locally](#setting-up-the-project-locally)
+- [Submitting a Pull Request](#submitting-a-pull-request)
 
-## Heading 2 ##
+## Setting Up the project locally
 
-    Markup :  ## Heading 2 ##
+To install the project you need to have `node` and `npm`
 
-    -OR-
+1.  [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone
+    your fork:
 
-    Markup: --------------- (below H2 text)
+    ```sh
+    # Clone your fork
+    git clone https://github.com/<your-username>/readme-md-generator.git
 
-### Heading 3 ###
+    # Navigate to the newly cloned directory
+    cd readme-md-generator
+    ```
 
-    Markup :  ### Heading 3 ###
+2.  Your environment needs to be running `node` version >= 9.3.0 and `npm` version >= 5.5.0.
 
-#### Heading 4 ####
+3.  from the root of the project: `npm` to install all dependencies
 
-    Markup :  #### Heading 4 ####
+    - make sure you have latest `npm` version
 
+4.  from the root of the project: `npm start` to run the cli.
 
-Common text
+> Tip: Keep your `master` branch pointing at the original repository and make
+> pull requests from branches on your fork. To do this, run:
+>
+> ```sh
+> git remote add upstream https://github.com/kefranabg/readme-md-generator.git
+> git fetch upstream
+> git branch --set-upstream-to=upstream/master master
+> ```
+>
+> This will add the original repository as a "remote" called "upstream," then
+> fetch the git information from that remote, then set your local `master`
+> branch to use the upstream master branch whenever you run `git pull`. Then you
+> can make all of your pull request branches based on this `master` branch.
+> Whenever you want to update your version of `master`, do a regular `git pull`.
 
-    Markup :  Common text
+## Submitting a Pull Request
 
-_Emphasized text_
+Please go through existing issues and pull requests to check if somebody else is already working on it.
 
-    Markup :  _Emphasized text_ or *Emphasized text*
+Also, make sure to run the tests and lint the code before you commit your
+changes.
 
-~~Strikethrough text~~
-
-    Markup :  ~~Strikethrough text~~
-
-__Strong text__
-
-    Markup :  __Strong text__ or **Strong text**
-
-___Strong emphasized text___
-
-    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
-
-[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-
-    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-
-[heading-1](#heading-1 "Goto heading-1")
-    
-    Markup: [heading-1](#heading-1 "Goto heading-1")
-
-Table, like this one :
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
+```sh
+npm run test
+npm run lint
 ```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-```
-
-Adding a pipe `|` in a cell :
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | \|
-
-```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  |  \| 
-```
-
-Left, right and center aligned table
-
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
-
-```
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
-```
-
-`code()`
-
-    Markup :  `code()`
-
-```javascript
-    var specificLanguage_code = 
-    {
-        "data": {
-            "lookedUpPlatform": 1,
-            "query": "Kasabian+Test+Transmission",
-            "lookedUpItem": {
-                "name": "Test Transmission",
-                "artist": "Kasabian",
-                "album": "Kasabian",
-                "picture": null,
-                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
-            }
-        }
-    }
-```
-
-    Markup : ```javascript
-             ```
-
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
-
-~~~
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
--OR-
-
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
-~~~
-
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
-
-~~~
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
-~~~
-
-- [ ] An uncompleted task
-- [x] A completed task
-
-~~~
- Markup : - [ ] An uncompleted task
-          - [x] A completed task
-~~~
-
-- [ ] An uncompleted task
-    - [ ] A subtask
-
-~~~
- Markup : - [ ] An uncompleted task
-              - [ ] A subtask
-~~~
-
-> Blockquote
->> Nested blockquote
-
-    Markup :  > Blockquote
-              >> Nested Blockquote
-
-_Horizontal line :_
-- - - -
-
-    Markup :  - - - -
-
-_Image with alt :_
-
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-Foldable text:
-
-<details>
-  <summary>Title 1</summary>
-  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-</details>
-<details>
-  <summary>Title 2</summary>
-  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
-</details>
-
-    Markup : <details>
-               <summary>Title 1</summary>
-               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-             </details>
-
-```html
-<h3>HTML</h3>
-<p> Some HTML code here </p>
-```
-
-Link to a specific part of the page:
-
-[Go To TOP](#TOP)
-   
-    Markup : [text goes here](#section_name)
-              section_title<a name="section_name"></a>    
-
-Hotkey:
-
-<kbd>⌘F</kbd>
-
-<kbd>⇧⌘F</kbd>
-
-    Markup : <kbd>⌘F</kbd>
-
-Hotkey list:
-
-| Key | Symbol |
-| --- | --- |
-| Option | ⌥ |
-| Control | ⌃ |
-| Command | ⌘ |
-| Shift | ⇧ |
-| Caps Lock | ⇪ |
-| Tab | ⇥ |
-| Esc | ⎋ |
-| Power | ⌽ |
-| Return | ↩ |
-| Delete | ⌫ |
-| Up | ↑ |
-| Down | ↓ |
-| Left | ← |
-| Right | → |
-
-Emoji:
-
-:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
-
-    Markup : Code appears between colons :EMOJICODE:
