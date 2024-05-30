@@ -1,61 +1,90 @@
-# Contributing to Readme Markdown Generator
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				@keyframes rotate {
+					0% {
+						transform: rotate(3deg);
+					}
+					100% {
+						transform: rotate(-3deg);
+					}
+				}
 
-👍🎉 First off, thanks for taking the time to contribute! 🎉👍
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
-Please note we have a [code of conduct](https://github.com/kefranabg/readme-md-generator/blob/master/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+				@keyframes fadeIn {
+					0% {
+						opacity: 0;
+					}
+					66% {
+						opacity: 0;
+					}
+					100% {
+						opacity: 1;
+					}
+				}
 
-## Table of Contents
+				.container {
+					font-family:
+						system-ui,
+						-apple-system,
+						'Segoe UI',
+						Roboto,
+						Helvetica,
+						Arial,
+						sans-serif,
+						'Apple Color Emoji',
+						'Segoe UI Emoji';
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
+					background-size: 600% 400%;
+					animation: gradientBackground 10s ease infinite;
+					border-radius: 10px;
+					color: white;
+					text-align: center;
+				}
 
-- [Setting Up the project locally](#setting-up-the-project-locally)
-- [Submitting a Pull Request](#submitting-a-pull-request)
+				h1 {
+					font-size: 50px;
+					line-height: 1.3;
+					letter-spacing: 5px;
+					text-transform: uppercase;
+					text-shadow:
+						0 1px 0 #efefef,
+						0 2px 0 #efefef,
+						0 3px 0 #efefef,
+						0 4px 0 #efefef,
+						0 12px 5px rgba(0, 0, 0, 0.1);
+					animation: rotate ease-in-out 1s infinite alternate;
+				}
 
-## Setting Up the project locally
-
-To install the project you need to have `node` and `npm`
-
-1.  [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone
-    your fork:
-
-    ```sh
-    # Clone your fork
-    git clone https://github.com/<your-username>/readme-md-generator.git
-
-    # Navigate to the newly cloned directory
-    cd readme-md-generator
-    ```
-
-2.  Your environment needs to be running `node` version >= 9.3.0 and `npm` version >= 5.5.0.
-
-3.  from the root of the project: `npm` to install all dependencies
-
-    - make sure you have latest `npm` version
-
-4.  from the root of the project: `npm start` to run the cli.
-
-> Tip: Keep your `master` branch pointing at the original repository and make
-> pull requests from branches on your fork. To do this, run:
->
-> ```sh
-> git remote add upstream https://github.com/kefranabg/readme-md-generator.git
-> git fetch upstream
-> git branch --set-upstream-to=upstream/master master
-> ```
->
-> This will add the original repository as a "remote" called "upstream," then
-> fetch the git information from that remote, then set your local `master`
-> branch to use the upstream master branch whenever you run `git pull`. Then you
-> can make all of your pull request branches based on this `master` branch.
-> Whenever you want to update your version of `master`, do a regular `git pull`.
-
-## Submitting a Pull Request
-
-Please go through existing issues and pull requests to check if somebody else is already working on it.
-
-Also, make sure to run the tests and lint the code before you commit your
-changes.
-
-```sh
-npm run test
-npm run lint
-```
+				p {
+					font-size: 20px;
+					text-shadow: 0 1px 0 #efefef;
+					animation: 5s ease 0s normal forwards 1 fadeIn;
+				}
+			</style>
+			<div class="container">
+				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
+				<p>Click to see the source</p>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
