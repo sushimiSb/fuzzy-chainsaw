@@ -1,89 +1,81 @@
-# Project Name
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+# Дополения к языку разметки MD.
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
+## Оглавление:
+1. [Детализация (кат)](#Детализация-кат)
+2. [Форматирование текста](#Форматирование-текста)
+3. [Имитация клавиатуры](#Имитация-клавиатуры) 
+4. [Бэйджики](#Бэйджики)
 
+## Детализация (кат) 
+Существует возможность спрятать часть текста под кат. Для этого необходимо использовать тэг HTML5 `<details>` текст `</details>`. Подробнее: [http://htmlbook.ru/html/details](http://htmlbook.ru/html/details) и [http://htmlbook.ru/html/summary](http://htmlbook.ru/html/summary)   
+Следующий код:   
+    `<details>`    
+    `<summary>Подробнее ...</summary>`    
+    `Тут текст который мы хотим скрыть`    
+    `</details>`   
 
-## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+Дает такой результат:
+<details>
+<summary>Подробнее ...</summary>
+Тут текст который мы хотим скрыть
+</details>    
 
+**Внимание:** это не работает в большинстве браузеров.    
+[:arrow_up:Оглавление](#Оглавление)    
+___
 
-## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+## Форматирование текста
+Для форматирования текста можно использовать тэг `<p>`. Подробнее: [http://htmlbook.ru/html/p](http://htmlbook.ru/html/p)   
+Вариант использования: `<p align="left | center | right | justify">...</p>`    
+<details>
+<summary>Текст без форматирования:</summary>
+Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
+</details>
+Результат применения тэга:
 
+```
+<p align="justify">
 
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+</p>
+```
 
+<details>
+<summary>Текст после форматирования:</summary>
+<p align="justify">
+Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
+</p>
+</details>    
+    
+[:arrow_up:Оглавление](#Оглавление)
+___
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+## Имитация клавиатуры
+Можно имитировать клавиатуру:
+```
+<pre>
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
+</pre> 
+```
+<pre>
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
+</pre>
 
+[:arrow_up:Оглавление](#Оглавление)
+___
 
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+## Бэйджики
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Можно вставлять свои или готовые бэйджки.
+Источник: [https://shields.io/category/build](https://shields.io/category/build)
 
+Пример:
+```
+Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
+```
 
-`write-your-code-here`
+Результат:  
+Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
 
-
-## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
-
-
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
-
-
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
