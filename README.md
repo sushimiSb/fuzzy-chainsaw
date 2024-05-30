@@ -1,90 +1,81 @@
-<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<style>
-				@keyframes rotate {
-					0% {
-						transform: rotate(3deg);
-					}
-					100% {
-						transform: rotate(-3deg);
-					}
-				}
+# Дополения к языку разметки MD.
 
-				@keyframes gradientBackground {
-					0% {
-						background-position: 0% 50%;
-					}
-					50% {
-						background-position: 100% 50%;
-					}
-					100% {
-						background-position: 0% 50%;
-					}
-				}
+## Оглавление:
+1. [Детализация (кат)](#Детализация-кат)
+2. [Форматирование текста](#Форматирование-текста)
+3. [Имитация клавиатуры](#Имитация-клавиатуры) 
+4. [Бэйджики](#Бэйджики)
 
-				@keyframes fadeIn {
-					0% {
-						opacity: 0;
-					}
-					66% {
-						opacity: 0;
-					}
-					100% {
-						opacity: 1;
-					}
-				}
+## Детализация (кат) 
+Существует возможность спрятать часть текста под кат. Для этого необходимо использовать тэг HTML5 `<details>` текст `</details>`. Подробнее: [http://htmlbook.ru/html/details](http://htmlbook.ru/html/details) и [http://htmlbook.ru/html/summary](http://htmlbook.ru/html/summary)   
+Следующий код:   
+    `<details>`    
+    `<summary>Подробнее ...</summary>`    
+    `Тут текст который мы хотим скрыть`    
+    `</details>`   
 
-				.container {
-					font-family:
-						system-ui,
-						-apple-system,
-						'Segoe UI',
-						Roboto,
-						Helvetica,
-						Arial,
-						sans-serif,
-						'Apple Color Emoji',
-						'Segoe UI Emoji';
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					margin: 0;
-					width: 100%;
-					height: 400px;
-					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
-					background-size: 600% 400%;
-					animation: gradientBackground 10s ease infinite;
-					border-radius: 10px;
-					color: white;
-					text-align: center;
-				}
+Дает такой результат:
+<details>
+<summary>Подробнее ...</summary>
+Тут текст который мы хотим скрыть
+</details>    
 
-				h1 {
-					font-size: 50px;
-					line-height: 1.3;
-					letter-spacing: 5px;
-					text-transform: uppercase;
-					text-shadow:
-						0 1px 0 #efefef,
-						0 2px 0 #efefef,
-						0 3px 0 #efefef,
-						0 4px 0 #efefef,
-						0 12px 5px rgba(0, 0, 0, 0.1);
-					animation: rotate ease-in-out 1s infinite alternate;
-				}
+**Внимание:** это не работает в большинстве браузеров.    
+[:arrow_up:Оглавление](#Оглавление)    
+___
 
-				p {
-					font-size: 20px;
-					text-shadow: 0 1px 0 #efefef;
-					animation: 5s ease 0s normal forwards 1 fadeIn;
-				}
-			</style>
-			<div class="container">
-				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
-				<p>Click to see the source</p>
-			</div>
-		</div>
-	</foreignObject>
-</svg>
+## Форматирование текста
+Для форматирования текста можно использовать тэг `<p>`. Подробнее: [http://htmlbook.ru/html/p](http://htmlbook.ru/html/p)   
+Вариант использования: `<p align="left | center | right | justify">...</p>`    
+<details>
+<summary>Текст без форматирования:</summary>
+Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
+</details>
+Результат применения тэга:
+
+```
+<p align="justify">
+
+</p>
+```
+
+<details>
+<summary>Текст после форматирования:</summary>
+<p align="justify">
+Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
+</p>
+</details>    
+    
+[:arrow_up:Оглавление](#Оглавление)
+___
+
+## Имитация клавиатуры
+Можно имитировать клавиатуру:
+```
+<pre>
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
+</pre> 
+```
+<pre>
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
+</pre>
+
+[:arrow_up:Оглавление](#Оглавление)
+___
+
+## Бэйджики
+
+Можно вставлять свои или готовые бэйджки.
+Источник: [https://shields.io/category/build](https://shields.io/category/build)
+
+Пример:
+```
+Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
+
+Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
+```
+
+Результат:  
+Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
+
+Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
