@@ -1,24 +1,14 @@
-(?# Floating point numbers)
-[0-9]+\.[0-9]+
+FROM debian
 
-(?# Long integer literals)
-[0-9]+L
+RUN apt update -y && \
+  apt upgrade -y && \
+  apt install curl -y
 
-(?# 2^64-1)
-18446744073709551615
+WORKDIR app
 
-(?# 2^64)
-18446744073709551616
+COPY gh-md-toc .
 
-(?# From http parser test)
-0GPHKXSJQ826RK7GZEB2
+RUN chmod +x gh-md-toc
 
-(?# From uint parse test)
-18446744073709551615
-10000000000000000000
-9223372036854775807G
-
-(?# Found in:)
-(?# esp-idf/components/nghttp/nghttp2/third-party/http-parser/test.c)
-(?# Part of the URL to the page on dan brown)
-0SHYY5BZXN3KR20BNFAY
+ENTRYPOINT ["./gh-md-toc"]
+CMD []
