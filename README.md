@@ -1,4 +1,4 @@
-declare module "*.json" {
-	const json: any;
-	export default json;
-}
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
