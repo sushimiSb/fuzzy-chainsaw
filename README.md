@@ -1,5 +1,12 @@
-# Explanation
-
-You can put HTML (actually XHTML) and CSS inside a [`<foreignObject>` tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) inside a SVG file inside an `<img>` tag inside your readme. 🤯
-
-Thanks to [@Richienb](https://github.com/Richienb) for sharing the trick in [this pull request](https://github.com/sindresorhus/sindresorhus/pull/9).
+version: '3.8'
+services:
+    spotify-readme:
+        env_file:
+            - .env
+        build: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./api:/api
+volumes:
+  persistent:
