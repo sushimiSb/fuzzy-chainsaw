@@ -1,16 +1,17 @@
-export default {
-  // Jest-bench need its own test environment to function
-  testEnvironment: "jest-bench/environment",
-  testEnvironmentOptions: {
-    // still Jest-bench environment will run your environment if you specify it here
-    testEnvironment: "jest-environment-node",
-    testEnvironmentOptions: {
-      // specify any option for your environment
-    },
-  },
-  // always include "default" reporter along with Jest-bench reporter
-  // for error reporting
-  reporters: ["default", "jest-bench/reporter"],
-  // will pick up "*.bench.js" file.
-  testRegex: "(\\.bench)\\.(ts|tsx|js)$",
-};
+<div align="center">
+	<br>
+	<a href="https://github.com/sindresorhus/css-in-readme-like-wat/blame/main/header.svg">
+		<img src="header.svg" width="800" height="400" alt="Click to see the source">
+	</a>
+	<br>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
