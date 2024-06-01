@@ -1,141 +1,267 @@
-<h1 align="center">Welcome to readme-md-generator 👋</h1>
-<p align="center">
-  <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
-  <a href="https://www.npmjs.com/package/readme-md-generator">
-    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
-  </a>
-  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
-  </a>
-  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
-    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
-  </a>
-  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
-    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
-  </a>
-  <a href="https://twitter.com/FranckAbgrall">
-    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/FranckAbgrall.svg?style=social" target="_blank" />
-  </a>
-</p>
+Getting started with Markdown
+=============================
 
-> CLI that generates beautiful README.md files.<br /> `readme-md-generator` will suggest you default answers by reading your `package.json` and `git` configuration.
 
-## ✨ Demo
+- [Getting started with Markdown](#getting-started-with-markdown)
+- [Titles](#titles)
+- [Paragraph](#paragraph)
+- [List](#list)
+	- [List CheckBox](#list-checkbox)
+- [Link](#link)
+	- [Anchor links](#anchor-links)
+- [Blockquote](#blockquote)
+- [Image | GIF](#image--gif)
+- [Style Text](#style-text)
+	- [Italic](#italic)
+	- [Bold](#bold)
+	- [Strikethrough](#strikethrough)
+- [Code](#code)
+- [Email](#email)
+- [Table](#table)
+	- [Table Align](#table-align)
+    	- [Align Center](#align-center)
+    	- [Align Left](#align-left)
+    	- [Align Right](#align-right)
+- [Escape Characters](#escape-characters)
+- [Emoji](#emoji)
+- [Shields Badges](#Shields-Badges)
+- [Markdown Editor](#markdown-editor)
+- [Some links for more in depth learning](#some-links-for-more-in-depth-learning)
 
-`readme-md-generator` is able to read your environment (package.json, git config...) to suggest you default answers during the `README.md` creation process:
+----------------------------------
 
-<p align="center">
-  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
-</p>
+# Titles 
 
-Generated `README.md`:
+### Title 1
+### Title 2
 
-<p align="center">
-  <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
-</p>
+	Title 1
+	========================
+	Title 2 
+	------------------------
 
-Example of `package.json` with good meta data:
+# Title 1
+## Title 2
+### Title 3
+#### Title 4
+##### Title 5
+###### Title 6
 
-```json
-// The package.json is not required to run README-MD-GENERATOR
-{
-  "name": "readme-md-generator",
-  "version": "0.1.3",
-  "description": "CLI that generates beautiful README.md files.",
-  "author": "Franck Abgrall",
-  "license": "MIT",
-  "homepage": "https://github.com/kefranabg/readme-md-generator#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kefranabg/readme-md-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kefranabg/readme-md-generator/issues"
-  },
-  "engines": {
-    "npm": ">=5.5.0",
-    "node": ">=9.3.0"
-  }
+    # Title 1
+    ## Title 2
+    ### Title 3    
+    #### Title 4
+    ##### Title 5
+    ###### Title 6    
+
+# Paragraph
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. Phasellus eleifend egestas diam, id tincidunt arcu dictum quis. Pellentesque eu dui tempus, tempus massa sed, eleifend tortor. Donec in sem in erat iaculis tincidunt. Fusce condimentum hendrerit turpis nec vehicula. Aliquam finibus nisi vel eros lobortis dictum. Etiam congue tortor libero, quis faucibus ligula gravida a. Suspendisse non pulvinar nisl. Sed malesuada, felis vitae consequat gravida, dui ligula suscipit ligula, nec elementum nulla sem vel dolor. Vivamus augue elit, venenatis non lorem in, volutpat placerat turpis. Nullam et libero at eros vulputate auctor. Duis sed pharetra lacus. Sed egestas ligula vitae libero aliquet, ac imperdiet est ullamcorper. Sed dapibus sem tempus eros dignissim, ac suscipit lectus dapibus. Proin sagittis diam vel urna volutpat, vel ullamcorper urna lobortis. Suspendisse potenti.
+
+Nulla varius risus sapien, nec fringilla massa facilisis sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vel ornare erat, eget rhoncus lectus. Suspendisse interdum scelerisque molestie. Aliquam convallis consectetur lorem ut consectetur. Nullam massa libero, cursus et porta ac, consequat eget nibh. Sed faucibus nisl augue, non viverra justo sagittis venenatis.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit. 
+    
+    Phasellus eleifend egestas diam, id tincidunt arcu dictum quis.
+
+# List 
+* Item 1;
+	* Item 1.1;
+* Item 2;
+	* Item 2.1;
+	* Item 2.2;
+* Item 3
+	* Item 3.1;
+		* Item 3.1.1;
+    
+>      * Item 1;
+>	      * Item 1.1;
+>	    * Item 2;
+>	     * Item 2.1;
+>	     * Item 2.2;
+>	    * Item 3
+>		   * Item 3.1;
+>			  * Item 3.1.1;
+
+## List CheckBox
+
+ - [ ] Item A
+ - [x] Item B
+ - [x] Item C
+ 
+>     - [ ] Item A
+>     - [x] Item B
+>     - [x] Item C
+
+
+# Link
+[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
+
+[Youtube](https://www.youtube.com) - _Enjoy videos and music you love, upload original content, and share it with friends, family, and the world on YouTube._
+
+[GitHub](https://github.com/fefong/markdown_readme#getting-started-with-markdown) - _Project_
+
+		[Google](https://www.google.com) - _Google | Youtube | Gmail | Maps | PlayStore | GoogleDrive_
+
+## Anchor links
+
+[Markdown - Summary](#Getting-started-with-Markdown)
+
+[Markdown - Markdown Editor](#Markdown-Editor)
+
+		[Markdown - Link](#Link)
+
+# Blockquote
+> Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny
+
+    > Lebenslangerschicksalsschatz: Lifelong Treasure of Destiny 
+
+# Image | GIF
+![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
+    
+    ![myImage](https://media.giphy.com/media/XRB1uf2F9bGOA/giphy.gif)
+    
+See more [Markdown Extras - Image Align](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#image-align)    
+
+# Style Text
+### Italic
+
+*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
+
+     *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.*
+
+### Bold
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
+
+    **Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu commodo posuere, ligula ante dictum neque, vitae pharetra mauris mi a velit.**
+    
+### Strikethrough
+~~strikethrough text~~
+
+    ~~strikethrough text~~
+    
+# Code
+
+```java
+public static void main(String[] args) {
+	//TODO
 }
 ```
 
-## 🚀 Usage
+>   \`\`\`java <br>
+>   public static void main(String[] args) {<br>
+>	    //TODO<br>
+>	}<br>
+>   \`\`\`<br>
 
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
+See more [Markdown Extras - Style Text](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#style-text)
 
-Just run the following command at the root of your project and answer questions:
+# Email
+<email@email.com>
 
-```sh
-npx readme-md-generator
+    <email@email.com>
+
+# Table
+
+|Column 1|Column 2|Column 3|
+|---|---|---|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|---|---|---|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+## Table Align
+
+## Align Center
+
+|Column 1|Column 2|Column 3|
+|:---:|:---:|:---:|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|:---:|:---:|:---:|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+## Align Left
+
+|Column 1|Column 2|Column 3|
+|:---|:---|:---|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|:---|:---|:---|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+## Align Right
+
+|Column 1|Column 2|Column 3|
+|---:|---:|---:|
+|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|
+|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|
+
+>\|Column 1|Column 2|Column 3|<br>
+>\|---:|---:|---:|<br>
+>\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br>
+>\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br>
+
+See more [Markdown Extras - Table](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table)
+* [Rownspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---rowspan)
+* [Colspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---colspan)
+
+# Escape Characters
+
+```
+\   backslash
+`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus sign
+-   minus sign (hyphen)
+.   dot
+!   exclamation mark
 ```
 
-Or use default values for all questions (`-y`):
+# Emoji
 
-```sh
-npx readme-md-generator -y
-```
+* [Emoji](emoji.md#emoji);
+	* [People](emoji.md#people) - (:blush: ; :hushed: ; :shit:);
+	* [Nature](emoji.md#nature) - (:sunny: ; :snowman: ; :dog:);
+	* [Objects](emoji.md#objects) - (:file_folder: ; :computer: ; :bell:);
+	* [Places](emoji.md#places) - (:rainbow: ; :warning: ; :statue_of_liberty:);
+	* [Symbols](emoji.md#symbols) - (:cancer: ; :x: ; :shipit:);
+* [Kaomoji](emoji.md#kaomoji);
+* [Special-Symbols](emoji.md#special-symbols);
+	
 
-Use your own `ejs` README template (`-p`):
+# Shields Badges
 
-```sh
-npx readme-md-generator -p path/to/my/own/template.md
-```
+:warning: _We are not responsible for this site_
 
-You can find [ejs README template examples here](https://github.com/kefranabg/readme-md-generator/tree/master/templates).
+See more: [https://shields.io/](https://shields.io/)
 
-## Code Contributors
+[![GitHub forks](https://img.shields.io/github/forks/fefong/markdown_readme)](https://github.com/fefong/markdown_readme/network)
+![Markdown](https://img.shields.io/badge/markdown-project-red)
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
+# Markdown Editor
 
-## Financial Contributors
+[StackEdit](https://stackedit.io) - _StackEdit’s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files._
 
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
+# Some links for more in depth learning
 
-### Individuals
+:page_facing_up: [Markdown Extras](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#markdown---extras)
 
-<a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a>
+:page_facing_up: [Wikipedia - Markdown](https://pt.wikipedia.org/wiki/Markdown)
 
-### Organizations
+:page_facing_up: [Oficial](https://daringfireball.net/projects/markdown/)
 
-Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
-<a href="https://opencollective.com/readme-md-generator/organization/0/website"><img src="https://opencollective.com/readme-md-generator/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/1/website"><img src="https://opencollective.com/readme-md-generator/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/2/website"><img src="https://opencollective.com/readme-md-generator/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/3/website"><img src="https://opencollective.com/readme-md-generator/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/4/website"><img src="https://opencollective.com/readme-md-generator/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/5/website"><img src="https://opencollective.com/readme-md-generator/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/6/website"><img src="https://opencollective.com/readme-md-generator/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/7/website"><img src="https://opencollective.com/readme-md-generator/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/8/website"><img src="https://opencollective.com/readme-md-generator/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/9/website"><img src="https://opencollective.com/readme-md-generator/organization/9/avatar.svg"></a>
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome.<br />
-Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues) if you want to contribute.<br />
-[Check the contributing guide](./CONTRIBUTING.md).<br />
-
-## Author
-
-👤 **Franck Abgrall**
-
-- Twitter: [@FranckAbgrall](https://twitter.com/FranckAbgrall)
-- Github: [@kefranabg](https://github.com/kefranabg)
-
-## Show your support
-
-Please ⭐️ this repository if this project helped you!
-
-<a href="https://www.patreon.com/FranckAbgrall">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-## 📝 License
-
-Copyright © 2019 [Franck Abgrall](https://github.com/kefranabg).<br />
-This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
