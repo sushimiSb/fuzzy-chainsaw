@@ -1,141 +1,67 @@
-<h1 align="center">Welcome to readme-md-generator 👋</h1>
-<p align="center">
-  <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
-  <a href="https://www.npmjs.com/package/readme-md-generator">
-    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
-  </a>
-  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
-  </a>
-  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
-    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
-  </a>
-  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
-    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
-  </a>
-  <a href="https://twitter.com/FranckAbgrall">
-    <img alt="Twitter: FranckAbgrall" src="https://img.shields.io/twitter/follow/FranckAbgrall.svg?style=social" target="_blank" />
-  </a>
-</p>
+# WordPress Blogs
 
-> CLI that generates beautiful README.md files.<br /> `readme-md-generator` will suggest you default answers by reading your `package.json` and `git` configuration.
+## Theme
 
-## ✨ Demo
+### Theme Repository
 
-`readme-md-generator` is able to read your environment (package.json, git config...) to suggest you default answers during the `README.md` creation process:
+The theme repository houses the current theme as well as previous themes that Buffer has used over the years. **buffer-2016** is in use across each of the sites right now.
 
-<p align="center">
-  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
-</p>
+https://github.com/bufferapp/buffer-blog-themes
 
-Generated `README.md`:
+### buffer-2016
 
-<p align="center">
-  <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
-</p>
+The 2016 theme is a single theme that has various template options available within the WordPress theme options allowing it to be tailored for each individual blog. Including different homepage templates called "newspaper" and "magazine".
 
-Example of `package.json` with good meta data:
+buffer-2016 makes use of GULP and SASS to compile & minify scripts and CSS.
 
-```json
-// The package.json is not required to run README-MD-GENERATOR
-{
-  "name": "readme-md-generator",
-  "version": "0.1.3",
-  "description": "CLI that generates beautiful README.md files.",
-  "author": "Franck Abgrall",
-  "license": "MIT",
-  "homepage": "https://github.com/kefranabg/readme-md-generator#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kefranabg/readme-md-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kefranabg/readme-md-generator/issues"
-  },
-  "engines": {
-    "npm": ">=5.5.0",
-    "node": ">=9.3.0"
-  }
-}
-```
+### Previous Themes
+Previous themes made use of a base theme which was then overwritten by sub themes to customize them for each individual site.
 
-## 🚀 Usage
+Having one singular code base for each sites theme makes making changes across each of the blogs easier.
 
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
 
-Just run the following command at the root of your project and answer questions:
 
-```sh
-npx readme-md-generator
-```
+## Plugins
 
-Or use default values for all questions (`-y`):
+Ideally we should explore plugins very carefully before installing them, running audits on installed plugins on a frequent basis to ensure we don't have any installed that aren't in use as well as ensuring upgrades are done to avoid security issues.
 
-```sh
-npx readme-md-generator -y
-```
 
-Use your own `ejs` README template (`-p`):
+## Hosting
 
-```sh
-npx readme-md-generator -p path/to/my/own/template.md
-```
+We have a number of WordPress blogs at Buffer. These are all hosted on WPEngine, using the same theme across each of the blogs.
 
-You can find [ejs README template examples here](https://github.com/kefranabg/readme-md-generator/tree/master/templates).
+Right now WPEngine hosts...
+* [Social](http://blog.bufferapp.com/)
+* [Open](http://open.buffer.com/)
+* [Overflow](https://overflow.buffer.com/)
 
-## Code Contributors
+We have additional sites setup within WPEngine which aren't currently in use. WPEngine allows us to host many installations of WordPress if we wish to expand our blog offering.
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
+### Deployments
 
-## Financial Contributors
+WPEngine has its own GIT repository setup which allows you to push to their repositories to deploy to staging or production. Unfortunately this can lead to issues when themes/plugins are changed remotely within WordPress.
 
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
+Instead we make use of GitHub for hosting the repository and use [DeployBot](http://buffer.deploybot.com/) to manage deployments to each of the blog environments. Right now these are set up to automatically deploy to each of the blog staging sites on merge to master and manual deployments are done to deploy to the production environments.
 
-### Individuals
+Previously deployments to production would be done in order of visitor numbers, starting with Overflow, then Open, before finally deploying to Social. DeployBot allows you to quickly rollback a change via their dashboard if required. For bigger changes you can also make use of the WPEngine backup points for extra security.
 
-<a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a>
+Deployments can also be triggered using Slack commands in #eng-deploys. These can be configured within DeployBot.
+* /deploy-social-blog-production
+* /deploy-social-blog-staging
+* /deploy-overflow-blog-production
+* /deploy-overflow-blog-staging
 
-### Organizations
+### Staging
+WPEngine offers a staging environment which can be used to test plugins & themes in the same setup as the production. Within the WPEngine dashboard you can trigger a sync between staging & production to test the latest content within the Staging environment.
 
-Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
-<a href="https://opencollective.com/readme-md-generator/organization/0/website"><img src="https://opencollective.com/readme-md-generator/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/1/website"><img src="https://opencollective.com/readme-md-generator/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/2/website"><img src="https://opencollective.com/readme-md-generator/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/3/website"><img src="https://opencollective.com/readme-md-generator/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/4/website"><img src="https://opencollective.com/readme-md-generator/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/5/website"><img src="https://opencollective.com/readme-md-generator/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/6/website"><img src="https://opencollective.com/readme-md-generator/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/7/website"><img src="https://opencollective.com/readme-md-generator/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/8/website"><img src="https://opencollective.com/readme-md-generator/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/9/website"><img src="https://opencollective.com/readme-md-generator/organization/9/avatar.svg"></a>
+* [Social](http://bufferblog.staging.wpengine.com/)
+* [Open](https://bufferopen.staging.wpengine.com/)
+* [Overflow](https://bufferdevs.staging.wpengine.com/)
 
-## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome.<br />
-Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues) if you want to contribute.<br />
-[Check the contributing guide](./CONTRIBUTING.md).<br />
+## Local Setup
+We have previously made use of MAMP to host WordPress locally. Depending on how familiar you are with Docker, you could also setup a Docker Image with a WordPress environment.
 
-## Author
+You'll want the buffer-blog-themes repository checked out within the WordPress envirnment so the WordPress installation has access to the themes.
 
-👤 **Franck Abgrall**
-
-- Twitter: [@FranckAbgrall](https://twitter.com/FranckAbgrall)
-- Github: [@kefranabg](https://github.com/kefranabg)
-
-## Show your support
-
-Please ⭐️ this repository if this project helped you!
-
-<a href="https://www.patreon.com/FranckAbgrall">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-## 📝 License
-
-Copyright © 2019 [Franck Abgrall](https://github.com/kefranabg).<br />
-This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+Once setup you can grab an export of the MySQL database from WPEngine via phpMyAdmin to work with real blog content.
