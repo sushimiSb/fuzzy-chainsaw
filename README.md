@@ -1,47 +1,126 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 54 54" style="enable-background:new 0 0 54 54;" xml:space="preserve">
-<g>
-	<g>
-		<path style="fill:#4FBA6F;" d="M27,1L27,1c14.359,0,26,11.641,26,26v0c0,14.359-11.641,26-26,26h0C12.641,53,1,41.359,1,27v0
-			C1,12.641,12.641,1,27,1z"/>
-		<path style="fill:#4FBA6F;" d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2
-			C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z"/>
-	</g>
-	<path style="fill:#FFFFFF;" d="M31.706,40c-0.256,0-0.512-0.098-0.707-0.293L19.501,28.209c-0.667-0.667-0.667-1.751,0-2.418
-		l11.498-11.498c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L21.12,27l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414
-		C32.218,39.902,31.962,40,31.706,40z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+# Markdown - Extras
+
+
+## Image Align
+
+### Image Align - Middle _(default)_
+
+Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium. lobortis.
+
+```html
+<img src="right-arrow.svg" width="42" height="42">
+```
+
+### Image Align - Left
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> Fusce semper libero ligula, vel varius enim sagittis quis. Aenean sed massa velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras faucibus consequat est eu varius. Nam vitae dignissim velit. 
+
+```html
+<img src="left-arrow.svg" alt="left face" align="left" width="42" height="42"> 
+```
+
+### Image Align - Right
+
+Aenean eu euismod ante. Phasellus finibus nec est eget euismod.<img src="right-arrow.svg" alt="right" align="right" width="42" height="42"> Duis pharetra sapien dolor, nec euismod nunc maximus ut. Fusce elementum tellus ac lacus ultrices, vel efficitur metus faucibus. Etiam sed egestas risus. Fusce quis ex lorem. Nullam aliquet ante vel mi ultrices, vel pretium nibh pretium.
+
+```html
+<img src="right-arrow.svg" alt="right" align="right" width="42" height="42">
+```
+
+## Style Text
+
+
+### keyboard input
+
+<kbd>ALT + F4</kbd> 
+```
+<kbd>ALT + F4</kbd> 
+```
+
+### subscripted
+normal text <sub>subscripted</sub> normal text
+```
+normal text <sub>subscripted</sub> normal text
+```
+
+### superscripted
+normal text <sup>superscripted</sup> normal text
+```
+normal text <sup>superscripted</sup> normal text
+```
+
+## Table
+
+### Table - _rowspan_
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+```
+
+### Table - _colspan_
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+```
