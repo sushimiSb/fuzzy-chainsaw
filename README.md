@@ -1,5 +1,17 @@
-# Explanation
+#!/usr/bin/env rake
 
-You can put HTML (actually XHTML) and CSS inside a [`<foreignObject>` tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) inside a SVG file inside an `<img>` tag inside your readme. 🤯
+require "bundler/gem_tasks"
 
-Thanks to [@Richienb](https://github.com/Richienb) for sharing the trick in [this pull request](https://github.com/sindresorhus/sindresorhus/pull/9).
+require 'rake/testtask'
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'lib' << 'test'
+  test.pattern = 'test/**/*_test.rb'
+  test.verbose = true
+end
+
+desc "Open an irb session preloaded with this library"
+task :console do
+  sh "irb -I lib -r bundler/setup -r github/markup"
+end
+
+task :default => :test
