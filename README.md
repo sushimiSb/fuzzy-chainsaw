@@ -1,291 +1,443 @@
-<a name="readme-top"></a>
+gh-md-toc
+=========
 
-<!--
-!!! IMPORTANT !!!
-This README is an example of how you could professionally present your codebase. 
-Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
+[![CI](https://github.com/ekalinin/github-markdown-toc/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/ekalinin/github-markdown-toc/actions/workflows/ci.yml)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ekalinin/github-markdown-toc)
 
-You should modify this file to match your project and remove sections that don't apply.
+gh-md-toc — is for you if you **want to generate TOC** (Table Of Content) for a README.md or
+a GitHub wiki page **without installing additional software**.
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+It's my try to fix a problem:
 
-OPTIONAL SECTIONS:
-- FAQ
+  * [github/issues/215](https://github.com/isaacs/github/issues/215)
 
-After you're finished please remove all the comments and instructions!
+gh-md-toc is able to process:
 
-For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
--->
+  * stdin
+  * local files (markdown files in local file system)
+  * remote files (html files on github.com)
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+gh-md-toc tested on Ubuntu, and macOS High Sierra (gh-md-toc release 0.4.9). If you want it on Windows, you
+better to use a golang based implementation:
 
-  <h3><b>Microverse README Template</b></h3>
+  * [github-markdown-toc.go](https://github.com/ekalinin/github-markdown-toc.go)
 
-</div>
+It's more solid, reliable and with ability of a parallel processing. And
+absolutely without dependencies.
 
-<!-- TABLE OF CONTENTS -->
+Table of contents
+=================
 
-# 📗 Table of Contents
+<!--ts-->
+   * [Installation](#installation)
+   * [Usage](#usage)
+      * [STDIN](#stdin)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+      * [Auto insert and update TOC](#auto-insert-and-update-toc)
+      * [GitHub token](#github-token)
+      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
+   * [Docker](#docker)
+     * [Local](#local)
+     * [Public](#public)
+<!--te-->
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+Installation
+============
 
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
-
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
+Linux (manual installation)
+```bash
+$ wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
+$ chmod a+x gh-md-toc
 ```
- -->
 
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+MacOS (manual installation)
+```bash
+$ curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
+$ chmod a+x gh-md-toc
 ```
---->
 
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
+Linux or MacOS (using [Basher](https://github.com/basherpm/basher))
+```bash
+$ basher install ekalinin/github-markdown-toc
+# `gh-md-toc` will automatically be available in the PATH
 ```
---->
 
-### Usage
+Usage
+=====
 
-To run the project, execute the following command:
 
-<!--
-Example command:
+STDIN
+-----
 
-```sh
-  rails server
+Here's an example of TOC creating for markdown from STDIN:
+
+```bash
+➥ cat ~/projects/Dockerfile.vim/README.md | ./gh-md-toc -
+  * [Dockerfile.vim](#dockerfilevim)
+  * [Screenshot](#screenshot)
+  * [Installation](#installation)
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+  * [License](#license)
 ```
---->
 
-### Run tests
+Local files
+-----------
 
-To run tests, run the following command:
+Here's an example of TOC creating for a local README.md:
 
-<!--
-Example command:
+```bash
+➥ ./gh-md-toc ~/projects/Dockerfile.vim/README.md
 
-```sh
-  bin/rails test test/models/article_test.rb
+
+Table of Contents
+=================
+
+  * [Dockerfile.vim](#dockerfilevim)
+  * [Screenshot](#screenshot)
+  * [Installation](#installation)
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+  * [License](#license)
 ```
---->
 
-### Deployment
+Remote files
+------------
 
-You can deploy this project using:
+And here's an example, when you have a README.md like this:
 
-<!--
-Example:
+  * [README.md without TOC](https://github.com/ekalinin/envirius/blob/f939d3b6882bfb6ecb28ef7b6e62862f934ba945/README.md)
 
-```sh
+And you want to generate TOC for it.
+
+There is nothing easier:
+
+```bash
+➥ ./gh-md-toc https://github.com/ekalinin/envirius/blob/master/README.md
+
+Table of Contents
+=================
+
+  * [envirius](#envirius)
+    * [Idea](#idea)
+    * [Features](#features)
+  * [Installation](#installation)
+  * [Uninstallation](#uninstallation)
+  * [Available plugins](#available-plugins)
+  * [Usage](#usage)
+    * [Check available plugins](#check-available-plugins)
+    * [Check available versions for each plugin](#check-available-versions-for-each-plugin)
+    * [Create an environment](#create-an-environment)
+    * [Activate/deactivate environment](#activatedeactivate-environment)
+      * [Activating in a new shell](#activating-in-a-new-shell)
+      * [Activating in the same shell](#activating-in-the-same-shell)
+    * [Get list of environments](#get-list-of-environments)
+    * [Get current activated environment](#get-current-activated-environment)
+    * [Do something in environment without enabling it](#do-something-in-environment-without-enabling-it)
+    * [Get help](#get-help)
+    * [Get help for a command](#get-help-for-a-command)
+  * [How to add a plugin?](#how-to-add-a-plugin)
+    * [Mandatory elements](#mandatory-elements)
+      * [plug_list_versions](#plug_list_versions)
+      * [plug_url_for_download](#plug_url_for_download)
+      * [plug_build](#plug_build)
+    * [Optional elements](#optional-elements)
+      * [Variables](#variables)
+      * [Functions](#functions)
+    * [Examples](#examples)
+  * [Example of the usage](#example-of-the-usage)
+  * [Dependencies](#dependencies)
+  * [Supported OS](#supported-os)
+  * [Tests](#tests)
+  * [Version History](#version-history)
+  * [License](#license)
+  * [README in another language](#readme-in-another-language)
+```
+
+That's all! Now all you need — is copy/paste result from console into original
+README.md.
+
+If you do not want to copy from console you can add `> YOURFILENAME.md` at the end of the command like `./gh-md-toc https://github.com/ekalinin/envirius/blob/master/README.md > table-of-contents.md` and this will store the table of contents to a file named table-of-contents.md in your current folder.
+
+And here is a result:
+
+  * [README.md with TOC](https://github.com/ekalinin/envirius/blob/24ea3be0d3cc03f4235fa4879bb33dc122d0ae29/README.md)
+
+Moreover, it's able to work with GitHub's wiki pages:
+
+```bash
+➥ ./gh-md-toc https://github.com/ekalinin/nodeenv/wiki/Who-Uses-Nodeenv
+
+Table of Contents
+=================
+
+  * [Who Uses Nodeenv?](#who-uses-nodeenv)
+    * [OpenStack](#openstack)
+    * [pre-commit.com](#pre-commitcom)
+```
+
+Multiple files
+--------------
+
+It supports multiple files as well:
+
+```bash
+➥ ./gh-md-toc \
+    https://github.com/aminb/rust-for-c/blob/master/hello_world/README.md \
+    https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md \
+    https://github.com/aminb/rust-for-c/blob/master/primitive_types_and_operators/README.md \
+    https://github.com/aminb/rust-for-c/blob/master/unique_pointers/README.md
+
+  * [Hello world](https://github.com/aminb/rust-for-c/blob/master/hello_world/README.md#hello-world)
+
+  * [Control Flow](https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md#control-flow)
+    * [If](https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md#if)
+    * [Loops](https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md#loops)
+    * [For loops](https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md#for-loops)
+    * [Switch/Match](https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md#switchmatch)
+    * [Method call](https://github.com/aminb/rust-for-c/blob/master/control_flow/README.md#method-call)
+
+  * [Primitive Types and Operators](https://github.com/aminb/rust-for-c/blob/master/primitive_types_and_operators/README.md#primitive-types-and-operators)
+
+  * [Unique Pointers](https://github.com/aminb/rust-for-c/blob/master/unique_pointers/README.md#unique-pointers)
+```
+
+Combo
+-----
+
+You can easily combine both ways:
+
+```bash
+➥ ./gh-md-toc \
+    ~/projects/Dockerfile.vim/README.md \
+    https://github.com/ekalinin/sitemap.s/blob/master/README.md
+
+  * [Dockerfile.vim](~/projects/Dockerfile.vim/README.md#dockerfilevim)
+  * [Screenshot](~/projects/Dockerfile.vim/README.md#screenshot)
+  * [Installation](~/projects/Dockerfile.vim/README.md#installation)
+        * [OR using Pathogen:](~/projects/Dockerfile.vim/README.md#or-using-pathogen)
+        * [OR using Vundle:](~/projects/Dockerfile.vim/README.md#or-using-vundle)
+  * [License](~/projects/Dockerfile.vim/README.md#license)
+
+  * [sitemap.js](https://github.com/ekalinin/sitemap.js/blob/master/README.md#sitemapjs)
+    * [Installation](https://github.com/ekalinin/sitemap.js/blob/master/README.md#installation)
+    * [Usage](https://github.com/ekalinin/sitemap.js/blob/master/README.md#usage)
+    * [License](https://github.com/ekalinin/sitemap.js/blob/master/README.md#license)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+```
+
+Auto insert and update TOC
+--------------------------
+
+Just put into a file these two lines:
 
 ```
- -->
+<!--ts-->
+<!--te-->
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+And run:
 
-<!-- AUTHORS -->
+```bash
+$ ./gh-md-toc --insert README.test.md
 
-## 👥 Authors <a name="authors"></a>
+Table of Contents
+=================
 
-> Mention all of the collaborators of this project.
+   * [gh-md-toc](#gh-md-toc)
+   * [Installation](#installation)
+   * [Usage](#usage)
+      * [STDIN](#stdin)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
 
-👤 **Author1**
+!! TOC was added into: 'README.test.md'
+!! Origin version of the file: 'README.test.md.orig.2018-02-04_192655'
+!! TOC added into a separate file: 'README.test.md.toc.2018-02-04_192655'
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+```
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Now check the same file:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bash
+➜ grep -A15 "<\!\-\-ts" README.test.md
+<!--ts-->
+   * [gh-md-toc](#gh-md-toc)
+   * [Table of contents](#table-of-contents)
+   * [Installation](#installation)
+   * [Usage](#usage)
+      * [STDIN](#stdin)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+      * [Auto insert and update TOC](#auto-insert-and-update-toc)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
 
-<!-- FUTURE FEATURES -->
+<!-- Added by: <your-user>, at: 2018-02-04T19:38+03:00 -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!--te-->
+```
 
-> Describe 1 - 3 features you will add to the project.
+Next time when your file will be changed just repeat the command (`./gh-md-toc
+--insert ...`) and TOC will be refreshed again.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+GitHub token
+------------
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+All your tokens are [here](https://github.com/settings/tokens).
 
-<!-- CONTRIBUTING -->
+You will need them if you get an error like this:
 
-## 🤝 Contributing <a name="contributing"></a>
+```
+Parsing local markdown file requires access to github API
+Error: You exceeded the hourly limit. See: https://developer.github.com/v3/#rate-limiting
+or place github auth token here: ./token.txt
+```
 
-Contributions, issues, and feature requests are welcome!
+A token can be used as an env variable:
 
-Feel free to check the [issues page](../../issues/).
+```bash
+➥ GH_TOC_TOKEN=2a2dab...563 ./gh-md-toc README.md
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Table of Contents
+=================
 
-<!-- SUPPORT -->
+* [github\-markdown\-toc](#github-markdown-toc)
+* [Table of Contents](#table-of-contents)
+* [Installation](#installation)
+* [Tests](#tests)
+* [Usage](#usage)
+* [LICENSE](#license)
+```
 
-## ⭐️ Show your support <a name="support"></a>
+Or from a file:
 
-> Write a message to encourage readers to support your project
+```bash
+➥ echo "2a2dab...563" > ./token.txt
+➥ ./gh-md-toc README.md
 
-If you like this project...
+Table of Contents
+=================
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* [github\-markdown\-toc](#github-markdown-toc)
+* [Table of Contents](#table-of-contents)
+* [Installation](#installation)
+* [Tests](#tests)
+* [Usage](#usage)
+* [LICENSE](#license)
+```
 
-<!-- ACKNOWLEDGEMENTS -->
+TOC generation with Github Actions
+----------------------------------
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+Config:
 
-> Give credit to everyone who inspired your codebase.
+```yaml
+on:
+  push:
+    branches: [main]
+    paths: ['foo.md']
 
-I would like to thank...
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/0.8.0/gh-md-toc -o gh-md-toc
+          chmod a+x gh-md-toc
+          ./gh-md-toc --insert --no-backup --hide-footer foo.md
+          rm gh-md-toc
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Auto update markdown TOC
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Tests
+=====
 
-<!-- FAQ (optional) -->
+Done with [bats](https://github.com/bats-core/bats-core).
+Useful articles:
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+  * https://www.engineyard.com/blog/how-to-use-bats-to-test-your-command-line-tools/
+  * http://blog.spike.cx/post/60548255435/testing-bash-scripts-with-bats
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+How to run tests:
 
-  - [Answer_1]
+```bash
+➥ make test                                                                                                                 
 
-- **[Question_2]**
+ ✓ TOC for local README.md
+ ✓ TOC for remote README.md
+ ✓ TOC for mixed README.md (remote/local)
+ ✓ TOC for markdown from stdin
+ ✓ --help
+ ✓ --version
 
-  - [Answer_2]
+6 tests, 0 failures
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Dependency
+==========
 
-<!-- LICENSE -->
+  * curl or wget
+  * awk (mawk is not tested)
+  * grep
+  * sed
+  * bats (for unit tests)
 
-## 📝 License <a name="license"></a>
+Tested on Ubuntu 14.04/14.10 in bash/zsh.
 
-This project is [MIT](./LICENSE) licensed.
+Docker
+======
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+Local
+-----
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* Build
+
+```shell
+$ docker build -t markdown-toc-generator .
+```
+
+* Run on an URL
+
+```shell
+$ docker run -it markdown-toc-generator https://github.com/ekalinin/envirius/blob/master/README.md
+```
+
+* Run on a local file (need to share volume with docker)
+
+```shell
+$ docker run -it -v /data/ekalinin/envirius:/data markdown-toc-generator /data/README.md
+```
+
+Public
+-------
+
+```shell
+$ docker pull evkalinin/gh-md-toc:0.7.0
+
+$ docker images | grep toc
+evkalinin/gh-md-toc                       0.7.0 0b8db6aed298        11 minutes ago      147MB
+
+$ docker run -it evkalinin/gh-md-toc:0.7.0 \
+    https://github.com/ekalinin/envirius/blob/master/README.md
+```
