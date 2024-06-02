@@ -1,12 +1,81 @@
-# Contribution Guidelines
+# Дополения к языку разметки MD.
 
-Please ensure your pull request adheres to the following guidelines:
+## Оглавление:
+1. [Детализация (кат)](#Детализация-кат)
+2. [Форматирование текста](#Форматирование-текста)
+3. [Имитация клавиатуры](#Имитация-клавиатуры) 
+4. [Бэйджики](#Бэйджики)
 
-- Suggested Github Profile READMEs should be beautiful or stand out in some way.
-- Make an individual pull request for each suggestion.
-- Can suggest for different categories as well.
-- Start the Name with a capital.
-- Check your spelling and grammar.
-- Make sure your text editor is set to remove trailing whitespace.
+## Детализация (кат) 
+Существует возможность спрятать часть текста под кат. Для этого необходимо использовать тэг HTML5 `<details>` текст `</details>`. Подробнее: [http://htmlbook.ru/html/details](http://htmlbook.ru/html/details) и [http://htmlbook.ru/html/summary](http://htmlbook.ru/html/summary)   
+Следующий код:   
+    `<details>`    
+    `<summary>Подробнее ...</summary>`    
+    `Тут текст который мы хотим скрыть`    
+    `</details>`   
 
-Thank you for your suggestions!
+Дает такой результат:
+<details>
+<summary>Подробнее ...</summary>
+Тут текст который мы хотим скрыть
+</details>    
+
+**Внимание:** это не работает в большинстве браузеров.    
+[:arrow_up:Оглавление](#Оглавление)    
+___
+
+## Форматирование текста
+Для форматирования текста можно использовать тэг `<p>`. Подробнее: [http://htmlbook.ru/html/p](http://htmlbook.ru/html/p)   
+Вариант использования: `<p align="left | center | right | justify">...</p>`    
+<details>
+<summary>Текст без форматирования:</summary>
+Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
+</details>
+Результат применения тэга:
+
+```
+<p align="justify">
+
+</p>
+```
+
+<details>
+<summary>Текст после форматирования:</summary>
+<p align="justify">
+Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
+</p>
+</details>    
+    
+[:arrow_up:Оглавление](#Оглавление)
+___
+
+## Имитация клавиатуры
+Можно имитировать клавиатуру:
+```
+<pre>
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
+</pre> 
+```
+<pre>
+    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
+</pre>
+
+[:arrow_up:Оглавление](#Оглавление)
+___
+
+## Бэйджики
+
+Можно вставлять свои или готовые бэйджки.
+Источник: [https://shields.io/category/build](https://shields.io/category/build)
+
+Пример:
+```
+Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
+
+Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
+```
+
+Результат:  
+Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
+
+Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
