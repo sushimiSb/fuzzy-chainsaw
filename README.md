@@ -1,143 +1,236 @@
+# 规范
 
-# Awesome README [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
-> A curated list of awesome READMEs
-> <img src="icon.png" align="right"/>
-
-Elements in beautiful READMEs include, but are not limited to:
-
-images, screenshots, GIFs, text formatting, etc.
-   
-## Examples
-
-- [ai/size-limit](https://github.com/ai/size-limit#readme) - Project logo, clear description, screenshot, step-by-step installing instructions.
-- [aimeos/aimeos-typo3](https://github.com/aimeos/aimeos-typo3#readme) - Project logo. Clear description of what the project does. Demo screenshot. TOC for easy navigation. Easy installation and setup sections with screenshots. Links for further reading.
-- [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide#readme) - Badges, project GIF, concise description, quick links, stepwise installation instructions.
-- [alichtman/shallow-backup](https://github.com/alichtman/shallow-backup#readme) - Clear description of what the project does. GIF Demo. TOC for easy navigation. Badges. Links for further reading. Simple install instructions.
-- [alichtman/stronghold](https://github.com/alichtman/stronghold#readme) - Project logo. Clear description of what the project does. GIF Demo. TOC for easy navigation. Badges. Links for further reading. Simple install instructions.
-- [amitmerchant1990/electron-markdownify](https://github.com/amitmerchant1990/electron-markdownify#readme) - Project logo. Minimalist description of what it is. GIF demo of the project. Key features. How to install guide. Credits.
-- [amplication/amplication](https://github.com/amplication/amplication#readme) - Clear project logo. Brief explanation. All features explained. Clean documentation. Useful links (website, docs, discord). List of contributors with their pictures and usernames.
-- [anfederico/Clairvoyant](https://github.com/anfederico/Clairvoyant#readme) - Multiple badges. Clean logo. Simple install instructions. Clear overview of the project accompanied by a schematic. GIF demo. Extensive code examples.
-- [ankitwasankar/mftool-java](https://github.com/ankitwasankar/mftool-java#readme) - Project logo with a short display of what can be achieved with it, TOC for easy navigation, important badges, clean installation guide, and multiple code snippets showing how to use the functionality.
-- [antoinezanardi/werewolves-assistant-api-next](https://github.com/antoinezanardi/werewolves-assistant-api-next#readme) - Project logo. Badges. Concise description. TOC for easy navigation. Simple install instructions and various sections. Clean project with code coverage, CI, and many other features.
-- [AntonioFalcaoJr/EventualShop](https://github.com/AntonioFalcaoJr/EventualShop#readme) - The project has a logo and well-defined sections such as: information about the project, the architectural solution, along with reference links such as articles, videos, and documentation. It explains how to run the project in different environments (development and production). It has documented load tests, it also describes which technologies are used, and it has diagrams for the archetype.
-- [aregtech/areg-sdk](https://github.com/aregtech/areg-sdk#readme) - Logo. Multiple info and statistics badges. List of contributors and stargazers with pictures. TOC and "Back to top" links for easy navigation. Headlines with graphics. Topic hide/show menu. Project description and philosophy. Clone and integration instructions. Quick build with multiple tools. Tools configuration instructions. Reference to examples and Demo projects. Reference to use cases. References to guidance and Wiki pages. Links with badges to contact. Links with badges to share project in social network.
-- [Armync/Arminc-AutoExec](https://github.com/ArmynC/ArminC-AutoExec/#readme) - Rich Markdown functions, modern layout, clear description and compliant with the recommended community standards.
-- [athityakumar/colorls](https://github.com/athityakumar/colorls#readme) - Multiple badges. Clean screenshots. Simple install instructions. TOC for easy navigation. Good contributor guidelines.
-- [ccostan/Home-AssistantConfig](https://github.com/CCOSTAN/Home-AssistantConfig#readme) - Project Banner. Badges. Easy navigation.
-- [choojs/choo](https://github.com/choojs/choo#readme) - Badges, clean, clear. Beautiful little menu above the fold with useful links. An FAQ inside of it for the main questions. Backers. Good language.
-- [chroline/well_app](https://github.com/chroline/well_app#readme) - Features attention-grabbing project thumbnail with clean badges, as well as download information and quick navigation links. Organized into multiple descriptive sections, each of which have a title with a yellow emoji. Includes details about the project itself, as well as the technologies used and how to contribute.
-- [create-go-app/cli](https://github.com/create-go-app/cli#readme) - Clean project logo. Useful badges (version, code style, test cover, docs). Clear readme with quickstart, understandable installation and usage manual, video screencast, ToC with well-documented project features (with a demo recording of the work in the terminal), project philosophy notes ("the why another"), most frequently asked questions, and more.
-- [Day8/re-frame](https://github.com/Day8/re-frame#readme) - Badges, logo, TOC, etc. Stands out by being a giant, well-written essay about the tech, how to use it, the philosophy behind it, and how it fits into the greater ecosystem.
-- [dbt-labs/dbt-core](https://github.com/dbt-labs/dbt-core#readme) - Project banner, super clear description (friendly to people brand new to the product), screenshot of the docs the tool generates, and concise links to other comprehensive pages explaining Getting Started, Joining the dbt Community, Bug Reports, Code Contribution, and Code of Conduct
-- [dowjones/react-dropdown-tree-select](https://github.com/dowjones/react-dropdown-tree-select#readme) - Clear readme with GIF screenshot for quick demo. Multiple badges, concise ToC, online playground, storybook, detailed description and more.
-- [easybase/easybase-react](https://github.com/easybase/easybase-react#readme) - Project banner and logo. Badges. Expandable walkthrough sections. Concise description and purpose. TOC for easy navigation. GIFs for installation demo. Multiple informative visuals.
-- [emalderson/thephish](https://github.com/emalderson/ThePhish#readme) - Project logo, informative badges, useful TOC, clear description, screenshots, step-by-step installation and configuration guide, contributor guidelines, code of conduct, UML diagrams, coherent tags, issue and pull request templates, well-documented and well-commented code, examples.
-- [github-changelog-generator/github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator#readme) - TOC for easy navigation. Concise project description. Installation and usage sections. Output example. Great feature overview. List of alternatives. FAQ.
-- [gitpoint/git-point](https://github.com/gitpoint/git-point#readme) - Clear description. Project Logo. App Store logos. TOC. Clean screenshots. List of features. Detailed installation process. Landing Page.
-- [gofiber/fiber](https://github.com/gofiber/fiber#readme) - Clean project logo. Useful badges and links (languages switcher, code style, test cover, docs, Discord channel). Clear description of what the project does with quickstart, benchmark charts, well-documented code examples (with the ability to hide long content), project philosophy notes ("the why of project"), tables with project addons, list of contributors, star growth statistics, and more.
-- [gowebly/gowebly](https://github.com/gowebly/gowebly#readme) - Clean project banner with logo. Useful badges and links (languages switcher, test cover, docs). Clear description of what the project does with quickstart, understandable feature list, links to the introduction video and article, well-documented CLI command examples, project philosophy notes ("motivation to create"), tables with project components, links to addons and helpers, list of stargazers, and more.
-- [Hexworks/Zircon](https://github.com/Hexworks/zircon#readme) - Dogfood in readme. Clear description of what the project does. Demo screenshot. TOC for easy navigation. Easy installation and setup sections with screenshots. Links for further reading.
-- [httpie/httpie](https://github.com/httpie/httpie#readme) - Description of what the project does. Demo screenshots. Project logo. TOC for easy navigation. Build badges. Quick and simple installation and usage sections. Includes an examples section.
-- [hywax/mafl](https://github.com/hywax/mafl#readme) - Project logo. Clear description of what the project does. TOC for easy navigation. Usage code samples.
-- [IgorAntun/node-chat](https://github.com/IgorAntun/node-chat#readme) - Project screenshot. Informative badges. Clear description. Easy installation/use instructions. Live demo.
-- [iharsh234/WebApp](https://github.com/iharsh234/WebApp#readme) - Project landing page. Clear description of what the project does. Demo screenshot. Simple install and usage sections. Includes an examples section with common uses and a mobile demo section.
-- [iterative/dvc](https://github.com/iterative/dvc#readme) - ReStructuredText format example, PyPi compatible. Logo, custom website-like menu. Smooth how-it-works animation. Badges. Nice contribution section with the hall-of-fame.
-- [ivanperez-keera/Yampa](https://github.com/ivanperez-keera/Yampa#readme) - Clear description. Feature list. TOC for easy navigation. Simple install instructions. Usage code samples. Project samples with GIFs and links to app stores. Documentation and publications. Clear development / contribution rules.
-- [karan/joe](https://github.com/karan/joe#readme) - Project logo. Clear description of what the project does. GIF demo. Easy install and usage sections.
-- [kopach/karma-sabarivka-reporter](https://github.com/kopach/karma-sabarivka-reporter#readme) - Project logo. Useful badges, clear readme with screenshots for quick demo. Concise ToC.
-- [L0garithmic/FastColabCopy](https://github.com/L0garithmic/FastColabCopy#readme) - Project logo. Minimalist description. Badges. GIF demo. About The Project. How To Use. Examples. Credits. Additional Examples.
-- [ma-shamshiri/Human-Activity-Recognition](https://github.com/ma-shamshiri/Human-Activity-Recognition#readme) - Beautiful table of contents. Project logo. Animated project banner. Complete project folder structure. Clear description of what the project does. Nice contributors’ section. Easy navigation.
-- [ma-shamshiri/Pacman-Game](https://github.com/ma-shamshiri/Pacman-Game#readme) - Beautiful table of contents. Project logo. Animated project banner. Suitable GIFs to display each part of the project. Complete list of project files in the repo along with their function. Complete execution instruction.
-- [ma-shamshiri/Spam-Detector](https://github.com/ma-shamshiri/Spam-Detector#readme) - Complete project file description. Project logo. Animated project banner. Concise project description. Clear execution instruction.
-- [MananTank/radioactive-state](https://github.com/MananTank/radioactive-state#readme) - Badges (version, downloads, coverage, size), Twitter Intent, Project Logo, Feature list, Motivation, Installation, Example with GIFs, Emojis, Collapsible Sections, Live Demos, API detailed usage, FAQs, Chat link.
-- [Martinsos/edlib](https://github.com/Martinsos/edlib#readme) - Informative badges (build, version, publication). Concise description. Feature list. TOC. Screenshots. Concise instructions with examples for building and including in your project. Common code examples to get you started quickly.
-- [NASA/ogma](https://github.com/NASA/ogma#readme) - Clear description. Feature list. Demo GIFs. Simple install instructions. Usage code samples. TOC for easy navigation.
-- [nhn/tui.editor](https://github.com/nhn/tui.editor#readme) - Project logo. Clear overview of project features with a demo GIF. Badges. TOC for easy navigation. Colorful icons in front of titles.
-- [NSRare/NSGIF](https://github.com/NSRare/NSGIF#readme) - Project logo. GIF Demo. Usage artwork. Usage code samples.
-- [Owloops/updo](https://github.com/owloops/updo#readme) - Well-structured, visually appealing, and provides comprehensive information about the tool, from its purpose and features to installation and usage, in a clear and user-friendly manner.
-- [php-censor/php-censor](https://github.com/php-censor/php-censor#readme) - Multiple badges, project logo, screenshots, step-by-step installing and upgrading instructions, TOC for easy navigation.
-- [PostHog/posthog](https://github.com/PostHog/posthog#readme) - Custom-made section icons, demo GIF, deploy button, profile images for contributors, concise, clear structure, project logo.
-- [priyavrat-misra/xrays-and-gradcam](https://github.com/priyavrat-misra/xrays-and-gradcam#readme) - TOC for easy navigation. Clear introduction of what the project does. Complete list of all files in the repo and what their function is. Usage section. Clean and concise tables.
-- [React on lambda](https://github.com/sultan99/react-on-lambda#readme) - Project logo, comics to present the main idea, badges, examples with code snippets, demo projects, api documentations, editor configurations.
-- [React Parallax Tilt](https://github.com/mkosir/react-parallax-tilt#readme) - GIF demo. Multiple badges. Feature list. Great live demo with code examples. Easy to follow instructions for local development set up.
-- [Rebilly/redoc](https://github.com/Redocly/redoc#readme) - Multiple badges, project logo, live demo link, GIF-animations of the key features, TL;DR usage.
-- [refinedev/refine](https://github.com/refinedev/refine#readme) - Clean project logo. Brief description at top. Multiple badges. Usage description and examples. Use cases and demo links. Screenshots. Key Features. Contributors. Stargazers. Contribution guidelines.
-- [release-it/release-it](https://github.com/release-it/release-it#readme) - Clear overview of project features with a demo GIF. Badges. Expandable TOC. Usage description and examples. Contribution guidelines. Detailed releases.
-- [rstacruz/hicat](https://github.com/rstacruz/hicat#readme) - GIF demo. Easy installation and setup sections with screenshots. Build badges. Great examples of use cases.
-- [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts#readme) - Clean project logo. Brief description at top. Sankey diagram, quick links, badges, OS specific icons, TOC, detailed release changelog.
-- [sebyddd/SDVersion](https://github.com/sebyddd/SDVersion#readme) - Project logo. Build badges. Documentation structuring for multiple programming languages. Usage examples.
-- [serpro69/kotlin-faker](https://github.com/serpro69/kotlin-faker#readme) - Project logo. Badges. Concise description and clear getting-started instructions with a link to the full documentation website. Test, build and contributing guidelines. Licence info.
-- [shama/gaze](https://github.com/shama/gaze#readme) - Project logo. Concise description. Feature list. Usage section. FAQ. Great API documentation. Release history.
-- [sidneycadot/oeis](https://github.com/sidneycadot/oeis#readme) - Overview. List of required dependencies. Complete list of all files in the repo and what their function is. Visual graph of how it all ties together.
-- [sindresorhus/pageres](https://github.com/sindresorhus/pageres#readme) - Project logo. Clear description of what the project does. Build badges. Demo screenshot. Simple install and usage sections. Includes an examples section with common uses.
-- [skydio/revup](https://github.com/Skydio/revup#readme) - Project logo. Animated GIF demo + GIFs for major stages of the step-by-step tutorial. Concise explanation, installation instructions, and contribution section. 
-- [Slackadays/Clipboard](https://github.com/Slackadays/Clipboard#readme) - Project logo. Build and test/coverage badges. Transition from plain description to people-oriented description. Animated GIF showing usage. Custom banners for clearly laid out sections. Custom text assets for headers. Immediate call to action with Quick Start section. Consistent and easy to read command names and signatures. Three immediate options for getting help provided. Easter eggs provided for the detail-oriented.
-- [sourcerer-io/sourcerer-app](https://github.com/sourcerer-io/sourcerer-app#readme) - Clean animated screenshot. Customized call to action badge. Usage showcase.
-- [sr6033/lterm](https://github.com/sr6033/lterm#readme) - Clean logo using characters. Brief updates on development. Detailed contribution guidelines. Contribution suggestions.
-- [Stack-in-a-box/triumphmayflowerclub.com](https://github.com/Stack-in-a-box/triumphmayflowerclub.com#readme) - Stands-out because, while only a simple website, it is presented as a very open project for lesser-experienced developers to cut their teeth on, with a friendly, inclusive tone and accessible set-up instructions. Includes many common elements found in other beautiful READMEs.
-- [stevenfoncken/multitool-for-spotify-php](https://github.com/stevenfoncken/multitool-for-spotify-php#readme) - Concise introduction description. Clear overview of features. Why-section with easter egg (heading). Informative badges. Clear disclaimer. Step-by-step setup instructions. Expandable TOC. Headlines with emojis. Detailed usage section. Shortlinks at top. Back-to-top link in footer. Credits to third-party code/libraries.
-- [sulu/sulu](https://github.com/sulu/sulu#readme) - Project logo, useful badges, clear instructions on where to find more information and report bugs, GIF screenshots, nice use of emoticons.
-- [supunlakmal/thismypc](https://github.com/supunlakmal/thismypc#readme) - Project logo. Useful badges. Web site URL. Screenshot. GIF step-by-step instructions for installation. Project folder structure.
-- [teles/array-mixer](https://github.com/teles/array-mixer#readme) - Clean project logo, badges. Table of contents. Contributing section. Many illustrated examples.
-- [thelounge/thelounge](https://github.com/thelounge/thelounge#readme) - Project logo. Useful badges and links (website, docs, demo). Screenshot. Feature list. Step-by-step instructions for installation, development, and testing. Link to the contributing guide. Good mobile summary.
-- [themerdev/themer](https://github.com/themerdev/themer#readme) - Project logo. Visual description (flowchart) of what the project does. Build badges. TOC. Demo screenshot. Concise install and usage sections, including common workflows. Colorful previews.
-- [vhesener/Closures](https://github.com/vhesener/Closures#readme) - Project logo, cognitive funnel, animated examples. Color coordinated. Clean documentation.
-- [xnbox/DeepfakeHTTP](https://github.com/xnbox/DeepfakeHTTP#readme) - Original hero section. Clear navigation. Minimalist design. Appendices.
-- [zenml-io/zenml](https://github.com/zenml-io/zenml#readme) - Clean project logo. Useful TOC. Clear code examples amongst feature list. Quickstart example.
+一个兼容的 README 必须满足下面列出的所有需求。
 
 
-## Articles
+> 注意: 标准自述文件是为开放源码库设计的。 尽管它[以前](README.cn.md#背景)是为 Node 和 npm 项目制作的，但它也适用于其他语言的库和包管理器。
 
-- ["Art of Readme - Learn the art of writing quality READMEs."](https://github.com/hackergrrl/art-of-readme#readme) - *Stephen Whitmore*
-- ["Elegant READMEs"](https://www.yegor256.com/2019/04/23/elegant-readme.html) - *Yegor Bugayenko*
-- ["How To Write A Great README"](https://thoughtbot.com/blog/how-to-write-a-great-readme) - *Caleb Thompson (thoughtbot)*
-- ["Readme Driven Development"](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html) - *Tom Preston-Werner*
-- ["Top ten reasons why I won’t use your open source project"](https://changelog.com/posts/top-ten-reasons-why-i-wont-use-your-open-source-project) - *Adam Stacoviak*
-- ["What I learned from an old GitHub project that won 3,000 Stars in a Week"](https://www.freecodecamp.org/news/what-i-learned-from-an-old-github-project-that-won-3-000-stars-in-a-week-628349a5ee14/) - *KyuWoo Choi*
+**要求:**
+  - 被叫做 README.md (大写).
+  - 如果项目支持 i18n，文件名必须相应地命名: `README.de.md`,  `de` 是 BCP 47语言标记. 对于命名，优先考虑语言的非区域子标记. 如果只有一个 README，并且语言不是英语，那么文本中允许使用不同的语言，而无需指定 BCP 标记: 例如: `README.md`  如果没有语言 README 的话，可以用德语  `README.md`. 在有多种语言的地方,README.md 是留给英语的.
+  - 做一个正确的 Markdown 文件.
+  - 部分必须按照下面给出的顺序显示。可以省略选择部分.
+  - 除非另有说明，部分必须有下面列出的标题。 如果 README 是另一种语言，则必须将标题翻译成该语言.
+  - 不能包含失效的链接.
+  - 如果有代码示例，那么它们的连接方式应该与项目其余部分的代码连接方式相同.
 
-## Tools
+## 目录
 
-- [Amazing GitHub Template](https://github.com/dec0dOS/amazing-github-template#readme) - Useful README.md, LICENSE, CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md, GitHub Issues, Pull Requests and Actions templates to jumpstart your projects.
-- [Common Readme](https://github.com/hackergrrl/common-readme#readme) - A common readme style for Node. Includes a guide and a readme generator.
-- [Feedmereadmes](https://github.com/lappleapple/feedmereadmes#readme) - README editing and project analysis/feedback.
-- [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats#readme) - Dynamically generated customizable GitHub cards for README. Stats, extra pins, top languages and WakaTime.
-- [Hall-of-fame](https://github.com/sourcerer-io/hall-of-fame#readme) - Helps show recognition to repo contributors on README. Features new/trending/top contributors. Updates every hour.
-- [Make a README](https://www.makeareadme.com/) - A guide to writing READMEs. Includes an editable template with live Markdown rendering.
-- [README best practices](https://github.com/jehna/readme-best-practices#readme) - A place to copy-paste your README.md from
-- [readme-md-generator](https://github.com/kefranabg/readme-md-generator#readme) - A CLI that generates beautiful README.md files
-- [Readme.so](https://readme.so/) - A simple editor that allows you to quickly add and customize all the sections you need for your project's readme.
-- [READMINE](https://github.com/mhucka/readmine) - A thorough, clear and self-describing README file template for software projects; copy it and edit it as needed.
-- [StackEdit](https://stackedit.io/) - A user-friendly online editor that allows you to quickly customize all the sections you need for your project's readme.
-- [Standard Readme](https://github.com/RichardLitt/standard-readme#readme) - A standard README style specification. Has a generator to help create spec-compliant READMEs, too.
-- [user-statistician](https://github.com/cicirello/user-statistician) - A GitHub Action that generates SVG of detailed GitHub user activity for profile readmes. 
-- [Zalando's README Template](https://github.com/zalando/zalando-howto-open-source/blob/master/READMEtemplate.md#readme) - Simple template to help you cover all the basics.
+_注意: 这只是规范的建议，并没有为任何符合规范的文档定义或强制要求使用术语。_
 
-## Creating GIFs
+- [段落](#段落)
+  - [标题](#标题)
+  - [横幅](#横幅)
+  - [徽章](#徽章)
+  - [简短描述](#简短描述)
+  - [长描述](#长描述)
+  - [目录](#目录-1)
+  - [安全](#安全)
+  - [背景](#背景)
+  - [安装](#安装)
+  - [用法](#用法)
+  - [额外部分](#额外部分)
+  - [API](#api)
+  - [维护者](#维护者)
+  - [致谢](#致谢)
+  - [如何贡献](#如何贡献)
+  - [许可证](#许可证)
+- [定义](#定义)
 
-Embedding an animated gif in your README quickly demonstrates what your project does and catches the reader's eye. Here are a few programs that can help you quickly create gifs for your project:
+## 段落
 
-- [Gifski](https://github.com/sindresorhus/Gifski#readme) - **FREE** - More vivid colors than the rest, but still keep size low.
-- [Giphy Capture](https://giphy.com/apps/giphycapture) - **FREE** - Easy to upload to giphy.com, slightly annoying UX.
-- [LICEcap](https://www.cockos.com/licecap/) - **FREE** - Less intuitive, more features.
-- [Peek](https://github.com/phw/peek#readme) - **FREE** - Simple and easy to use for Linux users.
-- [Recordit](https://recordit.co/) - **FREE** - Simple, clean UI, but auto-uploads to Recordit.
-- [ScreenToGif](https://github.com/NickeManarin/ScreenToGif/) - **FREE** - Open source, customizable UI and easily editable GIFs, easy to get started.
-- [terminalizer](https://github.com/faressoft/terminalizer) - **FREE** - Record your terminal and generate animated gif images or share a web player.
-- [ttystudio](https://github.com/chjj/ttystudio#readme) - **FREE** - For commandline tools, a terminal-to-gif recorder minus the headaches.
-- [vhs](https://github.com/charmbracelet/vhs) - **FREE** - Generate beautiful terminal gifs with a simple scripting language
+### 标题
+**状态:** 必须
 
-## Get Feedback
 
-- [feedmereadmes](https://github.com/LappleApple/feedmereadmes#readme) - Free README editing+feedback to make your open-source projects grow. See the README maturity model to help you keep going.
-- [maintainer.io](https://maintainer.io/) - Free README standardization and feedback, if you click on 'Book an audit'.
+**要求:**
 
-## Contribute
+- 标题必须与仓库、文件夹和包管理器名称相匹配——或者用斜体和括号表示的相关副标题。 例如:
 
-Contributions are always welcome!
-Please read the [contribution guidelines](contributing.md) first.
+  ```markdown
+  # Standard Readme Style _(standard-readme)_
+  ```
+  如果任何文件夹、仓库或包管理器名称不匹配，必须在“长描述”中附注说明原因。
 
-## License
+**建议:**
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+- 应该是有据可循的
 
-To the extent possible under law, [Matias Singers](https://mts.io) has waived all copyright and related or neighboring rights to this work.
+### 横幅
+**状态:** 可选
+
+**要求:**
+- 不能有自己的标题
+- 必须链接到当前存储库中的本地映像
+- 必须直接出现在标题后面
+
+### 徽章
+**Status:** 可选.
+
+**要求:**
+- 不能有自己的标题
+- 必须用换行符分隔
+
+**建议:**
+- 使用 http://shields.io 或类似的服务来创建和托管图像
+- 添加 Standard Readme badge 徽章.
+
+### 简短描述
+**状态:** 必须
+
+**要求:**
+- 不能有自己的标题
+- 必须少于120个字符
+- 不能以 `>` 开始
+-  一定是在它自己的行上
+- 必须符合包管理器的`描述`字段
+-  必须符合 GitHub 的描述(如果在 GitHub 上)
+
+**建议:**
+- 使用[gh-description](https://github.com/RichardLitt/gh-description) 描述设置并获取 GitHub 描述
+- 使用`npm show . description` 来展示本地的描述 [npm](https://npmjs.com) 包
+
+### 长描述
+**状态:** 可选
+
+**要求:**
+- 不能有自己的标题
+- 如果任何文件夹、存储库或包管理器名称不匹配，则必须在这里说明原因。 看标题部分
+
+**建议:**
+- 如果太长，考虑移动到背景部分。
+- 包含构建储存库的主要原因。
+
+- “这应该大致地描述你的模块，通常只有几个段落; 模块的例程或方法的更多细节，冗长的代码示例，或其他深入的材料应该在随后的章节中给出。
+  理想情况下，对您的模块稍微熟悉的人应该能够刷新他们的记忆，而不必按下“页面向下”键。 当你的读者继续阅读文档时，他们应该会接收到越来越多的知识。”
+
+  ~ [Kirrily "Skud" Robert, perlmodstyle](http://perldoc.perl.org/perlmodstyle.html)
+
+### 目录
+**状态:** 必需的; 对于小于100行的 README 可选。
+**要求:**
+- 必须链接到文件中的所有 Markdown 部分
+- 必须从下一节开始，不要包括标题或目录标题
+- 必须至少有一个深度: 必须捕获所有 `##` 标题
+
+**建议:**
+- 可以捕获第三个和第四个深度标题。如果是长目录，这些是可选的.
+
+### 安全
+**状态:** 可选.
+
+**要求:**
+- 如果需要强调安全问题，可以在这里，否则应该在`额外`部分.
+
+### 背景
+**状态:** 可选
+
+**要求:**
+- 包含动机.
+- 包含抽象依赖关系.
+- 包含知识来源: `可参见`也很合适.
+
+### 安装
+**状态:** 默认情况下是必需的，文档存储库是可选的.
+
+**要求:**
+- 说明如何安装的代码块
+
+**子段落:**
+- 如果有不寻常的依赖项或依赖项，必须手动安装
+
+**建议:**
+-链接到编程语言的必备站点: [npmjs](https://npmjs.com), [godocs](https://godoc.org),等等.
+- 包括安装所需的任何系统特定信息.
+- 一个`更新`部分对大多数软件包都很有用, 如果用户可以使用多个版本.
+
+###  用法
+**状态:** 默认情况下是必需的，文档存储库是可选的.
+
+**要求:**
+- 说明常用用法的代码块.
+- 如果 CLI 兼容，则代码块指示通用用法.
+- 如果可导入，则指示导入功能和用法的代码块.
+
+**建议:**
+- `CLI`. 如果 CLI 功能存在，则需要.
+
+**建议:**
+- 涵盖可能影响使用的基本选项: 例如，如果是 JavaScript，则涵盖 promises / callbacks，此处为 ES6
+- 如果相关，指向一个可运行的文件以获取使用代码
+
+### 额外部分
+**状态:** 可选.
+
+**要求:**
+- 没有.
+
+**建议:**
+- 这不应该被称为额外部分.  这是一个包含0个或更多部分的空间，每个部分都必须有自己的标题
+- 这应该包含任何其他相关的部分,放在用法之后, API 之前.
+- 具体来说，就是, 安全部分如果没有重要到可以放在上面的话，这个部分应该在这里.
+
+### API
+**状态:** 可选
+
+**要求:**
+- 描述暴露出的功能和对象.
+
+**建议:**
+- 描述签名、返回类型、回调和事件.
+- 指明不容易理解的类型.
+- 描述注意事项.
+- 如果使用外部 API 生成器(比如 go-doc、 js-doc 等等) ，请指向外部 API.md 文件. 这可能是该节中的唯一项，如果存在的话
+
+### 维护者
+**状态:** 可选.
+
+**要求:**
+- 一定要叫维护者
+- 列出存储库的维护人员，以及与他们联系的一种方式(例如 GitHub 链接或电子邮件).
+
+**建议:**
+- 这应该是一个负责项目方向的人员名单。 这不应该是拥有访问权限的每个人，比如整个组织，应该被展示的人是负责存储库的指导和维护的人
+- 列出过去的维护人员对于属性和分类都有好处.
+
+### 致谢
+**状态:** 可选.
+
+**要求:**
+- 一定要叫做 致谢 或者 感谢.
+
+**建议:**
+- 说明对项目的开发有重要帮助的任何人或任何事情
+- 标明公共链接，如果适用的话
+
+### 如何贡献
+**状态:** 必需.
+
+**要求:**
+- 说明用户可以提问的地方.
+- 说明是否接受 PR .
+- 列出贡献的所有要求; 例如，在提交时有一个签名.
+
+**建议:**
+- 链接到`如何贡献文件`--如果有的话
+- 尽可能友好
+- 链接到 GitHub issues 区域.
+-  链接到行为守则. `如何贡献规范`通常位于贡献部分或文档中,或者位于整个组织的其他位置，因此可能不需要在每个存储库中包含整个文件。 但是，强烈建议始终链接到规范位置，无论它位于何处.
+- 这里也欢迎列出贡献者的子段落.
+
+### 许可证
+**状态:** 必须
+
+**要求:**
+- 声明许可证全名或标识符, 参考[SPDX](https://spdx.org/licenses/) 许可证列表上的. 对于未授权的存储库, 添加 `UNLICENSED`. 更多详情，请参见 `SEE LICENSE IN <filename>`  并链接到许可文件. (这些要求是从 [npm](https://docs.npmjs.com/files/package.json#license)继承过来的).
+- 声明许可证持有人.
+- 一定是最后一部分.
+
+**建议:**
+- 链接到本地存储库中较长的许可证文件
+
+## 定义
+
+_提供这些定义是为了澄清上面使用的任何术语._
+
+- **文档存储库: 没有任何功能代码的存储库**
