@@ -1,50 +1,14 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+FROM debian
 
-# Folder config file
-Desktop.ini
+RUN apt update -y && \
+  apt upgrade -y && \
+  apt install curl -y
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+WORKDIR app
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+COPY gh-md-toc .
 
-# Windows shortcuts
-*.lnk
+RUN chmod +x gh-md-toc
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-.idea
-/.vs
+ENTRYPOINT ["./gh-md-toc"]
+CMD []
