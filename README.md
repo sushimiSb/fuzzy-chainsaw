@@ -1,42 +1,50 @@
-Welcome to the list of awesome GitHub profile readme templates and thanks for considering to contribute. Contributions are welcome so we can tap into the collection of best Github profile readmes' in one place.
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-Please [open a pull request](https://github.com/themlphdstudent/awesome-github-profile-readme-templates/pulls) if you would like to contribute new or improve existing readme. If you would like to comment on or discuss content but don't have concrete changes yet, please [open an issue](https://github.com/themlphdstudent/awesome-github-profile-readme-templates/issues).
+# Folder config file
+Desktop.ini
 
-This is a curated list so the goal is not to collect all possible resources but collect the ones which are most helpful, provide a unique perspective, or are of special significance.
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-## How to contribute:
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-- Step 1: Fork this repository.
+# Windows shortcuts
+*.lnk
 
-- Step 2: Clone the repository in your local machine.
+# =========================
+# Operating System Files
+# =========================
 
-- Step 3: Create a new branch.
+# OSX
+# =========================
 
-- Step 4: Create a new markdown file. Your file name should be your GitHub username.
-```
-- File name should be username.md 
-```
-- Step 5: Copy and Paste your GitHub profile readme content in the new file. Put file in **templates**
+.DS_Store
+.AppleDouble
+.LSOverride
 
-- Step 6: At the end of the file add the following content with appropriate changes.
+# Thumbnails
+._*
 
-  - Add line break using this command `------`
-  - Credit: `[username](https://github.com/username)`
-  - Last Edited on: Date when you edited this file. The date must be in DD/MM/YYYY format.
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
 
-- Step 7: Add your name and filename in **\_sidebar.md** like this
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-```
-- [username](/templates/username.md)
-```
-
-- Step 8: Save the file and commit your changes with the proper message. Your message must contain your username.
-```
-- Example Message : Added template for username: <username>
-```
-
-- Step 9: Push your commit to GitHub.
-
-- Step 10: Submit a Pull Request.
-
-- Step 11: All Done.
+.idea
+/.vs
