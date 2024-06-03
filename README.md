@@ -1,46 +1,240 @@
-# 项目背景
+# Specification
 
-蘑菇街能有今天的快速发展，得益于开源软件群雄崛起的大环境背景，我们一直对开源社区怀有感恩之情，因此也一直希望能为开源社区贡献一份力量。
+A compliant README must satisfy all the requirements listed below.
 
-2013年我们蘑菇街从社区导购华丽转身时尚电商平台，为解决千万妹子和时尚卖家的沟通问题，我们开发了自己的即时通讯软件。既然已经有了用户使用的IM，为什么我们自己公司内部沟通还要用第三方的呢？因此就有了TT(TeamTalk)的雏形，现在蘑菇街内部的在线沟通全部通过TT来完成。随着TT功能的逐渐完善，我们决定把TT开源来回馈开源社区，希望国内的中小企业都能用上开源、免费、好用的IM工具！
+> Note: Standard Readme is designed for open source libraries. Although it's [historically](README.md#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
 
-# 项目介绍
-* 名称：TeamTalk
-* 官网：http://tt.mogu.io/
-* 开源协议：[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
-* 定位：中小型企业用户，member >= 2
-* 特点：开源与产品并重
-* 功能：可靠的消息传递机制；支持文字、图片、语音等富文本信息；文件收发等	
+**Requirements:**
+  - Be called README (with capitalization) and have a specific extension depending on its format (`.md` for Markdown, `.org` for Org Mode Markup syntax, `.html` for HTML, ...)
+  - If the project supports i18n, the file must be named accordingly: `README.de.md`, where `de` is the BCP 47 Language tag. For naming, prioritize non-regional subtags for languages. If there is only one README and the language is not English, then a different language in the text is permissible without needing to specify the BCP tag: e.g., `README.md` can be in German if there is no `README.md` in another language. Where there are multiple languages, `README.md` is reserved for English.
+  - Be a valid file in the selected format (Markdown, Org Mode, HTML, ...).
+  - Sections must appear in order given below. Optional sections may be omitted.
+  - Sections must have the titles listed below, unless otherwise specified. If the README is in another language, the titles must be translated into that language.
+  - Must not contain broken links.
+  - If there are code examples, they should be linted in the same way as the code is linted in the rest of the project.
 
-# 项目框架
+## Table of Contents
 
+_Note: This is only a navigation guide for the specification, and does not define or mandate terms for any specification-compliant documents._
 
-麻雀虽小五脏俱全，本项目涉及到多个平台、多种语言，简单关系如下图：
-     
-![teamtalk架构图](http://s6.mogucdn.com/b7/pic/140921/7n6ih_ieygmzjsmiywezjwmmytambqhayde_514x551.jpg)
+- [Sections](#sections)
+  - [Title](#title)
+  - [Banner](#banner)
+  - [Badges](#badges)
+  - [Short Description](#short-description)
+  - [Long Description](#long-description)
+  - [Table of Contents](#table-of-contents-1)
+  - [Security](#security)
+  - [Background](#background)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Extra Sections](#extra-sections)
+  - [API](#api)
+  - [Maintainers](#maintainers)
+  - [Thanks](#thanks)
+  - [Contributing](#contributing)
+  - [License](#license)
+- [Definitions](#definitions)
 
+## Sections
 
-#### 服务端：
-     
-CppServer：TTCppServer工程，包括IM消息服务器、http服务器、文件传输服务器、文件存储服务器、登陆服务器
-java DB Proxy：TTJavaServer工程，承载着后台消息存储、redis等接口
-PHP server：TTPhpServer工程，teamtalk后台配置页面
+### Title
+**Status:** Required.
 
-#### 客户端：
+**Requirements:**
+- Title must match repository, folder and package manager names - or it may have another, relevant title with the repository, folder, and package manager title next to it in italics and in parentheses. For instance:
 
-- mac：TTMacClient工程，mac客户端工程
-- iOS：TTIOSClient工程，IOS客户端工程
-- Android：TTAndroidClient工程，android客户端工程
-- Windows：TTWinClient工程，windows客户端工程
+  ```markdown
+  # Standard Readme Style _(standard-readme)_
+  ```
 
-* 语言：c++、objective-c、java、php
-* 系统环境：Linux、Windows，Mac, iOS, Android
+  If any of the folder, repository, or package manager names do not match, there must be a note in the [Long Description](#long-description) explaining why.
 
-# 代码下载
--[地址](https://github.com/mogujie/TeamTalk)
+**Suggestions:**
+- Should be self-evident.
 
-# 交流
+### Banner
+**Status:** Optional.
 
-* qq交流群1：341273218(已满)
-* qq交流群2:437335108
-* 邮件交流：tt@mogujie.com
+**Requirements:**
+- Must not have its own title.
+- Must link to local image in current repository.
+- Must appear directly after the title.
+
+### Badges
+**Status:** Optional.
+
+**Requirements:**
+- Must not have its own title.
+- Must be newline delimited.
+
+**Suggestions:**
+- Use http://shields.io or a similar service to create and host the images.
+- Add the [Standard Readme badge](https://github.com/RichardLitt/standard-readme#badge).
+
+### Short Description
+**Status:** Required.
+
+**Requirements:**
+- Must not have its own title.
+- Must be less than 120 characters.
+- Must not start with `> `
+- Must be on its own line.
+- Must match the description in the packager manager's `description` field.
+- Must match GitHub's description (if on GitHub).
+
+**Suggestions:**
+- Use [gh-description](https://github.com/RichardLitt/gh-description) to set and get GitHub description.
+- Use `npm show . description` to show the description from a local [npm](https://npmjs.com) package.
+
+### Long Description
+**Status:** Optional.
+
+**Requirements:**
+- Must not have its own title.
+- If any of the folder, repository, or package manager names do not match, there must be a note here as to why. See [Title section](#title).
+
+**Suggestions:**
+- If too long, consider moving to the [Background](#background) section.
+- Cover the main reasons for building the repository.
+- "This should describe your module in broad terms,
+generally in just a few paragraphs; more detail of the module's
+routines or methods, lengthy code examples, or other in-depth
+material should be given in subsequent sections.
+
+  Ideally, someone who's slightly familiar with your module should be
+able to refresh their memory without hitting "page down". As your
+reader continues through the document, they should receive a
+progressively greater amount of knowledge."
+
+  ~ [Kirrily "Skud" Robert, perlmodstyle](http://perldoc.perl.org/perlmodstyle.html)
+
+### Table of Contents
+**Status:** Required; optional for READMEs shorter than 100 lines.
+
+**Requirements:**
+- Must link to all sections in the file.
+- Must start with the next section; do not include the title or Table of Contents headings.
+- Must be at least one-depth: must capture all level two headings (e.g.: Markdown's `##` or Org Mode's `**` or HTML's `<h2>` and so on).
+
+**Suggestions:**
+- May capture third and fourth depth headings. If it is a long ToC, these are optional.
+
+### Security
+**Status**: Optional.
+
+**Requirements:**
+- May go here if it is important to highlight security concerns. Otherwise, it should be in [Extra Sections](#extra-sections).
+
+### Background
+**Status:** Optional.
+
+**Requirements:**
+- Cover motivation.
+- Cover abstract dependencies.
+- Cover intellectual provenance: A `See Also` section is also fitting.
+
+### Install
+**Status:** Required by default, optional for [documentation repositories](#definitions).
+
+**Requirements:**
+- Code block illustrating how to install.
+
+**Subsections:**
+- `Dependencies`. Required if there are unusual dependencies or dependencies that must be manually installed.
+
+**Suggestions:**
+- Link to prerequisite sites for programming language: [npmjs](https://npmjs.com), [godocs](https://godoc.org), etc.
+- Include any system-specific information needed for installation.
+- An `Updating` section would be useful for most packages, if there are multiple versions which the user may interface with.
+
+### Usage
+**Status:** Required by default, optional for [documentation repositories](#definitions).
+
+**Requirements:**
+- Code block illustrating common usage.
+- If CLI compatible, code block indicating common usage.
+- If importable, code block indicating both import functionality and usage.
+
+**Subsections:**
+- `CLI`. Required if CLI functionality exists.
+
+**Suggestions:**
+- Cover basic choices that may affect usage: for instance, if JavaScript, cover promises/callbacks, ES6 here.
+- If relevant, point to a runnable file for the usage code.
+
+### Extra Sections
+**Status**: Optional.
+
+**Requirements:**
+- None.
+
+**Suggestions:**
+- This should not be called `Extra Sections`. This is a space for 0 or more sections to be included, each of which must have their own titles.
+- This should contain any other sections that are relevant, placed after [Usage](#usage) and before [API](#api).
+- Specifically, the [Security](#security) section should be here if it wasn't important enough to be placed above.
+
+### API
+**Status:** Optional.
+
+**Requirements:**
+- Describe exported functions and objects.
+
+**Suggestions:**
+- Describe signatures, return types, callbacks, and events.
+- Cover types covered where not obvious.
+- Describe caveats.
+- If using an external API generator (like go-doc, js-doc, or so on), point to an external `API.md` file. This can be the only item in the section, if present.
+
+### Maintainer(s)
+**Status**: Optional.
+
+**Requirements:**
+- Must be called `Maintainer` or `Maintainers`.
+- List maintainer(s) for a repository, along with one way of contacting them (e.g. GitHub link or email).
+
+**Suggestions:**
+- This should be a small list of people in charge of the repo. This should not be everyone with access rights, such as an entire organization, but the people who should be pinged and who are in charge of the direction and maintenance of the repository.
+- Listing past maintainers is good for attribution, and kind.
+
+### Thanks
+**Status**: Optional.
+
+**Requirements:**
+- Must be called `Thanks`, `Credits` or `Acknowledgements`.
+
+**Suggestions:**
+- State anyone or anything that significantly helped with the development of your project.
+- State public contact hyper-links if applicable.
+
+### Contributing
+**Status**: Required.
+
+**Requirements:**
+- State where users can ask questions.
+- State whether PRs are accepted.
+- List any requirements for contributing; for instance, having a sign-off on commits.
+
+**Suggestions:**
+- Link to a CONTRIBUTING file -- if there is one.
+- Be as friendly as possible.
+- Link to the GitHub issues.
+- Link to a Code of Conduct. A CoC is often in the Contributing section or document, or set elsewhere for an entire organization, so it may not be necessary to include the entire file in each repository. However, it is highly recommended to always link to the code, wherever it lives.
+- A subsection for listing contributors is also welcome here.
+
+### License
+**Status:** Required.
+
+**Requirements:**
+- State license full name or identifier, as listed on the  [SPDX](https://spdx.org/licenses/) license list. For unlicensed repositories, add `UNLICENSED`. For more details, add `SEE LICENSE IN <filename>` and link to the license file. (These requirements were adapted from [npm](https://docs.npmjs.com/files/package.json#license)).
+- State license owner.
+- Must be last section.
+
+**Suggestions:**
+- Link to longer License file in local repository.
+
+## Definitions
+
+_These definitions are provided to clarify any terms used above._
+
+- **Documentation repositories**: Repositories without any functional code. For instance, [RichardLitt/knowledge](https://github.com/RichardLitt/knowledge).
