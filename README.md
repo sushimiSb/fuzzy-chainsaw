@@ -1,3 +1,2 @@
-include README.rst
-include README.md
-include LICENSE
+import './src/styles/tailwind.css';
+require('prismjs/themes/prism-okaidia.css');
