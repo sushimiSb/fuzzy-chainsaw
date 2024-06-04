@@ -1,46 +1,32 @@
-{
-  "name": "standard-readme-spec",
-  "version": "1.2.2",
-  "description": "A standard style for README files",
-  "bin": "cat.sh",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RichardLitt/standard-readme.git"
-  },
-  "keywords": [
-    "standard",
-    "markdown",
-    "readme",
-    "parse",
-    "lint",
-    "standard-readme",
-    "spec",
-    "md",
-    "documentation"
-  ],
-  "author": {
-    "name": "Richard Littauer",
-    "email": "richard.littauer@gmail.com",
-    "url": "http://burntfen.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/RichardLitt/standard-readme/issues"
-  },
-  "homepage": "https://github.com/RichardLitt/standard-readme",
-  "dependencies": {
-    "opencollective": "^1.0.3",
-    "opencollective-postinstall": "^2.0.3"
-  },
-  "coordinates": [
-    52.5173031,
-    13.4535065
-  ],
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/standard-readme"
-  },
-  "scripts": {
-    "postinstall": "opencollective-postinstall"
-  }
-}
+import ts from "@wessberg/rollup-plugin-ts";
+import commonjs from "rollup-plugin-commonjs";
+import resolve from "rollup-plugin-node-resolve";
+import pkg from "./package.json";
+import json from "rollup-plugin-json";
+
+export const distPath = "dist";
+export const srcPath = "src";
+
+export const config = {
+	plugins: [
+		resolve({
+			module: true,
+			browser: true,
+			jsnext: true,
+			main: false,
+			modulesOnly: false
+		}),
+		json(),
+		ts({
+			transpiler: "babel"
+		}),
+		commonjs({
+			include: "**/node_modules/**"
+		})
+	],
+	external: [
+		...Object.keys(pkg.dependencies || {}),
+		...Object.keys(pkg.devDependencies || {}),
+	],
+	treeshake: false
+};
