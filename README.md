@@ -1,73 +1,10 @@
-## Contributing
+## Copyright 2021, [YOUR NAME]
 
-Contributions are welcome! Feel free to open an issue or submit a pull request if you have a way to improve this project.
+###### Please delete this line and the next one
+###### APP TYPE can be a webpage/website, a web app, a software and so on
 
-Make sure your request is meaningful and you have tested the app locally before submitting a pull request.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this [APP TYPE] and associated documentation files, to deal in the [APP TYPE] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [APP TYPE], and to permit persons to whom the [APP TYPE] is furnished to do so, subject to the following conditions:
 
-### Installing Requirements
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [APP TYPE].
 
-#### Requirements
-
-- [PHP 7.4+](https://www.apachefriends.org/index.html)
-- [Composer](https://getcomposer.org)
-
-#### Linux
-
-```bash
-sudo apt-get install php
-sudo apt-get install php-curl
-sudo apt-get install composer
-```
-
-#### Windows
-
-Install PHP from [XAMPP](https://www.apachefriends.org/index.html) or [php.net](https://windows.php.net/download)
-
-[▶ How to install and run PHP using XAMPP (Windows)](https://www.youtube.com/watch?v=K-qXW9ymeYQ)
-
-[📥 Download Composer](https://getcomposer.org/download/)
-
-### Clone the repository
-
-```
-git clone https://github.com/DenverCoder1/readme-typing-svg.git
-cd readme-typing-svg
-```
-
-### Running the app locally
-
-```bash
-composer start
-```
-
-Open http://localhost:8000/ and add parameters to run the project locally.
-
-### Running the tests
-
-Before you can run tests, PHPUnit must be installed. You can install it using Composer by running the following command.
-
-```bash
-composer install
-```
-
-### Format and test the code
-
-Run the following command to format the code with Prettier:
-
-```
-composer run format
-```
-
-Run the following command to check if your code is formatted properly:
-
-```
-composer run format:check
-```
-
-> **Note** You need to have [`prettier`](https://prettier.io/) and the [prettier-php plugin](https://github.com/prettier/plugin-php) installed globally in order to run this command.
-
-Run the following command to run the PHPUnit test script which will verify that the tested functionality is still working.
-
-```bash
-composer test
-```
+THE [APP TYPE] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [APP TYPE] OR THE USE OR OTHER DEALINGS IN THE [APP TYPE].
