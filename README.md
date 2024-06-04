@@ -1,2 +1,4 @@
-import './src/styles/tailwind.css';
-require('prismjs/themes/prism-okaidia.css');
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
