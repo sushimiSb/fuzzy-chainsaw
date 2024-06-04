@@ -1,7 +1,4 @@
-*.pyc
-pkg/
-.bundle
-Gemfile.lock
-.project
-.buildpath
-*~ 
+{
+  "singleQuote": true,
+  "semi": false
+}
