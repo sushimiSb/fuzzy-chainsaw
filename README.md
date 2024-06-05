@@ -1,81 +1,21 @@
-# Дополения к языку разметки MD.
+MIT License
 
-## Оглавление:
-1. [Детализация (кат)](#Детализация-кат)
-2. [Форматирование текста](#Форматирование-текста)
-3. [Имитация клавиатуры](#Имитация-клавиатуры) 
-4. [Бэйджики](#Бэйджики)
+Copyright (c) 2019 Franck Abgrall
 
-## Детализация (кат) 
-Существует возможность спрятать часть текста под кат. Для этого необходимо использовать тэг HTML5 `<details>` текст `</details>`. Подробнее: [http://htmlbook.ru/html/details](http://htmlbook.ru/html/details) и [http://htmlbook.ru/html/summary](http://htmlbook.ru/html/summary)   
-Следующий код:   
-    `<details>`    
-    `<summary>Подробнее ...</summary>`    
-    `Тут текст который мы хотим скрыть`    
-    `</details>`   
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Дает такой результат:
-<details>
-<summary>Подробнее ...</summary>
-Тут текст который мы хотим скрыть
-</details>    
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-**Внимание:** это не работает в большинстве браузеров.    
-[:arrow_up:Оглавление](#Оглавление)    
-___
-
-## Форматирование текста
-Для форматирования текста можно использовать тэг `<p>`. Подробнее: [http://htmlbook.ru/html/p](http://htmlbook.ru/html/p)   
-Вариант использования: `<p align="left | center | right | justify">...</p>`    
-<details>
-<summary>Текст без форматирования:</summary>
-Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
-</details>
-Результат применения тэга:
-
-```
-<p align="justify">
-
-</p>
-```
-
-<details>
-<summary>Текст после форматирования:</summary>
-<p align="justify">
-Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
-</p>
-</details>    
-    
-[:arrow_up:Оглавление](#Оглавление)
-___
-
-## Имитация клавиатуры
-Можно имитировать клавиатуру:
-```
-<pre>
-    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
-</pre> 
-```
-<pre>
-    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
-</pre>
-
-[:arrow_up:Оглавление](#Оглавление)
-___
-
-## Бэйджики
-
-Можно вставлять свои или готовые бэйджки.
-Источник: [https://shields.io/category/build](https://shields.io/category/build)
-
-Пример:
-```
-Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
-
-Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
-```
-
-Результат:  
-Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
-
-Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
