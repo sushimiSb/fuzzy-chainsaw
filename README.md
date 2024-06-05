@@ -1,69 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				@keyframes rotate {
+					0% {
+						transform: rotate(3deg);
+					}
+					100% {
+						transform: rotate(-3deg);
+					}
+				}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <meta name="description" content="Awesome GitHub Profile Readme Templates" />
-  <title>Awesome GitHub Profile Readme Templates</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css"
-    type="text/css">
+				@keyframes fadeIn {
+					0% {
+						opacity: 0;
+					}
+					66% {
+						opacity: 0;
+					}
+					100% {
+						opacity: 1;
+					}
+				}
 
-  <!-- docsify-themeable styles-->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
-  <link rel="stylesheet alternative" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
-    title="dark">
+				.container {
+					font-family:
+						system-ui,
+						-apple-system,
+						'Segoe UI',
+						Roboto,
+						Helvetica,
+						Arial,
+						sans-serif,
+						'Apple Color Emoji',
+						'Segoe UI Emoji';
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
+					background-size: 600% 400%;
+					animation: gradientBackground 10s ease infinite;
+					border-radius: 10px;
+					color: white;
+					text-align: center;
+				}
 
-  <style>
-    .sidebar-nav li>a[href^="/"]:not([href*="?id="]),
-    .sidebar-nav li>a[href^="/"]:not([href*="?id="])~ul a,
-    .sidebar-nav li>a[href^="#/"]:not([href*="?id="]),
-    .sidebar-nav li>a[href^="#/"]:not([href*="?id="])~ul a {
-      padding: 0;
-    }
+				h1 {
+					font-size: 50px;
+					line-height: 1.3;
+					letter-spacing: 5px;
+					text-transform: uppercase;
+					text-shadow:
+						0 1px 0 #efefef,
+						0 2px 0 #efefef,
+						0 3px 0 #efefef,
+						0 4px 0 #efefef,
+						0 12px 5px rgba(0, 0, 0, 0.1);
+					animation: rotate ease-in-out 1s infinite alternate;
+				}
 
-    .sidebar-nav li.collapse>a[href^="/"]:not([href*="?id="]):not(:only-child),
-    .sidebar-nav li.collapse>a[href^="#/"]:not([href*="?id="]):not(:only-child),
-    .sidebar-nav li.active>a[href^="/"]:not([href*="?id="]):not(:only-child),
-    .sidebar-nav li.active>a[href^="#/"]:not([href*="?id="]):not(:only-child) {
-      background: transparent;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="app">Please wait...</div>
-
-  <script>
-    window.$docsify = {
-      search: [
-        '/_sidebar',
-      ],
-
-      name: 'Awesome Github Profile Readme Templates',
-      basePath: "https://raw.githubusercontent.com/durgeshsamariya/awesome-github-profile-readme-templates/master/",
-      loadSidebar: true,
-      auto2top: true,
-      sidebarDisplayLevel: 1,
-    }
-  </script>
-
-
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-
-  <!-- plugins -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"
-    type="text/javascript">
-    </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
-    type="text/javascript">
-    </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-</body>
-
-</html>
+				p {
+					font-size: 20px;
+					text-shadow: 0 1px 0 #efefef;
+					animation: 5s ease 0s normal forwards 1 fadeIn;
+				}
+			</style>
+			<div class="container">
+				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
+				<p>Click to see the source</p>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
