@@ -1,7 +1,4 @@
-language: ruby
-rvm:
-  - 2.4
-before_script:
-  - gem install awesome_bot
-script:
-  - awesome_bot readme.md -w https://recordit.co/
+// https://www.npmjs.com/package/check-links
+declare module "check-links" {
+	export default function checkLinks (links: string[]): Promise<{[key: string]: {status: "alive" | "dead" | "invalid", statusCode: number}}>;
+}
