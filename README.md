@@ -1,99 +1,47 @@
-# Coding Style
-
-## File Layout (`src/components/*.js`)
-
-1. Imports
-2. Reusable components needed for the main component
-3. Main component (Eg: Addons in addons.js)
-4. export default \<MainComponent\>;
-
-## Reusable components
-
-- Do not make a new file for smaller components.
-- Smaller, reusable components needed in the main components should be added **above** the main component, **not** inside it.
-- Use ES6 arrow functions for defining components.
-
-## Spacing
-
-1. **JS:**
-
-   - Use a space after `if`, `for`, `while`, `switch`.
-   - Do not use a space after the opening `(` and before the closing `)`.
-   - Use a space before and after destructuring objects.
-
-   ```js
-   //good
-   const { apple, mangoes } = fruits;
-
-   //bad
-   const { apple, mangoes } = fruits;
-   ```
-
-
-        //Same for destructuring props:
-        //good
-        const BeautifulComponent = ({ prop1, prop2 }) => {}
-
-        //bad
-        const UglyComponent = ({prop1, prop2}) => {}
-    ```
-
-2. **JSX:**
-
-   - Use a space before the forward slash (`/`) of a self-closing tag
-
-   ```js
-   //good
-   <Foo />
-
-   //bad
-   <Foo/>
-   ```
-
-   - Do **not** use spaces for JSX curly braces
-
-   ```js
-   //good
-   <Foo bar={baz} />
-
-   //bad
-   <Foo bar={ baz } />
-   ```
-
-## **Props:**
-
-- Use camelCase for prop names, or PascalCase if the prop value is a React component.
-- Use new lines when props do not fit on the same line.
-
-  ```js
-  //good
-  <Foo
-      prop1={value1}
-      prop2={value2}
-      prop3={value3}
-  />
-
-  //bad
-  <Foo prop1={value1} prop2={value2} prop3={value3} />
-  ```
-
-## **Best practices:**
-
-- **Always** add semicolons after a line.
-- Use ES6 arrow functions.
-- Keep the indentation in your code correct.
-- Use 4 spaces for tabs.
-- Don't Repeat Yourself. If you think you're repeating too much code, make a smaller component, or a function.
-- **Always** add alt prop to `img` tags.
-- Add `rel="noopener"` for `a` tags which has `target="_blank"`.
-- Don't do `outline: none` on user input elements. If you do not want outline, give them faint, visible background on focus. This is for accessibility.
-
-### Other things to note
-
-- We are using [octicons](https://primer.style/octicons/) for icons. Use this if you need to add icons. Do **not** add a new library for icons.
-- Try to not commit changes in `package.json`, `package-lock.json`.
-- Discuss with contributors on discord if you're planning to add/remove a package.
-
-## Further reading:
-
-This guide is based on [airbnb's react guide](https://github.com/airbnb/javascript/tree/master/react). You can read all the best practices there.
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 54 54" style="enable-background:new 0 0 54 54;" xml:space="preserve">
+<g>
+	<g>
+		<path style="fill:#4FBA6F;" d="M27,1L27,1c14.359,0,26,11.641,26,26v0c0,14.359-11.641,26-26,26h0C12.641,53,1,41.359,1,27v0
+			C1,12.641,12.641,1,27,1z"/>
+		<path style="fill:#4FBA6F;" d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2
+			C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z"/>
+	</g>
+	<path style="fill:#FFFFFF;" d="M31.706,40c-0.256,0-0.512-0.098-0.707-0.293L19.501,28.209c-0.667-0.667-0.667-1.751,0-2.418
+		l11.498-11.498c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L21.12,27l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414
+		C32.218,39.902,31.962,40,31.706,40z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
