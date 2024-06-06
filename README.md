@@ -1,3 +1,7 @@
-include README.rst
-include README.md
-include LICENSE
+{
+  "plugins": {
+    "remark-title": {
+      "title": "IPFS Readme Standard"
+    }
+  }
+}
