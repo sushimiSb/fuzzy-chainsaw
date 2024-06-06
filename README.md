@@ -1,18 +1,9 @@
-import {config, distPath, srcPath} from "./rollup-default.config";
-
-export default {
-	...config,
-	input: `${srcPath}/index.ts`,
-	output: [
-		{
-			file: `${distPath}/index.cjs.js`,
-			format: "cjs",
-			sourcemap: true,
-		},
-		{
-			file: `${distPath}/index.esm.js`,
-			format: "esm",
-			sourcemap: true,
-		}
-	]
-};
+{
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "tabWidth": 2,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "semi": true,
+  "exclude": ["node_modules", "codepipeline"]
+}
