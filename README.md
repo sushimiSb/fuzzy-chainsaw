@@ -1,20 +1,13 @@
-.DS_Store
-node_modules
-/report
-/coverage
+codecov:
+  require_ci_to_pass: yes
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
 
-# Editor directories and files
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
-
-# Fix an error from npm 6.9.0
-.git
+  status:
+    project:
+      default:
+        threshold: 5
+    patch: false
