@@ -1,13 +1,8 @@
-codecov:
-  require_ci_to_pass: yes
+root = true
 
-coverage:
-  precision: 2
-  round: down
-  range: "70...100"
-
-  status:
-    project:
-      default:
-        threshold: 5
-    patch: false
+[*]
+indent_style = tab
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
