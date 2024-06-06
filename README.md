@@ -1,8 +1,3 @@
-#MacOS
-.DS_Store
-
-# Environment variables
-.env
-
-# Pycache
-__pycache__
+include README.rst
+include README.md
+include LICENSE
