@@ -1,1 +1,3 @@
-web: vendor/bin/heroku-php-apache2 src/
+node_modules
+yarn.lock
+.DS_Store
