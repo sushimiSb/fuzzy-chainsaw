@@ -1,321 +1,289 @@
-# EMOJI CHEAT SHEET
+# Changelog
 
-[Назад к README.md](https://github.com/GnuriaN/format-README.md/blob/master/README.md)
+<a name="1.0.0"></a>
 
-##  People
-|		|		|		|
-|	-	|	-	|	-	|
-|	:bowtie:    `:bowtie:`	|	:rage:    `:rage:`	|	:ok_hand:    `:ok_hand:`	|
-|	:smile:    `:smile:`	|	:triumph:    `:triumph:`	|	:punch:    `:punch:`	|
-|	:laughing:    `:laughing:`	|	:sleepy:    `:sleepy:`	|	:facepunch:    `:facepunch:`	|
-|	:blush:    `:blush:`	|	:yum:    `:yum:`	|	:fist:    `:fist:`	|
-|	:smiley:    `:smiley:`	|	:mask:    `:mask:`	|	:v:    `:v:`	|
-|	:relaxed:    `:relaxed:`	|	:sunglasses:    `:sunglasses:`	|	:wave:    `:wave:`	|
-|	:smirk:    `:smirk:`	|	:dizzy_face:    `:dizzy_face:`	|	:hand:    `:hand:`	|
-|	:heart_eyes:    `:heart_eyes:`	|	:imp:    `:imp:`	|	:raised_hand:    `:raised_hand:`	|
-|	:kissing_heart:    `:kissing_heart:`	|	:smiling_imp:    `:smiling_imp:`	|	:open_hands:    `:open_hands:`	|
-|	:kissing_closed_eyes:    `:kissing_closed_eyes:`	|	:neutral_face:    `:neutral_face:`	|	:point_up:    `:point_up:`	|
-|	:flushed:    `:flushed:`	|	:no_mouth:    `:no_mouth:`	|	:point_down:    `:point_down:`	|
-|	:relieved:    `:relieved:`	|	:innocent:    `:innocent:`	|	:point_left:    `:point_left:`	|
-|	:satisfied:    `:satisfied:`	|	:alien:    `:alien:`	|	:point_right:    `:point_right:`	|
-|	:grin:    `:grin:`	|	:yellow_heart:    `:yellow_heart:`	|	:raised_hands:    `:raised_hands:`	|
-|	:wink:    `:wink:`	|	:blue_heart:    `:blue_heart:`	|	:pray:    `:pray:`	|
-|	:stuck_out_tongue_winking_eye:    `:stuck_out_tongue_winking_eye:`	|	:purple_heart:    `:purple_heart:`	|	:point_up_2:    `:point_up_2:`	|
-|	:stuck_out_tongue_closed_eyes:    `:stuck_out_tongue_closed_eyes:`	|	:heart:    `:heart:`	|	:clap:    `:clap:`	|
-|	:grinning:    `:grinning:`	|	:green_heart:    `:green_heart:`	|	:muscle:    `:muscle:`	|
-|	:kissing:    `:kissing:`	|	:broken_heart:    `:broken_heart:`	|	:metal:    `:metal:`	|
-|	:kissing_smiling_eyes:    `:kissing_smiling_eyes:`	|	:heartbeat:    `:heartbeat:`	|	:fu:    `:fu:`	|
-|	:stuck_out_tongue:    `:stuck_out_tongue:`	|	:heartpulse:    `:heartpulse:`	|	:runner:    `:runner:`	|
-|	:sleeping:    `:sleeping:`	|	:two_hearts:    `:two_hearts:`	|	:running:    `:running:`	|
-|	:worried:    `:worried:`	|	:revolving_hearts:    `:revolving_hearts:`	|	:couple:    `:couple:`	|
-|	:frowning:    `:frowning:`	|	:cupid:    `:cupid:`	|	:family:    `:family:`	|
-|	:anguished:    `:anguished:`	|	:sparkling_heart:    `:sparkling_heart:`	|	:two_men_holding_hands:    `:two_men_holding_hands:`	|
-|	:open_mouth:    `:open_mouth:`	|	:sparkles:    `:sparkles:`	|	:two_women_holding_hands:    `:two_women_holding_hands:`	|
-|	:grimacing:    `:grimacing:`	|	:star:    `:star:`	|	:dancer:    `:dancer:`	|
-|	:confused:    `:confused:`	|	:star2:    `:star2:`	|	:dancers:    `:dancers:`	|
-|	:hushed:    `:hushed:`	|	:dizzy:    `:dizzy:`	|	:ok_woman:    `:ok_woman:`	|
-|	:expressionless:    `:expressionless:`	|	:boom:    `:boom:`	|	:no_good:    `:no_good:`	|
-|	:unamused:    `:unamused:`	|	:collision:    `:collision:`	|	:information_desk_person:    `:information_desk_person:`	|
-|	:sweat_smile:    `:sweat_smile:`	|	:anger:    `:anger:`	|	:raising_hand:    `:raising_hand:`	|
-|	:sweat:    `:sweat:`	|	:exclamation:    `:exclamation:`	|	:bride_with_veil:    `:bride_with_veil:`	|
-|	:disappointed_relieved:    `:disappointed_relieved:`	|	:question:    `:question:`	|	:person_with_pouting_face:    `:person_with_pouting_face:`	|
-|	:weary:    `:weary:`	|	:grey_exclamation:    `:grey_exclamation:`	|	:person_frowning:    `:person_frowning:`	|
-|	:pensive:    `:pensive:`	|	:grey_question:    `:grey_question:`	|	:bow:    `:bow:`	|
-|	:disappointed:    `:disappointed:`	|	:zzz:    `:zzz:`	|	:couple_with_heart:    `:couple_with_heart:`	|
-|	:confounded:    `:confounded:`	|	:dash:    `:dash:`	|	:massage:    `:massage:`	|
-|	:fearful:    `:fearful:`	|	:sweat_drops:    `:sweat_drops:`	|	:haircut:    `:haircut:`	|
-|	:cold_sweat:    `:cold_sweat:`	|	:notes:    `:notes:`	|	:nail_care:    `:nail_care:`	|
-|	:persevere:    `:persevere:`	|	:musical_note:    `:musical_note:`	|	:boy:    `:boy:`	|
-|	:cry:    `:cry:`	|	:fire:    `:fire:`	|	:girl:    `:girl:`	|
-|	:sob:    `:sob:`	|	:hankey:    `:hankey:`	|	:woman:    `:woman:`	|
-|	:joy:    `:joy:`	|	:poop:    `:poop:`	|	:man:    `:man:`	|
-|	:astonished:    `:astonished:`	|	:shit:    `:shit:`	|	:baby:    `:baby:`	|
-|	:scream:    `:scream:`	|	:+1:    `:+1:`	|	:older_woman:    `:older_woman:`	|
-|	:neckbeard:    `:neckbeard:`	|	:thumbsup:    `:thumbsup:`	|	:older_man:    `:older_man:`	|
-|	:tired_face:    `:tired_face:`	|	:-1:    `:-1:`	|	:person_with_blond_hair:    `:person_with_blond_hair:`	|
-|	:angry:    `:angry:`	|	:thumbsdown:    `:thumbsdown:`	|	:feelsgood:    `:feelsgood:`	|
-|	:man_with_gua_pi_mao:    `:man_with_gua_pi_mao:`	|	:hear_no_evil:    `:hear_no_evil:`	|	:finnadie:    `:finnadie:`	|
-|	:man_with_turban:    `:man_with_turban:`	|	:speak_no_evil:    `:speak_no_evil:`	|	:goberserk:    `:goberserk:`	|
-|	:construction_worker:    `:construction_worker:`	|	:guardsman:    `:guardsman:`	|	:godmode:    `:godmode:`	|
-|	:cop:    `:cop:`	|	:skull:    `:skull:`	|	:hurtrealbad:    `:hurtrealbad:`	|
-|	:angel:    `:angel:`	|	:feet:    `:feet:`	|	:rage1:    `:rage1:`	|
-|	:princess:    `:princess:`	|	:lips:    `:lips:`	|	:rage2:    `:rage2:`	|
-|	:smiley_cat:    `:smiley_cat:`	|	:kiss:    `:kiss:`	|	:rage3:    `:rage3:`	|
-|	:smile_cat:    `:smile_cat:`	|	:droplet:    `:droplet:`	|	:rage4:    `:rage4:`	|
-|	:heart_eyes_cat:    `:heart_eyes_cat:`	|	:ear:    `:ear:`	|	:suspect:    `:suspect:`	|
-|	:kissing_cat:    `:kissing_cat:`	|	:eyes:    `:eyes:`	|	:trollface:    `:trollface:`	|
-|	:smirk_cat:    `:smirk_cat:`	|	:nose:    `:nose:`	|	:joy_cat:    `:joy_cat:`	|
-|	:scream_cat:    `:scream_cat:`	|	:tongue:    `:tongue:`	|	:pouting_cat:    `:pouting_cat:`	|
-|	:crying_cat_face:    `:crying_cat_face:`	|	:love_letter:    `:love_letter:`	|	:japanese_ogre:    `:japanese_ogre:`	|
-|	:thought_balloon:    `:thought_balloon:`	|	:bust_in_silhouette:    `:bust_in_silhouette:`	|	:japanese_goblin:    `:japanese_goblin:`	|
-|	:see_no_evil:    `:see_no_evil:`	|	:busts_in_silhouette:    `:busts_in_silhouette:`	|	:speech_balloon:    `:speech_balloon:`	|
+## 1.0.0 (2019-12-03)
 
+### Added
 
-## Nature
-|		|		|		|
-|	-	|	-	|	-	|
-|	:sunny:    `:sunny:`	|	:bug:    `:bug:`	|	:maple_leaf:    `:maple_leaf:`	|
-|	:umbrella:    `:umbrella:`	|	:honeybee:    `:honeybee:`	|	:leaves:    `:leaves:`	|
-|	:cloud:    `:cloud:`	|	:ant:    `:ant:`	|	:fallen_leaf:    `:fallen_leaf:`	|
-|	:snowflake:    `:snowflake:`	|	:beetle:    `:beetle:`	|	:herb:    `:herb:`	|
-|	:snowman:    `:snowman:`	|	:snail:    `:snail:`	|	:mushroom:    `:mushroom:`	|
-|	:zap:    `:zap:`	|	:octopus:    `:octopus:`	|	:cactus:    `:cactus:`	|
-|	:cyclone:    `:cyclone:`	|	:tropical_fish:    `:tropical_fish:`	|	:palm_tree:    `:palm_tree:`	|
-|	:foggy:    `:foggy:`	|	:fish:    `:fish:`	|	:evergreen_tree:    `:evergreen_tree:`	|
-|	:ocean:    `:ocean:`	|	:whale:    `:whale:`	|	:deciduous_tree:    `:deciduous_tree:`	|
-|	:cat:    `:cat:`	|	:whale2:    `:whale2:`	|	:chestnut:    `:chestnut:`	|
-|	:dog:    `:dog:`	|	:dolphin:    `:dolphin:`	|	:seedling:    `:seedling:`	|
-|	:mouse:    `:mouse:`	|	:cow2:    `:cow2:`	|	:blossom:    `:blossom:`	|
-|	:hamster:    `:hamster:`	|	:ram:    `:ram:`	|	:ear_of_rice:    `:ear_of_rice:`	|
-|	:rabbit:    `:rabbit:`	|	:rat:    `:rat:`	|	:shell:    `:shell:`	|
-|	:wolf:    `:wolf:`	|	:water_buffalo:    `:water_buffalo:`	|	:globe_with_meridians:    `:globe_with_meridians:`	|
-|	:frog:    `:frog:`	|	:tiger2:    `:tiger2:`	|	:sun_with_face:    `:sun_with_face:`	|
-|	:tiger:    `:tiger:`	|	:rabbit2:    `:rabbit2:`	|	:full_moon_with_face:    `:full_moon_with_face:`	|
-|	:koala:    `:koala:`	|	:dragon:    `:dragon:`	|	:new_moon_with_face:    `:new_moon_with_face:`	|
-|	:bear:    `:bear:`	|	:goat:    `:goat:`	|	:new_moon:    `:new_moon:`	|
-|	:pig:    `:pig:`	|	:rooster:    `:rooster:`	|	:waxing_crescent_moon:    `:waxing_crescent_moon:`	|
-|	:pig_nose:    `:pig_nose:`	|	:dog2:    `:dog2:`	|	:first_quarter_moon:    `:first_quarter_moon:`	|
-|	:cow:    `:cow:`	|	:pig2:    `:pig2:`	|	:waxing_gibbous_moon:    `:waxing_gibbous_moon:`	|
-|	:boar:    `:boar:`	|	:mouse2:    `:mouse2:`	|	:full_moon:    `:full_moon:`	|
-|	:monkey_face:    `:monkey_face:`	|	:ox:    `:ox:`	|	:waning_gibbous_moon:    `:waning_gibbous_moon:`	|
-|	:monkey:    `:monkey:`	|	:dragon_face:    `:dragon_face:`	|	:last_quarter_moon:    `:last_quarter_moon:`	|
-|	:horse:    `:horse:`	|	:blowfish:    `:blowfish:`	|	:waning_crescent_moon:    `:waning_crescent_moon:`	|
-|	:racehorse:    `:racehorse:`	|	:crocodile:    `:crocodile:`	|	:last_quarter_moon_with_face:    `:last_quarter_moon_with_face:`	|
-|	:camel:    `:camel:`	|	:dromedary_camel:    `:dromedary_camel:`	|	:first_quarter_moon_with_face:    `:first_quarter_moon_with_face:`	|
-|	:sheep:    `:sheep:`	|	:leopard:    `:leopard:`	|	:crescent_moon:    `:crescent_moon:`	|
-|	:elephant:    `:elephant:`	|	:cat2:    `:cat2:`	|	:earth_africa:    `:earth_africa:`	|
-|	:panda_face:    `:panda_face:`	|	:poodle:    `:poodle:`	|	:earth_americas:    `:earth_americas:`	|
-|	:snake:    `:snake:`	|	:paw_prints:    `:paw_prints:`	|	:earth_asia:    `:earth_asia:`	|
-|	:bird:    `:bird:`	|	:bouquet:    `:bouquet:`	|	:volcano:    `:volcano:`	|
-|	:baby_chick:    `:baby_chick:`	|	:cherry_blossom:    `:cherry_blossom:`	|	:milky_way:    `:milky_way:`	|
-|	:hatched_chick:    `:hatched_chick:`	|	:tulip:    `:tulip:`	|	:partly_sunny:    `:partly_sunny:`	|
-|	:hatching_chick:    `:hatching_chick:`	|	:four_leaf_clover:    `:four_leaf_clover:`	|	:octocat:    `:octocat:`	|
-|	:chicken:    `:chicken:`	|	:rose:    `:rose:`	|	:squirrel:    `:squirrel:`	|
-|	:penguin:    `:penguin:`	|	:sunflower:    `:sunflower:`	|		|
-|	:turtle:    `:turtle:`	|	:hibiscus:    `:hibiscus:`	|		|
+- ✨ Ask for package manager when is JS project [[29986ce](https://github.com/kefranabg/readme-md-generator/commit/29986cea9acde108b9e167db5d0def67beaf7384)]
+- ✨ Ask user for a link to contributing guide (fixes [#168](https://github.com/kefranabg/readme-md-generator/issues/168)) ([#179](https://github.com/kefranabg/readme-md-generator/issues/179)) [[310a8b1](https://github.com/kefranabg/readme-md-generator/commit/310a8b1f78154d9226c1267ccf18d0db9d9ea09f)]
+- ✨ Ask author's linkedin username (fixes [#170](https://github.com/kefranabg/readme-md-generator/issues/170)) ([#177](https://github.com/kefranabg/readme-md-generator/issues/177)) [[10954d1](https://github.com/kefranabg/readme-md-generator/commit/10954d10739b995c431b751d63d5624c17397235)]
 
-## Objects
-|		|		|		|
-|	-	|	-	|	-	|
-|	:bamboo:    `:bamboo:`	|	:postal_horn:    `:postal_horn:`	|	:guitar:    `:guitar:`	|
-|	:gift_heart:    `:gift_heart:`	|	:mailbox_closed:    `:mailbox_closed:`	|	:shoe:    `:shoe:`	|
-|	:dolls:    `:dolls:`	|	:mailbox_with_mail:    `:mailbox_with_mail:`	|	:sandal:    `:sandal:`	|
-|	:school_satchel:    `:school_satchel:`	|	:mailbox_with_no_mail:    `:mailbox_with_no_mail:`	|	:high_heel:    `:high_heel:`	|
-|	:mortar_board:    `:mortar_board:`	|	:package:    `:package:`	|	:lipstick:    `:lipstick:`	|
-|	:flags:    `:flags:`	|	:door:    `:door:`	|	:boot:    `:boot:`	|
-|	:fireworks:    `:fireworks:`	|	:smoking:    `:smoking:`	|	:shirt:    `:shirt:`	|
-|	:sparkler:    `:sparkler:`	|	:bomb:    `:bomb:`	|	:tshirt:    `:tshirt:`	|
-|	:wind_chime:    `:wind_chime:`	|	:gun:    `:gun:`	|	:necktie:    `:necktie:`	|
-|	:rice_scene:    `:rice_scene:`	|	:hocho:    `:hocho:`	|	:womans_clothes:    `:womans_clothes:`	|
-|	:jack_o_lantern:    `:jack_o_lantern:`	|	:pill:    `:pill:`	|	:dress:    `:dress:`	|
-|	:ghost:    `:ghost:`	|	:syringe:    `:syringe:`	|	:running_shirt_with_sash:    `:running_shirt_with_sash:`	|
-|	:santa:    `:santa:`	|	:page_facing_up:    `:page_facing_up:`	|	:jeans:    `:jeans:`	|
-|	:christmas_tree:    `:christmas_tree:`	|	:page_with_curl:    `:page_with_curl:`	|	:kimono:    `:kimono:`	|
-|	:gift:    `:gift:`	|	:bookmark_tabs:    `:bookmark_tabs:`	|	:bikini:    `:bikini:`	|
-|	:bell:    `:bell:`	|	:bar_chart:    `:bar_chart:`	|	:ribbon:    `:ribbon:`	|
-|	:no_bell:    `:no_bell:`	|	:chart_with_upwards_trend:    `:chart_with_upwards_trend:`	|	:tophat:    `:tophat:`	|
-|	:tanabata_tree:    `:tanabata_tree:`	|	:chart_with_downwards_trend:    `:chart_with_downwards_trend:`	|	:crown:    `:crown:`	|
-|	:tada:    `:tada:`	|	:scroll:    `:scroll:`	|	:womans_hat:    `:womans_hat:`	|
-|	:confetti_ball:    `:confetti_ball:`	|	:clipboard:    `:clipboard:`	|	:mans_shoe:    `:mans_shoe:`	|
-|	:balloon:    `:balloon:`	|	:calendar:    `:calendar:`	|	:closed_umbrella:    `:closed_umbrella:`	|
-|	:crystal_ball:    `:crystal_ball:`	|	:date:    `:date:`	|	:briefcase:    `:briefcase:`	|
-|	:cd:    `:cd:`	|	:card_index:    `:card_index:`	|	:handbag:    `:handbag:`	|
-|	:dvd:    `:dvd:`	|	:file_folder:    `:file_folder:`	|	:pouch:    `:pouch:`	|
-|	:floppy_disk:    `:floppy_disk:`	|	:open_file_folder:    `:open_file_folder:`	|	:purse:    `:purse:`	|
-|	:camera:    `:camera:`	|	:scissors:    `:scissors:`	|	:eyeglasses:    `:eyeglasses:`	|
-|	:video_camera:    `:video_camera:`	|	:pushpin:    `:pushpin:`	|	:fishing_pole_and_fish:    `:fishing_pole_and_fish:`	|
-|	:movie_camera:    `:movie_camera:`	|	:paperclip:    `:paperclip:`	|	:coffee:    `:coffee:`	|
-|	:computer:    `:computer:`	|	:black_nib:    `:black_nib:`	|	:tea:    `:tea:`	|
-|	:tv:    `:tv:`	|	:pencil2:    `:pencil2:`	|	:sake:    `:sake:`	|
-|	:iphone:    `:iphone:`	|	:straight_ruler:    `:straight_ruler:`	|	:baby_bottle:    `:baby_bottle:`	|
-|	:phone:    `:phone:`	|	:triangular_ruler:    `:triangular_ruler:`	|	:beer:    `:beer:`	|
-|	:telephone:    `:telephone:`	|	:closed_book:    `:closed_book:`	|	:beers:    `:beers:`	|
-|	:telephone_receiver:    `:telephone_receiver:`	|	:green_book:    `:green_book:`	|	:cocktail:    `:cocktail:`	|
-|	:pager:    `:pager:`	|	:blue_book:    `:blue_book:`	|	:tropical_drink:    `:tropical_drink:`	|
-|	:fax:    `:fax:`	|	:orange_book:    `:orange_book:`	|	:wine_glass:    `:wine_glass:`	|
-|	:minidisc:    `:minidisc:`	|	:notebook:    `:notebook:`	|	:fork_and_knife:    `:fork_and_knife:`	|
-|	:vhs:    `:vhs:`	|	:notebook_with_decorative_cover:    `:notebook_with_decorative_cover:`	|	:pizza:    `:pizza:`	|
-|	:sound:    `:sound:`	|	:ledger:    `:ledger:`	|	:hamburger:    `:hamburger:`	|
-|	:speaker:    `:speaker:`	|	:books:    `:books:`	|	:fries:    `:fries:`	|
-|	:mute:    `:mute:`	|	:bookmark:    `:bookmark:`	|	:poultry_leg:    `:poultry_leg:`	|
-|	:loudspeaker:    `:loudspeaker:`	|	:name_badge:    `:name_badge:`	|	:meat_on_bone:    `:meat_on_bone:`	|
-|	:mega:    `:mega:`	|	:microscope:    `:microscope:`	|	:spaghetti:    `:spaghetti:`	|
-|	:hourglass:    `:hourglass:`	|	:telescope:    `:telescope:`	|	:curry:    `:curry:`	|
-|	:hourglass_flowing_sand:    `:hourglass_flowing_sand:`	|	:newspaper:    `:newspaper:`	|	:fried_shrimp:    `:fried_shrimp:`	|
-|	:alarm_clock:    `:alarm_clock:`	|	:football:    `:football:`	|	:bento:    `:bento:`	|
-|	:watch:    `:watch:`	|	:basketball:    `:basketball:`	|	:sushi:    `:sushi:`	|
-|	:radio:    `:radio:`	|	:soccer:    `:soccer:`	|	:fish_cake:    `:fish_cake:`	|
-|	:satellite:    `:satellite:`	|	:baseball:    `:baseball:`	|	:rice_ball:    `:rice_ball:`	|
-|	:loop:    `:loop:`	|	:tennis:    `:tennis:`	|	:rice_cracker:    `:rice_cracker:`	|
-|	:mag:    `:mag:`	|	:8ball:    `:8ball:`	|	:rice:    `:rice:`	|
-|	:mag_right:    `:mag_right:`	|	:rugby_football:    `:rugby_football:`	|	:ramen:    `:ramen:`	|
-|	:unlock:    `:unlock:`	|	:bowling:    `:bowling:`	|	:stew:    `:stew:`	|
-|	:lock:    `:lock:`	|	:golf:    `:golf:`	|	:oden:    `:oden:`	|
-|	:lock_with_ink_pen:    `:lock_with_ink_pen:`	|	:mountain_bicyclist:    `:mountain_bicyclist:`	|	:dango:    `:dango:`	|
-|	:closed_lock_with_key:    `:closed_lock_with_key:`	|	:bicyclist:    `:bicyclist:`	|	:egg:    `:egg:`	|
-|	:key:    `:key:`	|	:horse_racing:    `:horse_racing:`	|	:bread:    `:bread:`	|
-|	:bulb:    `:bulb:`	|	:snowboarder:    `:snowboarder:`	|	:doughnut:    `:doughnut:`	|
-|	:flashlight:    `:flashlight:`	|	:swimmer:    `:swimmer:`	|	:custard:    `:custard:`	|
-|	:high_brightness:    `:high_brightness:`	|	:surfer:    `:surfer:`	|	:icecream:    `:icecream:`	|
-|	:low_brightness:    `:low_brightness:`	|	:ski:    `:ski:`	|	:ice_cream:    `:ice_cream:`	|
-|	:electric_plug:    `:electric_plug:`	|	:spades:    `:spades:`	|	:shaved_ice:    `:shaved_ice:`	|
-|	:battery:    `:battery:`	|	:hearts:    `:hearts:`	|	:birthday:    `:birthday:`	|
-|	:calling:    `:calling:`	|	:clubs:    `:clubs:`	|	:cake:    `:cake:`	|
-|	:email:    `:email:`	|	:diamonds:    `:diamonds:`	|	:cookie:    `:cookie:`	|
-|	:mailbox:    `:mailbox:`	|	:gem:    `:gem:`	|	:chocolate_bar:    `:chocolate_bar:`	|
-|	:postbox:    `:postbox:`	|	:ring:    `:ring:`	|	:candy:    `:candy:`	|
-|	:bath:    `:bath:`	|	:trophy:    `:trophy:`	|	:lollipop:    `:lollipop:`	|
-|	:bathtub:    `:bathtub:`	|	:musical_score:    `:musical_score:`	|	:honey_pot:    `:honey_pot:`	|
-|	:shower:    `:shower:`	|	:musical_keyboard:    `:musical_keyboard:`	|	:apple:    `:apple:`	|
-|	:toilet:    `:toilet:`	|	:violin:    `:violin:`	|	:green_apple:    `:green_apple:`	|
-|	:wrench:    `:wrench:`	|	:space_invader:    `:space_invader:`	|	:tangerine:    `:tangerine:`	|
-|	:nut_and_bolt:    `:nut_and_bolt:`	|	:video_game:    `:video_game:`	|	:lemon:    `:lemon:`	|
-|	:hammer:    `:hammer:`	|	:black_joker:    `:black_joker:`	|	:cherries:    `:cherries:`	|
-|	:seat:    `:seat:`	|	:flower_playing_cards:    `:flower_playing_cards:`	|	:grapes:    `:grapes:`	|
-|	:moneybag:    `:moneybag:`	|	:game_die:    `:game_die:`	|	:watermelon:    `:watermelon:`	|
-|	:yen:    `:yen:`	|	:dart:    `:dart:`	|	:strawberry:    `:strawberry:`	|
-|	:dollar:    `:dollar:`	|	:mahjong:    `:mahjong:`	|	:peach:    `:peach:`	|
-|	:pound:    `:pound:`	|	:clapper:    `:clapper:`	|	:melon:    `:melon:`	|
-|	:euro:    `:euro:`	|	:memo:    `:memo:`	|	:banana:    `:banana:`	|
-|	:credit_card:    `:credit_card:`	|	:pencil:    `:pencil:`	|	:pear:    `:pear:`	|
-|	:money_with_wings:    `:money_with_wings:`	|	:book:    `:book:`	|	:pineapple:    `:pineapple:`	|
-|	:e-mail:    `:e-mail:`	|	:art:    `:art:`	|	:sweet_potato:    `:sweet_potato:`	|
-|	:inbox_tray:    `:inbox_tray:`	|	:microphone:    `:microphone:`	|	:eggplant:    `:eggplant:`	|
-|	:outbox_tray:    `:outbox_tray:`	|	:headphones:    `:headphones:`	|	:tomato:    `:tomato:`	|
-|	:envelope:    `:envelope:`	|	:trumpet:    `:trumpet:`	|	:corn:    `:corn:`	|
-|	:incoming_envelope:    `:incoming_envelope:`	|	:saxophone:    `:saxophone:`	|		|
+### Changed
 
+- ⬆️ Update yargs to the latest version ([#186](https://github.com/kefranabg/readme-md-generator/issues/186)) [[16d7ceb](https://github.com/kefranabg/readme-md-generator/commit/16d7ceb8ec3040d63841397ded83dbdddc28da52)]
+- ⬆️ Update ejs to the latest version ([#187](https://github.com/kefranabg/readme-md-generator/issues/187)) [[139e906](https://github.com/kefranabg/readme-md-generator/commit/139e906b1ed1b875ca96869fe8570ca03d9806c2)]
+- 🔧 Update CI tiggers ([#184](https://github.com/kefranabg/readme-md-generator/issues/184)) [[6ef2be8](https://github.com/kefranabg/readme-md-generator/commit/6ef2be8ba8e00af16087f42eabd7e4b4ed2243b3)]
+- ⬆️ Update ora to the latest version ([#181](https://github.com/kefranabg/readme-md-generator/issues/181)) [[c563d9d](https://github.com/kefranabg/readme-md-generator/commit/c563d9d473e5c17be6a45936b2f58f83b734c4e9)]
+- 🔧 Move CI from CircleCI to GitHub actions [[a132525](https://github.com/kefranabg/readme-md-generator/commit/a132525ffe343629db2589378647665747e5cd4f)]
+- 🔧 Update FUNDING.yml [[83be6c0](https://github.com/kefranabg/readme-md-generator/commit/83be6c00842eb4321b5c37a7f5617e28f1548cdb)]
 
-## Places
-|		|		|		|
-|	-	|	-	|	-	|
-|	:house:    `:house:`	|	:sailboat:    `:sailboat:`	|	:monorail:    `:monorail:`	|
-|	:house_with_garden:    `:house_with_garden:`	|	:rowboat:    `:rowboat:`	|	:railway_car:    `:railway_car:`	|
-|	:school:    `:school:`	|	:anchor:    `:anchor:`	|	:trolleybus:    `:trolleybus:`	|
-|	:office:    `:office:`	|	:rocket:    `:rocket:`	|	:ticket:    `:ticket:`	|
-|	:post_office:    `:post_office:`	|	:airplane:    `:airplane:`	|	:fuelpump:    `:fuelpump:`	|
-|	:hospital:    `:hospital:`	|	:helicopter:    `:helicopter:`	|	:vertical_traffic_light:    `:vertical_traffic_light:`	|
-|	:bank:    `:bank:`	|	:steam_locomotive:    `:steam_locomotive:`	|	:traffic_light:    `:traffic_light:`	|
-|	:convenience_store:    `:convenience_store:`	|	:tram:    `:tram:`	|	:warning:    `:warning:`	|
-|	:love_hotel:    `:love_hotel:`	|	:mountain_railway:    `:mountain_railway:`	|	:construction:    `:construction:`	|
-|	:hotel:    `:hotel:`	|	:bike:    `:bike:`	|	:beginner:    `:beginner:`	|
-|	:wedding:    `:wedding:`	|	:aerial_tramway:    `:aerial_tramway:`	|	:atm:    `:atm:`	|
-|	:church:    `:church:`	|	:suspension_railway:    `:suspension_railway:`	|	:slot_machine:    `:slot_machine:`	|
-|	:department_store:    `:department_store:`	|	:mountain_cableway:    `:mountain_cableway:`	|	:busstop:    `:busstop:`	|
-|	:european_post_office:    `:european_post_office:`	|	:tractor:    `:tractor:`	|	:barber:    `:barber:`	|
-|	:city_sunrise:    `:city_sunrise:`	|	:blue_car:    `:blue_car:`	|	:hotsprings:    `:hotsprings:`	|
-|	:city_sunset:    `:city_sunset:`	|	:oncoming_automobile:    `:oncoming_automobile:`	|	:checkered_flag:    `:checkered_flag:`	|
-|	:japanese_castle:    `:japanese_castle:`	|	:car:    `:car:`	|	:crossed_flags:    `:crossed_flags:`	|
-|	:european_castle:    `:european_castle:`	|	:red_car:    `:red_car:`	|	:izakaya_lantern:    `:izakaya_lantern:`	|
-|	:tent:    `:tent:`	|	:taxi:    `:taxi:`	|	:moyai:    `:moyai:`	|
-|	:factory:    `:factory:`	|	:oncoming_taxi:    `:oncoming_taxi:`	|	:circus_tent:    `:circus_tent:`	|
-|	:tokyo_tower:    `:tokyo_tower:`	|	:articulated_lorry:    `:articulated_lorry:`	|	:performing_arts:    `:performing_arts:`	|
-|	:japan:    `:japan:`	|	:bus:    `:bus:`	|	:round_pushpin:    `:round_pushpin:`	|
-|	:mount_fuji:    `:mount_fuji:`	|	:oncoming_bus:    `:oncoming_bus:`	|	:triangular_flag_on_post:    `:triangular_flag_on_post:`	|
-|	:sunrise_over_mountains:    `:sunrise_over_mountains:`	|	:rotating_light:    `:rotating_light:`	|	:jp:    `:jp:`	|
-|	:sunrise:    `:sunrise:`	|	:police_car:    `:police_car:`	|	:kr:    `:kr:`	|
-|	:stars:    `:stars:`	|	:oncoming_police_car:    `:oncoming_police_car:`	|	:cn:    `:cn:`	|
-|	:statue_of_liberty:    `:statue_of_liberty:`	|	:fire_engine:    `:fire_engine:`	|	:us:    `:us:`	|
-|	:bridge_at_night:    `:bridge_at_night:`	|	:ambulance:    `:ambulance:`	|	:fr:    `:fr:`	|
-|	:carousel_horse:    `:carousel_horse:`	|	:minibus:    `:minibus:`	|	:es:    `:es:`	|
-|	:rainbow:    `:rainbow:`	|	:truck:    `:truck:`	|	:it:    `:it:`	|
-|	:ferris_wheel:    `:ferris_wheel:`	|	:train:    `:train:`	|	:ru:    `:ru:`	|
-|	:fountain:    `:fountain:`	|	:station:    `:station:`	|	:gb:    `:gb:`	|
-|	:roller_coaster:    `:roller_coaster:`	|	:train2:    `:train2:`	|	:uk:    `:uk:`	|
-|	:ship:    `:ship:`	|	:bullettrain_front:    `:bullettrain_front:`	|	:de:    `:de:`	|
-|	:speedboat:    `:speedboat:`	|	:bullettrain_side:    `:bullettrain_side:`	|		|
-|	:boat:    `:boat:`	|	:light_rail:    `:light_rail:`	|		|
+### Fixed
 
+- 🐛 Fix version badge label when contains \_ or - ([#190](https://github.com/kefranabg/readme-md-generator/issues/190)) [[6c345b5](https://github.com/kefranabg/readme-md-generator/commit/6c345b50caec810ef48f00dcbac0255f1db1f4a3)]
+- 🐛 Execute default function to get default answer when -y flag is passed ([#185](https://github.com/kefranabg/readme-md-generator/issues/185)) [[89cd82d](https://github.com/kefranabg/readme-md-generator/commit/89cd82db18655bbb085eb72c339402f412dd3996)]
+- 🐛 Escape markdown characters in social network questions answers ([#183](https://github.com/kefranabg/readme-md-generator/issues/183)) [[d96e310](https://github.com/kefranabg/readme-md-generator/commit/d96e310c5b54c573a139d01f4ad348f9456f7c3c)]
+- ✏️ Use gender neutral in comment ([#174](https://github.com/kefranabg/readme-md-generator/issues/174)) [[9f78778](https://github.com/kefranabg/readme-md-generator/commit/9f78778002410c0b82f36015b86443fb366425a7)]
+- 🐛 Fix InstallCommand test name [[279711f](https://github.com/kefranabg/readme-md-generator/commit/279711f1cdd18b2d53478c52f577041ea2186675)]
 
+### Miscellaneous
 
-## Symbols
-|		|		|		|
-|	-	|	-	|	-	|
-|	:one:    `:one:`	|	:mens:    `:mens:`	|	:clock1030:    `:clock1030:`	|
-|	:two:    `:two:`	|	:womens:    `:womens:`	|	:clock11:    `:clock11:`	|
-|	:three:    `:three:`	|	:baby_symbol:    `:baby_symbol:`	|	:clock1130:    `:clock1130:`	|
-|	:four:    `:four:`	|	:no_smoking:    `:no_smoking:`	|	:clock12:    `:clock12:`	|
-|	:five:    `:five:`	|	:parking:    `:parking:`	|	:clock1230:    `:clock1230:`	|
-|	:six:    `:six:`	|	:wheelchair:    `:wheelchair:`	|	:clock2:    `:clock2:`	|
-|	:seven:    `:seven:`	|	:metro:    `:metro:`	|	:clock230:    `:clock230:`	|
-|	:eight:    `:eight:`	|	:baggage_claim:    `:baggage_claim:`	|	:clock3:    `:clock3:`	|
-|	:nine:    `:nine:`	|	:accept:    `:accept:`	|	:clock330:    `:clock330:`	|
-|	:keycap_ten:    `:keycap_ten:`	|	:wc:    `:wc:`	|	:clock4:    `:clock4:`	|
-|	:1234:    `:1234:`	|	:potable_water:    `:potable_water:`	|	:clock430:    `:clock430:`	|
-|	:zero:    `:zero:`	|	:put_litter_in_its_place:    `:put_litter_in_its_place:`	|	:clock5:    `:clock5:`	|
-|	:hash:    `:hash:`	|	:secret:    `:secret:`	|	:clock530:    `:clock530:`	|
-|	:symbols:    `:symbols:`	|	:congratulations:    `:congratulations:`	|	:clock6:    `:clock6:`	|
-|	:arrow_backward:    `:arrow_backward:`	|	:m:    `:m:`	|	:clock630:    `:clock630:`	|
-|	:arrow_down:    `:arrow_down:`	|	:passport_control:    `:passport_control:`	|	:clock7:    `:clock7:`	|
-|	:arrow_forward:    `:arrow_forward:`	|	:left_luggage:    `:left_luggage:`	|	:clock730:    `:clock730:`	|
-|	:arrow_left:    `:arrow_left:`	|	:customs:    `:customs:`	|	:clock8:    `:clock8:`	|
-|	:capital_abcd:    `:capital_abcd:`	|	:ideograph_advantage:    `:ideograph_advantage:`	|	:clock830:    `:clock830:`	|
-|	:abcd:    `:abcd:`	|	:cl:    `:cl:`	|	:clock9:    `:clock9:`	|
-|	:abc:    `:abc:`	|	:sos:    `:sos:`	|	:clock930:    `:clock930:`	|
-|	:arrow_lower_left:    `:arrow_lower_left:`	|	:id:    `:id:`	|	:heavy_dollar_sign:    `:heavy_dollar_sign:`	|
-|	:arrow_lower_right:    `:arrow_lower_right:`	|	:no_entry_sign:    `:no_entry_sign:`	|	:copyright:    `:copyright:`	|
-|	:arrow_right:    `:arrow_right:`	|	:underage:    `:underage:`	|	:registered:    `:registered:`	|
-|	:arrow_up:    `:arrow_up:`	|	:no_mobile_phones:    `:no_mobile_phones:`	|	:tm:    `:tm:`	|
-|	:arrow_upper_left:    `:arrow_upper_left:`	|	:do_not_litter:    `:do_not_litter:`	|	:x:    `:x:`	|
-|	:arrow_upper_right:    `:arrow_upper_right:`	|	:non-potable_water:    `:non-potable_water:`	|	:heavy_exclamation_mark:    `:heavy_exclamation_mark:`	|
-|	:arrow_double_down:    `:arrow_double_down:`	|	:no_bicycles:    `:no_bicycles:`	|	:bangbang:    `:bangbang:`	|
-|	:arrow_double_up:    `:arrow_double_up:`	|	:no_pedestrians:    `:no_pedestrians:`	|	:interrobang:    `:interrobang:`	|
-|	:arrow_down_small:    `:arrow_down_small:`	|	:children_crossing:    `:children_crossing:`	|	:o:    `:o:`	|
-|	:arrow_heading_down:    `:arrow_heading_down:`	|	:no_entry:    `:no_entry:`	|	:heavy_multiplication_x:    `:heavy_multiplication_x:`	|
-|	:arrow_heading_up:    `:arrow_heading_up:`	|	:eight_spoked_asterisk:    `:eight_spoked_asterisk:`	|	:heavy_plus_sign:    `:heavy_plus_sign:`	|
-|	:leftwards_arrow_with_hook:    `:leftwards_arrow_with_hook:`	|	:sparkle:    `:sparkle:`	|	:heavy_minus_sign:    `:heavy_minus_sign:`	|
-|	:arrow_right_hook:    `:arrow_right_hook:`	|	:eight_pointed_black_star:    `:eight_pointed_black_star:`	|	:heavy_division_sign:    `:heavy_division_sign:`	|
-|	:left_right_arrow:    `:left_right_arrow:`	|	:heart_decoration:    `:heart_decoration:`	|	:white_flower:    `:white_flower:`	|
-|	:arrow_up_down:    `:arrow_up_down:`	|	:vs:    `:vs:`	|	:100:    `:100:`	|
-|	:arrow_up_small:    `:arrow_up_small:`	|	:vibration_mode:    `:vibration_mode:`	|	:heavy_check_mark:    `:heavy_check_mark:`	|
-|	:arrows_clockwise:    `:arrows_clockwise:`	|	:mobile_phone_off:    `:mobile_phone_off:`	|	:ballot_box_with_check:    `:ballot_box_with_check:`	|
-|	:arrows_counterclockwise:    `:arrows_counterclockwise:`	|	:chart:    `:chart:`	|	:radio_button:    `:radio_button:`	|
-|	:rewind:    `:rewind:`	|	:currency_exchange:    `:currency_exchange:`	|	:link:    `:link:`	|
-|	:fast_forward:    `:fast_forward:`	|	:aries:    `:aries:`	|	:curly_loop:    `:curly_loop:`	|
-|	:information_source:    `:information_source:`	|	:taurus:    `:taurus:`	|	:wavy_dash:    `:wavy_dash:`	|
-|	:ok:    `:ok:`	|	:gemini:    `:gemini:`	|	:part_alternation_mark:    `:part_alternation_mark:`	|
-|	:twisted_rightwards_arrows:    `:twisted_rightwards_arrows:`	|	:cancer:    `:cancer:`	|	:trident:    `:trident:`	|
-|	:repeat:    `:repeat:`	|	:leo:    `:leo:`	|	:black_small_square:    `:black_small_square:`	|
-|	:repeat_one:    `:repeat_one:`	|	:virgo:    `:virgo:`	|	:white_small_square:    `:white_small_square:`	|
-|	:new:    `:new:`	|	:libra:    `:libra:`	|	:black_medium_small_square:    `:black_medium_small_square:`	|
-|	:top:    `:top:`	|	:scorpius:    `:scorpius:`	|	:white_medium_small_square:    `:white_medium_small_square:`	|
-|	:up:    `:up:`	|	:sagittarius:    `:sagittarius:`	|	:black_medium_square:    `:black_medium_square:`	|
-|	:cool:    `:cool:`	|	:capricorn:    `:capricorn:`	|	:white_medium_square:    `:white_medium_square:`	|
-|	:free:    `:free:`	|	:aquarius:    `:aquarius:`	|	:black_large_square:    `:black_large_square:`	|
-|	:ng:    `:ng:`	|	:pisces:    `:pisces:`	|	:white_large_square:    `:white_large_square:`	|
-|	:cinema:    `:cinema:`	|	:ophiuchus:    `:ophiuchus:`	|	:white_check_mark:    `:white_check_mark:`	|
-|	:koko:    `:koko:`	|	:six_pointed_star:    `:six_pointed_star:`	|	:black_square_button:    `:black_square_button:`	|
-|	:signal_strength:    `:signal_strength:`	|	:negative_squared_cross_mark:    `:negative_squared_cross_mark:`	|	:white_square_button:    `:white_square_button:`	|
-|	:u5272:    `:u5272:`	|	:a:    `:a:`	|	:black_circle:    `:black_circle:`	|
-|	:u5408:    `:u5408:`	|	:b:    `:b:`	|	:white_circle:    `:white_circle:`	|
-|	:u55b6:    `:u55b6:`	|	:ab:    `:ab:`	|	:red_circle:    `:red_circle:`	|
-|	:u6307:    `:u6307:`	|	:o2:    `:o2:`	|	:large_blue_circle:    `:large_blue_circle:`	|
-|	:u6708:    `:u6708:`	|	:diamond_shape_with_a_dot_inside:    `:diamond_shape_with_a_dot_inside:`	|	:large_blue_diamond:    `:large_blue_diamond:`	|
-|	:u6709:    `:u6709:`	|	:recycle:    `:recycle:`	|	:large_orange_diamond:    `:large_orange_diamond:`	|
-|	:u6e80:    `:u6e80:`	|	:end:    `:end:`	|	:small_blue_diamond:    `:small_blue_diamond:`	|
-|	:u7121:    `:u7121:`	|	:back:    `:back:`	|	:small_orange_diamond:    `:small_orange_diamond:`	|
-|	:u7533:    `:u7533:`	|	:on:    `:on:`	|	:small_red_triangle:    `:small_red_triangle:`	|
-|	:u7a7a:    `:u7a7a:`	|	:soon:    `:soon:`	|	:small_red_triangle_down:    `:small_red_triangle_down:`	|
-|	:u7981:    `:u7981:`	|	:clock1:    `:clock1:`	|	:shipit:    `:shipit:`	|
-|	:sa:    `:sa:`	|	:clock130:    `:clock130:`	|		|
-|	:restroom:    `:restroom:`	|	:clock10:    `:clock10:`	|		|
+- 📝 Add open collective to readme ([#192](https://github.com/kefranabg/readme-md-generator/issues/192)) [[81e3873](https://github.com/kefranabg/readme-md-generator/commit/81e387357c5c088714291b0a7f18b66cab8cd5c6)]
+- 📝 Add anku255 as a contributor for test and bug ([#182](https://github.com/kefranabg/readme-md-generator/issues/182)) [[7624889](https://github.com/kefranabg/readme-md-generator/commit/76248890cf46ec7a27b6986add3d156095deb782)]
+
+<a name="0.7.0"></a>
+
+## 0.7.0 (2019-11-01)
+
+### Added
+
+- ✨ Add Author Github website url if exists (fixes [#124](https://github.com/kefranabg/readme-md-generator/issues/124)) ([#145](https://github.com/kefranabg/readme-md-generator/issues/145)) [[541d6e5](https://github.com/kefranabg/readme-md-generator/commit/541d6e53fdc2df42a3a416b5c2f2b5c1422e45db)]
+
+### Changed
+
+- ♻️ re-use prettier regexp across scripts ([#159](https://github.com/kefranabg/readme-md-generator/issues/159)) [[576e367](https://github.com/kefranabg/readme-md-generator/commit/576e367c67f7fbe0013fe2e32e20d17b6d4b8c8f)]
+- 🔧 Add prettier fix command ([#158](https://github.com/kefranabg/readme-md-generator/issues/158)) [[da2c700](https://github.com/kefranabg/readme-md-generator/commit/da2c70034165b42d8e25abf1c799f275d7c349b0)]
+
+### Fixed
+
+- 🐛 Don't suggest install default value when project is not a js project ([#169](https://github.com/kefranabg/readme-md-generator/issues/169)) [[672d591](https://github.com/kefranabg/readme-md-generator/commit/672d591ae845e95ef2b8f41b00997e09dfff1a3c)]
+- 🐛 Fix static badge generation when license name contains special characters ([#141](https://github.com/kefranabg/readme-md-generator/issues/141)) [[5b8bc08](https://github.com/kefranabg/readme-md-generator/commit/5b8bc08925e54f1c542d84a26283832040232053)]
+
+### Miscellaneous
+
+- 📝 Update README with CONTRIBUTING link [[5ec2ce4](https://github.com/kefranabg/readme-md-generator/commit/5ec2ce4e1404349eb94037dae16a8c569977e90a)]
+- 📝 Add CONTRIBUTING.md (fixes [#155](https://github.com/kefranabg/readme-md-generator/issues/155)) ([#160](https://github.com/kefranabg/readme-md-generator/issues/160)) [[f2d6020](https://github.com/kefranabg/readme-md-generator/commit/f2d6020e5fdef4c880ed6830302ca20f0817d192)]
+- 📝 Add code of conduct markdown ([#157](https://github.com/kefranabg/readme-md-generator/issues/157)) [[be3ec22](https://github.com/kefranabg/readme-md-generator/commit/be3ec22a7d44c88b59c3c67910ad266b65ff9746)]
+
+<a name="0.6.4"></a>
+
+## 0.6.4 (2019-10-09)
+
+### Added
+
+- ✨ Add check for overwrite readme ([#143](https://github.com/kefranabg/readme-md-generator/issues/143)) [[2e12553](https://github.com/kefranabg/readme-md-generator/commit/2e12553df31c65f31c88f556eb8811d5b5672739)]
+- ✨ Display license badge even when there is no license url ([#139](https://github.com/kefranabg/readme-md-generator/issues/139)) [[a60627c](https://github.com/kefranabg/readme-md-generator/commit/a60627c93af35a2f87bc2f7ed44ce702871a6f7d)]
+- ✨ Ask for demo link during README creation process ([#102](https://github.com/kefranabg/readme-md-generator/issues/102)) ([#130](https://github.com/kefranabg/readme-md-generator/issues/130)) [[f4d6ad4](https://github.com/kefranabg/readme-md-generator/commit/f4d6ad45c3884b24bf60536dd02d3ae17034f1b1)]
+- ✨ Add dynamic license badge ([#131](https://github.com/kefranabg/readme-md-generator/issues/131)) [[86bdac5](https://github.com/kefranabg/readme-md-generator/commit/86bdac57c35734ca0bdd252d3e0ae12f9a5e80c8)]
+
+### Changed
+
+- ⬆️ Fix vulnerabilities ([#136](https://github.com/kefranabg/readme-md-generator/issues/136)) [[fb96985](https://github.com/kefranabg/readme-md-generator/commit/fb96985ff9665319f3669deae3e14e31a4fe9df9)]
+
+<a name="0.6.3"></a>
+
+## 0.6.3 (2019-09-24)
+
+### Added
+
+- ✨ Update issue templates [[3d5c28b](https://github.com/kefranabg/readme-md-generator/commit/3d5c28b3eb57c18245ef22f47fa8083117f1a08f)]
+- ✨ Add link to npm on version badge ([#99](https://github.com/kefranabg/readme-md-generator/issues/99)) [[fdfe6e3](https://github.com/kefranabg/readme-md-generator/commit/fdfe6e374953a255eb72945405e8d8eadb62d3a9)]
+- ✨ Add dynamic version badge if package exists on NPM ([#94](https://github.com/kefranabg/readme-md-generator/issues/94)) [[0a11d2a](https://github.com/kefranabg/readme-md-generator/commit/0a11d2ae3a7ea767e4f0138f7b1d21e114fb991a)]
+
+### Changed
+
+- ⬆️ Update ora to the latest version ([#122](https://github.com/kefranabg/readme-md-generator/issues/122)) [[ffb4d11](https://github.com/kefranabg/readme-md-generator/commit/ffb4d111547c23cedf03168c2facbd285c3c7d9d)]
+- 🔧 Add gh package registry config ([#115](https://github.com/kefranabg/readme-md-generator/issues/115)) [[af1fb5a](https://github.com/kefranabg/readme-md-generator/commit/af1fb5ac10cfdabc57fc579e3c0a8f9a3d417f64)]
+- ⬆️ Upgrade date-fns version ([#113](https://github.com/kefranabg/readme-md-generator/issues/113)) [[eacad62](https://github.com/kefranabg/readme-md-generator/commit/eacad62792e0f95f41b7ed267611265e08b14c2b)]
+- ⬆️ Upgrade inquirer to the latest version 🚀 ([#110](https://github.com/kefranabg/readme-md-generator/issues/110)) [[f6fc84e](https://github.com/kefranabg/readme-md-generator/commit/f6fc84ec71a5b11de581745c8d75b7e6c1dd2143)]
+- ⬆️ Bump mixin-deep from 1.3.1 to 1.3.2 ([#112](https://github.com/kefranabg/readme-md-generator/issues/112)) [[4e0abc4](https://github.com/kefranabg/readme-md-generator/commit/4e0abc4b574ced8433c0cc48f965d959a100ff04)]
+- ⬆️ Bump eslint-utils from 1.3.1 to 1.4.2 ([#111](https://github.com/kefranabg/readme-md-generator/issues/111)) [[f0e09ac](https://github.com/kefranabg/readme-md-generator/commit/f0e09ac3f6b20882bda39c67e552eedd6fe18dce)]
+- 🎨 Format Github issue templates [[95f44d2](https://github.com/kefranabg/readme-md-generator/commit/95f44d26062b06439c1ff97a13f61642279d32c5)]
+- ⬆️ Update yargs to the latest version ([#104](https://github.com/kefranabg/readme-md-generator/issues/104)) [[d66db07](https://github.com/kefranabg/readme-md-generator/commit/d66db07cd2e0393b5ecb456ee982953a1448eff4)]
+- ⬆️ Update inquirer to 6.5.1 ([#101](https://github.com/kefranabg/readme-md-generator/issues/101)) [[af8fbe6](https://github.com/kefranabg/readme-md-generator/commit/af8fbe6acf5f08090d6958e12e09c3a1f3e345ff)]
+- ⬆️ Update eslint-config-airbnb-base to 14.0.0 ([#100](https://github.com/kefranabg/readme-md-generator/issues/100)) [[85ffea5](https://github.com/kefranabg/readme-md-generator/commit/85ffea57f3b4ed925ffe827f4194ac066298eb83)]
+- ⬆️ Bump lodash from 4.17.11 to 4.17.13 ([#98](https://github.com/kefranabg/readme-md-generator/issues/98)) [[99dc774](https://github.com/kefranabg/readme-md-generator/commit/99dc774fac253a0786b935deb258a8cb3a777176)]
+- 🔧 Ignore .git file in order to fix an npm bug [[f940f13](https://github.com/kefranabg/readme-md-generator/commit/f940f130efef5ffdeb3f278e7435570c95363acb)]
+
+### Fixed
+
+- 🐛 Process get stuck because of ora new version ([#152](https://github.com/kefranabg/readme-md-generator/issues/152)) [[4a741b9](https://github.com/kefranabg/readme-md-generator/commit/4a741b9b266ae33c8c04267e6958c26e598655b7)]
+- 🐛 Fix badge target link ([#126](https://github.com/kefranabg/readme-md-generator/issues/126)) [[45df9a4](https://github.com/kefranabg/readme-md-generator/commit/45df9a4ab55ffa2ff6e8ac5a33e49bbba0b41efa)]
+- ✏️ Capitalize the H in GitHub ([#116](https://github.com/kefranabg/readme-md-generator/issues/116)) [[3d08a76](https://github.com/kefranabg/readme-md-generator/commit/3d08a7610723a0034607bd4d136926220f431a03)]
+
+### Miscellaneous
+
+- 📝 Add anku255 as a contributor ([#144](https://github.com/kefranabg/readme-md-generator/issues/144)) [[32af6a2](https://github.com/kefranabg/readme-md-generator/commit/32af6a23fd22efbc93861c47f13c190c0800b9ed)]
+- 📝 Add LucasProcopio as a contributor ([#138](https://github.com/kefranabg/readme-md-generator/issues/138)) [[d67b012](https://github.com/kefranabg/readme-md-generator/commit/d67b012fef502e296963c54f5cf3140a723c477d)]
+- 📝 Add tbetous as a contributor ([#137](https://github.com/kefranabg/readme-md-generator/issues/137)) [[a93cd56](https://github.com/kefranabg/readme-md-generator/commit/a93cd56c43ed420245824542e808e3b27654c3ec)]
+- 📝 Add david-dasilva as a contributor ([#133](https://github.com/kefranabg/readme-md-generator/issues/133)) [[f6f24e0](https://github.com/kefranabg/readme-md-generator/commit/f6f24e0be239214c5ff03d439aeb18007a513217)]
+- 📝 All contributor profile url fixed ([#129](https://github.com/kefranabg/readme-md-generator/issues/129)) [[06bd6f3](https://github.com/kefranabg/readme-md-generator/commit/06bd6f3bf9b8af68c2548bf57524e52939cd192f)]
+- 📝 Add Kushagra as a contributor ([#127](https://github.com/kefranabg/readme-md-generator/issues/127)) [[1624878](https://github.com/kefranabg/readme-md-generator/commit/1624878c90dc2f62cf5f692aa4fdedfc1d338f9c)]
+- :spakles: Add start script ([#121](https://github.com/kefranabg/readme-md-generator/issues/121)) [[bc3d383](https://github.com/kefranabg/readme-md-generator/commit/bc3d38301c5b09f301a75094d5aed6c85e130da6)]
+- 📝 Add bdougie as a contributor ([#117](https://github.com/kefranabg/readme-md-generator/issues/117)) [[2f327f7](https://github.com/kefranabg/readme-md-generator/commit/2f327f7547472093a030ded760508c90c1f21910)]
+
+<a name="0.5.2"></a>
+
+## 0.5.2 (2019-07-08)
+
+### Added
+
+- ✨ Filter social network inputs to remove potential @ ([#93](https://github.com/kefranabg/readme-md-generator/issues/93)) [[ccae357](https://github.com/kefranabg/readme-md-generator/commit/ccae357ad2c8a3788a248075644cf27d312f226b)]
+
+### Miscellaneous
+
+- Update readme and contributors to reflect username change ([#91](https://github.com/kefranabg/readme-md-generator/issues/91)) [[b2be60e](https://github.com/kefranabg/readme-md-generator/commit/b2be60e8bb429c9c440c6602f4f4ebec51b6d889)]
+
+<a name="0.5.1"></a>
+
+## 0.5.1 (2019-07-05)
+
+### Fixed
+
+- 🐛 Prevent encoding utf-8 chars in README ([#88](https://github.com/kefranabg/readme-md-generator/issues/88)) [[8059756](https://github.com/kefranabg/readme-md-generator/commit/80597564e0fd9e0b8c69c333929d02e9ec9ae0b0)]
+
+<a name="0.5.0"></a>
+
+## 0.5.0 (2019-06-27)
+
+### Added
+
+- ✨ Allow user to choose a non HTML README template ([#80](https://github.com/kefranabg/readme-md-generator/issues/80)) [[6d5c884](https://github.com/kefranabg/readme-md-generator/commit/6d5c8848c476fc2770204f215ddd6f48d539b4e0)]
+- ✨ Allow user to specify path to custom README template ([#68](https://github.com/kefranabg/readme-md-generator/issues/68)) [[e0d66c0](https://github.com/kefranabg/readme-md-generator/commit/e0d66c002c8108ff3ae142979a5c8003a28a8107)]
+- ✨ Get author name from package.json even if author prop is an object ([#75](https://github.com/kefranabg/readme-md-generator/issues/75)) [[688c338](https://github.com/kefranabg/readme-md-generator/commit/688c33833188a5487ff6df024d4993404ee0406c)]
+
+### Changed
+
+- ⬆️ Update eslint to the latest version ([#70](https://github.com/kefranabg/readme-md-generator/issues/70)) [[88c96ac](https://github.com/kefranabg/readme-md-generator/commit/88c96ac31acfa12381a33d39a2953f3405053870)]
+- ⬆️ Update inquirer to the latest version ([#67](https://github.com/kefranabg/readme-md-generator/issues/67)) [[59f69e5](https://github.com/kefranabg/readme-md-generator/commit/59f69e51ec1caae17230d9331a2c14b04bd2825e)]
+- ♻️ Refactoring inquirer code ([#69](https://github.com/kefranabg/readme-md-generator/issues/69)) [[802d57d](https://github.com/kefranabg/readme-md-generator/commit/802d57d8af2e2cdcdbddea86c2fa2225db6d4516)]
+
+<a name="0.4.0"></a>
+
+## 0.4.0 (2019-06-20)
+
+### Added
+
+- ✨ Ask for Patreon username ([#58](https://github.com/kefranabg/readme-md-generator/issues/58)) [[59b57af](https://github.com/kefranabg/readme-md-generator/commit/59b57af7aa5ce91ff0ce1998bff835d781b5df79)]
+- ✨ Enable funding [[af10690](https://github.com/kefranabg/readme-md-generator/commit/af10690857df92d29807a37abce055d5351f99f4)]
+- ✨ Add -v alias for --version option ([#50](https://github.com/kefranabg/readme-md-generator/issues/50)) [[a30cf02](https://github.com/kefranabg/readme-md-generator/commit/a30cf02531a4d26e85ed5e9db9ada6262d478711)]
+
+### Fixed
+
+- 🐛 Prevent from using inquirer 6.4 [[688c754](https://github.com/kefranabg/readme-md-generator/commit/688c754584bfb7d9191eb30e18563e16f2a7b3ff)]
+
+### Miscellaneous
+
+- 👥 Add contributors [[2533cd8](https://github.com/kefranabg/readme-md-generator/commit/2533cd8f2c8c78a043e67ca2bead9b4606606121)]
+- docs: add kefranabg as a contributor ([#57](https://github.com/kefranabg/readme-md-generator/issues/57)) [[e5d9d53](https://github.com/kefranabg/readme-md-generator/commit/e5d9d5376b8341e06005e497728935c2874631b6)]
+- 📝 Update README [[0dff1e5](https://github.com/kefranabg/readme-md-generator/commit/0dff1e5562404559b2ad64ccf0c8fc3d1df73f92)]
+- 📝 Replace static version badge by a dynamic one [[99a507d](https://github.com/kefranabg/readme-md-generator/commit/99a507d6ebf54b58aaf941e1752e7e4d16565a53)]
+- 📝 Update doc to use npx ([#55](https://github.com/kefranabg/readme-md-generator/issues/55)) [[77d6fdc](https://github.com/kefranabg/readme-md-generator/commit/77d6fdc4f0a2d9b86d3169f35ed8eab355ebcd68)]
+- 📝 Update badge list on README [[e87ed1a](https://github.com/kefranabg/readme-md-generator/commit/e87ed1ae92f04cc94e06a3e6339090588b3eaa17)]
+- 📝 Add available options in README ([#49](https://github.com/kefranabg/readme-md-generator/issues/49)) [[93da519](https://github.com/kefranabg/readme-md-generator/commit/93da51958d04335674201490cb90b9f04f5551bb)]
+
+<a name="0.3.0"></a>
+
+## 0.3.0 (2019-06-15)
+
+### Added
+
+- ✨ Add --yes flag ([#45](https://github.com/kefranabg/readme-md-generator/issues/45)) [[f0e2bd6](https://github.com/kefranabg/readme-md-generator/commit/f0e2bd6aaa0ed7b47843482046d4c443db5643c7)]
+- ✨ Add prerequisites badges ([#38](https://github.com/kefranabg/readme-md-generator/issues/38)) [[e7e3590](https://github.com/kefranabg/readme-md-generator/commit/e7e3590023027f80acde722aa91824d9bc3d0b26)]
+- ✅ Add missing test to readme generation [[d5027e4](https://github.com/kefranabg/readme-md-generator/commit/d5027e4d0e0d31e9059729e208e20908b299f040)]
+- ✨ Add Twitter follow badge ([#35](https://github.com/kefranabg/readme-md-generator/issues/35)) [[58034a0](https://github.com/kefranabg/readme-md-generator/commit/58034a00bfdf6ea50e4ffabdd39657dfce317fee)]
+- ✨ Improve README template [[7a12c8a](https://github.com/kefranabg/readme-md-generator/commit/7a12c8a687f50da7fee1c2b2352363f3abf1e71f)]
+- ✨ Improve README content [[ffd6e1f](https://github.com/kefranabg/readme-md-generator/commit/ffd6e1f9653c31168bf025e797e05951bc9ab15a)]
+- ✨ Adding some commands [[6850244](https://github.com/kefranabg/readme-md-generator/commit/685024493f8670559df643b551f383b9cbf434b0)]
+- 🔊 Add logs in writeReadme [[772d536](https://github.com/kefranabg/readme-md-generator/commit/772d536a99fea4d0a8024fedb02664ae3a968351)]
+- ✨ Add homepage link if exist [[1c1bf08](https://github.com/kefranabg/readme-md-generator/commit/1c1bf08b29ef16a677114d74eb145d3a83f3c35a)]
+
+### Changed
+
+- 💄 change prerequisite badges color ([#43](https://github.com/kefranabg/readme-md-generator/issues/43)) [[e888726](https://github.com/kefranabg/readme-md-generator/commit/e888726b471a28265ed689786f85c8618b9af957)]
+- 🔧 Move some dependencies in devDependencies [[0038201](https://github.com/kefranabg/readme-md-generator/commit/0038201ec94f1d31b3473948cdfd9f950466d4ad)]
+- 💬 Update badge version in README [[e5d418c](https://github.com/kefranabg/readme-md-generator/commit/e5d418c2b3b7e6fcbb2e5631adb70b51c2b82843)]
+
+### Fixed
+
+- 🐛 Fix current working directory error ([#46](https://github.com/kefranabg/readme-md-generator/issues/46)) [[6c184ba](https://github.com/kefranabg/readme-md-generator/commit/6c184ba009cfafb25adb1ff7ba6e1c4570de7503)]
+- 🐛 Fix error when package.json does not exist ([#42](https://github.com/kefranabg/readme-md-generator/issues/42)) [[fe0fc61](https://github.com/kefranabg/readme-md-generator/commit/fe0fc61e4664baf457e1d6f4a35e50e8cd325c10)]
+- ✏️ Remove whitespace before punctuation marks ([#36](https://github.com/kefranabg/readme-md-generator/issues/36)) [[094f9fb](https://github.com/kefranabg/readme-md-generator/commit/094f9fb5e7ebe6cc9001d1fe54cd9be0362730bd)]
+- 🐛 Get doc url from only if github repos [[62109c4](https://github.com/kefranabg/readme-md-generator/commit/62109c4b315613100b7adf9b9714b5a7e6c00b31)]
+
+<a name="0.1.4"></a>
+
+## 0.1.4 (2019-06-11)
+
+### Added
+
+- ✨ Add instruction in README [[8f32674](https://github.com/kefranabg/readme-md-generator/commit/8f3267442fbd1673e9c13969858c2075864d8be6)]
+- ✅ Add missing test for cli [[cdd7df6](https://github.com/kefranabg/readme-md-generator/commit/cdd7df640401fbce044c0e042bc02a8ede09b818)]
+- ✨ Improve README content [[9bb7e90](https://github.com/kefranabg/readme-md-generator/commit/9bb7e909d838bc6ae364f8ca40115adda590a9c4)]
+- ✅ Add cli tests [[2c5ed1e](https://github.com/kefranabg/readme-md-generator/commit/2c5ed1e1fb249f4f10e6ec7b304b1df1fbb38ec7)]
+- ✅ Add tests for project infos module [[aae1bc6](https://github.com/kefranabg/readme-md-generator/commit/aae1bc6872a60feb2cfd6e50057be857f6a87db8)]
+- ✨ Improve README content [[34d475c](https://github.com/kefranabg/readme-md-generator/commit/34d475cf4d446317430587d5b50644cf18049975)]
+- ✅ Add tests for questions [[576a290](https://github.com/kefranabg/readme-md-generator/commit/576a290f77cab6376c50d9edf3d6c51e572988af)]
+- ✅ Add tests for readme file [[0e18c2e](https://github.com/kefranabg/readme-md-generator/commit/0e18c2e73a16fb0edc039e3d28de52691c9409df)]
+- ✨ Enable code cov ([#23](https://github.com/kefranabg/readme-md-generator/issues/23)) [[46d21b5](https://github.com/kefranabg/readme-md-generator/commit/46d21b5df0f26cba8f9d3eb42492a129d3dc4dd1)]
+- ✨ Add log infos during process [[912c602](https://github.com/kefranabg/readme-md-generator/commit/912c602c9022ebcfd84f66ffce96ab814f424cd7)]
+- ✨ Improve README [[a8ff226](https://github.com/kefranabg/readme-md-generator/commit/a8ff22685daac89d22ac1756b480a2f6777d0f50)]
+- ✨ Improve README [[83796b2](https://github.com/kefranabg/readme-md-generator/commit/83796b29d055a52b9c7a67f9e9405141972b236c)]
+- ✨ Add some badges [[3174ab9](https://github.com/kefranabg/readme-md-generator/commit/3174ab9830b47919559a2c4cdc73b4a598b9e9d9)]
+- ✨ Add documentation badge [[dd435ca](https://github.com/kefranabg/readme-md-generator/commit/dd435ca85d2d5fa00b8cd28d956b6ff8ce08ea1f)]
+- ✨ Add license url and name auto detection [[d2ee432](https://github.com/kefranabg/readme-md-generator/commit/d2ee432d5cd09b163efcfccf7e37354754eb589b)]
+- ✨ Add prerequisites section in README [[9924f72](https://github.com/kefranabg/readme-md-generator/commit/9924f723afacee5c03fddd6b0436edf207cd618f)]
+- ✨ Add npm version infos [[9ce8bb6](https://github.com/kefranabg/readme-md-generator/commit/9ce8bb64924404f01f2e5a0105b3241b15be1d65)]
+- ✨ Add default value for github username if repos is github [[a59520f](https://github.com/kefranabg/readme-md-generator/commit/a59520ffd877cc0a091343d764733d058f6862c1)]
+- ✨ Add contributing section [[d0f61f9](https://github.com/kefranabg/readme-md-generator/commit/d0f61f93f25998c2020f14e77165f0990cf43fb4)]
+- ✨ Improve README content [[01134d2](https://github.com/kefranabg/readme-md-generator/commit/01134d2b9d8f347335dc132b1c9ea1edddc1aac4)]
+- ✨ Improve README content [[5c4c2e8](https://github.com/kefranabg/readme-md-generator/commit/5c4c2e804429e75f912cd45c0192a990d1287a3e)]
+- ✨ Improve README content [[0b4fe40](https://github.com/kefranabg/readme-md-generator/commit/0b4fe40281f447132011a3326847e6b6829d08ac)]
+- ✨ Improve support section in README [[91a6f9e](https://github.com/kefranabg/readme-md-generator/commit/91a6f9e785a51cfdbc945b759216ef5e1708d682)]
+- ✨ Add license to README [[096d44f](https://github.com/kefranabg/readme-md-generator/commit/096d44fc89108fb91ec51b2d10a6a71fdb274ae5)]
+- ✨ Renaming questions function names [[8907db0](https://github.com/kefranabg/readme-md-generator/commit/8907db008882dd5b7a76864e59452ee5e7b9e5d7)]
+- ✨ Add Greenkeeper 🌴 [[f69b4ad](https://github.com/kefranabg/readme-md-generator/commit/f69b4adc5307be9492dc4ea370696cd84ebf8d53)]
+- ✨ Add support section in README [[b16af00](https://github.com/kefranabg/readme-md-generator/commit/b16af00df801992cdd56df54cbb8a913279ab544)]
+- ✨ Add footer in README [[3d2cd7d](https://github.com/kefranabg/readme-md-generator/commit/3d2cd7d2d0d6c737d18b3e68b8e19ef40d316e4f)]
+- ✨ Update README.md [[699f250](https://github.com/kefranabg/readme-md-generator/commit/699f250223ddd8d11872e3e3023056b15740d3ea)]
+- ✨ Add author information in README [[2337d6b](https://github.com/kefranabg/readme-md-generator/commit/2337d6b6a8a933bbb55d4ab6489999dc2fb74363)]
+- ✨ Improve author infos logic [[5d4cf6f](https://github.com/kefranabg/readme-md-generator/commit/5d4cf6fe9f790d4d2ee6bcc151e8283c7ac06655)]
+- ✨ Add author information in README [[665303a](https://github.com/kefranabg/readme-md-generator/commit/665303a623f359d819872faae4e432cb95e82a8c)]
+- 🎉 Initial commit [[500b2e8](https://github.com/kefranabg/readme-md-generator/commit/500b2e81875aeb61f94b6202bcb5d0b264cf7413)]
+
+### Changed
+
+- 🎨 Improve README structure [[1ced8d6](https://github.com/kefranabg/readme-md-generator/commit/1ced8d6ff426f5806d110f2c92b653547187c6c5)]
+- 💬 Fix README format [[20005b6](https://github.com/kefranabg/readme-md-generator/commit/20005b6d243d26a8ab8d049e722776218796bb82)]
+- 🔧 Update jest config [[3a9d847](https://github.com/kefranabg/readme-md-generator/commit/3a9d84742423d9da5b1c3c19dc96a1846010a44d)]
+- 🔧 Add jest config [[5f629ed](https://github.com/kefranabg/readme-md-generator/commit/5f629edd4bb0f9d2eb7b6e7749a92454468c08a3)]
+- ♻️ Code refactoring [[79cfbbf](https://github.com/kefranabg/readme-md-generator/commit/79cfbbf7e6cc5eefb6cd1f2a1a6809f4a9c9c593)]
+- ♻️ CLI refactoring [[ead151b](https://github.com/kefranabg/readme-md-generator/commit/ead151b9a7c2e177cd9859fb3691c530f09ded3c)]
+- ♻️ Code refactoring [[1ae6c40](https://github.com/kefranabg/readme-md-generator/commit/1ae6c40fb89f9099f0dc38e5bb843d2719d23b07)]
+- 💬 Rename command in README [[4279e2e](https://github.com/kefranabg/readme-md-generator/commit/4279e2e99e9e21a58104632478be612f9f80dbf8)]
+- 💬 Update project name [[2cad8e3](https://github.com/kefranabg/readme-md-generator/commit/2cad8e3cfca8afc33585f0de5e11378add9dad26)]
+- 🔧 Add bin config [[56d7e78](https://github.com/kefranabg/readme-md-generator/commit/56d7e7840a48f8d6d653db00538303a2dac07a77)]
+- 💬 Improve questions text [[67d611b](https://github.com/kefranabg/readme-md-generator/commit/67d611b4ba9489bdf2297e2ba120eddee0368a7a)]
+- ♻️ Utils code refactoring [[97d675e](https://github.com/kefranabg/readme-md-generator/commit/97d675efb088139949cf57e1bc0c8d534f41b136)]
+- ♻️ Code refactoring [[c14974c](https://github.com/kefranabg/readme-md-generator/commit/c14974c5b24e370c4af54ca1a7d71375eeb2bfc2)]
+- 🎨 Improve README title [[8c79b5e](https://github.com/kefranabg/readme-md-generator/commit/8c79b5efbd5e8b94497b00164642796ce0b29033)]
+- 🎨 Improve support section in README [[e855e38](https://github.com/kefranabg/readme-md-generator/commit/e855e385e0c3a8304e7e42cde4162c392269d787)]
+- 💬 Update project description and README footer texts [[b1c9a87](https://github.com/kefranabg/readme-md-generator/commit/b1c9a877874b5dd925e072d84cc8e8f8cd856bab)]
+- 🎨 Improve template format [[d27649f](https://github.com/kefranabg/readme-md-generator/commit/d27649f1a0a3f6344c74a735040436010dec86b8)]
+- ♻️ Questions and utils code refactoring [[a5b5a4c](https://github.com/kefranabg/readme-md-generator/commit/a5b5a4c95da8643af319299448d93db0123fafa1)]
+- ♻️ Questions and utils functions refactoring [[177c086](https://github.com/kefranabg/readme-md-generator/commit/177c08699989328d5ceeb71c139b196f58bd23c0)]
+- 🚨 Fix file format with prettier [[aa6e3eb](https://github.com/kefranabg/readme-md-generator/commit/aa6e3eb6081cdc0d34c872c078f3a9e415a45d2b)]
+
+### Removed
+
+- 🔥 Remove unused export [[bdc0e3e](https://github.com/kefranabg/readme-md-generator/commit/bdc0e3eb4d2d37240715abb1703eedcbe0dc5e2a)]
+
+### Fixed
+
+- 🐛 Fix badge bad link [[d8c8e45](https://github.com/kefranabg/readme-md-generator/commit/d8c8e45e77f8f5f8c68b60c176da09808e4cbb4c)]
+- 🐛 Fix bug when engines infos were not found [[918140e](https://github.com/kefranabg/readme-md-generator/commit/918140e6ad98f01279b5b2b617d4976b330faecd)]
+- 🐛 Fix badges links [[acd0a22](https://github.com/kefranabg/readme-md-generator/commit/acd0a22b9885501503d298ed125942b043884c82)]
+- 🐛 Fix badge display [[623afd9](https://github.com/kefranabg/readme-md-generator/commit/623afd9cc1831e144bcdf1ba0c0d0fc4c75c9324)]
+- 🐛 Fix author infos [[2d8b2c2](https://github.com/kefranabg/readme-md-generator/commit/2d8b2c25096fbc05ac1a24aadfd68e93899782e3)]
+
+### Miscellaneous
+
+- 0.1.4 [[65ddd76](https://github.com/kefranabg/readme-md-generator/commit/65ddd767df2712ca39527a4a30dbbcffa00be87a)]
+- 📝 Add demo to README [[19f04e2](https://github.com/kefranabg/readme-md-generator/commit/19f04e232f9363d72b9c0c5e7c8c7f4ab363528d)]
+- Merge pull request [#20](https://github.com/kefranabg/readme-md-generator/issues/20) from kefranabg/greenkeeper/initial [[acfa940](https://github.com/kefranabg/readme-md-generator/commit/acfa9407c90edd2eff549f1d21a48b3add60428a)]
+- docs(readme): add Greenkeeper badge [[d3ad805](https://github.com/kefranabg/readme-md-generator/commit/d3ad80571868c75e84de42cad13f3af64582bf8f)]
+- 📝 Update project description [[6fadc05](https://github.com/kefranabg/readme-md-generator/commit/6fadc05bffd78dfa9855578ce4af708950dc7c4c)]
+- Update README [[ee6f44f](https://github.com/kefranabg/readme-md-generator/commit/ee6f44f49ef29dba8163898a36f24efc656f762c)]
+- docs(readme): add Greenkeeper badge [[1d6fe09](https://github.com/kefranabg/readme-md-generator/commit/1d6fe09fd824be7489c10978a228acac287360da)]
+- Initial commit [[dd97da0](https://github.com/kefranabg/readme-md-generator/commit/dd97da0e0a4540806ec83152b586dd0b8f8421a1)]
