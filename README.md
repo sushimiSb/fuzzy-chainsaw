@@ -1,2 +1,13 @@
-*.md linguist-detectable=true
-*.md linguist-documentation=false
+codecov:
+  require_ci_to_pass: yes
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+
+  status:
+    project:
+      default:
+        threshold: 5
+    patch: false
