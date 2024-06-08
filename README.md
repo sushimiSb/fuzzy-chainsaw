@@ -1,13 +1,4 @@
-codecov:
-  require_ci_to_pass: yes
-
-coverage:
-  precision: 2
-  round: down
-  range: "70...100"
-
-  status:
-    project:
-      default:
-        threshold: 5
-    patch: false
+// https://www.npmjs.com/package/check-links
+declare module "check-links" {
+	export default function checkLinks (links: string[]): Promise<{[key: string]: {status: "alive" | "dead" | "invalid", statusCode: number}}>;
+}
