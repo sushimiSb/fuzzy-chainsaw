@@ -1,421 +1,272 @@
-#!/usr/bin/env bash
+2011-2019 Artsy Inc.
 
-#
-# Steps:
-#
-#  1. Download corresponding html file for some README.md:
-#       curl -s $1
-#
-#  2. Discard rows where no substring 'user-content-' (github's markup):
-#       awk '/user-content-/ { ...
-#
-#  3.1 Get last number in each row like ' ... </span></a>sitemap.js</h1'.
-#      It's a level of the current header:
-#       substr($0, length($0), 1)
-#
-#  3.2 Get level from 3.1 and insert corresponding number of spaces before '*':
-#       sprintf("%*s", (level-1)*'"$nb_spaces"', "")
-#
-#  4. Find head's text and insert it inside "* [ ... ]":
-#       substr($0, match($0, /a>.*<\/h/)+2, RLENGTH-5)
-#
-#  5. Find anchor and insert it inside "(...)":
-#       substr($0, match($0, "href=\"[^\"]+?\" ")+6, RLENGTH-8)
-#
+## creative commons
 
-gh_toc_version="0.10.0"
+# Attribution 4.0 International
 
-gh_user_agent="gh-md-toc v$gh_toc_version"
+Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal
+advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship.
+Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives
+no warranties regarding its licenses, any material licensed under their terms and conditions, or any related
+information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent
+possible.
 
-#
-# Download rendered into html README.md by its url.
-#
-#
-gh_toc_load() {
-    local gh_url=$1
+### Using Creative Commons Public Licenses
 
-    if type curl &>/dev/null; then
-        curl --user-agent "$gh_user_agent" -s "$gh_url"
-    elif type wget &>/dev/null; then
-        wget --user-agent="$gh_user_agent" -qO- "$gh_url"
-    else
-        echo "Please, install 'curl' or 'wget' and try again."
-        exit 1
-    fi
-}
+Creative Commons public licenses provide a standard set of terms and conditions that creators and other rights
+holders may use to share original works of authorship and other material subject to copyright and certain other
+rights specified in the public license below. The following considerations are for informational purposes only, are
+not exhaustive, and do not form part of our licenses.
 
-#
-# Converts local md file into html by GitHub
-#
-# -> curl -X POST --data '{"text": "Hello world github/linguist#1 **cool**, and #1!"}' https://api.github.com/markdown
-# <p>Hello world github/linguist#1 <strong>cool</strong>, and #1!</p>'"
-gh_toc_md2html() {
-    local gh_file_md=$1
-    local skip_header=$2
+- **Considerations for licensors:** Our public licenses are intended for use by those authorized to give the public
+  permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are
+  irrevocable. Licensors should read and understand the terms and conditions of the license they choose before
+  applying it. Licensors should also secure all rights necessary before applying our licenses so that the public
+  can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This
+  includes other CC-licensed material, or material used under an exception or limitation to copyright.
+  [More considerations for licensors](https://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensors).
 
-    URL=https://api.github.com/markdown/raw
+- **Considerations for the public:** By using one of our public licenses, a licensor grants the public permission
+  to use the licensed material under specified terms and conditions. If the licensor’s permission is not necessary
+  for any reason–for example, because of any applicable exception or limitation to copyright–then that use is not
+  regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a
+  licensor has authority to grant. Use of the licensed material may still be restricted for other reasons,
+  including because others have copyright or other rights in the material. A licensor may make special requests,
+  such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged
+  to respect those requests where reasonable.
+  [More considerations for the public](https://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensees).
 
-    if [ -n "$GH_TOC_TOKEN" ]; then
-        TOKEN=$GH_TOC_TOKEN
-    else
-        TOKEN_FILE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/token.txt"
-        if [ -f "$TOKEN_FILE" ]; then
-            TOKEN="$(cat "$TOKEN_FILE")"
-        fi
-    fi
-    if [ -n "${TOKEN}" ]; then
-        AUTHORIZATION="Authorization: token ${TOKEN}"
-    fi
+## Creative Commons Attribution 4.0 International Public License
 
-    local gh_tmp_file_md=$gh_file_md
-    if [ "$skip_header" = "yes" ]; then
-        if grep -Fxq "<!--te-->" "$gh_src"; then
-          # cut everything before the toc
-          gh_tmp_file_md=$gh_file_md~~
-          sed '1,/<!--te-->/d' "$gh_file_md" > "$gh_tmp_file_md"
-        fi
-    fi
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of
+this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public
+License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance
+of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor
+receives from making the Licensed Material available under these terms and conditions.
 
-    # echo $URL 1>&2
-    OUTPUT=$(curl -s \
-        --user-agent "$gh_user_agent" \
-        --data-binary @"$gh_tmp_file_md" \
-        -H "Content-Type:text/plain" \
-        -H "$AUTHORIZATION" \
-        "$URL")
+### Section 1 – Definitions.
 
-    rm -f "${gh_file_md}~~"
+a. **Adapted Material** means material subject to Copyright and Similar Rights that is derived from or based upon
+the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or
+otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor.
+For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound
+recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a
+moving image.
 
-    if [ "$?" != "0" ]; then
-        echo "XXNetworkErrorXX"
-    fi
-    if [ "$(echo "${OUTPUT}" | awk '/API rate limit exceeded/')" != "" ]; then
-        echo "XXRateLimitXX"
-    else
-        echo "${OUTPUT}"
-    fi
-}
+b. **Adapter's License** means the license You apply to Your Copyright and Similar Rights in Your contributions to
+Adapted Material in accordance with the terms and conditions of this Public License.
 
+c. **Copyright and Similar Rights** means copyright and/or similar rights closely related to copyright including,
+without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how
+the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section
+2(b)(1)-(2) are not Copyright and Similar Rights.
 
-#
-# Is passed string url
-#
-gh_is_url() {
-    case $1 in
-        https* | http*)
-            echo "yes";;
-        *)
-            echo "no";;
-    esac
-}
+d. **Effective Technological Measures** means those measures that, in the absence of proper authority, may not be
+circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December
+20, 1996, and/or similar international agreements.
 
-#
-# TOC generator
-#
-gh_toc(){
-    local gh_src=$1
-    local gh_src_copy=$1
-    local gh_ttl_docs=$2
-    local need_replace=$3
-    local no_backup=$4
-    local no_footer=$5
-    local indent=$6
-    local skip_header=$7
+e. **Exceptions and Limitations** means fair use, fair dealing, and/or any other exception or limitation to
+Copyright and Similar Rights that applies to Your use of the Licensed Material.
 
-    if [ "$gh_src" = "" ]; then
-        echo "Please, enter URL or local path for a README.md"
-        exit 1
-    fi
+f. **Licensed Material** means the artistic or literary work, database, or other material to which the Licensor
+applied this Public License.
 
+g. **Licensed Rights** means the rights granted to You subject to the terms and conditions of this Public License,
+which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the
+Licensor has authority to license.
 
-    # Show "TOC" string only if working with one document
-    if [ "$gh_ttl_docs" = "1" ]; then
+h. **Licensor** means the individual(s) or entity(ies) granting rights under this Public License.
 
-        echo "Table of Contents"
-        echo "================="
-        echo ""
-        gh_src_copy=""
+i. **Share** means to provide material to the public by any means or process that requires permission under the
+Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination,
+communication, or importation, and to make material available to the public including in ways that members of the
+public may access the material from a place and at a time individually chosen by them.
 
-    fi
+j. **Sui Generis Database Rights** means rights other than copyright resulting from Directive 96/9/EC of the
+European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or
+succeeded, as well as other essentially equivalent rights anywhere in the world.
 
-    if [ "$(gh_is_url "$gh_src")" == "yes" ]; then
-        gh_toc_load "$gh_src" | gh_toc_grab "$gh_src_copy" "$indent"
-        if [ "${PIPESTATUS[0]}" != "0" ]; then
-            echo "Could not load remote document."
-            echo "Please check your url or network connectivity"
-            exit 1
-        fi
-        if [ "$need_replace" = "yes" ]; then
-            echo
-            echo "!! '$gh_src' is not a local file"
-            echo "!! Can't insert the TOC into it."
-            echo
-        fi
-    else
-        local rawhtml
-        rawhtml=$(gh_toc_md2html "$gh_src" "$skip_header")
-        if [ "$rawhtml" == "XXNetworkErrorXX" ]; then
-             echo "Parsing local markdown file requires access to github API"
-             echo "Please make sure curl is installed and check your network connectivity"
-             exit 1
-        fi
-        if [ "$rawhtml" == "XXRateLimitXX" ]; then
-             echo "Parsing local markdown file requires access to github API"
-             echo "Error: You exceeded the hourly limit. See: https://developer.github.com/v3/#rate-limiting"
-             TOKEN_FILE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/token.txt"
-             echo "or place GitHub auth token here: ${TOKEN_FILE}"
-             exit 1
-        fi
-        local toc
-        toc=`echo "$rawhtml" | gh_toc_grab "$gh_src_copy" "$indent"`
-        echo "$toc"
-        if [ "$need_replace" = "yes" ]; then
-            if grep -Fxq "<!--ts-->" "$gh_src" && grep -Fxq "<!--te-->" "$gh_src"; then
-                echo "Found markers"
-            else
-                echo "You don't have <!--ts--> or <!--te--> in your file...exiting"
-                exit 1
-            fi
-            local ts="<\!--ts-->"
-            local te="<\!--te-->"
-            local dt
-            dt=$(date +'%F_%H%M%S')
-            local ext=".orig.${dt}"
-            local toc_path="${gh_src}.toc.${dt}"
-            local toc_createdby="<!-- Created by https://github.com/ekalinin/github-markdown-toc -->"
-            local toc_footer
-            toc_footer="<!-- Added by: `whoami`, at: `date` -->"
-            # http://fahdshariff.blogspot.ru/2012/12/sed-mutli-line-replacement-between-two.html
-            # clear old TOC
-            sed -i"${ext}" "/${ts}/,/${te}/{//!d;}" "$gh_src"
-            # create toc file
-            echo "${toc}" > "${toc_path}"
-            if [ "${no_footer}" != "yes" ]; then
-                echo -e "\n${toc_createdby}\n${toc_footer}\n" >> "$toc_path"
-            fi
+k. **You** means the individual or entity exercising the Licensed Rights under this Public License. Your has a
+corresponding meaning.
 
-            # insert toc file
-            if ! sed --version > /dev/null 2>&1; then
-                sed -i "" "/${ts}/r ${toc_path}" "$gh_src"
-            else
-                sed -i "/${ts}/r ${toc_path}" "$gh_src"
-            fi
-            echo
-            if [ "${no_backup}" = "yes" ]; then
-                rm "$toc_path" "$gh_src$ext"
-            fi
-            echo "!! TOC was added into: '$gh_src'"
-            if [ -z "${no_backup}" ]; then
-                echo "!! Origin version of the file: '${gh_src}${ext}'"
-                echo "!! TOC added into a separate file: '${toc_path}'"
-        fi
-            echo
-        fi
-    fi
-}
+### Section 2 – Scope.
 
-#
-# Grabber of the TOC from rendered html
-#
-# $1 - a source url of document.
-#      It's need if TOC is generated for multiple documents.
-# $2 - number of spaces used to indent.
-#
-gh_toc_grab() {
+a. **_License grant._**
 
-    href_regex="/href=\"[^\"]+?\"/"
-    common_awk_script='
-                     modified_href = ""
-                     split(href, chars, "")
-                     for (i=1;i <= length(href); i++) {
-                         c = chars[i]
-                         res = ""
-                         if (c == "+") {
-                             res = " "
-                         } else {
-                             if (c == "%") {
-                                 res = "\\x"
-                             } else {
-                                 res = c ""
-                             }
-                         }
-                         modified_href = modified_href res
-                    }
-                    print sprintf("%*s", (level-1)*'"$2"', "") "* [" text "](" gh_url  modified_href ")"
-                    '
-    if [ "`uname -s`" == "OS/390" ]; then
-        grepcmd="pcregrep -o"
-        echoargs=""
-        awkscript='{
-                     level = substr($0, 3, 1)
-                     text = substr($0, match($0, /<\/span><\/a>[^<]*<\/h/)+11, RLENGTH-14)
-                     href = substr($0, match($0, '$href_regex')+6, RLENGTH-7)
-                     '"$common_awk_script"'
-                }'
-    else
-        grepcmd="grep -Eo"
-        echoargs="-e"
-        awkscript='{
-                     level = substr($0, 3, 1)
-                     text = substr($0, match($0, /">.*<\/h/)+2, RLENGTH-5)
-                     href = substr($0, match($0, '$href_regex')+6, RLENGTH-7)
-                     '"$common_awk_script"'
-                }'
-    fi
+1.  Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide,
+    royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the
+    Licensed Material to:
 
-    # if closed <h[1-6]> is on the new line, then move it on the prev line
-    # for example:
-    #   was: The command <code>foo1</code>
-    #        </h1>
-    #   became: The command <code>foo1</code></h1>
-    sed -e ':a' -e 'N' -e '$!ba' -e 's/\n<\/h/<\/h/g' |
+    A. reproduce and Share the Licensed Material, in whole or in part; and
 
-    # Sometimes a line can start with <span>. Fix that.
-    sed -e ':a' -e 'N' -e '$!ba' -e 's/\n<span/<span/g' |
+    B. produce, reproduce, and Share Adapted Material.
 
-    # find strings that corresponds to template
-    $grepcmd '<h.*class="heading-element".*</a' |
+2.  **Exceptions and Limitations.** For the avoidance of doubt, where Exceptions and Limitations apply to Your use,
+    this Public License does not apply, and You do not need to comply with its terms and conditions.
 
-    # remove code tags
-    sed 's/<code>//g' | sed 's/<\/code>//g' |
+3.  **Term.** The term of this Public License is specified in Section 6(a).
 
-    # remove g-emoji
-    sed 's/<g-emoji[^>]*[^<]*<\/g-emoji> //g' |
+4.  **Media and formats; technical modifications allowed.** The Licensor authorizes You to exercise the Licensed
+    Rights in all media and formats whether now known or hereafter created, and to make technical modifications
+    necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from
+    making technical modifications necessary to exercise the Licensed Rights, including technical modifications
+    necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making
+    modifications authorized by this Section 2(a)(4) never produces Adapted Material.
 
-    # now all rows are like:
-    #   <h1 class="heading-element">title</h1><a href="..."><span>..</span></a>
-    # format result line
-    #   * $0 - whole string
-    #   * last element of each row: "</hN" where N in (1,2,3,...)
-    echo $echoargs "$(awk -v "gh_url=$1" "$awkscript")"
-}
+5.  **Downstream recipients.**
 
-        # perl -lpE 's/(\[[^\]]*\]\()(.*?)(\))/my ($pre, $in, $post)=($1, $2, $3) ; $in =~ s{\+}{ }g; $in =~ s{%}{\\x}g; $pre.$in.$post/ems')"
+    A. **Offer from the Licensor – Licensed Material.** Every recipient of the Licensed Material automatically
+    receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this
+    Public License.
 
-#
-# Returns filename only from full path or url
-#
-gh_toc_get_filename() {
-    echo "${1##*/}"
-}
+    B. **No downstream restrictions.** You may not offer or impose any additional or different terms or conditions
+    on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of
+    the Licensed Rights by any recipient of the Licensed Material.
 
-show_version() {
-    echo "$gh_toc_version"
-    echo
-    echo "os:     `uname -s`"
-    echo "arch:   `uname -m`"
-    echo "kernel: `uname -r`"
-    echo "shell:  `$SHELL --version`"
-    echo
-    for tool in curl wget grep awk sed; do
-        printf "%-5s: " $tool
-        if type $tool &>/dev/null; then
-            $tool --version | head -n 1
-        else
-            echo "not installed"
-        fi
-    done
-}
+6.  **No endorsement.** Nothing in this Public License constitutes or may be construed as permission to assert or
+    imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or
+    granted official status by, the Licensor or others designated to receive attribution as provided in Section
+    3(a)(1)(A)(i).
 
-show_help() {
-    local app_name
-    app_name=$(basename "$0")
-    echo "GitHub TOC generator ($app_name): $gh_toc_version"
-    echo ""
-    echo "Usage:"
-    echo "  $app_name [options] src [src]   Create TOC for a README file (url or local path)"
-    echo "  $app_name -                     Create TOC for markdown from STDIN"
-    echo "  $app_name --help                Show help"
-    echo "  $app_name --version             Show version"
-    echo ""
-    echo "Options:"
-    echo "  --indent <NUM>      Set indent size. Default: 3."
-    echo "  --insert            Insert new TOC into original file. For local files only. Default: false."
-    echo "                      See https://github.com/ekalinin/github-markdown-toc/issues/41 for details."
-    echo "  --no-backup         Remove backup file. Set --insert as well. Default: false."
-    echo "  --hide-footer       Do not write date & author of the last TOC update. Set --insert as well. Default: false."
-    echo "  --skip-header       Hide entry of the topmost headlines. Default: false."
-    echo "                      See https://github.com/ekalinin/github-markdown-toc/issues/125 for details."
-    echo ""
-}
+b. **_Other rights._**
 
-#
-# Options handlers
-#
-gh_toc_app() {
-    local need_replace="no"
-    local indent=3
+1.  Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity,
+    privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or
+    agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to
+    exercise the Licensed Rights, but not otherwise.
 
-    if [ "$1" = '--help' ] || [ $# -eq 0 ] ; then
-        show_help
-        return
-    fi
+2.  Patent and trademark rights are not licensed under this Public License.
 
-    if [ "$1" = '--version' ]; then
-        show_version
-        return
-    fi
+3.  To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the
+    Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or
+    compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such
+    royalties.
 
-    if [ "$1" = '--indent' ]; then
-        indent="$2"
-        shift 2
-    fi
+### Section 3 – License Conditions.
 
-    if [ "$1" = "-" ]; then
-        if [ -z "$TMPDIR" ]; then
-            TMPDIR="/tmp"
-        elif [ -n "$TMPDIR" ] && [ ! -d "$TMPDIR" ]; then
-            mkdir -p "$TMPDIR"
-        fi
-        local gh_tmp_md
-        if [ "`uname -s`" == "OS/390" ]; then
-            local timestamp
-            timestamp=$(date +%m%d%Y%H%M%S)
-            gh_tmp_md="$TMPDIR/tmp.$timestamp"
-        else
-            gh_tmp_md=$(mktemp "$TMPDIR/tmp.XXXXXX")
-        fi
-        while read -r input; do
-            echo "$input" >> "$gh_tmp_md"
-        done
-        gh_toc_md2html "$gh_tmp_md" | gh_toc_grab "" "$indent"
-        return
-    fi
+Your exercise of the Licensed Rights is expressly made subject to the following conditions.
 
-    if [ "$1" = '--insert' ]; then
-        need_replace="yes"
-        shift
-    fi
+a. **_Attribution._**
 
-    if [ "$1" = '--no-backup' ]; then
-        need_replace="yes"
-        no_backup="yes"
-        shift
-    fi
+1.  If You Share the Licensed Material (including in modified form), You must:
 
-    if [ "$1" = '--hide-footer' ]; then
-        need_replace="yes"
-        no_footer="yes"
-        shift
-    fi
+    A. retain the following if it is supplied by the Licensor with the Licensed Material:
 
-    if [ "$1" = '--skip-header' ]; then
-        skip_header="yes"
-        shift
-    fi
+    i. identification of the creator(s) of the Licensed Material and any others designated to receive attribution,
+    in any reasonable manner requested by the Licensor (including by pseudonym if designated);
 
+    ii. a copyright notice;
 
-    for md in "$@"
-    do
-        echo ""
-        gh_toc "$md" "$#" "$need_replace" "$no_backup" "$no_footer" "$indent" "$skip_header"
-    done
+    iii. a notice that refers to this Public License;
 
-    echo ""
-    echo "<!-- Created by https://github.com/ekalinin/github-markdown-toc -->"
-}
+    iv. a notice that refers to the disclaimer of warranties;
 
-#
-# Entry point
-#
-gh_toc_app "$@"
+    v. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
+
+    B. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+
+    C. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or
+    hyperlink to, this Public License.
+
+2.  You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and
+    context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions
+    by providing a URI or hyperlink to a resource that includes the required information.
+
+3.  If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the
+    extent reasonably practicable.
+
+4.  If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the
+    Adapted Material from complying with this Public License.
+
+### Section 4 – Sui Generis Database Rights.
+
+Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
+
+a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or
+a substantial portion of the contents of the database;
+
+b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis
+Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents)
+is Adapted Material; and
+
+c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of
+the database.
+
+For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public
+License where the Licensed Rights include other Copyright and Similar Rights.
+
+### Section 5 – Disclaimer of Warranties and Limitation of Liability.
+
+a. **Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the
+Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the
+Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of
+title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects,
+accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of
+warranties are not allowed in full or in part, this disclaimer may not apply to You.**
+
+b. **To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without
+limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive,
+exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed
+Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages.
+Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.**
+
+c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that,
+to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+
+### Section 6 – Term and Termination.
+
+a. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail
+to comply with this Public License, then Your rights under this Public License terminate automatically.
+
+b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
+
+1.  automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of
+    the violation; or
+
+2.  upon express reinstatement by the Licensor.
+
+For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for
+Your violations of this Public License.
+
+c. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions
+or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
+
+d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+
+### Section 7 – Other Terms and Conditions.
+
+a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless
+expressly agreed.
+
+b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate
+from and independent of the terms and conditions of this Public License.
+
+### Section 8 – Interpretation.
+
+a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit,
+restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission
+under this Public License.
+
+b. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be
+automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed,
+it shall be severed from this Public License without affecting the enforceability of the remaining terms and
+conditions.
+
+c. No term or condition of this Public License will be waived and no failure to comply consented to unless
+expressly agreed to by the Licensor.
+
+d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any
+privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction
+or authority.
+
+> Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one
+> of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except
+> for the limited purpose of indicating that material is shared under a Creative Commons public license or as
+> otherwise permitted by the Creative Commons policies published at
+> [creativecommons.org/policies](https://creativecommons.org/policies), Creative Commons does not authorize the use
+> of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written
+> consent including, without limitation, in connection with any unauthorized modifications to any of its public
+> licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the
+> avoidance of doubt, this paragraph does not form part of the public licenses.
+>
+> Creative Commons may be contacted at creativecommons.org
