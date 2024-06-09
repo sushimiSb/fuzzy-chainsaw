@@ -1,12 +1,16 @@
-# Awesome GitHub Profile README Template Collection
+# Contribution Guidelines
 
-[![GitHub stars](https://img.shields.io/github/stars/themlphdstudent/awesome-github-profile-readme-templates.svg)](https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/themlphdstudent/awesome-github-profile-readme-templates.svg?color=blue)](https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/network)
-[![GitHub contributors](https://img.shields.io/github/contributors/themlphdstudent/awesome-github-profile-readme-templates.svg?color=blue)](https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/network)
+Please ensure your pull request adheres to the following guidelines:
 
-A collection of GitHub profile README's examples.
+- Alphabetize your entry.
+- Search previous suggestions before making a new one, as yours may be a duplicate.
+- Suggested READMEs should be beautiful or stand out in some way.
+- Make an individual pull request for each suggestion.
+- New categories, or improvements to the existing categorization are welcome.
+- Keep descriptions short and simple, but descriptive.
+- Start the description with a capital and end with a full stop/period.
+- Check your spelling and grammar.
+- Make sure your text editor is set to remove trailing whitespace.
+- Use the `#readme` anchor for GitHub READMEs to link them directly
 
-[Contributions](https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/CONTRIBUTING.md) are welcome. Read the [Guidelines](https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/CONTRIBUTING.md) on how to contribute.
-Feel free to add your or someone else's GitHub profile README file.
-
-Don't forget to hit the :star: if you like this repo.
+Thank you for your suggestions!
