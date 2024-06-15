@@ -1,5 +1,3 @@
-[bdist_wheel]
-universal = 1
-
-[metadata]
-license_file = LICENSE
+global.___loader = {
+  enqueue: jest.fn(),
+};
