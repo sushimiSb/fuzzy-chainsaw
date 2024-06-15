@@ -1,20 +1,69 @@
-==================
-format-README.rst
-==================
-reStructuredText (сокращение: ReST, расширение файла: .rst) — облегчённый язык разметки.
+<!DOCTYPE html>
+<html lang="en">
 
-:Дата последнего редактирования: |date| в |time| 
-:Компоновал: **GnuriaN**
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="description" content="Awesome GitHub Profile Readme Templates" />
+  <title>Awesome GitHub Profile Readme Templates</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
 
-Общее описание
-==============
-**reStructuredText** - хорошо применим для создания простых веб-страниц и других документов, а также в качестве вспомогательного языка при написании комментариев в программном коде. Используется в системе подготовки технической документации Docutils, написанной в основном Дэвидом Гуджером (David Goodger). reStructuredText можно считать потомком легковесных систем разметки StructuredText и Setext. Парсер reStructuredText поддерживает достаточное количество конечных форматов, в том числе PDF, HTML, ODT, LaTeX и формат презентаций S5.
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css"
+    type="text/css">
 
-Система документирования Sphinx, написанная для нужд документирования языка программирования Python на сайте docs.python.org и построенная на базе Docutils, применяется уже в нескольких десятках проектов. ReST является одним из языков разметки, используемых на github, в частности, для README-файлов. Формат имеет статус экспериментального в проекте «Гутенберг».
+  <!-- docsify-themeable styles-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
+  <link rel="stylesheet alternative" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    title="dark">
 
-**Sphinx** — это генератор документации, который преобразует файлы в формате *reStructuredText* в HTML website и другие форматы (PDF, EPub и man). Он использует ряд расширений для reStructuredText (например, для автоматической генерации документации по исходному коду, создания математических формул или подсветки исходного кода). Первый публичный релиз (версия 0.1.61611) был объявлен 21 марта 2008 года. Он был разработан и широко используется для документирования языка программирования Python, а также его дополнительных модулей.
+  <style>
+    .sidebar-nav li>a[href^="/"]:not([href*="?id="]),
+    .sidebar-nav li>a[href^="/"]:not([href*="?id="])~ul a,
+    .sidebar-nav li>a[href^="#/"]:not([href*="?id="]),
+    .sidebar-nav li>a[href^="#/"]:not([href*="?id="])~ul a {
+      padding: 0;
+    }
 
-Вся необходимая информация для работы со **Sphinx** и форматом **reStructuredText** находится тут: https://sphinx-ru.readthedocs.io/ru/latest/index.html и тут https://sphinx-ru.readthedocs.io/ru/latest/rst-markup.html#retext
+    .sidebar-nav li.collapse>a[href^="/"]:not([href*="?id="]):not(:only-child),
+    .sidebar-nav li.collapse>a[href^="#/"]:not([href*="?id="]):not(:only-child),
+    .sidebar-nav li.active>a[href^="/"]:not([href*="?id="]):not(:only-child),
+    .sidebar-nav li.active>a[href^="#/"]:not([href*="?id="]):not(:only-child) {
+      background: transparent;
+    }
+  </style>
+</head>
 
-.. |date| date:: %d.%m.%Y
-.. |time| date:: %H:%M
+<body>
+  <div id="app">Please wait...</div>
+
+  <script>
+    window.$docsify = {
+      search: [
+        '/_sidebar',
+      ],
+
+      name: 'Awesome Github Profile Readme Templates',
+      basePath: "https://raw.githubusercontent.com/durgeshsamariya/awesome-github-profile-readme-templates/master/",
+      loadSidebar: true,
+      auto2top: true,
+      sidebarDisplayLevel: 1,
+    }
+  </script>
+
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+  <!-- plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"
+    type="text/javascript">
+    </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
+    type="text/javascript">
+    </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+</body>
+
+</html>
