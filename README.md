@@ -1,68 +1,46 @@
-As a team, we've created some shared standards around architecture reviews to only improve quality and consistency across the board, and increase transparency into the decisions that are made. Documenting these decisions will also give future engineers something to reference if they wonder why we chose a certain schema or communication pattern.
+# 项目背景
 
-We aim for bigger decisions (anything that has long-run consequences, and any one-way door irreversible decisions) to have a proposal that gets reviewed, through our "Architecture Review" process.
+蘑菇街能有今天的快速发展，得益于开源软件群雄崛起的大环境背景，我们一直对开源社区怀有感恩之情，因此也一直希望能为开源社区贡献一份力量。
 
-### What is "Architecture"? 
-This is hard to define, but the kind of thing that should get reviewed is any irrevesible/hard to reverse decision (are you going through a one way door?) or a decision that has long-run consequences and far reaching impact. Use your best judgement in deciding what should get a review. 
+2013年我们蘑菇街从社区导购华丽转身时尚电商平台，为解决千万妹子和时尚卖家的沟通问题，我们开发了自己的即时通讯软件。既然已经有了用户使用的IM，为什么我们自己公司内部沟通还要用第三方的呢？因此就有了TT(TeamTalk)的雏形，现在蘑菇街内部的在线沟通全部通过TT来完成。随着TT功能的逐渐完善，我们决定把TT开源来回馈开源社区，希望国内的中小企业都能用上开源、免费、好用的IM工具！
 
-### What is an Architecture Review?
+# 项目介绍
+* 名称：TeamTalk
+* 官网：http://tt.mogu.io/
+* 开源协议：[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+* 定位：中小型企业用户，member >= 2
+* 特点：开源与产品并重
+* 功能：可靠的消息传递机制；支持文字、图片、语音等富文本信息；文件收发等	
 
-Architecture review is a decision maker / advice process structure that is consistently used for bigger implementation decisions. 
-
-Here is the overview showing how to structure a proposal for an architecture review: [Template for Architecture Proposals](https://paper.dropbox.com/doc/Template-Architecture-Review-Proposal--APm~N1i5HAlD6E1bH_e4ZpBeAg-YCQUVGUWV16A0BtYrQ8mw)
-
-Your proposal will share the goal you're trying to achieve, your plan how you'll achieve that, and some answers to key questions, and possible alternatives to your plan.
-
-### How do the reviews work and what roles are played during the creation of a proposal and the review?
-
-#### Roles played during Creating the Proposal: 
-
-*Responsible* for creating a solid proposal: 
-This would usually be a senior engineer on a team. This role may also be played by an Engineer III if they have the context and expertise in this area. 
-The Proposers job is to create a solid proposal that ideally doesn’t need too much iteration to finalize and approve.
-
-*Accountable* to that proposal being solid: 
-The team’s EM is accountable to choosing the right engineer who is responsible for creating a solid proposal. More than one person can work on a proposal.
-
-*Consulted*: 
-The engineer responsible for creating the proposal should proactively seek out the advice of subject matter experts to create an good proposal.
-Other (product) engineers, Domain experts, PM, anyone relevant who needs to give input on the goal or help suggest viable solutions. For example, a new Database decision may spark consultation from Steven as a domain expert.
-
-*Informed*: 
-Anyone working closely on the team, or anyone who will be affected by this decision. The person responsible for creating the proposal should share the outcomes clearly with anyone affected.
-The architecture review is completely transparent, so here “informed” means “proactively giving a heads up”. By default, everyone will have access to this information.
-
-#### Roles played during the Review and ‘Signoff’:
-
-*Responsible* for reviewing the proposal: 
-This would usually be either Dan personally, or a staff or senior engineer with the right context and experience that Dan specifically delegates this responsibility to. 
-Hopefully the initial proposal is solid enough that it keeps ‘forward motion’, even if it requires a few smaller iterations.
-
-*Accountable* to the outcomes of technical decisions made:
-Dan remains overall accountable to the technical roadmap and to the outcomes of all these decisions.
-
-*Consulted* on the proposal: 
-Any subject matter expert who’s advice would improve the outcome. 
-
-*Informed* of the solution: 
-Anyone working closely on the team, or anyone who will be affected by this decision.
+# 项目框架
 
 
-### How can I learn and grow into creating these proposals? 
-
-This is an important growth area if you’re looking to become a senior engineer down the line, or in general grow as a technical leader. Your EM is here to support this growth and help you find opportunities to either create proposals, or collaborate with input/advice from a senior engineer on proposals.
-
-Your track record at making good implementation decisions will be part of how your EM decides you’re ready to create bigger proposals, and your successful work in creating architecture proposals is an exciting milestone to recognize and reward on the path to being a senior engineer! 
-
-If you’re already a senior engineer, you’re essentially doing much of this already in your advice process emails, technical chats with Dan if you have those, and your leadership of cycle planning if you’re in product. Doing architecture proposals will make that existing work more transparent, but doesn’t change the nature of the work you’re already doing in your role as a senior engineer.
+麻雀虽小五脏俱全，本项目涉及到多个平台、多种语言，简单关系如下图：
+     
+![teamtalk架构图](http://s6.mogucdn.com/b7/pic/140921/7n6ih_ieygmzjsmiywezjwmmytambqhayde_514x551.jpg)
 
 
-### Does this change how we do engineering work?
+#### 服务端：
+     
+CppServer：TTCppServer工程，包括IM消息服务器、http服务器、文件传输服务器、文件存储服务器、登陆服务器
+java DB Proxy：TTJavaServer工程，承载着后台消息存储、redis等接口
+PHP server：TTPhpServer工程，teamtalk后台配置页面
 
-It shouldn’t change much - this is happening already, but more casually in calls, Jira and emails. 
+#### 客户端：
 
-What is different about an architecture review advice process is the clear lines of accountability and the transparency of what decisions are made, by whom, why and exactly how. 
+- mac：TTMacClient工程，mac客户端工程
+- iOS：TTIOSClient工程，IOS客户端工程
+- Android：TTAndroidClient工程，android客户端工程
+- Windows：TTWinClient工程，windows客户端工程
 
-As Dan shares on the template, not only does this increase consistency across engineering and with our technical roadmap, it also reduces knowledge silos on our team and serves as a decision history for our future selves. This way we can revisit and understand past context, and learn better from our past decisions if they don’t go quite as planned 😉 
+* 语言：c++、objective-c、java、php
+* 系统环境：Linux、Windows，Mac, iOS, Android
 
+# 代码下载
+-[地址](https://github.com/mogujie/TeamTalk)
 
+# 交流
+
+* qq交流群1：341273218(已满)
+* qq交流群2:437335108
+* 邮件交流：tt@mogujie.com
