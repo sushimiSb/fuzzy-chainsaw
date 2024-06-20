@@ -1,19 +1,15 @@
-{
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
-  },
-  "plugins": ["react"],
-  "rules": {
-    "react/forbid-prop-types": 0
-  },
-  "ignorePatterns": ["**/*.test.js"]
-}
+# Changelog
+
+## v1.0.0
+
+### Added or Changed
+- Added this changelog :)
+- Fixed typos in both templates
+- Back to top links
+- Added more "Built With" frameworks/libraries
+- Changed table of contents to start collapsed
+- Added checkboxes for major features on roadmap
+
+### Removed
+
+- Some packages/libraries from acknowledgements I no longer use
