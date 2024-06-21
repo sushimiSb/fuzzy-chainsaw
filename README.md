@@ -1,1 +1,3 @@
-* text=auto eol=lf
+node_modules
+yarn.lock
+.DS_Store
