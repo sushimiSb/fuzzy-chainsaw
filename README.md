@@ -1,1 +1,3 @@
-* text=auto eol=lf
+#! /bin/bash
+
+cat spec.md
