@@ -1,81 +1,46 @@
-# Дополения к языку разметки MD.
+# 项目背景
 
-## Оглавление:
-1. [Детализация (кат)](#Детализация-кат)
-2. [Форматирование текста](#Форматирование-текста)
-3. [Имитация клавиатуры](#Имитация-клавиатуры) 
-4. [Бэйджики](#Бэйджики)
+蘑菇街能有今天的快速发展，得益于开源软件群雄崛起的大环境背景，我们一直对开源社区怀有感恩之情，因此也一直希望能为开源社区贡献一份力量。
 
-## Детализация (кат) 
-Существует возможность спрятать часть текста под кат. Для этого необходимо использовать тэг HTML5 `<details>` текст `</details>`. Подробнее: [http://htmlbook.ru/html/details](http://htmlbook.ru/html/details) и [http://htmlbook.ru/html/summary](http://htmlbook.ru/html/summary)   
-Следующий код:   
-    `<details>`    
-    `<summary>Подробнее ...</summary>`    
-    `Тут текст который мы хотим скрыть`    
-    `</details>`   
+2013年我们蘑菇街从社区导购华丽转身时尚电商平台，为解决千万妹子和时尚卖家的沟通问题，我们开发了自己的即时通讯软件。既然已经有了用户使用的IM，为什么我们自己公司内部沟通还要用第三方的呢？因此就有了TT(TeamTalk)的雏形，现在蘑菇街内部的在线沟通全部通过TT来完成。随着TT功能的逐渐完善，我们决定把TT开源来回馈开源社区，希望国内的中小企业都能用上开源、免费、好用的IM工具！
 
-Дает такой результат:
-<details>
-<summary>Подробнее ...</summary>
-Тут текст который мы хотим скрыть
-</details>    
+# 项目介绍
+* 名称：TeamTalk
+* 官网：http://tt.mogu.io/
+* 开源协议：[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+* 定位：中小型企业用户，member >= 2
+* 特点：开源与产品并重
+* 功能：可靠的消息传递机制；支持文字、图片、语音等富文本信息；文件收发等	
 
-**Внимание:** это не работает в большинстве браузеров.    
-[:arrow_up:Оглавление](#Оглавление)    
-___
+# 项目框架
 
-## Форматирование текста
-Для форматирования текста можно использовать тэг `<p>`. Подробнее: [http://htmlbook.ru/html/p](http://htmlbook.ru/html/p)   
-Вариант использования: `<p align="left | center | right | justify">...</p>`    
-<details>
-<summary>Текст без форматирования:</summary>
-Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
-</details>
-Результат применения тэга:
 
-```
-<p align="justify">
+麻雀虽小五脏俱全，本项目涉及到多个平台、多种语言，简单关系如下图：
+     
+![teamtalk架构图](http://s6.mogucdn.com/b7/pic/140921/7n6ih_ieygmzjsmiywezjwmmytambqhayde_514x551.jpg)
 
-</p>
-```
 
-<details>
-<summary>Текст после форматирования:</summary>
-<p align="justify">
-Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
-</p>
-</details>    
-    
-[:arrow_up:Оглавление](#Оглавление)
-___
+#### 服务端：
+     
+CppServer：TTCppServer工程，包括IM消息服务器、http服务器、文件传输服务器、文件存储服务器、登陆服务器
+java DB Proxy：TTJavaServer工程，承载着后台消息存储、redis等接口
+PHP server：TTPhpServer工程，teamtalk后台配置页面
 
-## Имитация клавиатуры
-Можно имитировать клавиатуру:
-```
-<pre>
-    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
-</pre> 
-```
-<pre>
-    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> - Вызов диспетчера задач.
-</pre>
+#### 客户端：
 
-[:arrow_up:Оглавление](#Оглавление)
-___
+- mac：TTMacClient工程，mac客户端工程
+- iOS：TTIOSClient工程，IOS客户端工程
+- Android：TTAndroidClient工程，android客户端工程
+- Windows：TTWinClient工程，windows客户端工程
 
-## Бэйджики
+* 语言：c++、objective-c、java、php
+* 系统环境：Linux、Windows，Mac, iOS, Android
 
-Можно вставлять свои или готовые бэйджки.
-Источник: [https://shields.io/category/build](https://shields.io/category/build)
+# 代码下载
+-[地址](https://github.com/mogujie/TeamTalk)
 
-Пример:
-```
-Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
+# 交流
 
-Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
-```
-
-Результат:  
-Status: ![https://img.shields.io/badge/Status-WIP-red](https://img.shields.io/badge/Status-WIP-red) ![https://img.shields.io/badge/Realese-No-red](https://img.shields.io/badge/Realese-No-red)
-
-Language: ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7.5-blue)
+* qq交流群1：341273218(已满)
+* qq交流群2:437335108
+* 邮件交流：tt@mogujie.com
