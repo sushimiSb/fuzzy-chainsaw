@@ -1,121 +1,97 @@
-Creative Commons Legal Code
+# `buffer-web` workers and cron in Kubernetes
 
-CC0 1.0 Universal
+We are transitionning `buffer-web` utils workers to k8s (Kubernetes). Here what you'll need to know to make changes to those workers.
 
-    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
-    LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
-    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
-    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
-    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
-    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
-    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
-    HEREUNDER.
+Team members to contact for more information:
+* Primary contacts - Eric, Colin
 
-Statement of Purpose
+## Contents
 
-The laws of most jurisdictions throughout the world automatically confer
-exclusive Copyright and Related Rights (defined below) upon the creator
-and subsequent owner(s) (each and all, an "owner") of an original work of
-authorship and/or a database (each, a "Work").
+* [List of workers in k8s](#list-of-workers-in-k8s)
+* [List of crons in k8s](#list-of-crons-in-k8s)
+* [Deploy workers/crons to k8s](#deploying-workers-or-crons-to-kubernetes)
+* [Architecture](#architecture)
+* [Code specific to k8s](#code-specific-to-k8s)
+* [Run k8s workers locally](#run-k8s-workers-locally)
+* [Production Deployments](#production-deployments)
 
-Certain owners wish to permanently relinquish those rights to a Work for
-the purpose of contributing to a commons of creative, cultural and
-scientific works ("Commons") that the public can reliably and without fear
-of later claims of infringement build upon, modify, incorporate in other
-works, reuse and redistribute as freely as possible in any form whatsoever
-and for any purposes, including without limitation commercial purposes.
-These owners may contribute to the Commons to promote the ideal of a free
-culture and the further production of creative, cultural and scientific
-works, or to gain reputation or greater distribution for their Work in
-part through the use and efforts of others.
+## List of workers in k8s
+| Worker name | deployment key | Description|
+| --- | --- | --- |
+| analytics | worker-analytics | Update analytics
+| elasticsearch-indexer | worker-elasticsearch-indexer | Index profiles/users/updates in elasticsearch
+| email | worker-email | ???
+| gnip analytics | worker-gnip-analytics | Process GNIP analytics for a given twitter profile
+| link | worker-link | increment the buffer button
+| patch-records | worker-patch-record | "patch" the image fields for updates with the correct data structure
+| picture | worker-picture | Process images
+| push | worker-push | ???
+| quick-analytics | worker-quick-analytics | Update analytics
+| s3-cleanup | worker-s3-cleanup | ???
+| service | worker-service | ???
+| signup | worker-signup | Add complimentary information to user after the signup process
+| stripe-webhook | worker-stripe-webhook | ???
+| tweet-backfill | worker-tweet-backfill | ?
+| twitter-friends | worker-twitter-friends | Index in the twitter friend elasticsearch cluster
+| update | worker-update | Use to send updates from our users
+| update-migration | worker-update-migration | ???
+| user-cleanup | worker-user-cleanup | clean users information after they leave buffer
+| weekly-email-digest | worker-eweekly-email-digestmail | Send weekly email stats to our users
 
-For these and/or other purposes and motivations, and without any
-expectation of additional consideration or compensation, the person
-associating CC0 with a Work (the "Affirmer"), to the extent that he or she
-is an owner of Copyright and Related Rights in the Work, voluntarily
-elects to apply CC0 to the Work and publicly distribute the Work under its
-terms, with knowledge of his or her Copyright and Related Rights in the
-Work and the meaning and intended legal effect of CC0 on those rights.
 
-1. Copyright and Related Rights. A Work made available under CC0 may be
-protected by copyright and related or neighboring rights ("Copyright and
-Related Rights"). Copyright and Related Rights include, but are not
-limited to, the following:
+## List of crons in k8s
+| Cron name | deployment key | Description|
+| --- | --- | --- |
+| queue-analytics | cron-analytics | Send all due analytics to the analytics queue
+| queue-scheduled-updates | cron-updates | Send all due updates to the sqs updates queue (The update workers will process the queue later on)
 
-  i. the right to reproduce, adapt, distribute, perform, display,
-     communicate, and translate a Work;
- ii. moral rights retained by the original author(s) and/or performer(s);
-iii. publicity and privacy rights pertaining to a person's image or
-     likeness depicted in a Work;
- iv. rights protecting against unfair competition in regards to a Work,
-     subject to the limitations in paragraph 4(a), below;
-  v. rights protecting the extraction, dissemination, use and reuse of data
-     in a Work;
- vi. database rights (such as those arising under Directive 96/9/EC of the
-     European Parliament and of the Council of 11 March 1996 on the legal
-     protection of databases, and under any national implementation
-     thereof, including any amended or successor version of such
-     directive); and
-vii. other similar, equivalent or corresponding rights throughout the
-     world based on applicable law or treaty, and any national
-     implementations thereof.
 
-2. Waiver. To the greatest extent permitted by, but not in contravention
-of, applicable law, Affirmer hereby overtly, fully, permanently,
-irrevocably and unconditionally waives, abandons, and surrenders all of
-Affirmer's Copyright and Related Rights and associated claims and causes
-of action, whether now known or unknown (including existing as well as
-future claims and causes of action), in the Work (i) in all territories
-worldwide, (ii) for the maximum duration provided by applicable law or
-treaty (including future time extensions), (iii) in any current or future
-medium and for any number of copies, and (iv) for any purpose whatsoever,
-including without limitation commercial, advertising or promotional
-purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
-member of the public at large and to the detriment of Affirmer's heirs and
-successors, fully intending that such Waiver shall not be subject to
-revocation, rescission, cancellation, termination, or any other legal or
-equitable action to disrupt the quiet enjoyment of the Work by the public
-as contemplated by Affirmer's express Statement of Purpose.
+## Deploying workers or crons to kubernetes
 
-3. Public License Fallback. Should any part of the Waiver for any reason
-be judged legally invalid or ineffective under applicable law, then the
-Waiver shall be preserved to the maximum extent permitted taking into
-account Affirmer's express Statement of Purpose. In addition, to the
-extent the Waiver is so judged Affirmer hereby grants to each affected
-person a royalty-free, non transferable, non sublicensable, non exclusive,
-irrevocable and unconditional license to exercise Affirmer's Copyright and
-Related Rights in the Work (i) in all territories worldwide, (ii) for the
-maximum duration provided by applicable law or treaty (including future
-time extensions), (iii) in any current or future medium and for any number
-of copies, and (iv) for any purpose whatsoever, including without
-limitation commercial, advertising or promotional purposes (the
-"License"). The License shall be deemed effective as of the date CC0 was
-applied by Affirmer to the Work. Should any part of the License for any
-reason be judged legally invalid or ineffective under applicable law, such
-partial invalidity or ineffectiveness shall not invalidate the remainder
-of the License, and in such case Affirmer hereby affirms that he or she
-will not (i) exercise any of his or her remaining Copyright and Related
-Rights in the Work or (ii) assert any associated claims and causes of
-action with respect to the Work, in either case contrary to Affirmer's
-express Statement of Purpose.
+Take the deployment key [of the worker](#list-of-workers-in-k8s) or [crons](#list-of-crons-in-k8s) you want to target, and do:
+```
+    @bufferbot servicedeploy [deployment key]
+```
 
-4. Limitations and Disclaimers.
+For example to deploy to the update worker:
+```
+    @bufferbot servicedeploy worker-update
+```
 
- a. No trademark or patent rights held by Affirmer are waived, abandoned,
-    surrendered, licensed or otherwise affected by this document.
- b. Affirmer offers the Work as-is and makes no representations or
-    warranties of any kind concerning the Work, express, implied,
-    statutory or otherwise, including without limitation warranties of
-    title, merchantability, fitness for a particular purpose, non
-    infringement, or the absence of latent or other defects, accuracy, or
-    the present or absence of errors, whether or not discoverable, all to
-    the greatest extent permissible under applicable law.
- c. Affirmer disclaims responsibility for clearing rights of other persons
-    that may apply to the Work or any use thereof, including without
-    limitation any person's Copyright and Related Rights in the Work.
-    Further, Affirmer disclaims responsibility for obtaining any necessary
-    consents, permissions or other rights required for any use of the
-    Work.
- d. Affirmer understands and acknowledges that Creative Commons is not a
-    party to this document and has no duty or obligation with respect to
-    this CC0 or use of the Work.
+Then you can check the workers has been properly deployed by checking the age of the worker:
+```
+    kubectl get pods -n workers
+```
+
+## Architecture
+
+To put it in a simple way, we put the `buffer-web` repo in a docker container and run the workers in k8s. [Here the Dockerfile used in production](https://github.com/bufferapp/buffer-web/blob/master/Dockerfile.workers). We use the [official PHP 5.6.31](https://github.com/bufferapp/dockerfiles/blob/master/php56-cli/Dockerfile) image, that uses itself `Debian 8.9 (jessie)`.
+
+Each worker has its own kubernetes deployment file located in the kube repo, under `kube/us-east1.buffer-k8s.com/workers`. Reach anyone in the system team to have access to it!
+
+In SQS, the new queue name [has the `_k8s` suffix appened](https://github.com/bufferapp/buffer-web/blob/4eda46cb62a18f9285eab93e33100d7133e92cfc/shared/libraries/Workers/Worker.php#L81-L83) to its previous name. For instance, instead of `update` queue, it will be `update_k8s`
+
+## Code specific to k8s
+We set the  [`ENV_KUBERNETES`](https://github.com/bufferapp/buffer-web/blob/37348b9f59c675f420ea7099fd2ed9d0758e4844/Dockerfile.workers#L10
+) environnment variable to specify the code that is specific to kubernetes. Here the handy link to see [how it's used](https://github.com/bufferapp/buffer-web/search?utf8=%E2%9C%93&q=ENV_KUBERNETES&type=).
+
+## Run k8s workers locally
+
+Use `buffer-dev` to starts the worker :
+
+- `./dev web-worker start worker_name`
+- `./dev web-worker tail worker_name`
+- `./dev web-worker stop worker_name`
+
+If you have modified the `Dockerfile.local.worker`, please make sure to `./dev rebuild web-worker` the dev environment.
+
+Note: This way is better than the `./dev worker` command  because it reflects the exact same container as production. 🐳🐳🐳
+
+
+## Production Deployments 
+
+To deploy to production :
+
+`@bufferbot servicedeploy [deployment-key]`
+
+Note:  You'll probably change some library/models that will affect utils, web or api environnments. In that case, you should aslo deploy to those environnments. Just ask in #eng-deploys if you're unsure :) 
